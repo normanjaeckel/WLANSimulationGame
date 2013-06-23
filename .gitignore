@@ -1,0 +1,5 @@
+# Virtual environment (virtualenv)
+.virtualenv/
+
+# Python compiled files
+*.pyc
