@@ -3,3 +3,7 @@
 
 # Python compiled files
 *.pyc
+
+# Personal settings and database
+settings.py
+database.sqlite
