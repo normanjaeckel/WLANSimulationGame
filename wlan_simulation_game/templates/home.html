@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %}Startseite{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans 'Home' %} – {{ block.super }}{% endblock %}
 
 {% block content %}
 
     <div class="row">
         <div class="col c12">
             <h2>{{ config.headline }}</h2>
-            <p>{{ config.text }}</p>
+            <p>{{ config.introduction }}</p>
         </div>
     </div>
 

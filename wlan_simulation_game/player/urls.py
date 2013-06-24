@@ -3,9 +3,10 @@
 
 from django.conf.urls import patterns, url
 from django.contrib.auth.decorators import login_required
-from django.views.generic import DetailView, ListView
+from django.views.generic import ListView, DetailView
 
 from .models import Player
+
 
 urlpatterns = patterns(
     '',

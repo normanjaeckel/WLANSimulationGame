@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
@@ -6,7 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}in-response.css" title="In Response" media="all" />
     <meta name="viewport" content="width=device-width, initial-scale=0.6" />
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{{ config.title }}{% endblock %}</title>
 </head>
 
 <body class="light">
@@ -21,11 +23,11 @@
     <div class="row">
         <div class="col c12 aligncenter navmenu">
             <p>
-                <a href="{% url 'home' %}" class="current">Startseite</a>
-                <a href="{% url 'player_list' %}">Spieler</a>
-                <a href="#">Nachrichten</a>
-                <a href="#">Karten</a>
-                <a href="{% url 'admin:index' %}">Administration</a>
+                <a href="{% url 'home' %}" class="current">{% trans 'Home' %}</a>
+                <a href="{% url 'player_list' %}">{% trans 'Players' %}</a>
+                <a href="#">{% trans 'Messages' %}</a>
+                <a href="{% url 'card_list' %}">{% trans 'Cards' %}</a>
+                <a href="{% url 'admin:index' %}">{% trans 'Administration' %}</a>
             </p>
         </div>
     </div>
@@ -40,9 +42,11 @@
 
     <div class="row">
         <div class="col c12 aligncenter">
-            <p><span class="larger">&copy; 2013 {{ config.name }}</span><br />
-            Powered by <a href="http://github.com/normanjaeckel/wlan-simulation-game/">WLAN Simulation Game</a><br />
-            <a href="http://andreasviklund.com/dt_portfolio/in-response/">Template design</a> by <a href="http://andreasviklund.com/">Andreas Viklund</a></p>
+            <p>
+                <span class="larger">&copy; 2013 {{ config.name }}</span><br />
+                {% trans 'Powered by' %} <a href="http://github.com/normanjaeckel/wlan-simulation-game/">WLAN Simulation Game</a><br />
+                {% trans '<a href="http://andreasviklund.com/dt_portfolio/in-response/">Template design</a> by <a href="http://andreasviklund.com/">Andreas Viklund</a>' %}
+            </p>
         </div>
     </div>
  </div>

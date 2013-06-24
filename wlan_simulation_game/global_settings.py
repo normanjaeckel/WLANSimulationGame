@@ -127,6 +127,7 @@ INSTALLED_APPS = (
     'constance',
     'constance.backends.database',
     'wlan_simulation_game.player',
+    'wlan_simulation_game.card',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -161,13 +162,15 @@ LOGGING = {
 # Constance - Dynamic Django settings (django-constance)
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
 
+from django.utils.translation import ugettext_lazy
+
 CONSTANCE_CONFIG = {
-    'title': ('Überschrift', u'Titel des Spiels, erste Überschrift im Template'),
-    'subtitle': ('Untertitel', u'Untertitel des Spiels, zweite Überschrift im Template'),
-    'headline': ('Herzlich willkommen', u'Überschrift des Einführungstextes'),
-    'text': ('Anleitung', u'Anleitungs- und Einführungstext für das Spiel'),
-    'name': ('Max Mustermann', u'Name des Spielleiters'),
-    'players_can_submit_messages': (False, u'Die Spieler können Nachrichten ins System eingeben.'),
+    'title': ('Title', ugettext_lazy('Title of the game. Used as first heading in the template.')),
+    'subtitle': ('Subtitle', ugettext_lazy('Subtitle of the game. Used as second heading in the template.')),
+    'headline': ('Welcome here', ugettext_lazy('Headline for the introduction text.')),
+    'introduction': ('Introduction', ugettext_lazy('Introduction to the game and the system.')),
+    'name': ('Your Name', ugettext_lazy('Name of the game master.')),
+    'players_can_submit_messages': (False, ugettext_lazy('If this is active, players can submit messages to the system.')),
 }
 
 TEMPLATE_CONTEXT_PROCESSORS = (
