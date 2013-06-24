@@ -1,8 +1,10 @@
-# Virtual environment (virtualenv)
-.virtualenv/
+# Patterns to be ignored by git
 
 # Python compiled files
 *.pyc
+
+# Virtual Python Environment builder (virtualenv)
+.virtualenv/
 
 # Personal settings and database
 settings.py

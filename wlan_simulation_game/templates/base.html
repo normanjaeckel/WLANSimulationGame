@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="{{ LANGUAGE_CODE }}">
 <head>
     <meta charset="UTF-8" />
     <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css' />
@@ -21,15 +21,15 @@
     <div class="row">
         <div class="col c12 aligncenter navmenu">
             <p>
-                <a href="/" class="current">Startseite</a>
-                <a href="#">Spieler</a>
+                <a href="{% url 'home' %}" class="current">Startseite</a>
+                <a href="{% url 'player_list' %}">Spieler</a>
                 <a href="#">Nachrichten</a>
                 <a href="#">Karten</a>
-                <a href="/admin/">Administration</a>
+                <a href="{% url 'admin:index' %}">Administration</a>
             </p>
         </div>
     </div>
-  
+
     <div class="row">
         <div class="col c12 aligncenter headerimage">
             <img src="{{ STATIC_URL }}images/test.jpg" width="960" height="300" alt="" />
@@ -41,7 +41,7 @@
     <div class="row">
         <div class="col c12 aligncenter">
             <p><span class="larger">&copy; 2013 {{ config.name }}</span><br />
-            Powered by <a href="http://github.com/normanjaeckel/wlan-simulation-game">WLAN Simulation Game</a><br />
+            Powered by <a href="http://github.com/normanjaeckel/wlan-simulation-game/">WLAN Simulation Game</a><br />
             <a href="http://andreasviklund.com/dt_portfolio/in-response/">Template design</a> by <a href="http://andreasviklund.com/">Andreas Viklund</a></p>
         </div>
     </div>

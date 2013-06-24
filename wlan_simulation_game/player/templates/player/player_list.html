@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Die Spieler und ihr derzeitiger Punktestand</h1>
+
+<style type="text/css">
+    span.spielerpunktebalken {background-color:blue;float:left;margin-right:20px;width:100%}
+</style>
+
+<div>
+{% for player in player_list %}
+    <p>
+        <span class="spielerpunktelabel"><a href="{% url 'player_detail' player.pk %}">{{ player }}</a></span>
+        <span class="spielerpunktebalken" style="width:{{player.relative_score}}%;">&nbsp;</span>
+        {{ player.score }}&nbsp;Punkte
+    </p>
+{% endfor %}
+</div>
+
+{% endblock %}
