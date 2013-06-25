@@ -159,6 +159,10 @@ LOGGING = {
     }
 }
 
+# Login
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+
 # Constance - Dynamic Django settings (django-constance)
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
 
