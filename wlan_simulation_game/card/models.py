@@ -2,36 +2,40 @@
 # -*- coding: utf-8 -*-
 
 from django.db import models
+from django.utils.translation import ugettext as _, ugettext_lazy
 
 from wlan_simulation_game.player.models import Player
 
 
 class Card(models.Model):
-    name = models.CharField(max_length=255)
-    description = models.TextField()
-    owner = models.ForeignKey(Player, related_name='cards')
-    target = models.ForeignKey(Player, related_name='cards_against_me')
-    value = models.IntegerField()
-    used = models.BooleanField(default=False)
+    """
+    Model for a card that one player, the owner, can play with respect to
+    another player, the target.
+    """
+    name = models.CharField(max_length=255, verbose_name=ugettext_lazy('Name'))
+    description = models.TextField(blank=True, verbose_name=ugettext_lazy('Description'))
+    owner = models.ForeignKey(Player, related_name='cards', verbose_name=ugettext_lazy('Owner'))
+    target = models.ForeignKey(Player, related_name='cards_against_me', verbose_name=ugettext_lazy('Target'))
+    value = models.IntegerField(verbose_name=ugettext_lazy('Value'))
+    used = models.BooleanField(default=False, verbose_name=ugettext_lazy('Used'))
 
     class Meta:
-        verbose_name = 'Karte'
-        verbose_name_plural = 'Karten'
-        #~ permissions = (
-            #~ ("can_play", "Can play a card."),
-            #~ ("can_print", "Can see all cards as pdf.")
-        #~ )
+        verbose_name = ugettext_lazy('Card')
+        verbose_name_plural = ugettext_lazy('Cards')
 
     def __unicode__(self):
         return self.name
 
     def play(self):
         """
-        Funktion für das Ausspielen einer Karte. Schreibt Punkte gut,
-        zieht spielbare Karten ab und verbraucht die Karte. Keine Prüfung der Berechtigung.
+        Method to play a card. No check of permissions.
         """
         if self.used:
-            raise StandardError  # TODO: Raise another error here.
+            # TODO: Raise another error here.
+            raise StandardError, _('You can not play this card any more. It is already used.')
+        elif self.owner.playable_cards <= 0:
+            # TODO: Raise another error here.
+            raise StandardError, _('The owner can not play cards anymore.')
         else:
             self.used = True
             self.save()

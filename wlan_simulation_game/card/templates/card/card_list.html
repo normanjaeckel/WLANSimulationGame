@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+    <h2>{% trans 'All cards' %}</h2>
+
+    <a href="{% url 'card_list_print' %}">{% trans 'Print' %}</a>
+
+    <div>
+        {% for card in card_list %}
+            <p><a href="{% url 'card_detail' card.pk %}">{{ card }}</a></p>
+        {% endfor %}
+    </div>
+
+{% endblock %}

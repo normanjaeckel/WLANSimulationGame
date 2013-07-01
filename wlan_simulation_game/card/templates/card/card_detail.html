@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+    <h2>{{ card }}</h2>
+
+    <a href="{% url 'card_play' card.pk %}">{% trans 'Play this card' %}</a>
+
+{% endblock %}
+

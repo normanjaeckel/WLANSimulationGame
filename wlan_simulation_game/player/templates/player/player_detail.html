@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
 
-<h1>{{ player }}</h1>
+    <h2>{{ player }}</h2>
 
-<p>Punkte: {{ player.score }}</p>
+    <p>{% trans 'Scores' %}: {{ player.score }}</p>
 
-<p>Noch spielbare Aktionskarten: {{ player.playable_cards }}</p>
+    <p>{% trans 'Playable Cards' %}: {{ player.playable_cards }}</p>
 
-<p><em>{{ player.description }}</em></p>
+    <p><em>{{ player.description }}</em></p>
 
 {% endblock %}
 

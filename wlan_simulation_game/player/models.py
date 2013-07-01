@@ -5,6 +5,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy
 
+
 class Player(models.Model):
     """
     Model for the five player groups. It is one-to-one linked to Django's user
@@ -12,7 +13,7 @@ class Player(models.Model):
     """
     user = models.OneToOneField(User, unique=True, verbose_name=ugettext_lazy('Login user'))
     character = models.CharField(max_length=255, unique=True, verbose_name=ugettext_lazy('Character'))
-    description = models.TextField(verbose_name=ugettext_lazy('Description'))
+    description = models.TextField(blank=True, verbose_name=ugettext_lazy('Description'))
     score = models.IntegerField(default=20, verbose_name=ugettext_lazy('Score'))
     playable_cards = models.IntegerField(default=5, verbose_name=ugettext_lazy('Playable Cards'))
 

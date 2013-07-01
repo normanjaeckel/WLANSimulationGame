@@ -1,21 +1,28 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
 
-<h1>Die Spieler und ihr derzeitiger Punktestand</h1>
+    <h2>{% trans 'The players and their actual score.' %}</h2>
 
-<style type="text/css">
-    span.spielerpunktebalken {background-color:blue;float:left;margin-right:20px;width:100%}
-</style>
+    <style type="text/css">
+        span.scorebar {
+            background-color:blue;
+            float:left;
+            margin-right:20px;
+            width:100%}
+        span.scorelabe {}
+    </style>
 
-<div>
-{% for player in player_list %}
-    <p>
-        <span class="spielerpunktelabel"><a href="{% url 'player_detail' player.pk %}">{{ player }}</a></span>
-        <span class="spielerpunktebalken" style="width:{{player.relative_score}}%;">&nbsp;</span>
-        {{ player.score }}&nbsp;Punkte
-    </p>
-{% endfor %}
-</div>
+    <div>
+        {% for player in player_list %}
+            <p>
+                <span class="scorelabel"><a href="{% url 'player_detail' player.pk %}">{{ player }}</a></span>
+                <span class="scorebar" style="width:{{player.relative_score}}%;">&nbsp;</span>
+                {{ player.score }}&nbsp;{% trans 'Scores' %}
+            </p>
+        {% endfor %}
+    </div>
 
 {% endblock %}

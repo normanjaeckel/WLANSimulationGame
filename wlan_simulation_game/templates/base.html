@@ -43,6 +43,16 @@
         </div>
     </div>
 
+    {% block messages %}
+        <div class="row">
+            <div class="col c12 aligncenter">
+                {% for message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    {% endblock %}
+
     {% block content %}{% endblock %}
 
     <div class="row">
