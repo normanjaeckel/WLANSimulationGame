@@ -128,6 +128,7 @@ INSTALLED_APPS = (
     'constance.backends.database',
     'wlan_simulation_game.player',
     'wlan_simulation_game.card',
+    'wlan_simulation_game.message',
 )
 
 # A sample logging configuration. The only tangible logging

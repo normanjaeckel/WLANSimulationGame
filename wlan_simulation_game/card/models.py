@@ -4,6 +4,7 @@
 from django.db import models
 from django.utils.translation import ugettext as _, ugettext_lazy
 
+from wlan_simulation_game.exceptions import WLANSimulationGameError
 from wlan_simulation_game.player.models import Player
 
 
@@ -23,7 +24,18 @@ class Card(models.Model):
         verbose_name = ugettext_lazy('Card')
         verbose_name_plural = ugettext_lazy('Cards')
 
+    def save(self, *args, **kwargs):
+        """
+        Override to check that no one is owner and target at one time.
+        """
+        if self.owner == self.target:
+            raise WLANSimulationGameError, _('The owner can not be saved as target.')
+        return super(Card, self).save(*args, **kwargs)
+
     def __unicode__(self):
+        """
+        Method for representation.
+        """
         return self.name
 
     def play(self):
@@ -31,11 +43,9 @@ class Card(models.Model):
         Method to play a card. No check of permissions.
         """
         if self.used:
-            # TODO: Raise another error here.
-            raise StandardError, _('You can not play this card any more. It is already used.')
+            raise WLANSimulationGameError, _('You can not play this card any more. It is already used.')
         elif self.owner.playable_cards <= 0:
-            # TODO: Raise another error here.
-            raise StandardError, _('The owner can not play cards anymore.')
+            raise WLANSimulationGameError, _('The owner can not play cards anymore.')
         else:
             self.used = True
             self.save()

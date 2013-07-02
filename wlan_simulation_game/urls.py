@@ -16,5 +16,6 @@ urlpatterns = patterns(
     url(r'^logout/$', 'django.contrib.auth.views.logout_then_login', name='logout'),
     url(r'^player/', include('wlan_simulation_game.player.urls')),
     url(r'^card/', include('wlan_simulation_game.card.urls')),
+    url(r'^message/', include('wlan_simulation_game.message.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
