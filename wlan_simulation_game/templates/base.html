@@ -25,7 +25,7 @@
             <p>
                 <a href="{% url 'home' %}" class="current">{% trans 'Home' %}</a>
                 <a href="{% url 'player_list' %}">{% trans 'Players' %}</a>
-                <a href="#">{% trans 'Messages' %}</a>
+                <a href="{% url 'message_list' %}">{% trans 'Messages' %}</a>
                 <a href="{% url 'card_list' %}">{% trans 'Cards' %}</a>
                 <a href="{% url 'admin:index' %}">{% trans 'Administration' %}</a>
                 {% if user.is_authenticated %}
@@ -53,7 +53,19 @@
         </div>
     {% endblock %}
 
-    {% block content %}{% endblock %}
+    {% block content %}
+        <div class="row">
+            <div class="col c12 aligncenter">
+                <h2>{% block heading %}{% endblock %}</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% block both %}
+                <div class="col c3">{% block left %}&nbsp;{% endblock %}</div>
+                <div class="col c9">{% block right %}&nbsp;{% endblock %}</div>
+            {% endblock %}
+        </div>
+    {% endblock %}
 
     <div class="row">
         <div class="col c12 aligncenter">
@@ -64,6 +76,9 @@
             </p>
         </div>
     </div>
- </div>
+</div>
+
+{% block javascript %}{% endblock %}
+
 </body>
 </html>

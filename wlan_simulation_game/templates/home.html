@@ -4,13 +4,12 @@
 
 {% block title %}{% trans 'Home' %} – {{ block.super }}{% endblock %}
 
-{% block content %}
+{% block heading %}{{ config.headline }}{% endblock %}
 
-    <div class="row">
-        <div class="col c12">
-            <h2>{{ config.headline }}</h2>
-            <p>{{ config.introduction }}</p>
-        </div>
+{% block both %}
+    <div class="col c12">
+        <p>{{ config.introduction }}</p>
     </div>
-
 {% endblock %}
+
+

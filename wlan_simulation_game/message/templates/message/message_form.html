@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans 'New message' %} – {{ block.super }}{% endblock %}
+
+{% block heading %}{% trans 'New message' %}{% endblock %}
+
+{% block left %}
+    <p><a href="{% url 'message_list' %}">{% trans 'All messages' %}</a></p>
+{% endblock %}
+
+{% block right %}
+    <form action="" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="{% trans 'Submit' %}" />
+        <input type="reset" value="{% trans 'Reset' %}" />
+        <a href="{% url 'message_list' %}"><button type="button">{% trans 'Cancel' %}</button></a>
+    </form>
+{% endblock %}

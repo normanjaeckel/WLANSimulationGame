@@ -4,12 +4,4 @@
 
 {% block title %}{% trans '403 Forbidden' %} – {{ block.super }}{% endblock %}
 
-{% block content %}
-
-    <div class="row">
-        <div class="col c12">
-            <h2>{% trans 'Forbidden' %}</h2>
-        </div>
-    </div>
-
-{% endblock %}
+{% block heading %}{% trans 'Forbidden' %}{% endblock %}
