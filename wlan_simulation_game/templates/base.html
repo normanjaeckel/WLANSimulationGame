@@ -4,32 +4,35 @@
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
     <meta charset="UTF-8" />
-    <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}in-response.css" title="In Response" media="all" />
+    {% block styles %}
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}fonts.css" />
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}in-response.css" title="In Response" media="all" />
+    {% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=0.6" />
     <title>{% block title %}{{ config.title }}{% endblock %}</title>
 </head>
 
 <body class="light">
 <div id="layout">
-    <div class="row">
+    <div id="title-subtitle" class="row">
         <div class="col c12">
             <h1 class="aligncenter"><a href="/">{{ config.title }}</a></h1>
             <p class="aligncenter slogan">{{ config.subtitle }}</p>
         </div>
     </div>
 
-    <div class="row">
+    <div id="nav" class="row">
         <div class="col c12 aligncenter navmenu">
             <p>
                 <a href="{% url 'home' %}" class="current">{% trans 'Home' %}</a>
                 <a href="{% url 'player_list' %}">{% trans 'Players' %}</a>
                 <a href="{% url 'message_list' %}">{% trans 'Messages' %}</a>
                 <a href="{% url 'card_list' %}">{% trans 'Cards' %}</a>
-                <a href="{% url 'admin:index' %}">{% trans 'Administration' %}</a>
                 {% if user.is_authenticated %}
-                    <a href="{% url 'logout' %}">{% trans 'Logout' %}</a>
+                    {% if user.is_staff %}
+                        <a href="{% url 'admin:index' %}">{% trans 'Administration' %}</a>
+                    {% endif %}
+                    <a href="{% url 'logout' %}">{% trans 'Logout' %}</a> {% trans 'User' %}: {{ user }}
                 {% else %}
                     <a href="{% url 'login' %}">{% trans 'Login' %}</a>
                 {% endif %}
@@ -37,14 +40,14 @@
         </div>
     </div>
 
-    <div class="row">
+    <div id="headerimage" class="row">
         <div class="col c12 aligncenter headerimage">
             <img src="{{ STATIC_URL }}images/test.jpg" width="960" height="300" alt="" />
         </div>
     </div>
 
     {% block messages %}
-        <div class="row">
+        <div id="messages" class="row">
             <div class="col c12 aligncenter">
                 {% for message in messages %}
                     <p>{{ message }}</p>
@@ -54,20 +57,20 @@
     {% endblock %}
 
     {% block content %}
-        <div class="row">
+        <div id="content-heading" class="row">
             <div class="col c12 aligncenter">
                 <h2>{% block heading %}{% endblock %}</h2>
             </div>
         </div>
-        <div class="row">
+        <div id="content-both" class="row">
             {% block both %}
-                <div class="col c3">{% block left %}&nbsp;{% endblock %}</div>
-                <div class="col c9">{% block right %}&nbsp;{% endblock %}</div>
+                <div id="content-left"class="col c3">{% block left %}&nbsp;{% endblock %}</div>
+                <div id="content-right" class="col c9">{% block right %}&nbsp;{% endblock %}</div>
             {% endblock %}
         </div>
     {% endblock %}
 
-    <div class="row">
+    <div id="footlines" class="row">
         <div class="col c12 aligncenter">
             <p>
                 <span class="larger">&copy; 2013 {{ config.name }}</span><br />

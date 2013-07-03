@@ -51,6 +51,8 @@
                 {% endfor %}
             </ul>
         </li>
+    {% empty %}
+        <li><em>{% trans 'No messages available.' %}</em></li>
     {% endfor %}
     </ul>
 {% endblock %}

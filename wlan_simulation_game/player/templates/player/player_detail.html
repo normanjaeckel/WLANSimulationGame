@@ -2,15 +2,15 @@
 
 {% load i18n %}
 
-{% block content %}
+{% block title %}{% trans 'Player' %} {{ player }}– {{ block.super }}{% endblock %}
 
-    <h2>{{ player }}</h2>
+{% block heading %}{{ player }}{% endblock %}
 
-    <p>{% trans 'Scores' %}: {{ player.score }}</p>
-
-    <p>{% trans 'Playable Cards' %}: {{ player.playable_cards }}</p>
-
-    <p><em>{{ player.description }}</em></p>
-
+{% block both %}
+    <div class="col c12">
+        <p>{% trans 'Score' %}: {{ player.score }}</p>
+        <p>{% trans 'Playable Cards' %}: {{ player.playable_cards }}</p>
+        <p><em>{{ player.description }}</em></p>
+    </div>
 {% endblock %}
 

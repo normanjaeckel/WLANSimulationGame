@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from constance import config
+
 from django.contrib import messages
 from django.core.exceptions import PermissionDenied
 from django.core.urlresolvers import reverse
@@ -73,6 +75,16 @@ class MessageCreateView(CreateView):
     View to write a new message.
     """
     model = Message
+
+    def dispatch(self, request, *args, **kwargs):
+        """
+        Checks the config variable 'players_can_submit_messages'.
+        """
+        if config.players_can_submit_messages or request.user.is_staff:
+            return super(MessageCreateView, self).dispatch(request, *args, **kwargs)
+        else:
+            messages.error(request, _('You are not allowed to send a message at the moment.'))
+            raise PermissionDenied
 
     def get_form_class(self, *args, **kwargs):
         """

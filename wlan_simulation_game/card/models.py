@@ -21,6 +21,7 @@ class Card(models.Model):
     used = models.BooleanField(default=False, verbose_name=ugettext_lazy('Used'))
 
     class Meta:
+        ordering = ('owner', 'target')
         verbose_name = ugettext_lazy('Card')
         verbose_name_plural = ugettext_lazy('Cards')
 

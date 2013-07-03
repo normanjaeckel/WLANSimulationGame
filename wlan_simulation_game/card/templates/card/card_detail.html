@@ -2,11 +2,27 @@
 
 {% load i18n %}
 
-{% block content %}
+{% block title %}{% trans 'Card' %} {{ card }} – {{ block.super }}{% endblock %}
 
-    <h2>{{ card }}</h2>
+{% block heading %}{{ card }}{% endblock %}
 
-    <a href="{% url 'card_play' card.pk %}">{% trans 'Play this card' %}</a>
+{% block left %}
+    <p><a href="{% url 'card_list' %}">{% trans 'All cards' %}</a></p>
+{% endblock %}
 
+{% block right %}
+    <p>{% trans 'Owner' %}: {{ card.owner }}</p>
+    <p>{% trans 'Target' %}: {{ card.target }}</p>
+    <p>{% trans 'Value' %}: {{ card.value }}</p>
+    <p><em>{{ card.description }}</em></p>
+    <p>
+        {% if card.used %}
+            <em>{% trans 'This card was already played.' %}</em>
+        {% elif user.is_staff %}
+            <a href="{% url 'card_play' card.pk %}"><button>{% trans 'Play this card' %}</button></a>
+        {% else %}
+            <em>{% trans 'This card was not yet played.' %}</em>
+        {% endif %}
+    </p>
 {% endblock %}
 

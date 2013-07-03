@@ -1,0 +1,9 @@
+/*
+Print style for messages
+*/
+#title-subtitle, #nav, #headerimage, #messages, #content-heading, #content-left, #print-message, #footlines {
+    display:none;
+}
+div {
+    font-size: 40px;
+}

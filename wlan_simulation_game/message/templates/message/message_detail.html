@@ -2,6 +2,11 @@
 
 {% load i18n %}
 
+{% block styles %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}message-print.css" media="print" />
+{% endblock %}
+
 {% block title %}{% trans 'Message' %} – {{ block.super }}{% endblock %}
 
 {% block heading %}{{ message }}{% endblock %}
@@ -15,14 +20,16 @@
 {% endblock %}
 
 {% block right %}
-    <ul>
-        <li>{% trans 'From' %}: {{ message.sender }}</li>
-        <li>{% trans 'To' %}: {{ message.recipient }}</li>
-        <li>{% trans 'Time' %}: {{ message.sending_time }}</li>
-    </ul>
-    <p><strong>{{ message.subject }}</strong></p>
-    <div style="padding-left:1em;">{{ message.text|linebreaks }}</div>
-    <p>
+    <div>
+        <ul>
+            <li>{% trans 'From' %}: {{ message.sender }}</li>
+            <li>{% trans 'To' %}: {{ message.recipient }}</li>
+            <li>{% trans 'Time' %}: {{ message.sending_time }}</li>
+        </ul>
+        <p><strong>{{ message.subject }}</strong></p>
+        <div style="padding-left:1em;">{{ message.text|linebreaks }}</div>
+    </div>
+    <p id="print-message">
         {% if message.printed %}
             <em>{% trans 'This message was already printed.' %}</em>
         {% elif user.is_staff %}

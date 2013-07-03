@@ -8,6 +8,8 @@ from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext as _
 from django.views.generic import DetailView, RedirectView
 
+from wlan_simulation_game.exceptions import WLANSimulationGameError
+
 from .models import Card
 
 
@@ -26,7 +28,7 @@ class CardDetailView(DetailView):
         if request.user.is_staff or request.user.player == self.object.owner:
             return dispatch
         else:
-            messages.error(request, _('You are not owner of this card.'))
+            messages.error(request, _('You are not owner of this card, so you are not allowed to see it.'))
             raise PermissionDenied
 
 
@@ -50,7 +52,7 @@ class CardPlayView(RedirectView):
         card = get_object_or_404(Card, pk=kwargs['pk'])
         try:
             card.play()
-        except StandardError, error_message:
+        except WLANSimulationGameError, error_message:
             messages.error(self.request, error_message)
         else:
             messages.success(self.request, _('Card %(name)s was successfully played.') % {'name': card.name})

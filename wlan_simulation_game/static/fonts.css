@@ -1,0 +1,17 @@
+/*
+Fonts for the project
+*/
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/fonts/ABeeZee/ABeeZee-Regular.eot);
+  src: local('ABeeZee'), local('ABeeZee-Regular'), url(/static/fonts/ABeeZee/ABeeZee.woff) format('woff');
+}
+@font-face {
+  font-family: 'Enriqueta';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/fonts/Enriqueta/Enriqueta-Regular.eot);
+  src: local('Enriqueta-Regular'), url(/static/fonts/Enriqueta/Enriqueta.woff) format('woff');
+}

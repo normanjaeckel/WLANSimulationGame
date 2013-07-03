@@ -20,20 +20,42 @@ Voraussetzungen
 Installation
 ------------
 
-$ git clone https://github.com/normanjaeckel/wlan-simulation-game.git
+:: 
 
-$ cd wlan-simulation-game
+    $ git clone https://github.com/normanjaeckel/wlan-simulation-game.git
 
-$ virtualenv .virtualenv
+    $ cd wlan-simulation-game
 
-$ source .virtualenv/bin/activate
+    $ virtualenv .virtualenv
 
-$ pip install Django==1.5.1 django_constance[database]==0.6
+    $ source .virtualenv/bin/activate
 
-$ python manage.py syncdb
+    $ pip install Django==1.5.1 django_constance[database]==0.6
+
+    $ python manage.py syncdb
 
 
 Start
 -----
 
-$ python manage.py runserver 0.0.0.0:8000
+::
+
+    $ python manage.py runserver 0.0.0.0:8000
+
+
+Einrichtung
+-----------
+
+Zusätzlich zum Administratorbenutzer muss über das Administrationsmenü für
+jede Spielfigur zunächst ein Benutzer mit Benutzername und Passwort
+angelegt werden. Danach können die Spieler angelegt und mit den jeweiligen
+Benutzern verbunden werden. Weiterhin müssten unter dem Menüpunkt
+Constance/Config alle allgemeinen Einstellungen vorgenommen werden.
+Schließlich müssen alle Spielkarten mit den jeweiligen Texten, Besitzern
+und Zielen sowie Punkten eingegeben werden. Zu Spielbeginn wird im
+Menüpunkt Constance/Config das Schreiben von Nachrichten freigeschaltet. Am
+Spielende kann dort das Schreiben von Nachrichten wieder deaktiviert
+werden. Alle geschriebenen Nachrichten müssen ausgedruckt und persönlich
+überbracht werden. Die Spieler haben keine Möglichkeit, über das Interface
+Nachrichten zu empfangen. Alle von den Spielern mündlich gespielten Karten
+werden durch die Spielleitung im Interface als ausgespielt markiert.

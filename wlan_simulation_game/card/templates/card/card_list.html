@@ -2,16 +2,55 @@
 
 {% load i18n %}
 
-{% block content %}
+{% block title %}{% trans 'All cards' %} – {{ block.super }}{% endblock %}
 
-    <h2>{% trans 'All cards' %}</h2>
+{% block heading %}{% trans 'All cards' %}{% endblock %}
 
-    <a href="{% url 'card_list_print' %}">{% trans 'Print' %}</a>
-
-    <div>
-        {% for card in card_list %}
-            <p><a href="{% url 'card_detail' card.pk %}">{{ card }}</a></p>
-        {% endfor %}
-    </div>
-
+{% block left %}
+    {% if user.is_staff %}
+        <p><a href="{% url 'card_list_print' %}">{% trans 'Print all cards' %}</a></p>
+    {% else %}
+        &nbsp;
+    {% endif %}
 {% endblock %}
+
+{% block right %}
+    {% regroup card_list by owner as owner_list %}
+    <ul>
+        {% for owner_group in owner_list %}
+            <li>
+                {% trans 'Owner' %}: {{ owner_group.grouper }}
+                {% regroup owner_group.list by target as target_list %}
+                <ul style="padding-left:1em; list-style-type:none;">
+                    {% for target_group in target_list %}
+                        <li>
+                            {% trans 'Target' %}: {{ target_group.grouper }}
+                            <ul style="padding-left:2em; list-style-type:none;">
+                                {% for card in target_group.list %}
+                                    <li>
+                                        {% if user.is_staff or user.player == card.owner %}
+                                            <a href="{% url 'card_detail' card.pk %}">
+                                        {% endif %}
+                                        {{ card }}
+                                        {% if user.is_staff or user.player == card.owner %}
+                                            </a>
+                                        {% endif %}
+                                        {% if card.used %}
+                                            ({% trans 'Played' %})
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% empty %}
+            <li><em>{% trans 'No cards available.' %}</em></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+
+

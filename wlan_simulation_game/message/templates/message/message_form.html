@@ -2,6 +2,15 @@
 
 {% load i18n %}
 
+{% block styles %}
+    {{ block.super }}
+    <style>
+        .errorlist {
+            color: rgb(208, 96, 96);
+        }
+    </style>
+{% endblock %}
+
 {% block title %}{% trans 'New message' %} – {{ block.super }}{% endblock %}
 
 {% block heading %}{% trans 'New message' %}{% endblock %}

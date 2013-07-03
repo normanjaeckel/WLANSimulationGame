@@ -2,27 +2,38 @@
 
 {% load i18n %}
 
-{% block content %}
-
-    <h2>{% trans 'The players and their actual score.' %}</h2>
-
+{% block styles %}
+    {{ block.super }}
     <style type="text/css">
-        span.scorebar {
+        td.scorebar {
+            width:100%;
+        }
+        td.scorebar span {
             background-color:blue;
+            width:100%;
             float:left;
-            margin-right:20px;
-            width:100%}
-        span.scorelabe {}
+            margin-left:10px;
+            margin-right:10px;
+        }
     </style>
-
-    <div>
-        {% for player in player_list %}
-            <p>
-                <span class="scorelabel"><a href="{% url 'player_detail' player.pk %}">{{ player }}</a></span>
-                <span class="scorebar" style="width:{{player.relative_score}}%;">&nbsp;</span>
-                {{ player.score }}&nbsp;{% trans 'Scores' %}
-            </p>
-        {% endfor %}
-    </div>
-
 {% endblock %}
+
+{% block title %}{% trans 'All Players' %} – {{ block.super }}{% endblock %}
+
+{% block heading %}{% trans 'The players and their actual score.' %}{% endblock %}
+
+{% block both %}
+    <div class="col c12">
+        <table>
+            {% for player in player_list %}
+                <tr>
+                    <td><a href="{% url 'player_detail' player.pk %}">{{ player }}</a></td>
+                    <td class="scorebar"><span style="width:{{player.relative_score}}%;">&nbsp;</span>{{ player.score }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
+
+
+
