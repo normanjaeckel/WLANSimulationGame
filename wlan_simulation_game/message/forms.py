@@ -28,7 +28,7 @@ class MessageCreateForm(forms.ModelForm):
         request object is excluded from the kwargs for it was hacked in into
         the view.
         """
-        return_value = super(MessageCreateForm, self ).__init__(*args, **kwargs)
+        return_value = super(MessageCreateForm, self).__init__(*args, **kwargs)
         self.fields['recipient'].queryset = Player.objects.exclude(pk=request.user.player.pk)
         return return_value
 
@@ -57,4 +57,4 @@ class MessageCreateFormStaff(forms.ModelForm):
         The request object is excluded from the kwargs for it was hacked in
         into the view.
         """
-        return super(MessageCreateFormStaff, self ).__init__(*args, **kwargs)
+        return super(MessageCreateFormStaff, self).__init__(*args, **kwargs)

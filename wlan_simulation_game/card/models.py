@@ -29,7 +29,7 @@ class Card(models.Model):
         Override to check that no one is owner and target at one time.
         """
         if self.owner == self.target:
-            raise WLANSimulationGameError, _('The owner can not be saved as target.')
+            raise WLANSimulationGameError(_('The owner can not be saved as target.'))
         return super(Card, self).save(*args, **kwargs)
 
     def __unicode__(self):
@@ -43,9 +43,9 @@ class Card(models.Model):
         Method to play a card. No check of permissions.
         """
         if self.used:
-            raise WLANSimulationGameError, _('You can not play this card any more. It is already used.')
+            raise WLANSimulationGameError(_('You can not play this card any more. It is already used.'))
         elif self.owner.playable_cards <= 0:
-            raise WLANSimulationGameError, _('The owner can not play cards anymore.')
+            raise WLANSimulationGameError(_('The owner can not play cards anymore.'))
         else:
             self.used = True
             self.save()

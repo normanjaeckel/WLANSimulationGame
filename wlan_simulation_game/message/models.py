@@ -40,7 +40,7 @@ class Message(models.Model):
         Override to check that no one is sender and recipient at one time.
         """
         if self.sender == self.recipient and self.sender is not None:
-            raise WLANSimulationGameError, _('The sender can not be saved as recipient.')
+            raise WLANSimulationGameError(_('The sender can not be saved as recipient.'))
         return super(Message, self).save(*args, **kwargs)
 
     def __unicode__(self):
