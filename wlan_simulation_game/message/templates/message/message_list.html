@@ -10,7 +10,14 @@
     {% if user.is_staff %}
         <p><a href="{% url 'message_list_not_printed' %}">{% trans 'All messages to be printed' %}</a></p>
     {% endif %}
-    <p><a href="{% url 'message_create' %}">{% trans 'New message' %}</a></p>
+    <p>
+        <a href="{% url 'message_create' %}">{% trans 'New message' %}</a>
+        {% if not config.players_can_submit_messages %}
+            ({% trans 'Disabled' %})
+        {% endif %}
+    </p>
+    <p><a href="">{% trans 'Secret action' %}</a></p>
+
 {% endblock %}
 
 {% block right %}

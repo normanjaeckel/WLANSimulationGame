@@ -1,0 +1,18 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <h1>{% trans 'List of all cards' %}</h1>
+    <dl>
+    {% for card in card_list %}
+        <div style="padding:10px 0px;">
+            <dt>{{ card }}</dd>
+            <dd>{% trans 'Owner' %}: {{ card.owner }} | {% trans 'Target' %}: {{ card.target }}</dd>
+        </div>
+    {% endfor %}
+    </dl>
+</body>

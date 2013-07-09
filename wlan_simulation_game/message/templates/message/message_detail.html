@@ -22,8 +22,22 @@
 {% block right %}
     <div>
         <ul>
-            <li>{% trans 'From' %}: {{ message.sender }}</li>
-            <li>{% trans 'To' %}: {{ message.recipient }}</li>
+            <li>
+                {% trans 'Sender' %}:
+                {% if message.sender %}
+                    {{ message.sender }}
+                {% else %}
+                    {% trans 'Game Master' %}
+                {% endif %}
+            </li>
+            <li>
+                {% trans 'Recipient' %}:
+                {% if message.recipient %}
+                    {{ message.recipient }}
+                {% else %}
+                    {% trans 'All players' %}
+                {% endif %}
+            </li>
             <li>{% trans 'Time' %}: {{ message.sending_time }}</li>
         </ul>
         <p><strong>{{ message.subject }}</strong></p>

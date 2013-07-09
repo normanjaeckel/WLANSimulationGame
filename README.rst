@@ -10,8 +10,9 @@ Voraussetzungen
 
 * Ein Server mit
   * Python 2.7 mit Virtual Python Environment builder 1.7
-  * Django 1.5
+  * Django 1.5.1
   * Constance – Dynamic Django settings 0.6 (Backend: Database)
+  * Fabric 1.6.1
   * Aktueller Browser mit Unterstützung für HTML5 und CSS3
 * Mindestens ein Computer für jede Spielergruppe mit aktuellem Browser
 * Zugang aller Computer zu einem Netzwerk, z. B. ein eigenes WLAN
@@ -20,7 +21,7 @@ Voraussetzungen
 Installation
 ------------
 
-:: 
+::
 
     $ git clone https://github.com/normanjaeckel/wlan-simulation-game.git
 
@@ -30,7 +31,9 @@ Installation
 
     $ source .virtualenv/bin/activate
 
-    $ pip install Django==1.5.1 django_constance[database]==0.6
+    $ pip install Django==1.5.1 django_constance[database]==0.6 Fabric==1.6.1
+
+    $ fab settings
 
     $ python manage.py syncdb
 

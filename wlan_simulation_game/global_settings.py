@@ -5,7 +5,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 import os
-WLAN_SIMULATION_GAME_MODUL = os.path.dirname(__file__)
+WLAN_SIMULATION_GAME_MODUL_PATH = os.path.dirname(__file__)
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -76,7 +76,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(WLAN_SIMULATION_GAME_MODUL, 'static'),
+    os.path.join(WLAN_SIMULATION_GAME_MODUL_PATH, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -113,7 +113,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(WLAN_SIMULATION_GAME_MODUL, 'templates'),
+    os.path.join(WLAN_SIMULATION_GAME_MODUL_PATH, 'templates'),
 )
 
 INSTALLED_APPS = (
@@ -172,14 +172,14 @@ from django.utils.translation import ugettext_lazy
 CONSTANCE_CONFIG = {
     'title': ('Title', ugettext_lazy('Title of the game. Used as first heading in the template.')),
     'subtitle': ('Subtitle', ugettext_lazy('Subtitle of the game. Used as second heading in the template.')),
-    'headline': ('Welcome here', ugettext_lazy('Headline for the introduction text.')),
-    'introduction': ('Introduction', ugettext_lazy('Introduction to the game and the system.')),
+    'headline': ('Welcome to WLAN Simulation Game', ugettext_lazy('Headline for the introduction text.')),
+    'introduction': ('Introduction into WLAN Simulation Game comes here.', ugettext_lazy('Introduction to the game and the system.')),
     'name': ('Your Name', ugettext_lazy('Name of the game master.')),
     'players_can_submit_messages': (False, ugettext_lazy('If this is active, players can submit messages to the system.')),
 }
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    # Default
+    # Django's default
     "django.contrib.auth.context_processors.auth",
     "django.core.context_processors.debug",
     "django.core.context_processors.i18n",

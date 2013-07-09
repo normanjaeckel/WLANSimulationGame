@@ -7,8 +7,9 @@
 {% block heading %}{% trans 'All cards' %}{% endblock %}
 
 {% block left %}
+    <p><a href="{% url 'card_list_print_list' %}">{% trans 'Print card list' %}</a></p>
     {% if user.is_staff %}
-        <p><a href="{% url 'card_list_print' %}">{% trans 'Print all cards' %}</a></p>
+        <p><a href="{% url 'card_list_print_all' %}">{% trans 'Print all cards' %}</a></p>
     {% else %}
         &nbsp;
     {% endif %}
