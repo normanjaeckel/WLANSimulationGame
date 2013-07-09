@@ -12,8 +12,15 @@ SETTINGS = """#!/usr/bin/env python
 
 from wlan_simulation_game.global_settings import *
 
-SECRET_KEY= %(secret_key)r
+SECRET_KEY = %(secret_key)r
 """
+
+
+def pep8():
+    """
+    Checks for PEP 8 errors.
+    """
+    local('pep8 --max-line-length=150 wlan_simulation_game/')
 
 
 def settings():
