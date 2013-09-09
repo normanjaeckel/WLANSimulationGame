@@ -22,7 +22,7 @@
 {% block right %}
     <form action="" method="post">{% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="{% trans 'Submit' %}" />
+        <input type="submit" value="{% trans 'Send' %}" />
         <input type="reset" value="{% trans 'Reset' %}" />
         <a href="{% url 'message_list' %}"><button type="button">{% trans 'Cancel' %}</button></a>
     </form>

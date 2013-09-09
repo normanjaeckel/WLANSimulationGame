@@ -25,7 +25,7 @@ class MessageCreateForm(forms.ModelForm):
     def __init__(self, request, *args, **kwargs):
         """
         Manipulate recipient field to exclude the request user player. The
-        request object is excluded from the kwargs for it was hacked in into
+        request object is excluded from the kwargs for it was hacked in in
         the view.
         """
         return_value = super(MessageCreateForm, self).__init__(*args, **kwargs)
@@ -55,6 +55,6 @@ class MessageCreateFormStaff(forms.ModelForm):
     def __init__(self, request, *args, **kwargs):
         """
         The request object is excluded from the kwargs for it was hacked in
-        into the view.
+        in the view.
         """
         return super(MessageCreateFormStaff, self).__init__(*args, **kwargs)

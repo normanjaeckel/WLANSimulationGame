@@ -42,11 +42,13 @@ class MessageDetailView(DetailView):
         Method to check that only staff or senders can see their messages.
         """
         dispatch = super(MessageDetailView, self).dispatch(request, *args, **kwargs)
-        if request.user.is_staff or request.user.player == self.object.sender:
-            return dispatch
-        else:
+        if not request.user.is_staff and not request.user.player == self.object.sender:
             messages.error(request, _('You are not allowed to see this message.'))
             raise PermissionDenied
+        else:
+            # Everything is ok, the message can be shown.
+            pass
+        return dispatch
 
 
 class MessagePrintView(RedirectView):
@@ -80,11 +82,13 @@ class MessageCreateView(CreateView):
         """
         Checks the config variable 'players_can_submit_messages'.
         """
-        if config.players_can_submit_messages or request.user.is_staff:
-            return super(MessageCreateView, self).dispatch(request, *args, **kwargs)
-        else:
+        if not request.user.is_staff and not config.players_can_submit_messages:
             messages.error(request, _('You are not allowed to send a message at the moment.'))
             raise PermissionDenied
+        else:
+            # Everything is ok, the message can be created.
+            pass
+        return super(MessageCreateView, self).dispatch(request, *args, **kwargs)
 
     def get_form_class(self, *args, **kwargs):
         """
@@ -92,9 +96,10 @@ class MessageCreateView(CreateView):
         staff.
         """
         if self.request.user.is_staff:
-            return MessageCreateFormStaff
+            form = MessageCreateFormStaff
         else:
-            return MessageCreateForm
+            form = MessageCreateForm
+        return form
 
     def get_form_kwargs(self, *args, **kwargs):
         """
@@ -110,9 +115,10 @@ class MessageCreateView(CreateView):
         the object.
         """
         if self.request.user.is_staff:
-            return super(MessageCreateView, self).form_valid(form)
+            return_value = super(MessageCreateView, self).form_valid(form)
         else:
             self.object = form.save(commit=False)
             self.object.sender = self.request.user.player
             self.object.save()
-            return HttpResponseRedirect(self.get_success_url())
+            return_value = HttpResponseRedirect(self.get_success_url())
+        return return_value

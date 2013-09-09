@@ -12,12 +12,11 @@
     {% endif %}
     <p>
         <a href="{% url 'message_create' %}">{% trans 'New message' %}</a>
-        {% if not config.players_can_submit_messages %}
+        {% if not user.is_staff and not config.players_can_submit_messages %}
             ({% trans 'Disabled' %})
         {% endif %}
     </p>
     <p><a href="">{% trans 'Secret action' %}</a></p>
-
 {% endblock %}
 
 {% block right %}

@@ -13,7 +13,7 @@ class Message(models.Model):
     Model for messages between players.
 
     If the sender is None, it means that the sender is the game master. If the
-    recepient is None, it means that it is a message to all.
+    recepient is None, it means that it is a message to all players.
     """
     sender = models.ForeignKey(
         Player,
