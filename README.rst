@@ -9,13 +9,14 @@ Voraussetzungen
 ---------------
 
 * Ein Server mit
-  * Python 2.7 mit Virtual Python Environment builder 1.7
-  * Django 1.5.1
+
+  * Python 2.7.x mit Virtual Python Environment builder 1.7.x
+  * Django 1.5.2
   * Constance – Dynamic Django settings 0.6 (Backend: Database)
-  * Fabric 1.6.1
   * Aktueller Browser mit Unterstützung für HTML5 und CSS3
+
 * Mindestens ein Computer für jede Spielergruppe mit aktuellem Browser
-* Zugang aller Computer zu einem Netzwerk, z. B. ein eigenes WLAN
+* Zugang aller Computer zu einem Netzwerk, zum Beispiel ein eigenes WLAN
 
 
 Installation
@@ -29,11 +30,13 @@ Installation
 
     $ virtualenv .virtualenv
 
-    $ source .virtualenv/bin/activate
+    $ source .virtualenv/bin/activate  # On Windows use: .virtualenv\Scripts\activate
 
-    $ pip install Django==1.5.1 django_constance[database]==0.6 Fabric==1.6.1
+    $ python --version  # Ensure, that this returns Python 2.7.x
 
-    $ fab settings
+    $ pip install -r requirements.txt
+
+    $ python helper_script.py --create-settings
 
     $ python manage.py syncdb
 
@@ -62,3 +65,16 @@ werden. Alle geschriebenen Nachrichten müssen ausgedruckt und persönlich
 überbracht werden. Die Spieler haben keine Möglichkeit, über das Interface
 Nachrichten zu empfangen. Alle von den Spielern mündlich gespielten Karten
 werden durch die Spielleitung im Interface als ausgespielt markiert.
+
+
+Beispiel
+--------
+
+Um die Daten eines Beispiel-Planspiels zu laden, geben Sie nach der
+Installation ein::
+
+    $ python manage.py loaddata example/example_game_de.json
+
+Der Benutzername des Administrators lautet `admin`. Die Passwörter aller
+Benutzer lauten `default`. Alle Passwörter müssen vor Spielbeginn geändert
+werden.
