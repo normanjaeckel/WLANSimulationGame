@@ -5,6 +5,6 @@ WLAN Simulation Game
 """
 
 __version__ = '1.0a1-dev'
-__author__ = 'Norman Jäckel (wlan-simulation-game@normanjaeckel.de)'
+__author__ = 'Norman Jäckel <wlansimulationgame@normanjaeckel.de>'
 __date__ = 'unpublished'
 #__credits__ = ''
