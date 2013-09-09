@@ -4,147 +4,348 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-01 16:11+0200\n"
+"POT-Creation-Date: 2013-09-09 13:22+0200\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: global_settings.py:172
+#: global_settings.py:170
 msgid "Title of the game. Used as first heading in the template."
 msgstr ""
 
-#: global_settings.py:173
+#: global_settings.py:171
 msgid "Subtitle of the game. Used as second heading in the template."
 msgstr ""
 
-#: global_settings.py:174
+#: global_settings.py:172
 msgid "Headline for the introduction text."
 msgstr ""
 
-#: global_settings.py:175
+#: global_settings.py:173
 msgid "Introduction to the game and the system."
 msgstr ""
 
-#: global_settings.py:176
+#: global_settings.py:174
 msgid "Name of the game master."
 msgstr ""
 
-#: global_settings.py:177
+#: global_settings.py:175
 msgid "If this is active, players can submit messages to the system."
 msgstr ""
 
-#: card/models.py:11
+#: card/models.py:16
 msgid "Name"
 msgstr ""
 
-#: card/models.py:12 player/models.py:15
+#: card/models.py:17 player/models.py:16
 msgid "Description"
 msgstr ""
 
-#: card/models.py:13
+#: card/models.py:18 card/templates/card/card_detail.html:14
+#: card/templates/card/card_list.html:23
+#: card/templates/card/card_list_print_list.html:14
 msgid "Owner"
 msgstr ""
 
-#: card/models.py:14
+#: card/models.py:19 card/templates/card/card_detail.html:15
+#: card/templates/card/card_list.html:28
+#: card/templates/card/card_list_print_list.html:14
 msgid "Target"
 msgstr ""
 
-#: card/models.py:15
+#: card/models.py:20 card/templates/card/card_detail.html:16
 msgid "Value"
 msgstr ""
 
-#: card/models.py:16
+#: card/models.py:21
 msgid "Used"
 msgstr ""
 
-#: card/models.py:19
+#: card/models.py:25 card/templates/card/card_detail.html:5
 msgid "Card"
 msgstr ""
 
-#: card/models.py:20 templates/base.html:29
+#: card/models.py:26 templates/base.html:30
 msgid "Cards"
 msgstr ""
 
-#: card/models.py:35
+#: card/models.py:33
+msgid "The owner can not be saved as target."
+msgstr ""
+
+#: card/models.py:47
 msgid "You can not play this card any more. It is already used."
 msgstr ""
 
-#: card/models.py:38
+#: card/models.py:49
 msgid "The owner can not play cards anymore."
 msgstr ""
 
-#: card/views.py:29
-msgid "You are not owner of this card."
+#: card/views.py:31
+msgid "You are not owner of this card, so you are not allowed to see it."
 msgstr ""
 
-#: card/views.py:48
+#: card/views.py:50
 msgid "You are not allowed to play a card via this interface."
 msgstr ""
 
-#: card/views.py:56
+#: card/views.py:58
 #, python-format
 msgid "Card %(name)s was successfully played."
 msgstr ""
 
-#: player/models.py:13
-msgid "Login user"
+#: card/templates/card/card_detail.html:10
+#: card/templates/card/card_list.html:5 card/templates/card/card_list.html:7
+msgid "All cards"
 msgstr ""
 
-#: player/models.py:14
-msgid "Character"
+#: card/templates/card/card_detail.html:20
+msgid "This card was already played."
 msgstr ""
 
-#: player/models.py:16
-msgid "Score"
+#: card/templates/card/card_detail.html:22
+msgid "Play this card"
 msgstr ""
 
-#: player/models.py:17
-msgid "Playable Cards"
+#: card/templates/card/card_detail.html:24
+msgid "This card was not yet played."
 msgstr ""
 
-#: player/models.py:20
-msgid "Player"
+#: card/templates/card/card_list.html:10
+msgid "Print card list"
 msgstr ""
 
-#: player/models.py:21 templates/base.html:27
-msgid "Players"
+#: card/templates/card/card_list.html:12
+msgid "Print all cards"
 msgstr ""
 
-#: templates/403.html:5 templates/base.html:26 templates/home.html:5
-msgid "Home"
+#: card/templates/card/card_list.html:40
+msgid "Played"
 msgstr ""
 
-#: templates/403.html:11
-msgid "Forbidden"
+#: card/templates/card/card_list.html:50
+msgid "No cards available."
 msgstr ""
 
-#: templates/base.html:28
+#: card/templates/card/card_list_print_list.html:9
+msgid "List of all cards"
+msgstr ""
+
+#: message/forms.py:18 message/forms.py:47 message/models.py:27
+#: message/templates/message/message_detail.html:34
+#: message/templates/message/message_list.html:38
+#: message/templates/message/message_list_not_printed.html:28
+msgid "Recipient"
+msgstr ""
+
+#: message/forms.py:41 message/templates/message/message_detail.html:30
+#: message/templates/message/message_list.html:32
+#: message/templates/message/message_list_not_printed.html:25
+msgid "Game Master"
+msgstr ""
+
+#: message/forms.py:42 message/models.py:22
+#: message/templates/message/message_detail.html:26
+#: message/templates/message/message_list.html:28
+#: message/templates/message/message_list_not_printed.html:21
+msgid "Sender"
+msgstr ""
+
+#: message/forms.py:46 message/templates/message/message_detail.html:38
+#: message/templates/message/message_list.html:42
+#: message/templates/message/message_list_not_printed.html:32
+msgid "All players"
+msgstr ""
+
+#: message/models.py:28
+msgid "Subject"
+msgstr ""
+
+#: message/models.py:29
+msgid "Text"
+msgstr ""
+
+#: message/models.py:30
+msgid "Printed"
+msgstr ""
+
+#: message/models.py:31
+msgid "Sending Time"
+msgstr ""
+
+#: message/models.py:35 message/templates/message/message_detail.html:10
+msgid "Message"
+msgstr ""
+
+#: message/models.py:36 message/templates/message/message_list.html:5
+#: message/templates/message/message_list.html:7 templates/base.html:29
 msgid "Messages"
 msgstr ""
 
-#: templates/base.html:30
+#: message/models.py:43
+msgid "The sender can not be saved as recipient."
+msgstr ""
+
+#: message/views.py:48
+msgid "You are not allowed to see this message."
+msgstr ""
+
+#: message/views.py:69
+msgid "The message was already marked as printed."
+msgstr ""
+
+#: message/views.py:86
+msgid "You are not allowed to send a message at the moment."
+msgstr ""
+
+#: message/templates/message/message_detail.html:15
+#: message/templates/message/message_form.html:19
+#: message/templates/message/message_list_not_printed.html:10
+msgid "All messages"
+msgstr ""
+
+#: message/templates/message/message_detail.html:17
+#: message/templates/message/message_list.html:11
+msgid "All messages to be printed"
+msgstr ""
+
+#: message/templates/message/message_detail.html:19
+#: message/templates/message/message_form.html:14
+#: message/templates/message/message_form.html:16
+#: message/templates/message/message_list.html:14
+#: message/templates/message/message_list_not_printed.html:11
+msgid "New message"
+msgstr ""
+
+#: message/templates/message/message_detail.html:41
+#: message/templates/message/message_list_not_printed.html:20
+msgid "Time"
+msgstr ""
+
+#: message/templates/message/message_detail.html:48
+msgid "This message was already printed."
+msgstr ""
+
+#: message/templates/message/message_detail.html:50
+msgid "Message printed"
+msgstr ""
+
+#: message/templates/message/message_detail.html:52
+msgid "This message was not yet printed."
+msgstr ""
+
+#: message/templates/message/message_form.html:25 templates/login.html:22
+msgid "Submit"
+msgstr ""
+
+#: message/templates/message/message_form.html:26
+msgid "Reset"
+msgstr ""
+
+#: message/templates/message/message_form.html:27
+msgid "Cancel"
+msgstr ""
+
+#: message/templates/message/message_list.html:16
+msgid "Disabled"
+msgstr ""
+
+#: message/templates/message/message_list.html:19
+msgid "Secret action"
+msgstr ""
+
+#: message/templates/message/message_list.html:51
+msgid "printed"
+msgstr ""
+
+#: message/templates/message/message_list.html:62
+msgid "No messages available."
+msgstr ""
+
+#: message/templates/message/message_list_not_printed.html:5
+#: message/templates/message/message_list_not_printed.html:7
+msgid "Messages to be printed"
+msgstr ""
+
+#: message/templates/message/message_list_not_printed.html:38
+msgid "No messages to be printed."
+msgstr ""
+
+#: player/models.py:14
+msgid "Login user"
+msgstr ""
+
+#: player/models.py:15
+msgid "Character"
+msgstr ""
+
+#: player/models.py:17 player/templates/player/player_detail.html:11
+msgid "Score"
+msgstr ""
+
+#: player/models.py:18 player/templates/player/player_detail.html:12
+msgid "Playable Cards"
+msgstr ""
+
+#: player/models.py:21 player/templates/player/player_detail.html:5
+msgid "Player"
+msgstr ""
+
+#: player/models.py:22 templates/base.html:28
+msgid "Players"
+msgstr ""
+
+#: player/templates/player/player_list.html:21
+msgid "All Players"
+msgstr ""
+
+#: player/templates/player/player_list.html:23
+msgid "The players and their actual score."
+msgstr ""
+
+#: templates/403.html:5
+msgid "403 Forbidden"
+msgstr ""
+
+#: templates/403.html:7
+msgid "Forbidden"
+msgstr ""
+
+#: templates/404.html:5
+msgid "404 Not Found"
+msgstr ""
+
+#: templates/404.html:7
+msgid "Not Found"
+msgstr ""
+
+#: templates/base.html:27 templates/home.html:5
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:33
 msgid "Administration"
 msgstr ""
 
-#: templates/base.html:32
+#: templates/base.html:35
 msgid "Logout"
 msgstr ""
 
-#: templates/base.html:34 templates/login.html:5
+#: templates/base.html:35
+msgid "User"
+msgstr ""
+
+#: templates/base.html:37 templates/login.html:14 templates/login.html.py:16
 msgid "Login"
 msgstr ""
 
-#: templates/base.html:62
+#: templates/base.html:77
 msgid "Powered by"
 msgstr ""
 
-#: templates/base.html:63
+#: templates/base.html:78
 msgid ""
 "<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template "
 "design</a> by <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
-msgstr ""
-
-#: templates/login.html:16
-msgid "Submit"
 msgstr ""
