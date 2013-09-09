@@ -10,6 +10,7 @@
     <div class="col c12">
         <p>{% trans 'Score' %}: {{ player.score }}</p>
         <p>{% trans 'Playable Cards' %}: {{ player.playable_cards }}</p>
+        <p>{% trans 'Interceptions' %}: {{ player.interception_set.all.count }} / {{ config.number_of_interceptions }}</p>
         <p><em>{{ player.description }}</em></p>
     </div>
 {% endblock %}

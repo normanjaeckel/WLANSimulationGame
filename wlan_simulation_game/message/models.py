@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from django.db import models
+from constance import config
+
+from django.db import models, IntegrityError
 from django.utils.translation import ugettext as _, ugettext_lazy
 
 from wlan_simulation_game.exceptions import WLANSimulationGameError
@@ -55,3 +57,49 @@ class Message(models.Model):
         Url to the detail view.
         """
         return ('message_detail', [str(self.pk)])
+
+
+class Interception(models.Model):
+    """
+    Model for an interception by one player against two others.
+    """
+    interceptor = models.ForeignKey(
+        Player,
+        verbose_name=ugettext_lazy('Interceptor'))
+    message = models.ForeignKey(
+        Message,
+        verbose_name=ugettext_lazy('Message'))
+
+    class Meta:
+        unique_together = ('interceptor', 'message')
+        verbose_name = ugettext_lazy('Interception')
+        verbose_name_plural = ugettext_lazy('Interceptions')
+
+    def save(self, *args, **kwargs):
+        """
+        Override to check that a player can only intercept messages of other
+        players and only the allowed number of messages.
+        """
+        if self.message.sender is None:
+            raise WLANSimulationGameError(_('You can not intercept messages from the game master.'))
+        if (self.message.sender == self.interceptor or
+                self.message.recipient == self.interceptor or
+                self.message.recipient is None):
+            raise WLANSimulationGameError(_('You can not intercept a message from or to yourself.'))
+        if Interception.objects.filter(interceptor=self.interceptor).count() >= config.number_of_interceptions:
+            raise WLANSimulationGameError(_('You can only intercept a total number of %d messages') % config.number_of_interceptions)
+        try:
+            return_value = super(Interception, self).save(*args, **kwargs)
+        except IntegrityError as error:
+            if error.args[0] == 'columns interceptor_id, message_id are not unique':
+                error_message = _('There is no new message you have not intercepted yet. Try again later.')
+            else:
+                error_message = error.args
+            raise WLANSimulationGameError(error_message)
+        return return_value
+
+    def __unicode__(self):
+        """
+        Method for representation.
+        """
+        return '%s -- %s (%s an %s)' % (self.interceptor, self.message, self.message.sender, self.message.recipient)

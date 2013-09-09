@@ -6,7 +6,8 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from django.views.generic import ListView
 
 from .models import Message
-from .views import MessageListView, MessageCreateView, MessageDetailView, MessagePrintView
+from .forms import InterceptionWizardFormOne, InterceptionWizardFormTwo
+from .views import MessageListView, MessageCreateView, MessageDetailView, MessagePrintView, InterceptionWizardView
 
 
 urlpatterns = patterns(
@@ -31,4 +32,8 @@ urlpatterns = patterns(
     # Print
     url(r'^(?P<pk>\d+)/print/$',
         user_passes_test(lambda user: user.is_staff)(MessagePrintView.as_view()),
-        name='message_print'))
+        name='message_print'),
+    # Interception
+    url(r'^interception/$',
+        login_required(InterceptionWizardView.as_view([InterceptionWizardFormOne, InterceptionWizardFormTwo])),
+        name='interception'))

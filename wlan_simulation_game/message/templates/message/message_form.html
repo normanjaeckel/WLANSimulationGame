@@ -17,6 +17,11 @@
 
 {% block left %}
     <p><a href="{% url 'message_list' %}">{% trans 'All messages' %}</a></p>
+    {% if user.is_staff %}
+        <p><a href="{% url 'message_list_not_printed' %}">{% trans 'All messages to be printed' %}</a></p>
+    {% else %}
+        <p><a href="{% url 'interception' %}">{% trans 'Interception' %}</a></p>
+    {% endif %}
 {% endblock %}
 
 {% block right %}

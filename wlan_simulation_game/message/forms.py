@@ -6,7 +6,7 @@ from django.utils.translation import ugettext_lazy
 
 from wlan_simulation_game.player.models import Player
 
-from .models import Message
+from .models import Message, Interception
 
 
 class MessageCreateForm(forms.ModelForm):
@@ -58,3 +58,41 @@ class MessageCreateFormStaff(forms.ModelForm):
         in the view.
         """
         return super(MessageCreateFormStaff, self).__init__(*args, **kwargs)
+
+
+class InterceptionWizardFormOne(forms.Form):
+    """
+    Form one for a new interception.
+    """
+    victim_sender = forms.ModelChoiceField(
+        label=ugettext_lazy('Victim Sender'),
+        queryset=Player.objects.all())
+
+    def __init__(self, request, *args, **kwargs):
+        """
+        Manipulate victim_sender field to exclude the request user player. The
+        request object is excluded from the kwargs for it was hacked in in
+        the view.
+        """
+        return_value = super(InterceptionWizardFormOne, self).__init__(*args, **kwargs)
+        self.fields['victim_sender'].queryset = Player.objects.exclude(pk=request.user.player.pk)
+        return return_value
+
+
+class InterceptionWizardFormTwo(forms.Form):
+    """
+    Form two for a new interception.
+    """
+    victim_recipient = forms.ModelChoiceField(
+        label=ugettext_lazy('Victim Recipient'),
+        queryset=Player.objects.all())
+
+    def __init__(self, request, victim_sender=None, *args, **kwargs):
+        """
+        Manipulate victim_recipient field to exclude the request user player
+        and the victim_sender. The request object and the victim_sender are
+        excluded from the kwargs for they were hacked in in the view.
+        """
+        return_value = super(InterceptionWizardFormTwo, self).__init__(*args, **kwargs)
+        self.fields['victim_recipient'].queryset = Player.objects.exclude(pk=request.user.player.pk).exclude(pk=victim_sender.pk)
+        return return_value

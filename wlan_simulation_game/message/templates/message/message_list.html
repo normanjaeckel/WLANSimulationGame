@@ -16,7 +16,9 @@
             ({% trans 'Disabled' %})
         {% endif %}
     </p>
-    <p><a href="">{% trans 'Secret action' %}</a></p>
+    {% if not user.is_staff %}
+        <p><a href="{% url 'interception' %}">{% trans 'Interception' %}</a></p>
+    {% endif %}
 {% endblock %}
 
 {% block right %}

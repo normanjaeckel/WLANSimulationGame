@@ -4,15 +4,19 @@
 from constance import config
 
 from django.contrib import messages
+from django.contrib.formtools.wizard.views import SessionWizardView
 from django.core.exceptions import PermissionDenied
 from django.core.urlresolvers import reverse
+from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext as _
 from django.views.generic import ListView, DetailView, RedirectView, CreateView
 
+from wlan_simulation_game.exceptions import WLANSimulationGameError
+
 from .forms import MessageCreateForm, MessageCreateFormStaff
-from .models import Message
+from .models import Message, Interception
 
 
 class MessageListView(ListView):
@@ -23,11 +27,12 @@ class MessageListView(ListView):
 
     def get_queryset(self, *args, **kwargs):
         """
-        Players can only see their own messages.
+        Players can only see their own messages or intercepted messages.
         """
         queryset = super(MessageListView, self).get_queryset(*args, **kwargs)
         if not self.request.user.is_staff:
-            queryset = queryset.filter(sender=self.request.user.player)
+            queryset = queryset.filter(
+                Q(sender=self.request.user.player) | Q(interception__interceptor=self.request.user.player))
         return queryset
 
 
@@ -39,10 +44,13 @@ class MessageDetailView(DetailView):
 
     def dispatch(self, request, *args, **kwargs):
         """
-        Method to check that only staff or senders can see their messages.
+        Method to check that only staff or senders can see their messages
+        (or intercepted messages).
         """
         dispatch = super(MessageDetailView, self).dispatch(request, *args, **kwargs)
-        if not request.user.is_staff and not request.user.player == self.object.sender:
+        if (not request.user.is_staff and
+                not request.user.player == self.object.sender and
+                not self.object.interception_set.filter(interceptor=request.user.player).exists()):
             messages.error(request, _('You are not allowed to see this message.'))
             raise PermissionDenied
         else:
@@ -105,9 +113,9 @@ class MessageCreateView(CreateView):
         """
         Hacks in the request for we can use it in the form later.
         """
-        kwargs = super(MessageCreateView, self).get_form_kwargs(*args, **kwargs)
-        kwargs['request'] = self.request
-        return kwargs
+        form_kwargs = super(MessageCreateView, self).get_form_kwargs(*args, **kwargs)
+        form_kwargs['request'] = self.request
+        return form_kwargs
 
     def form_valid(self, form):
         """
@@ -122,3 +130,54 @@ class MessageCreateView(CreateView):
             self.object.save()
             return_value = HttpResponseRedirect(self.get_success_url())
         return return_value
+
+
+class InterceptionWizardView(SessionWizardView):
+    """
+    View to intercept messages.
+    """
+    template_name = 'message/interception_wizard_form.html'
+
+    def dispatch(self, request, *args, **kwargs):
+        """
+        Checks whether the user as already intercepted enough messages.
+        """
+        if not hasattr(request.user, 'player'):
+            messages.error(request, _('The interception view is only for players.'))
+            raise PermissionDenied
+        elif Interception.objects.filter(interceptor=request.user.player).count() >= config.number_of_interceptions:
+            messages.error(request, _('You can only intercept %d messages') % config.number_of_interceptions)
+            raise PermissionDenied
+        else:
+            # Everything is ok, intercept now.
+            pass
+        return super(InterceptionWizardView, self).dispatch(request, *args, **kwargs)
+
+    def get_form_kwargs(self, step):
+        """
+        Hacks in the request for we can use it in the form later.
+        """
+        form_kwargs = super(InterceptionWizardView, self).get_form_kwargs(step)
+        form_kwargs['request'] = self.request
+        if step == '1':
+            form_kwargs['victim_sender'] = self.get_cleaned_data_for_step('0')['victim_sender']
+        return form_kwargs
+
+    def done(self, form_list, **kwargs):
+        """
+        Processes the valid form data.
+        """
+        data = {}
+        for form in form_list:
+            data.update(form.cleaned_data)
+        message_list = Message.objects.filter(sender=data['victim_sender'], recipient=data['victim_recipient']).reverse()
+        if not message_list:
+            messages.error(self.request, _('There is no message to intercept between these two players. Try again later.'))
+        else:
+            try:
+                Interception.objects.create(interceptor=self.request.user.player, message=message_list[0])
+            except WLANSimulationGameError as error:
+                messages.error(self.request, error.args[0])
+            else:
+                messages.success(self.request, _('The message was succesfully intercepted. You can read it now.'))
+        return HttpResponseRedirect(reverse('message_list'))

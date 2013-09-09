@@ -48,6 +48,14 @@
     }
   },
   {
+    "pk": 7,
+    "model": "database.constance",
+    "fields": {
+      "value": 4,
+      "key": "number_of_interceptions"
+    }
+  },
+  {
     "pk": 1,
     "model": "auth.user",
     "fields": {

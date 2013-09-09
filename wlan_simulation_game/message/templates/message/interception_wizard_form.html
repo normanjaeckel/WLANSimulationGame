@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block styles %}
+    {{ block.super }}
+    <style>
+        .errorlist {
+            color: rgb(208, 96, 96);
+        }
+    </style>
+{% endblock %}
+
+{% block title %}{% trans 'Interception' %} – {{ block.super }}{% endblock %}
+
+{% block heading %}{% trans 'Interception' %}{% endblock %}
+
+{% block left %}
+    <p><a href="{% url 'message_list' %}">{% trans 'All messages' %}</a></p>
+    <p><a href="{% url 'message_create' %}">{% trans 'New message' %}</a></p>
+{% endblock %}
+
+{% block right %}
+    <p>{% trans 'You can try to intercept a message that one player sent to another recently. Only the newest message can be intercepted. Choose sender and recipient in two steps. Good luck.' %}
+    </p>
+    <p>
+        {% blocktrans with config.number_of_interceptions as number %}
+            Note: You can intercept a total number of {{ number }} messages only.
+        {% endblocktrans %}
+    </p>
+    <p>
+        {% blocktrans with wizard.steps.step1 as step1 and wizard.steps.count as count %}
+            Step {{ step1 }} of {{ count }}
+        {% endblocktrans %}
+    </p>
+    <form action="" method="post">{% csrf_token %}
+        {{ wizard.management_form }}
+        {% if wizard.form.forms %}
+            {{ wizard.form.management_form }}
+            {% for form in wizard.form.forms %}
+                {{ form.as_p }}
+            {% endfor %}
+        {% else %}
+            {{ wizard.form.as_p }}
+        {% endif %}
+        {% if wizard.steps.prev %}
+            <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}">
+                {% trans 'Back' %}
+            </button>
+        {% endif %}
+        <input type="submit" value="{% if wizard.steps.index == 0 %}{% trans 'Next' %}{% else %}{% trans 'Try interception' %}{% endif %}" />
+        <a href="{% url 'message_list' %}"><button type="button">{% trans 'Cancel' %}</button></a>
+    </form>
+{% endblock %}
+
