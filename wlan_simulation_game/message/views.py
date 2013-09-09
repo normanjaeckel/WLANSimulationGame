@@ -146,7 +146,7 @@ class InterceptionWizardView(SessionWizardView):
             messages.error(request, _('The interception view is only for players.'))
             raise PermissionDenied
         elif Interception.objects.filter(interceptor=request.user.player).count() >= config.number_of_interceptions:
-            messages.error(request, _('You can only intercept %d messages') % config.number_of_interceptions)
+            messages.error(request, _('You can only intercept a total number of %d messages.') % config.number_of_interceptions)
             raise PermissionDenied
         else:
             # Everything is ok, intercept now.

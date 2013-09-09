@@ -87,7 +87,7 @@ class Interception(models.Model):
                 self.message.recipient is None):
             raise WLANSimulationGameError(_('You can not intercept a message from or to yourself.'))
         if Interception.objects.filter(interceptor=self.interceptor).count() >= config.number_of_interceptions:
-            raise WLANSimulationGameError(_('You can only intercept a total number of %d messages') % config.number_of_interceptions)
+            raise WLANSimulationGameError(_('You can only intercept a total number of %d messages.') % config.number_of_interceptions)
         try:
             return_value = super(Interception, self).save(*args, **kwargs)
         except IntegrityError as error:
