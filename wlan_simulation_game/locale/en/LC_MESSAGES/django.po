@@ -4,34 +4,38 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-09 13:22+0200\n"
+"POT-Creation-Date: 2013-09-09 18:17+0200\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: global_settings.py:170
+#: global_settings.py:171
 msgid "Title of the game. Used as first heading in the template."
 msgstr ""
 
-#: global_settings.py:171
+#: global_settings.py:172
 msgid "Subtitle of the game. Used as second heading in the template."
 msgstr ""
 
-#: global_settings.py:172
+#: global_settings.py:173
 msgid "Headline for the introduction text."
 msgstr ""
 
-#: global_settings.py:173
+#: global_settings.py:174
 msgid "Introduction to the game and the system."
 msgstr ""
 
-#: global_settings.py:174
+#: global_settings.py:175
 msgid "Name of the game master."
 msgstr ""
 
-#: global_settings.py:175
+#: global_settings.py:176
 msgid "If this is active, players can submit messages to the system."
+msgstr ""
+
+#: global_settings.py:177
+msgid "Maximum number of messages a player can intercept."
 msgstr ""
 
 #: card/models.py:16
@@ -132,84 +136,142 @@ msgstr ""
 msgid "List of all cards"
 msgstr ""
 
-#: message/forms.py:18 message/forms.py:47 message/models.py:27
-#: message/templates/message/message_detail.html:34
-#: message/templates/message/message_list.html:38
+#: message/forms.py:18 message/forms.py:47 message/models.py:29
+#: message/templates/message/message_detail.html:37
+#: message/templates/message/message_list.html:39
 #: message/templates/message/message_list_not_printed.html:28
 msgid "Recipient"
 msgstr ""
 
-#: message/forms.py:41 message/templates/message/message_detail.html:30
-#: message/templates/message/message_list.html:32
+#: message/forms.py:41 message/templates/message/message_detail.html:33
+#: message/templates/message/message_list.html:33
 #: message/templates/message/message_list_not_printed.html:25
 msgid "Game Master"
 msgstr ""
 
-#: message/forms.py:42 message/models.py:22
-#: message/templates/message/message_detail.html:26
-#: message/templates/message/message_list.html:28
+#: message/forms.py:42 message/models.py:24
+#: message/templates/message/message_detail.html:29
+#: message/templates/message/message_list.html:29
 #: message/templates/message/message_list_not_printed.html:21
 msgid "Sender"
 msgstr ""
 
-#: message/forms.py:46 message/templates/message/message_detail.html:38
-#: message/templates/message/message_list.html:42
+#: message/forms.py:46 message/templates/message/message_detail.html:41
+#: message/templates/message/message_list.html:43
 #: message/templates/message/message_list_not_printed.html:32
 msgid "All players"
 msgstr ""
 
-#: message/models.py:28
-msgid "Subject"
+#: message/forms.py:68
+msgid "Victim Sender"
 msgstr ""
 
-#: message/models.py:29
-msgid "Text"
+#: message/forms.py:87
+msgid "Victim Recipient"
 msgstr ""
 
 #: message/models.py:30
-msgid "Printed"
+msgid "Subject"
 msgstr ""
 
 #: message/models.py:31
+msgid "Text"
+msgstr ""
+
+#: message/models.py:32
+msgid "Printed"
+msgstr ""
+
+#: message/models.py:33
 msgid "Sending Time"
 msgstr ""
 
-#: message/models.py:35 message/templates/message/message_detail.html:10
+#: message/models.py:37 message/models.py:71
+#: message/templates/message/message_detail.html:10
 msgid "Message"
 msgstr ""
 
-#: message/models.py:36 message/templates/message/message_list.html:5
+#: message/models.py:38 message/templates/message/message_list.html:5
 #: message/templates/message/message_list.html:7 templates/base.html:29
 msgid "Messages"
 msgstr ""
 
-#: message/models.py:43
+#: message/models.py:45
 msgid "The sender can not be saved as recipient."
 msgstr ""
 
-#: message/views.py:48
+#: message/models.py:68
+msgid "Interceptor"
+msgstr ""
+
+#: message/models.py:75
+#: message/templates/message/interception_wizard_form.html:14
+#: message/templates/message/interception_wizard_form.html:16
+#: message/templates/message/message_detail.html:21
+#: message/templates/message/message_form.html:23
+#: message/templates/message/message_list.html:20
+msgid "Interception"
+msgstr ""
+
+#: message/models.py:76 player/templates/player/player_detail.html:13
+msgid "Interceptions"
+msgstr ""
+
+#: message/models.py:84
+msgid "You can not intercept messages from the game master."
+msgstr ""
+
+#: message/models.py:88
+msgid "You can not intercept a message from or to yourself."
+msgstr ""
+
+#: message/models.py:90
+#, python-format
+msgid "You can only intercept a total number of %d messages"
+msgstr ""
+
+#: message/models.py:95
+msgid "There is no new message you have not intercepted yet. Try again later."
+msgstr ""
+
+#: message/views.py:54
 msgid "You are not allowed to see this message."
 msgstr ""
 
-#: message/views.py:69
+#: message/views.py:79
 msgid "The message was already marked as printed."
 msgstr ""
 
-#: message/views.py:86
+#: message/views.py:94
 msgid "You are not allowed to send a message at the moment."
 msgstr ""
 
+#: message/views.py:146
+msgid "The interception view is only for players."
+msgstr ""
+
+#: message/views.py:149
+#, python-format
+msgid "You can only intercept %d messages"
+msgstr ""
+
+#: message/views.py:175
+msgid ""
+"There is no message to intercept between these two players. Try again later."
+msgstr ""
+
+#: message/views.py:182
+msgid "The message was succesfully intercepted. You can read it now."
+msgstr ""
+
+#: message/templates/message/interception_wizard_form.html:19
 #: message/templates/message/message_detail.html:15
 #: message/templates/message/message_form.html:19
 #: message/templates/message/message_list_not_printed.html:10
 msgid "All messages"
 msgstr ""
 
-#: message/templates/message/message_detail.html:17
-#: message/templates/message/message_list.html:11
-msgid "All messages to be printed"
-msgstr ""
-
+#: message/templates/message/interception_wizard_form.html:20
 #: message/templates/message/message_detail.html:19
 #: message/templates/message/message_form.html:14
 #: message/templates/message/message_form.html:16
@@ -218,48 +280,87 @@ msgstr ""
 msgid "New message"
 msgstr ""
 
-#: message/templates/message/message_detail.html:41
+#: message/templates/message/interception_wizard_form.html:24
+msgid ""
+"You can try to intercept a message that one player sent to another recently. "
+"Only the newest message can be intercepted. Choose sender and recipient in "
+"two steps. Good luck."
+msgstr ""
+
+#: message/templates/message/interception_wizard_form.html:27
+#, python-format
+msgid ""
+"\n"
+"            Note: You can intercept a total number of %(number)s messages "
+"only.\n"
+"        "
+msgstr ""
+
+#: message/templates/message/interception_wizard_form.html:32
+#, python-format
+msgid ""
+"\n"
+"            Step %(step1)s of %(count)s\n"
+"        "
+msgstr ""
+
+#: message/templates/message/interception_wizard_form.html:48
+msgid "Back"
+msgstr ""
+
+#: message/templates/message/interception_wizard_form.html:51
+msgid "Next"
+msgstr ""
+
+#: message/templates/message/interception_wizard_form.html:51
+msgid "Try interception"
+msgstr ""
+
+#: message/templates/message/interception_wizard_form.html:52
+#: message/templates/message/message_form.html:32
+msgid "Cancel"
+msgstr ""
+
+#: message/templates/message/message_detail.html:17
+#: message/templates/message/message_form.html:21
+#: message/templates/message/message_list.html:11
+msgid "All messages to be printed"
+msgstr ""
+
+#: message/templates/message/message_detail.html:44
 #: message/templates/message/message_list_not_printed.html:20
 msgid "Time"
 msgstr ""
 
-#: message/templates/message/message_detail.html:48
+#: message/templates/message/message_detail.html:51
 msgid "This message was already printed."
 msgstr ""
 
-#: message/templates/message/message_detail.html:50
+#: message/templates/message/message_detail.html:53
 msgid "Message printed"
 msgstr ""
 
-#: message/templates/message/message_detail.html:52
+#: message/templates/message/message_detail.html:55
 msgid "This message was not yet printed."
 msgstr ""
 
-#: message/templates/message/message_form.html:25 templates/login.html:22
-msgid "Submit"
+#: message/templates/message/message_form.html:30
+msgid "Send"
 msgstr ""
 
-#: message/templates/message/message_form.html:26
+#: message/templates/message/message_form.html:31
 msgid "Reset"
-msgstr ""
-
-#: message/templates/message/message_form.html:27
-msgid "Cancel"
 msgstr ""
 
 #: message/templates/message/message_list.html:16
 msgid "Disabled"
 msgstr ""
 
-#: message/templates/message/message_list.html:19
-msgid "Secret action"
-msgstr ""
-
-#: message/templates/message/message_list.html:51
+#: message/templates/message/message_list.html:52
 msgid "printed"
 msgstr ""
 
-#: message/templates/message/message_list.html:62
+#: message/templates/message/message_list.html:63
 msgid "No messages available."
 msgstr ""
 
@@ -337,6 +438,7 @@ msgid "User"
 msgstr ""
 
 #: templates/base.html:37 templates/login.html:14 templates/login.html.py:16
+#: templates/login.html:22
 msgid "Login"
 msgstr ""
 
