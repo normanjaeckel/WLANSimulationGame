@@ -8,7 +8,7 @@ from django.utils.translation import ugettext_lazy
 
 class Player(models.Model):
     """
-    Model for the five player groups. It is one-to-one linked to Django's user
+    Model for the player groups. It is one-to-one linked to Django's user
     model but this user model is only used for login.
     """
     user = models.OneToOneField(User, unique=True, verbose_name=ugettext_lazy('Login user'))

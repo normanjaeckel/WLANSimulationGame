@@ -73,7 +73,7 @@ Beispiel
 Um die Daten eines Beispiel-Planspiels zu laden, geben Sie nach der
 Installation ein::
 
-    $ python manage.py loaddata example/example_game_de.json
+    $ python manage.py loaddata examples/example_game_de.json
 
 Der Benutzername des Administrators lautet `admin`. Die Passwörter aller
 Benutzer lauten `default`. Alle Passwörter müssen vor Spielbeginn geändert
