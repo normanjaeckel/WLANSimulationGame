@@ -18,6 +18,7 @@ class Player(models.Model):
     playable_cards = models.IntegerField(default=5, verbose_name=ugettext_lazy('Playable Cards'))
 
     class Meta:
+        ordering = ('character',)
         verbose_name = ugettext_lazy('Player')
         verbose_name_plural = ugettext_lazy('Players')
 
