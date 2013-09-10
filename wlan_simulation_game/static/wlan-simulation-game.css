@@ -1,0 +1,5 @@
+/*
+Extra CSS for WLAN Simulation Game
+*/
+
+#messages p {border:1px solid #444; background-color:#eee; border-radius:10px;}
