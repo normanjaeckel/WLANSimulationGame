@@ -5,7 +5,7 @@
 * Calculate playable cards and score on the fly. Don't save absolute score
   in the database. Insert field for extra score (default 20).
 * Add cards to example.
-* Add rst docs to example: Play a card form.
+* Add rst docs to example: Play a card form. Done.
 * Enhance template to print all card
 * Update German translation
 * Change header of admin template
