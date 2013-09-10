@@ -9,6 +9,6 @@
 * Enhance template to print all card
 * Update German translation
 * Change header of admin template
-* Add standard 500.html
-* Let dev server serve statics whan DEBUG=False
-* Set DEBUG=False
+* Add standard 500.html Done.
+* Let dev server serve statics whan DEBUG=False. Done.
+* Set DEBUG=False. Done.

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans '500 Internal Server Error' %} – {{ block.super }}{% endblock %}
+
+{% block heading %}{% trans 'Internal Server Error' %}{% endblock %}
+
+{% block both %}
+    <div class="col c12">
+        <p>{% trans 'Please contact the administrator.' %}</p>
+    </div>
+{% endblock %}

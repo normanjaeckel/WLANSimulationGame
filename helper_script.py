@@ -14,6 +14,10 @@ SETTINGS = """#!/usr/bin/env python
 from wlan_simulation_game.global_settings import *
 
 SECRET_KEY = %(secret_key)r
+
+# If you have problems, uncomment the next two lines to run the server in debug mode.
+# DEBUG = True
+# TEMPLATE_DEBUG = DEBUG
 """
 
 
