@@ -1,42 +1,46 @@
 # Language file for WLAN Simulation Game
 # This file is distributed under the same license as the WLAN Simulation Game package.
 #
+# Translators:
+# normanjaeckel <transifex16062013@normanjaeckel.de>, 2013
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-10 16:28+0200\n"
-"Language: en\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: global_settings.py:172
 msgid "Title of the game. Used as first heading in the template."
-msgstr ""
+msgstr "Titel des Spiels. Verwendet als Hauptüberschrift im Template."
 
 #: global_settings.py:173
 msgid "Subtitle of the game. Used as second heading in the template."
-msgstr ""
+msgstr "Untertitel des Spiels. Verwendet als Untertitel im Template."
 
 #: global_settings.py:174
 msgid "Headline for the introduction text."
-msgstr ""
+msgstr "Überschrift für den Einführungstext."
 
 #: global_settings.py:175
 msgid "Introduction to the game and the system."
-msgstr ""
+msgstr "Einführung in das Spiel und das System."
 
 #: global_settings.py:176
 msgid "Name of the game master."
-msgstr ""
+msgstr "Name des Spielleiters."
 
 #: global_settings.py:177
 msgid "If this is active, players can submit messages to the system."
 msgstr ""
+"Wenn diese Einstellung aktiviert ist, dürfen die Spieler Nachrichten an das "
+"System übermitteln."
 
 #: global_settings.py:178
 msgid "Maximum number of messages a player can intercept."
-msgstr ""
+msgstr "Maximale Anzahl an Nachrichten, die ein Spieler abfangen kann."
 
 #: global_settings.py:198
 msgid "English"
@@ -48,169 +52,170 @@ msgstr ""
 
 #: card/models.py:16
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: card/models.py:17 player/models.py:16
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: card/models.py:18 card/templates/card/card_detail.html:14
 #: card/templates/card/card_list.html:23
 #: card/templates/card/card_list_print_list.html:14
 msgid "Owner"
-msgstr ""
+msgstr "Inhaber"
 
 #: card/models.py:19 card/templates/card/card_detail.html:15
 #: card/templates/card/card_list.html:28
 #: card/templates/card/card_list_print_list.html:14
 msgid "Target"
-msgstr ""
+msgstr "Ziel"
 
 #: card/models.py:20 card/templates/card/card_detail.html:16
 msgid "Value"
-msgstr ""
+msgstr "Wert"
 
 #: card/models.py:21
 msgid "Used"
-msgstr ""
+msgstr "Gespielt"
 
 #: card/models.py:25 card/templates/card/card_detail.html:5
 msgid "Card"
-msgstr ""
+msgstr "Karte"
 
 #: card/models.py:26 templates/base.html:30
 msgid "Cards"
-msgstr ""
+msgstr "Karten"
 
 #: card/models.py:33
 msgid "The owner can not be saved as target."
-msgstr ""
+msgstr "Der Inhaber kann nicht zugleich als Ziel gesetzt werden."
 
 #: card/models.py:47
 msgid "You can not play this card any more. It is already used."
-msgstr ""
+msgstr "Sie können diese Karte nicht mehr spielen. Sie wurde bereits gespielt."
 
 #: card/models.py:49
 msgid "The owner can not play cards anymore."
-msgstr ""
+msgstr "Der Inhaber kann keine Karten mehr spielen."
 
 #: card/views.py:31
 msgid "You are not owner of this card, so you are not allowed to see it."
 msgstr ""
+"Sie sind nicht der Inhaber der Karte, weshalb Sie sie nicht ansehen dürfen."
 
 #: card/views.py:50
 msgid "You are not allowed to play a card via this interface."
-msgstr ""
+msgstr "Sie dürfen keine Karten über das Interface spielen."
 
 #: card/views.py:58
 #, python-format
 msgid "Card %(name)s was successfully played."
-msgstr ""
+msgstr "Karte %(name)s wurde erfolgreich gespielt."
 
 #: card/templates/card/card_detail.html:10
 #: card/templates/card/card_list.html:5 card/templates/card/card_list.html:7
 msgid "All cards"
-msgstr ""
+msgstr "Alle Karten"
 
 #: card/templates/card/card_detail.html:20
 msgid "This card was already played."
-msgstr ""
+msgstr "Diese Karte wurde bereits gespielt."
 
 #: card/templates/card/card_detail.html:22
 msgid "Play this card"
-msgstr ""
+msgstr "Spiele diese Karte"
 
 #: card/templates/card/card_detail.html:24
 msgid "This card was not yet played."
-msgstr ""
+msgstr "Diese Karte wurde noch nicht gespielt."
 
 #: card/templates/card/card_list.html:10
 msgid "Print card list"
-msgstr ""
+msgstr "Liste aller Karten drucken"
 
 #: card/templates/card/card_list.html:12
 msgid "Print all cards"
-msgstr ""
+msgstr "Alle Karten drucken"
 
 #: card/templates/card/card_list.html:40
 msgid "Played"
-msgstr ""
+msgstr "Gespielt"
 
 #: card/templates/card/card_list.html:50
 msgid "No cards available."
-msgstr ""
+msgstr "Keine Karten verfügbar."
 
 #: card/templates/card/card_list_print_list.html:9
 msgid "List of all cards"
-msgstr ""
+msgstr "Liste aller Karten"
 
 #: message/forms.py:18 message/forms.py:47 message/models.py:29
 #: message/templates/message/message_detail.html:37
 #: message/templates/message/message_list.html:39
 #: message/templates/message/message_list_not_printed.html:28
 msgid "Recipient"
-msgstr ""
+msgstr "Empfänger"
 
 #: message/forms.py:41 message/templates/message/message_detail.html:33
 #: message/templates/message/message_list.html:33
 #: message/templates/message/message_list_not_printed.html:25
 msgid "Game Master"
-msgstr ""
+msgstr "Spielleiter"
 
 #: message/forms.py:42 message/models.py:24
 #: message/templates/message/message_detail.html:29
 #: message/templates/message/message_list.html:29
 #: message/templates/message/message_list_not_printed.html:21
 msgid "Sender"
-msgstr ""
+msgstr "Absender"
 
 #: message/forms.py:46 message/templates/message/message_detail.html:41
 #: message/templates/message/message_list.html:43
 #: message/templates/message/message_list_not_printed.html:32
 msgid "All players"
-msgstr ""
+msgstr "Alle Spieler"
 
 #: message/forms.py:68
 msgid "Victim Sender"
-msgstr ""
+msgstr "Opfer-Absender"
 
 #: message/forms.py:87
 msgid "Victim Recipient"
-msgstr ""
+msgstr "Opfer-Empfänger"
 
 #: message/models.py:30
 msgid "Subject"
-msgstr ""
+msgstr "Betreff"
 
 #: message/models.py:31
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: message/models.py:32
 msgid "Printed"
-msgstr ""
+msgstr "Gedruckt"
 
 #: message/models.py:33
 msgid "Sending Time"
-msgstr ""
+msgstr "Gesendet"
 
 #: message/models.py:37 message/models.py:71
 #: message/templates/message/message_detail.html:10
 msgid "Message"
-msgstr ""
+msgstr "Nachricht"
 
 #: message/models.py:38 message/templates/message/message_list.html:5
 #: message/templates/message/message_list.html:7 templates/base.html:29
 msgid "Messages"
-msgstr ""
+msgstr "Nachrichten"
 
 #: message/models.py:45
 msgid "The sender can not be saved as recipient."
-msgstr ""
+msgstr "Der Absender kann nicht zugleich als Empfänger gesetzt werden."
 
 #: message/models.py:68
 msgid "Interceptor"
-msgstr ""
+msgstr "Abfänger"
 
 #: message/models.py:75
 #: message/templates/message/interception_wizard_form.html:14
@@ -219,60 +224,65 @@ msgstr ""
 #: message/templates/message/message_form.html:23
 #: message/templates/message/message_list.html:20
 msgid "Interception"
-msgstr ""
+msgstr "Überwachung"
 
 #: message/models.py:76 player/templates/player/player_detail.html:13
 msgid "Interceptions"
-msgstr ""
+msgstr "Überwachungen"
 
 #: message/models.py:84
 msgid "You can not intercept messages from the game master."
-msgstr ""
+msgstr "Sie können Nachrichten des Spielleiters nicht abfangen."
 
 #: message/models.py:88
 msgid "You can not intercept a message from or to yourself."
-msgstr ""
+msgstr "Sie können keine Nachrichten von oder an Sie selbst abfangen."
 
 #: message/models.py:90 message/views.py:149
 #, python-format
 msgid "You can only intercept a total number of %d messages."
-msgstr ""
+msgstr "Sie können insgesamt nur %d Nachrichten abfangen."
 
 #: message/models.py:95
 msgid "There is no new message you have not intercepted yet. Try again later."
 msgstr ""
+"Es gibt keine neue Nachricht, die Sie noch nicht abgefangen haben. Versuchen "
+"Sie es später noch einmal."
 
 #: message/views.py:54
 msgid "You are not allowed to see this message."
-msgstr ""
+msgstr "Sie dürfen diese Nachricht nicht ansehen."
 
 #: message/views.py:79
 msgid "The message was already marked as printed."
-msgstr ""
+msgstr "Die Nachricht wurde bereits als gedruckt markiert."
 
 #: message/views.py:94
 msgid "You are not allowed to send a message at the moment."
-msgstr ""
+msgstr "Sie dürfen im Moment keine Nachrichten senden."
 
 #: message/views.py:146
 msgid "The interception view is only for players."
-msgstr ""
+msgstr "Die Ansicht zum Abfangen von Nachrichten ist nur für Spieler."
 
 #: message/views.py:175
 msgid ""
 "There is no message to intercept between these two players. Try again later."
 msgstr ""
+"Es gibt zwischen den beiden Spielern keine Nachrichten zum Abfangen. "
+"Versuchen Sie es später noch einmal."
 
 #: message/views.py:182
 msgid "The message was succesfully intercepted. You can read it now."
 msgstr ""
+"Die Nachricht wurde erfolgreich abgefangen. Sie können Sie jetzt lesen."
 
 #: message/templates/message/interception_wizard_form.html:19
 #: message/templates/message/message_detail.html:15
 #: message/templates/message/message_form.html:19
 #: message/templates/message/message_list_not_printed.html:10
 msgid "All messages"
-msgstr ""
+msgstr "Alle Nachrichten"
 
 #: message/templates/message/interception_wizard_form.html:20
 #: message/templates/message/message_detail.html:19
@@ -281,7 +291,7 @@ msgstr ""
 #: message/templates/message/message_list.html:14
 #: message/templates/message/message_list_not_printed.html:11
 msgid "New message"
-msgstr ""
+msgstr "Neue Nachricht"
 
 #: message/templates/message/interception_wizard_form.html:24
 msgid ""
@@ -289,6 +299,9 @@ msgid ""
 "Only the newest message can be intercepted. Choose sender and recipient in "
 "two steps. Good luck."
 msgstr ""
+"Sie können versuchen, eine Nachricht abzufangen, die ein Spieler einem "
+"anderen kürzlich gesendet hat. Nur die neuste Nachricht kann abgefangen "
+"werden. Wählen Sie Absender und Empfänger in zwei Schritten aus. Viel Glück."
 
 #: message/templates/message/interception_wizard_form.html:27
 #, python-format
@@ -298,6 +311,10 @@ msgid ""
 "messages.\n"
 "        "
 msgstr ""
+"\n"
+"            Hinweis: Sie können insgesamt nur %(number)s Nachrichten "
+"abfangen.\n"
+"        "
 
 #: message/templates/message/interception_wizard_form.html:32
 #, python-format
@@ -306,151 +323,156 @@ msgid ""
 "            Step %(step1)s of %(count)s\n"
 "        "
 msgstr ""
+"\n"
+"            Schritt %(step1)s von %(count)s\n"
+"        "
 
 #: message/templates/message/interception_wizard_form.html:48
 msgid "Back"
-msgstr ""
+msgstr "Zurück"
 
 #: message/templates/message/interception_wizard_form.html:51
 msgid "Next"
-msgstr ""
+msgstr "Weiter"
 
 #: message/templates/message/interception_wizard_form.html:51
 msgid "Try interception"
-msgstr ""
+msgstr "Starte Abfangversuch"
 
 #: message/templates/message/interception_wizard_form.html:52
 #: message/templates/message/message_form.html:32
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #: message/templates/message/message_detail.html:17
 #: message/templates/message/message_form.html:21
 #: message/templates/message/message_list.html:11
 msgid "All messages to be printed"
-msgstr ""
+msgstr "Alle zu druckenden Nachrichten"
 
 #: message/templates/message/message_detail.html:44
 #: message/templates/message/message_list_not_printed.html:20
 msgid "Time"
-msgstr ""
+msgstr "Zeit"
 
 #: message/templates/message/message_detail.html:51
 msgid "This message was already printed."
-msgstr ""
+msgstr "Diese Nachricht wurde bereits gedruckt."
 
 #: message/templates/message/message_detail.html:53
 msgid "Message printed"
-msgstr ""
+msgstr "Nachricht gedruckt"
 
 #: message/templates/message/message_detail.html:55
 msgid "This message was not yet printed."
-msgstr ""
+msgstr "Diese Nachricht wurde noch nicht gedruckt."
 
 #: message/templates/message/message_form.html:30
 msgid "Send"
-msgstr ""
+msgstr "Senden"
 
 #: message/templates/message/message_form.html:31
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: message/templates/message/message_list.html:16
 msgid "Disabled"
-msgstr ""
+msgstr "Deaktiviert"
 
 #: message/templates/message/message_list.html:52
 msgid "printed"
-msgstr ""
+msgstr "gedruckt"
 
 #: message/templates/message/message_list.html:63
 msgid "No messages available."
-msgstr ""
+msgstr "Keine Nachrichten verfügbar."
 
 #: message/templates/message/message_list_not_printed.html:5
 #: message/templates/message/message_list_not_printed.html:7
 msgid "Messages to be printed"
-msgstr ""
+msgstr "Zu druckende Nachrichten"
 
 #: message/templates/message/message_list_not_printed.html:38
 msgid "No messages to be printed."
-msgstr ""
+msgstr "Keine Nachrichten zu drucken."
 
 #: player/models.py:14
 msgid "Login user"
-msgstr ""
+msgstr "Anmeldebenutzer"
 
 #: player/models.py:15
 msgid "Character"
-msgstr ""
+msgstr "Charakter"
 
 #: player/models.py:17 player/templates/player/player_detail.html:11
 msgid "Score"
-msgstr ""
+msgstr "Punkte"
 
 #: player/models.py:18 player/templates/player/player_detail.html:12
 msgid "Playable Cards"
-msgstr ""
+msgstr "Spielbare Karten"
 
 #: player/models.py:22 player/templates/player/player_detail.html:5
 msgid "Player"
-msgstr ""
+msgstr "Spieler"
 
 #: player/models.py:23 templates/base.html:28
 msgid "Players"
-msgstr ""
+msgstr "Spieler"
 
 #: player/templates/player/player_list.html:22
 msgid "All Players"
-msgstr ""
+msgstr "Alle Spieler"
 
 #: player/templates/player/player_list.html:24
 msgid "The players and their actual score."
-msgstr ""
+msgstr "Die Spieler und ihr aktueller Punktestand."
 
 #: templates/403.html:5
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 Zugriff verweigert"
 
 #: templates/403.html:7
 msgid "Forbidden"
-msgstr ""
+msgstr "Zugriff verweigert"
 
 #: templates/404.html:5
 msgid "404 Not Found"
-msgstr ""
+msgstr "404 Seite nicht gefunden"
 
 #: templates/404.html:7
 msgid "Not Found"
-msgstr ""
+msgstr "Seite nicht gefunden"
 
 #: templates/base.html:27 templates/home.html:5
 msgid "Home"
-msgstr ""
+msgstr "Startseite"
 
 #: templates/base.html:33
 msgid "Administration"
-msgstr ""
+msgstr "Administration"
 
 #: templates/base.html:35
 msgid "Logout"
-msgstr ""
+msgstr "Abmelden"
 
 #: templates/base.html:35
 msgid "User"
-msgstr ""
+msgstr "Benutzer"
 
 #: templates/base.html:37 templates/login.html:14 templates/login.html.py:16
 #: templates/login.html:22
 msgid "Login"
-msgstr ""
+msgstr "Anmelden"
 
 #: templates/base.html:77
 msgid "Powered by"
-msgstr ""
+msgstr "Powered by"
 
 #: templates/base.html:78
 msgid ""
 "<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template "
 "design</a> by <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
 msgstr ""
+"<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template "
+"Design</a> von <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
