@@ -5,12 +5,17 @@
 # normanjaeckel <transifex16062013@normanjaeckel.de>, 2013
 msgid ""
 msgstr ""
+"Project-Id-Version: WLANSimulationGame\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-10 16:28+0200\n"
-"Language: de\n"
+"PO-Revision-Date: 2013-09-10 14:39+0000\n"
+"Last-Translator: normanjaeckel <transifex16062013@normanjaeckel.de>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/wlansimulationgame/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: global_settings.py:172
 msgid "Title of the game. Used as first heading in the template."
@@ -34,9 +39,7 @@ msgstr "Name des Spielleiters."
 
 #: global_settings.py:177
 msgid "If this is active, players can submit messages to the system."
-msgstr ""
-"Wenn diese Einstellung aktiviert ist, dürfen die Spieler Nachrichten an das "
-"System übermitteln."
+msgstr "Wenn diese Einstellung aktiviert ist, dürfen die Spieler Nachrichten an das System übermitteln."
 
 #: global_settings.py:178
 msgid "Maximum number of messages a player can intercept."
@@ -44,11 +47,11 @@ msgstr "Maximale Anzahl an Nachrichten, die ein Spieler abfangen kann."
 
 #: global_settings.py:198
 msgid "English"
-msgstr ""
+msgstr "Englisch"
 
 #: global_settings.py:199
 msgid "German"
-msgstr ""
+msgstr "Deutsch"
 
 #: card/models.py:16
 msgid "Name"
@@ -100,8 +103,7 @@ msgstr "Der Inhaber kann keine Karten mehr spielen."
 
 #: card/views.py:31
 msgid "You are not owner of this card, so you are not allowed to see it."
-msgstr ""
-"Sie sind nicht der Inhaber der Karte, weshalb Sie sie nicht ansehen dürfen."
+msgstr "Sie sind nicht der Inhaber der Karte, weshalb Sie sie nicht ansehen dürfen."
 
 #: card/views.py:50
 msgid "You are not allowed to play a card via this interface."
@@ -245,9 +247,7 @@ msgstr "Sie können insgesamt nur %d Nachrichten abfangen."
 
 #: message/models.py:95
 msgid "There is no new message you have not intercepted yet. Try again later."
-msgstr ""
-"Es gibt keine neue Nachricht, die Sie noch nicht abgefangen haben. Versuchen "
-"Sie es später noch einmal."
+msgstr "Es gibt keine neue Nachricht, die Sie noch nicht abgefangen haben. Versuchen Sie es später noch einmal."
 
 #: message/views.py:54
 msgid "You are not allowed to see this message."
@@ -268,14 +268,11 @@ msgstr "Die Ansicht zum Abfangen von Nachrichten ist nur für Spieler."
 #: message/views.py:175
 msgid ""
 "There is no message to intercept between these two players. Try again later."
-msgstr ""
-"Es gibt zwischen den beiden Spielern keine Nachrichten zum Abfangen. "
-"Versuchen Sie es später noch einmal."
+msgstr "Es gibt zwischen den beiden Spielern keine Nachrichten zum Abfangen. Versuchen Sie es später noch einmal."
 
 #: message/views.py:182
 msgid "The message was succesfully intercepted. You can read it now."
-msgstr ""
-"Die Nachricht wurde erfolgreich abgefangen. Sie können Sie jetzt lesen."
+msgstr "Die Nachricht wurde erfolgreich abgefangen. Sie können Sie jetzt lesen."
 
 #: message/templates/message/interception_wizard_form.html:19
 #: message/templates/message/message_detail.html:15
@@ -295,26 +292,18 @@ msgstr "Neue Nachricht"
 
 #: message/templates/message/interception_wizard_form.html:24
 msgid ""
-"You can try to intercept a message that one player sent to another recently. "
-"Only the newest message can be intercepted. Choose sender and recipient in "
+"You can try to intercept a message that one player sent to another recently."
+" Only the newest message can be intercepted. Choose sender and recipient in "
 "two steps. Good luck."
-msgstr ""
-"Sie können versuchen, eine Nachricht abzufangen, die ein Spieler einem "
-"anderen kürzlich gesendet hat. Nur die neuste Nachricht kann abgefangen "
-"werden. Wählen Sie Absender und Empfänger in zwei Schritten aus. Viel Glück."
+msgstr "Sie können versuchen, eine Nachricht abzufangen, die ein Spieler einem anderen kürzlich gesendet hat. Nur die neuste Nachricht kann abgefangen werden. Wählen Sie Absender und Empfänger in zwei Schritten aus. Viel Glück."
 
 #: message/templates/message/interception_wizard_form.html:27
 #, python-format
 msgid ""
 "\n"
-"            Note: You can only intercept a total number of %(number)s "
-"messages.\n"
+"            Note: You can only intercept a total number of %(number)s messages.\n"
 "        "
-msgstr ""
-"\n"
-"            Hinweis: Sie können insgesamt nur %(number)s Nachrichten "
-"abfangen.\n"
-"        "
+msgstr "\n            Hinweis: Sie können insgesamt nur %(number)s Nachrichten abfangen.\n        "
 
 #: message/templates/message/interception_wizard_form.html:32
 #, python-format
@@ -322,10 +311,7 @@ msgid ""
 "\n"
 "            Step %(step1)s of %(count)s\n"
 "        "
-msgstr ""
-"\n"
-"            Schritt %(step1)s von %(count)s\n"
-"        "
+msgstr "\n            Schritt %(step1)s von %(count)s\n        "
 
 #: message/templates/message/interception_wizard_form.html:48
 msgid "Back"
@@ -473,6 +459,4 @@ msgstr "Powered by"
 msgid ""
 "<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template "
 "design</a> by <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
-msgstr ""
-"<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template "
-"Design</a> von <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
+msgstr "<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template Design</a> von <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
