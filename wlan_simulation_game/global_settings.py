@@ -128,6 +128,7 @@ INSTALLED_APPS = (
     'wlan_simulation_game.player',
     'wlan_simulation_game.card',
     'wlan_simulation_game.message',
+    'wlan_simulation_game.templatetags',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -178,16 +179,11 @@ CONSTANCE_CONFIG = {
     'number_of_interceptions': (3, ugettext_lazy('Maximum number of messages a player can intercept.')),
 }
 
-TEMPLATE_CONTEXT_PROCESSORS = (
-    # Django's default
-    "django.contrib.auth.context_processors.auth",
-    "django.core.context_processors.debug",
-    "django.core.context_processors.i18n",
-    "django.core.context_processors.media",
-    "django.core.context_processors.static",
-    "django.core.context_processors.tz",
-    "django.contrib.messages.context_processors.messages",
-    # Constance
+# Template context processors
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as _TEMPLATE_CONTEXT_PROCESSORS
+
+TEMPLATE_CONTEXT_PROCESSORS = _TEMPLATE_CONTEXT_PROCESSORS + (
+    'django.core.context_processors.request',
     'constance.context_processors.config',
 )
 

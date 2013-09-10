@@ -1,4 +1,5 @@
 {% load i18n %}
+{% load wlan_simulation_game_extras %}
 
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
@@ -25,17 +26,17 @@
     <div id="nav" class="row">
         <div class="col c12 aligncenter navmenu">
             <p>
-                <a href="{% url 'home' %}" class="current">{% trans 'Home' %}</a>
-                <a href="{% url 'player_list' %}">{% trans 'Players' %}</a>
-                <a href="{% url 'message_list' %}">{% trans 'Messages' %}</a>
-                <a href="{% url 'card_list' %}">{% trans 'Cards' %}</a>
+                <a {% url_href_class_current 'home' %}>{% trans 'Home' %}</a>
+                <a {% url_href_class_current 'player_list' %}>{% trans 'Players' %}</a>
+                <a {% url_href_class_current 'message_list' %}>{% trans 'Messages' %}</a>
+                <a {% url_href_class_current 'card_list' %}>{% trans 'Cards' %}</a>
                 {% if user.is_authenticated %}
                     {% if user.is_staff %}
                         <a href="{% url 'admin:index' %}">{% trans 'Administration' %}</a>
                     {% endif %}
                     <a href="{% url 'logout' %}">{% trans 'Logout' %}</a> {% trans 'User' %}: {{ user }}
                 {% else %}
-                    <a href="{% url 'login' %}">{% trans 'Login' %}</a>
+                    <a {% url_href_class_current 'login' %}>{% trans 'Login' %}</a>
                 {% endif %}
             </p>
         </div>
