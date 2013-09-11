@@ -217,5 +217,605 @@
       "user": 6,
       "description": "WebBild ist das Internetportal des Verlags einer großen deutschen Tageszeitung. Hier erfährt der (zahlende) User alles, was auf der Welt passiert. Politische Possen oder das Neuste aus dem Privatleben der Promis: Alles auf einen Klick, mit großen Bildern und Videos und manchmal auch etwas Text. Nur leider brechen die Werbeeinnahmen weg, der Nachrichtenhunger der Leute ist groß und die Konkurrenz schläft auch nicht. Dann muss man eben ab und zu den guten alten Skandaljournalismus aus dem Schrank holen. Und neuerdings gibt es ja im Internet so viel über die Leute zu finden ..."
     }
+  },
+  {
+    "pk": 1,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "Text",
+      "value": 3,
+      "owner": 2,
+      "name": "Reisedaten verdächtiger Personen übermitteln"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "Text",
+      "value": 6,
+      "owner": 2,
+      "name": "Neue Sicherheitsgesetze erlassen"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": 4,
+      "owner": 2,
+      "name": "Datenschutz lockern"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": 5,
+      "owner": 2,
+      "name": "Melderegisterabfragen ermöglichen"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": 3,
+      "owner": 2,
+      "name": "Jobs im Ministerium anbieten"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": 5,
+      "owner": 2,
+      "name": "Strafverfahren einstellen"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": 4,
+      "owner": 2,
+      "name": "NSU-Lostopf manipulieren"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": 6,
+      "owner": 2,
+      "name": "Heiße Tipps über geplante Polizeizugriffe"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": 4,
+      "owner": 4,
+      "name": "Ausländische Terrorverdächtige melden"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": 6,
+      "owner": 4,
+      "name": "Doppelgänger für wichtige Politiker finden"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": 3,
+      "owner": 4,
+      "name": "Ausländische Regime zur Netzpolitik „beraten“"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": 6,
+      "owner": 4,
+      "name": "Geschäftsgeheimnisse der Konkurrenz übermitteln"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": 4,
+      "owner": 4,
+      "name": "Kontakte zur Untergrundszene vermitteln"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": 5,
+      "owner": 4,
+      "name": "Neuste Kryptographietechnik untersuchen lassen"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": 5,
+      "owner": 4,
+      "name": "Infos über den nächsten Putsch zuspielen"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": 3,
+      "owner": 4,
+      "name": "Exklusivinterview mit dem Präsidenten ermöglichen"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": 3,
+      "owner": 3,
+      "name": "Vorratsdaten abliefern"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": 5,
+      "owner": 3,
+      "name": "Ungepixelte StreetView-Daten übersenden"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "",
+      "value": 6,
+      "owner": 3,
+      "name": "Zugriff auf Cloud Storages eröffnen"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "",
+      "value": 4,
+      "owner": 3,
+      "name": "Gaagol-Maps im Ausland manipulieren"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": 3,
+      "owner": 3,
+      "name": "Kostenlose Entwicklerplattform einrichten"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": 6,
+      "owner": 3,
+      "name": "Großsponsoring des nächsten Hackertreffens"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": 4,
+      "owner": 3,
+      "name": "Werbedaten übermitteln"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": 5,
+      "owner": 3,
+      "name": "Suchtreffer der Konkurrenz minimieren"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": 4,
+      "owner": 1,
+      "name": "Filesharer und Internetpiraten verraten"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": 5,
+      "owner": 1,
+      "name": "Börsendaten hacken und manipulieren"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "",
+      "value": 5,
+      "owner": 1,
+      "name": "Botnetzangriff auf ausländisches Regime"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "",
+      "value": 3,
+      "owner": 1,
+      "name": "Fähige Hacker und V-Leute vermitteln"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": 4,
+      "owner": 1,
+      "name": "Dienste auf Herz und Nieren testen"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": 6,
+      "owner": 1,
+      "name": "Standardsuchmaschine in freien Softwareprojekten einstellen"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": 3,
+      "owner": 1,
+      "name": "Beiträge lesen und kaufen"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": 6,
+      "owner": 1,
+      "name": "Exklusiveinformationen über den neusten Datenskandal mitteilen"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": 3,
+      "owner": 5,
+      "name": "Wahlwerbung gut platzieren"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": 6,
+      "owner": 5,
+      "name": "Kampagne für schärfere Sicherheitsgesetze fahren"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "",
+      "value": 4,
+      "owner": 5,
+      "name": "Gezielter Journalismus über ausländische Regime"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "",
+      "value": 5,
+      "owner": 5,
+      "name": "Informanten- und Korrespondentennetzwerk überlassen"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": 5,
+      "owner": 5,
+      "name": "Nutzungsrechte an eigenen Beiträgen einräumen"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": 3,
+      "owner": 5,
+      "name": "Gezielte Links setzen"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": 6,
+      "owner": 5,
+      "name": "Über die neusten Projekte intensiv berichten"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": 4,
+      "owner": 5,
+      "name": "Hackerwettbewerb ausschreiben"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": -8,
+      "owner": 2,
+      "name": "Urheberrecht verschärfen"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": -8,
+      "owner": 2,
+      "name": "V-Leute einschleusen, Gruppen zersetzen"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": -8,
+      "owner": 4,
+      "name": "Eigeninitiative im Inneren starten"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 3,
+      "description": "",
+      "value": -8,
+      "owner": 4,
+      "name": "Zugriff auf chinesisches Netz sperren lassen"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 1,
+      "description": "",
+      "value": -8,
+      "owner": 3,
+      "name": "Hackerfreunde abwerben"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": -8,
+      "owner": 3,
+      "name": "Beiträge aus der Suche nehmen"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 5,
+      "description": "",
+      "value": -8,
+      "owner": 1,
+      "name": "DoS-Angriff fahren"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "",
+      "value": -8,
+      "owner": 1,
+      "name": "Informaten und Spione enttarnen"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 4,
+      "description": "",
+      "value": -8,
+      "owner": 5,
+      "name": "Datenskandal publizieren"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "card.card",
+    "fields": {
+      "used": false,
+      "target": 2,
+      "description": "",
+      "value": -8,
+      "owner": 5,
+      "name": "Privates Liebesverhältnis (er-)finden"
+    }
   }
 ]
