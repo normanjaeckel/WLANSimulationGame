@@ -17,7 +17,7 @@
         <p><a href="{% url 'message_list_not_printed' %}">{% trans 'All messages to be printed' %}</a></p>
     {% endif %}
     <p><a href="{% url 'message_create' %}">{% trans 'New message' %}</a></p>
-    {% if user.is_staff %}
+    {% if not user.is_staff %}
         <p><a href="{% url 'interception' %}">{% trans 'Interception' %}</a></p>
     {% endif %}
 {% endblock %}
