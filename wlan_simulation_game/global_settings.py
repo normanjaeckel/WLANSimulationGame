@@ -176,7 +176,7 @@ CONSTANCE_CONFIG = {
     'introduction': ('Introduction into WLAN Simulation Game comes here.', ugettext_lazy('Introduction to the game and the system.')),
     'name': ('Your Name', ugettext_lazy('Name of the game master.')),
     'players_can_submit_messages': (False, ugettext_lazy('If this is active, players can submit messages to the system.')),
-    'number_of_interceptions': (3, ugettext_lazy('Maximum number of messages a player can intercept.')),
+    'number_of_interceptions': (8, ugettext_lazy('Maximum number of messages a player can intercept.')),
 }
 
 # Template context processors

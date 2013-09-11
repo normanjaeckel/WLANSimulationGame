@@ -135,7 +135,7 @@
     "pk": 4,
     "model": "database.constance",
     "fields": {
-      "value": "gAJYNAsAAERhcyBJbmZvcm1hdGlvbnN6ZWl0YWx0ZXIgaGF0IHZpZWxlIEZhY2V0dGVuLiBQb2xpdGlrLCBHZWhlaW1kaWVuc3RlLCBJVC1VbnRlcm5laG1lbiwgTWVkaWVuIHVuZCBQcml2YXRlIGFnaWVyZW4gdmllbGbDpGx0aWcgaW0gTmV0ejogVmVyZGVja3Qgb2RlciBvZmZlbiwgSGF1cHRzYWNoZSBzY2huZWxsIHVuZCBpbmZvcm1hdGl2IG3DvHNzZW4gZGllIERhdGVuIHNlaW4sIGRpZSBkdXJjaCBkaWUgTGVpdHVuZ2VuIHJhc2VuLiBXZXIgd2lyZCBhbSBFbmRlIGRhcyBtZWlzdGUgV2lzc2VuIGhhYmVuLCBzaWNoIGRpZSBtZWlzdGUgTWFjaHQgc2ljaGVybj8NCg0KRGFzIFppZWwgZGVzIFNwaWVscyBpc3QgZXMsIG3DtmdsaWNoc3QgdmllbGUgUHVua3RlIHp1IGVycmVpY2hlbi4gQWxsZSBTcGllbGVyIHN0YXJ0ZW4gYmVyZWl0cyBtaXQgMjAgUHVua3Rlbi4gV2VyIGFtIEVuZGUgZGllIG1laXN0ZW4gUHVua3RlIGhhdCwgZ2V3aW5udC4gRGFzIFNwaWVsIGRhdWVydCBldHdhIDc1IE1pbnV0ZW4uDQoNClfDpGhyZW5kIGRlcyBTcGllbHMgYmxlaWJlbiBkaWUgR3J1cHBlbiB1bnRlciBzaWNoLiBEaWVzZXMgV2ViaW50ZXJmYWNlIHVudGVyc3TDvHR6dCBTaWUgYmVpIGRlbiB3ZXNlbnRsaWNoZW4gQWt0aW9uZW4gZGVzIFNwaWVscyB1bmQgYmVpIGRlciBLb21tdW5pa2F0aW9uIG1pdCBkZW4gTWl0c3BpZWxlcm4uDQoNCk5hY2ggU3BpZWxiZWdpbm4gw7xiZXJsZWdlbiBTaWUgc2ljaCBpbiBJaHJlciBHcnVwcGUgZGllIGJlc3RlIFN0cmF0ZWdpZSBmw7xyIElocmVuIFNwaWVsY2hhcmFrdGVyLiBQbHVzcHVua3RlIGvDtm5uZW4gU2llIG51ciBiZWtvbW1lbiwgd2VubiBTaWUgbWl0IGVpbmVyIGFuZGVyZW4gU3BpZWxmaWd1ciBlaW5lIEthcnRlIHRhdXNjaGVuLCBkYXMgaGVpw590IGdlZ2Vuc2VpdGlnIGF1ZmVpbmFuZGVyIGF1c3NwaWVsZW4uIE1pbnVzcHVua3RlIGvDtm5uZW4gU2llIGJla29tbWVuLCB3ZW5uIGVpbiBhbmRlcmVyIFNwaWVsZXIgZWluZSBwYXNzZW5kZSBNaW51cy1LYXJ0ZSBhdWYgU2llIOKAnmxvc2zDpHNzdOKAnC4NCg0KVW0gZWluZSBQbHVzLUthcnRlIHp1IHNwaWVsZW4sIHZlcndlbmRlbiBTaWUgZGFzIHZvbiBkZXIgU3BpZWxsZWl0dW5nIGF1c2dldGVpbHRlIEZvcm11bGFyLiBOdXIgd2VubiBiZWlkZSBTZWl0ZW4gZWluIGF1ZmVpbmFuZGVyIGJlem9nZW5lcyBGb3JtdWxhciBlaW5yZWljaGVuLCB3aXJkIGRlciBUYXVzY2ggZWluZ2Vsw7ZzdC4gRGVyIGFuZGVyZSBiZWtvbW10IGRpZSBQbHVzcHVua3RlLCBkaWUgYXVmIElocmVyIEthcnRlIG5vdGllcnQgc2luZCwgdW5kIFNpZSBiZWtvbW1lbiB1bWdla2VocnQgZGllIFBsdXNwdW5rdGUsIGRpZSBhdWYgc2VpbmVyIEthcnRlIHN0ZWhlbi4gQWNodHVuZzogV2llIHZpZWxlIFB1bmt0ZSBTaWUgZ2VuYXUgYmVrb21tZW4sIHdpc3NlbiBTaWUgZXJzdCwgd2VubiBkZXIgVGF1c2NoIHZvbGx6b2dlbiBpc3QuDQoNCkRpZSBTcGllbGxlaXR1bmcgc2ljaGVydCBhYiwgZGFzcyBkZXIgdmVyZWluYmFydGUgVGF1c2NoIGF1Y2ggZWluZ2VoYWx0ZW4gd2lyZCwga8O8bW1lcnQgc2ljaCBhYmVyIG5pY2h0LCB3ZW5uIGluaGFsdGxpY2hlIFVuc3RpbW1pZ2tlaXRlbiBhdWZ0cmV0ZW4gb2RlciBlaW5lIFNlaXRlIG5hY2h2ZXJoYW5kZWxuIHdpbGwuDQoNCkluc2dlc2FtdCBkw7xyZmVuIG51ciBmw7xuZiBkZXIgemVobiBLYXJ0ZW4gYXVzZ2VzcGllbHQgd2VyZGVuLiBBbHNvIMO8YmVybGVnZW4gU2llIGd1dCwgbWl0IHdlbSBTaWUgaW5zIEdlc2Now6RmdCBrb21tZW4gd29sbGVuLg0KDQpEaWUgS2FydGVuIG1pdCBkZW4gTWludXNwdW5rdGVuIGvDtm5uZW4gw7xicmlnZW5zIGplZGVyemVpdCBlaW5mYWNoIHNvIGF1ZiBkZW4gYW5kZXJlbiDigJ5sb3NnZWxhc3NlbuKAnCB3ZXJkZW4uIEVpbiBUYXVzY2ggZmluZGV0IGhpZXIgbmljaHQgc3RhdHQuIERlciBhbmRlcmUgYmVrb21tdCBzb2ZvcnQgZGllIE1pbnVzcHVua3RlIHVuZCBrYW5uIHNpY2ggZGFnZWdlbiBuaWNodCB3ZWhyZW4uIERhcyBBdXNzcGllbGVuIHJlZHV6aWVydCBhYmVyIElocmUgQW56YWhsIGFuIHNwaWVsYmFyZW4gS2FydGVuIHVuZCBkYW1pdCBJaHJlIE3DtmdsaWNoa2VpdGVuLCB3ZWl0ZXJlIGfDvG5zdGlnZSBUYXVzY2hha3Rpb25lbiBkdXJjaHp1ZsO8aHJlbi4gTWFuIGthbm4gbmF0w7xybGljaCBhdWNoIG51ciBkcm9oZW4gb2RlciBibHVmZmVuLg0KDQpVbSBtaXQgZGVuIGFuZGVyZW4gU3BpZWxlcm4genUga29tbXVuaXppZXJlbiwgbnV0emVuIFNpZSBkYXMgTmFjaHJpY2h0ZW5wb3J0YWwuIERpZSBOYWNocmljaHRlbiB3ZXJkZW4gdm9uIGRlciBTcGllbGxlaXR1bmcgYXVzZ2VkcnVja3QgdW5kIHp1Z2VzdGVsbHQuIEltIE5hY2hyaWNodGVucG9ydGFsIGvDtm5uZW4gU2llIG51ciBkaWUgZWlnZW5lbiBnZXNlbmRldGVuIE5hY2hyaWNodGVuIG5vY2ggZWlubWFsIG5hY2hsZXNlbi4gRGllIGVtcGZhbmdlbmVuIHVuZCBhbGxlIGZyZW1kZW4gTmFjaHJpY2h0ZW4gc2luZCBnZXNwZXJydC4NCg0KQXVzbmFobWU6IEplZGVyIENoYXJha3RlciBrYW5uIGJpcyB6dSBkcmVpIE5hY2hyaWNodGVuIHZvbiBhbmRlcmVuIFNwaWVsZXJuIGF1c3NwaW9uaWVyZW4uIEpld2VpbHMgZGllIGxldHp0ZSBOYWNocmljaHQsIGRpZSBlaW4gU3BpZWxlciBlaW5lbSBhbmRlcmVuIGdlc2NoaWNrdCBoYXQsIGthbm4gYWJnZWxhdXNjaHQgd2VyZGVuLiBCZW51dHplbiBTaWUgZGF6dSBlaW5mYWNoIGRlbiBMaW5rIGltIE5hY2hyaWNodGVucG9ydGFsLiBXZW5uIGdlcmFkZSBrZWluZSBOYWNocmljaHQgdmVyZsO8Z2JhciBpc3QsIHZlcnN1Y2hlbiBTaWUgZXMgZWluZmFjaCBzcMOkdGVyIG5vY2ggZWlubWFsLnEBLg==",
+      "value": "gAJY4AsAAERhcyBJbmZvcm1hdGlvbnN6ZWl0YWx0ZXIgaGF0IHZpZWxlIEZhY2V0dGVuLiBQb2xpdGlrLCBHZWhlaW1kaWVuc3RlLCBJVC1VbnRlcm5laG1lbiwgTWVkaWVuIHVuZCBQcml2YXRlIGFnaWVyZW4gdmllbGbDpGx0aWcgaW0gTmV0ejogVmVyZGVja3Qgb2RlciBvZmZlbiwgSGF1cHRzYWNoZSBzY2huZWxsIHVuZCBpbmZvcm1hdGl2IG3DvHNzZW4gZGllIERhdGVuIHNlaW4sIGRpZSBkdXJjaCBkaWUgTGVpdHVuZ2VuIHJhc2VuLiBXZXIgd2lyZCBhbSBFbmRlIGRhcyBtZWlzdGUgV2lzc2VuIGhhYmVuLCBzaWNoIGRpZSBtZWlzdGUgTWFjaHQgc2ljaGVybj8NCg0KRGFzIFppZWwgZGVzIFNwaWVscyBpc3QgZXMsIG3DtmdsaWNoc3QgdmllbGUgUHVua3RlIHp1IGVycmVpY2hlbi4gQWxsZSBTcGllbGVyIHN0YXJ0ZW4gYmVyZWl0cyBtaXQgMjAgUHVua3Rlbi4gV2VyIGFtIEVuZGUgZGllIG1laXN0ZW4gUHVua3RlIGhhdCwgZ2V3aW5udC4gRGFzIFNwaWVsIGRhdWVydCBldHdhIDc1IE1pbnV0ZW4uDQoNCkplZGUgR3J1cHBlIHNwaWVsdCBlaW5lbiBTcGllbGNoYXJha3Rlci4gV8OkaHJlbmQgZGVzIFNwaWVscyBibGVpYmVuIGRpZSBHcnVwcGVuIHVudGVyIHNpY2guIERpZXNlcyBXZWJpbnRlcmZhY2UgdW50ZXJzdMO8dHp0IFNpZSBiZWkgZGVyIEtvbW11bmlrYXRpb24gbWl0IGRlbiBNaXRzcGllbGVybiB1bmQgYmVpIGRlbiB3ZXNlbnRsaWNoZW4gQWt0aW9uZW4gZGVzIFNwaWVscy4NCg0KTmFjaCBTcGllbGJlZ2lubiDDvGJlcmxlZ2VuIFNpZSBzaWNoIGluIElocmVyIEdydXBwZSBkaWUgYmVzdGUgU3RyYXRlZ2llIGbDvHIgSWhyZW4gU3BpZWxjaGFyYWt0ZXIuIFBsdXNwdW5rdGUga8O2bm5lbiBTaWUgbnVyIGJla29tbWVuLCB3ZW5uIFNpZSBtaXQgZWluZXIgYW5kZXJlbiBHcnVwcGUgZWluZSBLYXJ0ZSB0YXVzY2hlbiwgZGFzIGhlacOfdCBnZWdlbnNlaXRpZyBhdWZlaW5hbmRlciBhdXNzcGllbGVuLiBNaW51c3B1bmt0ZSBrw7ZubmVuIFNpZSBiZWtvbW1lbiwgd2VubiBlaW5lIGFuZGVyZSBHcnVwcGUgZWluZSBwYXNzZW5kZSBNaW51cy1LYXJ0ZSBhdWYgU2llIOKAnmxvc2zDpHNzdOKAnC4NCg0KSmVkZSBLYXJ0ZSBnZWjDtnJ0IGVpbmVtIGJlc3RpbW10ZW4gQ2hhcmFrdGVyIHVuZCBrYW5uIG51ciBhdWYgZWluZW4gYmVzdGltbXRlbiBhbmRlcmVuIENoYXJha3RlciBhdXNnZXNwaWVsdCB3ZXJkZW4uIFVtIGVpbmUgUGx1cy1LYXJ0ZSB6dSBzcGllbGVuLCB2ZXJ3ZW5kZW4gU2llIGRhcyB2b24gZGVyIFNwaWVsbGVpdHVuZyBhdXNnZXRlaWx0ZSBGb3JtdWxhci4gTnVyIHdlbm4gYmVpZGUgU2VpdGVuIGVpbiBhdWZlaW5hbmRlciBiZXpvZ2VuZXMgRm9ybXVsYXIgZWlucmVpY2hlbiwgd2lyZCBkZXIgVGF1c2NoIGVpbmdlbMO2c3QuIERpZSBNaXRzcGllbGVyZ3J1cHBlIGJla29tbXQgZGllIFBsdXNwdW5rdGUsIGRpZSBhdWYgSWhyZXIgS2FydGUgbm90aWVydCBzaW5kLCB1bmQgU2llIGJla29tbWVuIHVtZ2VrZWhydCBkaWUgUGx1c3B1bmt0ZSwgZGllIGF1ZiBpaHJlciBLYXJ0ZSBzdGVoZW4uIEFjaHR1bmc6IFdpZSB2aWVsZSBQdW5rdGUgU2llIGdlbmF1IGJla29tbWVuLCB3aXNzZW4gU2llIGVyc3QsIHdlbm4gZGVyIFRhdXNjaCB2b2xsem9nZW4gaXN0Lg0KDQpEaWUgU3BpZWxsZWl0dW5nIHNpY2hlcnQgYWIsIGRhc3MgZGVyIHZlcmVpbmJhcnRlIFRhdXNjaCBhdWNoIGVpbmdlaGFsdGVuIHdpcmQsIGvDvG1tZXJ0IHNpY2ggYWJlciBuaWNodCwgd2VubiBpbmhhbHRsaWNoZSBVbnN0aW1taWdrZWl0ZW4gYXVmdHJldGVuIG9kZXIgZWluZSBTZWl0ZSBuYWNodmVyaGFuZGVsbiB3aWxsLg0KDQpJbnNnZXNhbXQgZMO8cmZlbiBudXIgZsO8bmYgZGVyIHplaG4gS2FydGVuIGF1c2dlc3BpZWx0IHdlcmRlbi4gQWxzbyDDvGJlcmxlZ2VuIFNpZSBndXQsIG1pdCB3ZW0gU2llIGlucyBHZXNjaMOkZnQga29tbWVuIHdvbGxlbi4NCg0KRGllIEthcnRlbiBtaXQgZGVuIE1pbnVzcHVua3RlbiBrw7ZubmVuIMO8YnJpZ2VucyBqZWRlcnplaXQgZWluZmFjaCBzbyBhdWYgZGllIGFuZGVyZW4g4oCebG9zZ2VsYXNzZW7igJwgd2VyZGVuLiBFaW4gVGF1c2NoIGZpbmRldCBoaWVyIG5pY2h0IHN0YXR0LiBEZXIgYW5kZXJlIENoYXJha3RlciBiZWtvbW10IHNvZm9ydCBkaWUgTWludXNwdW5rdGUgdW5kIGthbm4gc2ljaCBkYWdlZ2VuIG5pY2h0IHdlaHJlbi4gRGFzIEF1c3NwaWVsZW4gcmVkdXppZXJ0IGFiZXIgSWhyZSBBbnphaGwgYW4gc3BpZWxiYXJlbiBLYXJ0ZW4gdW5kIGRhbWl0IElocmUgTcO2Z2xpY2hrZWl0ZW4sIHdlaXRlcmUgZ8O8bnN0aWdlIFRhdXNjaGFrdGlvbmVuIGR1cmNoenVmw7xocmVuLiBNYW4ga2FubiBuYXTDvHJsaWNoIGF1Y2ggbnVyIGRyb2hlbiBvZGVyIGJsdWZmZW4uDQoNClVtIG1pdCBkZW4gYW5kZXJlbiBHcnVwcGVuIHp1IGtvbW11bml6aWVyZW4sIG51dHplbiBTaWUgZGFzIE5hY2hyaWNodGVucG9ydGFsLiBEaWUgTmFjaHJpY2h0ZW4gd2VyZGVuIHZvbiBkZXIgU3BpZWxsZWl0dW5nIGF1c2dlZHJ1Y2t0IHVuZCB6dWdlc3RlbGx0LiBJbSBOYWNocmljaHRlbnBvcnRhbCBrw7ZubmVuIFNpZSBudXIgZGllIGVpZ2VuZW4gZ2VzZW5kZXRlbiBOYWNocmljaHRlbiBub2NoIGVpbm1hbCBuYWNobGVzZW4uIERpZSBlbXBmYW5nZW5lbiB1bmQgYWxsZSBmcmVtZGVuIE5hY2hyaWNodGVuIHNpbmQgZ2VzcGVycnQuDQoNCkF1c25haG1lOiBKZWRlciBDaGFyYWt0ZXIga2FubiBiaXMgenUgYWNodCBOYWNocmljaHRlbiB2b24gYW5kZXJlbiBHcnVwcGVuIGF1c3NwaW9uaWVyZW4uIEpld2VpbHMgZGllIGxldHp0ZSBOYWNocmljaHQsIGRpZSBlaW5lIEdydXBwZSBhbiBlaW5lIGFuZGVyZSBnZXNjaGlja3QgaGF0LCBrYW5uIGFiZ2VsYXVzY2h0IHdlcmRlbi4gQmVudXR6ZW4gU2llIGRhenUgZWluZmFjaCBkZW4gTGluayBpbSBOYWNocmljaHRlbnBvcnRhbC4gV2VubiBnZXJhZGUga2VpbmUgTmFjaHJpY2h0IHZlcmbDvGdiYXIgaXN0LCB2ZXJzdWNoZW4gU2llIGVzIGVpbmZhY2ggc3DDpHRlciBub2NoIGVpbm1hbC5xAS4=",
       "key": "introduction"
     }
   },
@@ -159,7 +159,7 @@
     "pk": 7,
     "model": "database.constance",
     "fields": {
-      "value": 3,
+      "value": 8,
       "key": "number_of_interceptions"
     }
   },
@@ -171,7 +171,7 @@
       "score": 20,
       "character": "A-No-Ni-Mos",
       "user": 2,
-      "description": "A-No-Ni-Mos ist eine häufig online und selten offline agierende Gruppe von Hackern: Sie sind jung, (hauptsächlich) männlich, unsportlich und bekommen oft zu wenig Tageslicht. Dafür sind sie über alles, was im Netz passiert, bestens informiert, kennen alle technischen Details und beschäftigen sich am liebsten mit den neusten Programmen und Entwicklungen, die das Netz so zu bieten hat. Der ein oder andere von ihnen hat dabei auch schon etwas tiefer in fremde Rechner gesehen, als dem Inhaber lieb ist. Was soll's: Wenn ein cooles Feature des eigenen Projekts mal nicht gelingt, kann man ja immer noch den Router des Nachbarn oder den Server einer Bank cracken ..."
+      "description": "A-No-Ni-Mos ist eine häufig online und selten offline agierende Gruppe von Hackern: Sie sind jung, (hauptsächlich) männlich, unsportlich und bekommen oft zu wenig Tageslicht. Dafür sind sie über alles, was im Netz passiert, bestens informiert, kennen alle technischen Details und beschäftigen sich am liebsten mit den neusten Programmen und Entwicklungen, die das Netz so zu bieten hat. Frei nach dem Motto: „Ein Hacker ist jemand, der versucht einen Weg zu finden, wie man mit einer Kaffeemaschine Toast zubereiten kann“ (Wau Holland). Der ein oder andere von ihnen hat dabei auch schon etwas tiefer in fremde Rechner gesehen, als dem Inhaber lieb ist. Was soll's: Wenn ein cooles Feature des eigenen Projekts mal nicht gelingt, kann man ja immer noch den Router des Nachbarn oder den Server einer Bank cracken ..."
     }
   },
   {
@@ -182,7 +182,7 @@
       "score": 20,
       "character": "Dr. Franz Flichtig",
       "user": 3,
-      "description": "Dr. Franz Flichtig ist der amtierende Innenminister der Bundesrepublik Deutschland. Er hat eine lange Parteikarriere hinter sich und ist noch nicht am Ziel seiner politischen Träume. Ob der Staat viel oder wenig überwacht, mag ihm eigentlich egal sein. Aber Law and Order-Politik hat sich schon immer gut verkauft. So möchte er am liebsten bestens über alles informiert sein. Mit dem Verfassungsschutz und dem BKA hat er auch einige Helfer und Helfershelfer zur Hand. Wenn ihm da nicht immer die anderen Nachrichtendienste und die Länder dazwischen funken würden ..."
+      "description": "Dr. Franz Flichtig ist der amtierende Innenminister der Bundesrepublik Deutschland. Er hat eine mühsame Parteikarriere hinter sich und ist noch lange nicht am Ziel seiner politischen Träume. Der (gewiss gutgemeinte) Polizeistaat ist ihm ein Herzensanliegen. Denn Law and Order-Politik hat sich schon immer gut verkauft. So möchte Franz am liebsten bestens über alles informiert sein. Mit dem Verfassungsschutz und dem BKA hat er einige willige und fähige Helfer zur Hand. Auch die Justiz frisst ihm aus der Hand. Wenn ihm da nicht immer die anderen Nachrichtendienste und die Bundesländer dazwischen funken würden ..."
     }
   },
   {
@@ -193,7 +193,7 @@
       "score": 20,
       "character": "Gaagol",
       "user": 4,
-      "description": "Gaagol ist das weltweit größte IT-Unternehmen. Seine Gründer haben das Informationszeitalter eingeleitet und mit seinen vielfältigen Diensten, wie Suchmaschinen, E-Mail-Diensten, Videoplattformen, Routenplaner beherrscht es den Alltag vieler Menschen. Aber die vielen Server und Mitarbeiter wollen gefüttert werden: Informationen sind das täglich Brot dieser Firma, Nutzerklicks ihr Lebenssaft, Netzprofile ihr Evangelium. Wenn da nur nicht diese Datenschützer wären ..."
+      "description": "Gaagol ist das weltweit größte IT-Unternehmen. Seine Gründer haben das Informationszeitalter eingeleitet und mit seinen vielfältigen Diensten, wie Suchmaschinen, E-Mail, Videoplattformen, Routenplaner und Online-Werbung beherrscht es den Alltag vieler Menschen. Aber die vielen Server und Mitarbeiter wollen gefüttert werden: Informationen sind das täglich Brot dieser Firma, Nutzerklicks ihr Lebenssaft, Netzprofile ihr Evangelium. Wenn da nur nicht diese Datenschützer wären ..."
     }
   },
   {
@@ -204,7 +204,7 @@
       "score": 20,
       "character": "NDB",
       "user": 5,
-      "description": "Der NDB ist der deutsche Auslandsnachrichtendienst. Seine Fühler sind weit verteilt, sein Informantennetz ist dicht und seine finanziellen Mittel zur „Gestaltung“ wichtiger politischer Fragen schier unerschöpflich. Wer hier arbeitet und was man hier so macht, weiß keiner. Immerhin geht es vielleicht ums Ganze: Freiheit, Demokratie und die Innovationskraft der heimischen Wirtschaft wollen verteidigt werden. Und da sind nicht nur Diktatoren und Rebellen in irgendwelchen weit entfernten Staaten zu betrachten. Die neue Gefahr droht aus dem Internet und wer da so alles unterwegs ist ...? Wenigstens machen die Provider keinen Ärger, wenn man ihnen nur mit den altbewährten Mittel kommt."
+      "description": "Der NDB ist der deutsche Auslandsnachrichtendienst. Seine Fühler sind weit verteilt, sein Informantennetze dicht und seine finanziellen Mittel zur „Gestaltung“ wichtiger politischer Fragen in allen Ländern schier unerschöpflich. Wer hier arbeitet und was man hier so macht, weiß keiner. Immerhin geht es (vielleicht) ums Ganze: Freiheit, Demokratie und die Innovationskraft der heimischen Wirtschaft wollen verteidigt werden. Und da sind nicht nur Diktatoren und Rebellen in irgendwelchen weit entfernten Staaten zu betrachten. Die neue Gefahr droht aus dem Internet und wer da so alles unterwegs ist ...? Wenigstens machen die Provider keinen Ärger, wenn man ihnen nur mit den altbewährten Mittel kommt."
     }
   },
   {
@@ -213,9 +213,9 @@
     "fields": {
       "playable_cards": 5,
       "score": 20,
-      "character": "WebBild",
+      "character": "FOTO.de",
       "user": 6,
-      "description": "WebBild ist das Internetportal des Verlags einer großen deutschen Tageszeitung. Hier erfährt der (zahlende) User alles, was auf der Welt passiert. Politische Possen oder das Neuste aus dem Privatleben der Promis: Alles auf einen Klick, mit großen Bildern und Videos und manchmal auch etwas Text. Nur leider brechen die Werbeeinnahmen weg, der Nachrichtenhunger der Leute ist groß und die Konkurrenz schläft auch nicht. Dann muss man eben ab und zu den guten alten Skandaljournalismus aus dem Schrank holen. Und neuerdings gibt es ja im Internet so viel über die Leute zu finden ..."
+      "description": "FOTO.de ist das Internetportal des Verlags einer großen deutschen Tageszeitung. Hier erfährt der (zahlende) User alles, was in der Welt passiert. Politische Possen oder das Neuste aus dem Privatleben der Promis: Alles auf einen Klick, mit großen Bildern und Videos und manchmal auch etwas Text. Nur leider brechen die Werbeeinnahmen weg, der Nachrichtenhunger der Leute ist groß und die Konkurrenz schläft auch nicht. Dann muss man eben ab und zu den guten alten Skandaljournalismus aus dem Schrank holen. Und neuerdings gibt es ja im Internet so viel über die Leute zu finden ..."
     }
   },
   {
@@ -239,7 +239,7 @@
       "description": "Text",
       "value": 6,
       "owner": 2,
-      "name": "Neue Sicherheitsgesetze erlassen"
+      "name": "Schärfere Sicherheitsgesetze mit neuen Befugnissen erlassen"
     }
   },
   {
@@ -251,7 +251,7 @@
       "description": "",
       "value": 4,
       "owner": 2,
-      "name": "Datenschutz lockern"
+      "name": "Datenschutzbeauftragten abschaffen"
     }
   },
   {
@@ -263,7 +263,7 @@
       "description": "",
       "value": 5,
       "owner": 2,
-      "name": "Melderegisterabfragen ermöglichen"
+      "name": "Private massenhafte Melderegisterabfragen ermöglichen"
     }
   },
   {
@@ -275,7 +275,7 @@
       "description": "",
       "value": 3,
       "owner": 2,
-      "name": "Jobs im Ministerium anbieten"
+      "name": "Jobs in der IT-Abteilung des Ministeriums anbieten"
     }
   },
   {
@@ -299,7 +299,7 @@
       "description": "",
       "value": 4,
       "owner": 2,
-      "name": "NSU-Lostopf manipulieren"
+      "name": "NSU-Lostopf nach Wunsch manipulieren"
     }
   },
   {
@@ -311,7 +311,7 @@
       "description": "",
       "value": 6,
       "owner": 2,
-      "name": "Heiße Tipps über geplante Polizeizugriffe"
+      "name": "Heiße Tipps zu geplanten Polizeizugriffen geben"
     }
   },
   {
@@ -347,7 +347,7 @@
       "description": "",
       "value": 3,
       "owner": 4,
-      "name": "Ausländische Regime zur Netzpolitik „beraten“"
+      "name": "Ausländische Regime zu liberaler Netzpolitik „beraten“"
     }
   },
   {
@@ -359,7 +359,7 @@
       "description": "",
       "value": 6,
       "owner": 4,
-      "name": "Geschäftsgeheimnisse der Konkurrenz übermitteln"
+      "name": "Geschäftsgeheimnisse der Konkurrenz ausspionieren und übermitteln"
     }
   },
   {
@@ -383,7 +383,7 @@
       "description": "",
       "value": 5,
       "owner": 4,
-      "name": "Neuste Kryptographietechnik untersuchen lassen"
+      "name": "Neuste Kryptographietechnik ausprobieren lassen"
     }
   },
   {
@@ -443,7 +443,7 @@
       "description": "",
       "value": 6,
       "owner": 3,
-      "name": "Zugriff auf Cloud Storages eröffnen"
+      "name": "Zugriff auf Cloud Storages bestimmter Personen eröffnen"
     }
   },
   {
@@ -455,7 +455,7 @@
       "description": "",
       "value": 4,
       "owner": 3,
-      "name": "Gaagol-Maps im Ausland manipulieren"
+      "name": "Gaagol-Maps im Ausland auf Wunsch gezielt manipulieren"
     }
   },
   {
@@ -467,7 +467,7 @@
       "description": "",
       "value": 3,
       "owner": 3,
-      "name": "Kostenlose Entwicklerplattform einrichten"
+      "name": "Kostenlose Online-Entwicklerplattform einrichten"
     }
   },
   {
@@ -491,7 +491,7 @@
       "description": "",
       "value": 4,
       "owner": 3,
-      "name": "Werbedaten übermitteln"
+      "name": "Werbedaten und Nutzerprofile übermitteln"
     }
   },
   {
@@ -527,7 +527,7 @@
       "description": "",
       "value": 5,
       "owner": 1,
-      "name": "Börsendaten hacken und manipulieren"
+      "name": "Börsendaten hacken und nach Wunsch manipulieren"
     }
   },
   {
@@ -539,7 +539,7 @@
       "description": "",
       "value": 5,
       "owner": 1,
-      "name": "Botnetzangriff auf ausländisches Regime"
+      "name": "Botnetzangriff auf ausländisches Regime nach Wunsch fahren"
     }
   },
   {
@@ -551,7 +551,7 @@
       "description": "",
       "value": 3,
       "owner": 1,
-      "name": "Fähige Hacker und V-Leute vermitteln"
+      "name": "Interessierte als V-Leute und Hacker vermitteln"
     }
   },
   {
@@ -575,7 +575,7 @@
       "description": "",
       "value": 6,
       "owner": 1,
-      "name": "Standardsuchmaschine in freien Softwareprojekten einstellen"
+      "name": "Standardsuchmaschine in den Webbrowsern der Leute einstellen"
     }
   },
   {
@@ -587,7 +587,7 @@
       "description": "",
       "value": 3,
       "owner": 1,
-      "name": "Beiträge lesen und kaufen"
+      "name": "Artikel lesen und kaufen"
     }
   },
   {
@@ -599,7 +599,7 @@
       "description": "",
       "value": 6,
       "owner": 1,
-      "name": "Exklusiveinformationen über den neusten Datenskandal mitteilen"
+      "name": "Exklusivinformationen über den neusten Datenskandal mitteilen"
     }
   },
   {
@@ -611,7 +611,7 @@
       "description": "",
       "value": 3,
       "owner": 5,
-      "name": "Wahlwerbung gut platzieren"
+      "name": "Wahlwerbung auf der Startseite platzieren"
     }
   },
   {
@@ -635,7 +635,7 @@
       "description": "",
       "value": 4,
       "owner": 5,
-      "name": "Gezielter Journalismus über ausländische Regime"
+      "name": "Gezielte Berichterstattung über ausländische Regime nach Wunsch"
     }
   },
   {
@@ -647,7 +647,7 @@
       "description": "",
       "value": 5,
       "owner": 5,
-      "name": "Informanten- und Korrespondentennetzwerk überlassen"
+      "name": "Informanten- und Korrespondentennetzwerk nutzen lassen"
     }
   },
   {
@@ -683,7 +683,7 @@
       "description": "",
       "value": 6,
       "owner": 5,
-      "name": "Über die neusten Projekte intensiv berichten"
+      "name": "Über die neusten Projekte intensiv und wohlwollend berichten"
     }
   },
   {
@@ -743,7 +743,7 @@
       "description": "",
       "value": -8,
       "owner": 4,
-      "name": "Zugriff auf chinesisches Netz sperren lassen"
+      "name": "Zensur in China verschärfen lassen"
     }
   },
   {
@@ -767,7 +767,7 @@
       "description": "",
       "value": -8,
       "owner": 3,
-      "name": "Beiträge aus der Suche nehmen"
+      "name": "Beiträge und Bilder aus der Suche nehmen"
     }
   },
   {
@@ -779,7 +779,7 @@
       "description": "",
       "value": -8,
       "owner": 1,
-      "name": "DoS-Angriff fahren"
+      "name": "DoS-Angriff auf das Portal fahren"
     }
   },
   {
@@ -791,7 +791,7 @@
       "description": "",
       "value": -8,
       "owner": 1,
-      "name": "Informaten und Spione enttarnen"
+      "name": "Eigene Informanten und Spione enttarnen, Dokumente leaken"
     }
   },
   {
@@ -803,7 +803,7 @@
       "description": "",
       "value": -8,
       "owner": 5,
-      "name": "Datenskandal publizieren"
+      "name": "Sich mit Edward Snowden treffen"
     }
   },
   {
