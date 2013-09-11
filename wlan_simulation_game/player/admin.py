@@ -7,5 +7,9 @@ from django.contrib.auth.models import Group
 from .models import Player
 
 
-admin.site.register(Player)
+class PlayerAdmin(admin.ModelAdmin):
+    list_display = ('character', 'score')
+
+
+admin.site.register(Player, PlayerAdmin)
 admin.site.unregister(Group)
