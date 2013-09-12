@@ -10,7 +10,7 @@
 {% block both %}
     <div class="col c12">
         <p>{% trans 'Score' %}: {{ player.score }}</p>
-        <p>{% trans 'Playable Cards' %}: {% blocktrans with player.playable_cards as cards %}still {{ cards }}{% endblocktrans %}</p>
+        <p>{% trans 'Playable cards' %}: {% blocktrans with player.playable_cards as cards %}still {{ cards }}{% endblocktrans %}</p>
         <p>
             {% trans 'Interceptions' %}:
             {% with rest_interceptions=player.interception_set.all.count|rest_interceptions %}
