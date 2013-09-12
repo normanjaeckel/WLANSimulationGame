@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% load i18n %}
+{% load wlan_simulation_game_extras %}
 
 {% block title %}{% trans 'Player' %} {{ player }} – {{ block.super }}{% endblock %}
 
@@ -9,8 +10,13 @@
 {% block both %}
     <div class="col c12">
         <p>{% trans 'Score' %}: {{ player.score }}</p>
-        <p>{% trans 'Playable Cards' %}: {{ player.playable_cards }}</p>
-        <p>{% trans 'Interceptions' %}: {{ player.interception_set.all.count }} / {{ config.number_of_interceptions }}</p>
+        <p>{% trans 'Playable Cards' %}: {% blocktrans with player.playable_cards as cards %}still {{ cards }}{% endblocktrans %}</p>
+        <p>
+            {% trans 'Interceptions' %}:
+            {% with rest_interceptions=player.interception_set.all.count|rest_interceptions %}
+                {% blocktrans %}still {{ rest_interceptions }}{% endblocktrans %}
+            {% endwith %}
+        </p>
         <p><em>{{ player.description }}</em></p>
     </div>
 {% endblock %}

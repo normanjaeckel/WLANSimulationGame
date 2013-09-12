@@ -17,7 +17,7 @@
     {% regroup card_list by owner as owner_list %}
     <ul>
         {% for owner_group in owner_list %}
-            <li>
+            <li style="margin-bottom:1em;">
                 {% trans 'Owner' %}: {{ owner_group.grouper }}
                 {% regroup owner_group.list by target as target_list %}
                 <ul style="padding-left:1em; list-style-type:none;">
@@ -32,7 +32,7 @@
                                         {% endif %}
                                         {{ card }}
                                         {% if user.is_staff or user.player == card.owner %}
-                                            </a>
+                                            </a> {{ card.value }}
                                         {% endif %}
                                         {% if card.used %}
                                             ({% trans 'Played' %})
@@ -43,6 +43,7 @@
                         </li>
                     {% endfor %}
                 </ul>
+            {% if not forloop.last %}<hr />{% endif %}
             </li>
         {% empty %}
             <li><em>{% trans 'No cards available.' %}</em></li>

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% load i18n %}
+{% load wlan_simulation_game_extras %}
 
 {% block styles %}
     {{ block.super }}
@@ -21,12 +22,13 @@
 {% endblock %}
 
 {% block right %}
-    <p>{% trans 'You can try to intercept a message that one player sent to another recently. Only the newest message can be intercepted. Choose sender and recipient in two steps. Good luck.' %}
-    </p>
+    <p>{% trans 'You can try to intercept a message that one player sent to another recently. Only the newest message can be intercepted. Choose sender and recipient in two steps. Good luck.' %}</p>
     <p>
-        {% blocktrans with config.number_of_interceptions as number %}
-            Note: You can only intercept a total number of {{ number }} messages.
-        {% endblocktrans %}
+        {% with rest_interceptions=user.player.interception_set.all.count|rest_interceptions %}
+            {% blocktrans %}
+                Note: You can still intercept {{ rest_interceptions }} messages.
+            {% endblocktrans %}
+        {% endwith %}
     </p>
     <p>
         {% blocktrans with wizard.steps.step1 as step1 and wizard.steps.count as count %}

@@ -42,8 +42,8 @@
                 {% endif %}
             </li>
             <li>{% trans 'Time' %}: {{ message.sending_time }}</li>
+            <li>{% trans 'Subject' %}: {{ message.subject }}</li>
         </ul>
-        <p><strong>{{ message.subject }}</strong></p>
         <div style="padding-left:1em;">{{ message.text|linebreaks }}</div>
     </div>
     <p id="print-message">
