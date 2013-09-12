@@ -15,7 +15,7 @@ class Player(models.Model):
     character = models.CharField(max_length=255, unique=True, verbose_name=ugettext_lazy('Character'))
     description = models.TextField(blank=True, verbose_name=ugettext_lazy('Description'))
     score = models.IntegerField(default=20, verbose_name=ugettext_lazy('Score'))
-    playable_cards = models.IntegerField(default=5, verbose_name=ugettext_lazy('Playable Cards'))
+    playable_cards = models.IntegerField(default=5, verbose_name=ugettext_lazy('Playable cards'))
 
     class Meta:
         ordering = ('character',)
