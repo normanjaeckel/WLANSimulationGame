@@ -21,7 +21,7 @@
     "pk": 2,
     "model": "auth.user",
     "fields": {
-      "username": "Gruppe1",
+      "username": "An-No-Ni-Mos",
       "first_name": "",
       "last_name": "",
       "is_active": true,
@@ -39,7 +39,7 @@
     "pk": 3,
     "model": "auth.user",
     "fields": {
-      "username": "Gruppe2",
+      "username": "Dr._Franz_Flichtig",
       "first_name": "",
       "last_name": "",
       "is_active": true,
@@ -57,7 +57,7 @@
     "pk": 4,
     "model": "auth.user",
     "fields": {
-      "username": "Gruppe3",
+      "username": "Gaagol",
       "first_name": "",
       "last_name": "",
       "is_active": true,
@@ -75,7 +75,7 @@
     "pk": 5,
     "model": "auth.user",
     "fields": {
-      "username": "Gruppe4",
+      "username": "NDB",
       "first_name": "",
       "last_name": "",
       "is_active": true,
@@ -93,7 +93,7 @@
     "pk": 6,
     "model": "auth.user",
     "fields": {
-      "username": "Gruppe5",
+      "username": "FOTO.de",
       "first_name": "",
       "last_name": "",
       "is_active": true,
@@ -135,7 +135,7 @@
     "pk": 4,
     "model": "database.constance",
     "fields": {
-      "value": "gAJY4AsAAERhcyBJbmZvcm1hdGlvbnN6ZWl0YWx0ZXIgaGF0IHZpZWxlIEZhY2V0dGVuLiBQb2xpdGlrLCBHZWhlaW1kaWVuc3RlLCBJVC1VbnRlcm5laG1lbiwgTWVkaWVuIHVuZCBQcml2YXRlIGFnaWVyZW4gdmllbGbDpGx0aWcgaW0gTmV0ejogVmVyZGVja3Qgb2RlciBvZmZlbiwgSGF1cHRzYWNoZSBzY2huZWxsIHVuZCBpbmZvcm1hdGl2IG3DvHNzZW4gZGllIERhdGVuIHNlaW4sIGRpZSBkdXJjaCBkaWUgTGVpdHVuZ2VuIHJhc2VuLiBXZXIgd2lyZCBhbSBFbmRlIGRhcyBtZWlzdGUgV2lzc2VuIGhhYmVuLCBzaWNoIGRpZSBtZWlzdGUgTWFjaHQgc2ljaGVybj8NCg0KRGFzIFppZWwgZGVzIFNwaWVscyBpc3QgZXMsIG3DtmdsaWNoc3QgdmllbGUgUHVua3RlIHp1IGVycmVpY2hlbi4gQWxsZSBTcGllbGVyIHN0YXJ0ZW4gYmVyZWl0cyBtaXQgMjAgUHVua3Rlbi4gV2VyIGFtIEVuZGUgZGllIG1laXN0ZW4gUHVua3RlIGhhdCwgZ2V3aW5udC4gRGFzIFNwaWVsIGRhdWVydCBldHdhIDc1IE1pbnV0ZW4uDQoNCkplZGUgR3J1cHBlIHNwaWVsdCBlaW5lbiBTcGllbGNoYXJha3Rlci4gV8OkaHJlbmQgZGVzIFNwaWVscyBibGVpYmVuIGRpZSBHcnVwcGVuIHVudGVyIHNpY2guIERpZXNlcyBXZWJpbnRlcmZhY2UgdW50ZXJzdMO8dHp0IFNpZSBiZWkgZGVyIEtvbW11bmlrYXRpb24gbWl0IGRlbiBNaXRzcGllbGVybiB1bmQgYmVpIGRlbiB3ZXNlbnRsaWNoZW4gQWt0aW9uZW4gZGVzIFNwaWVscy4NCg0KTmFjaCBTcGllbGJlZ2lubiDDvGJlcmxlZ2VuIFNpZSBzaWNoIGluIElocmVyIEdydXBwZSBkaWUgYmVzdGUgU3RyYXRlZ2llIGbDvHIgSWhyZW4gU3BpZWxjaGFyYWt0ZXIuIFBsdXNwdW5rdGUga8O2bm5lbiBTaWUgbnVyIGJla29tbWVuLCB3ZW5uIFNpZSBtaXQgZWluZXIgYW5kZXJlbiBHcnVwcGUgZWluZSBLYXJ0ZSB0YXVzY2hlbiwgZGFzIGhlacOfdCBnZWdlbnNlaXRpZyBhdWZlaW5hbmRlciBhdXNzcGllbGVuLiBNaW51c3B1bmt0ZSBrw7ZubmVuIFNpZSBiZWtvbW1lbiwgd2VubiBlaW5lIGFuZGVyZSBHcnVwcGUgZWluZSBwYXNzZW5kZSBNaW51cy1LYXJ0ZSBhdWYgU2llIOKAnmxvc2zDpHNzdOKAnC4NCg0KSmVkZSBLYXJ0ZSBnZWjDtnJ0IGVpbmVtIGJlc3RpbW10ZW4gQ2hhcmFrdGVyIHVuZCBrYW5uIG51ciBhdWYgZWluZW4gYmVzdGltbXRlbiBhbmRlcmVuIENoYXJha3RlciBhdXNnZXNwaWVsdCB3ZXJkZW4uIFVtIGVpbmUgUGx1cy1LYXJ0ZSB6dSBzcGllbGVuLCB2ZXJ3ZW5kZW4gU2llIGRhcyB2b24gZGVyIFNwaWVsbGVpdHVuZyBhdXNnZXRlaWx0ZSBGb3JtdWxhci4gTnVyIHdlbm4gYmVpZGUgU2VpdGVuIGVpbiBhdWZlaW5hbmRlciBiZXpvZ2VuZXMgRm9ybXVsYXIgZWlucmVpY2hlbiwgd2lyZCBkZXIgVGF1c2NoIGVpbmdlbMO2c3QuIERpZSBNaXRzcGllbGVyZ3J1cHBlIGJla29tbXQgZGllIFBsdXNwdW5rdGUsIGRpZSBhdWYgSWhyZXIgS2FydGUgbm90aWVydCBzaW5kLCB1bmQgU2llIGJla29tbWVuIHVtZ2VrZWhydCBkaWUgUGx1c3B1bmt0ZSwgZGllIGF1ZiBpaHJlciBLYXJ0ZSBzdGVoZW4uIEFjaHR1bmc6IFdpZSB2aWVsZSBQdW5rdGUgU2llIGdlbmF1IGJla29tbWVuLCB3aXNzZW4gU2llIGVyc3QsIHdlbm4gZGVyIFRhdXNjaCB2b2xsem9nZW4gaXN0Lg0KDQpEaWUgU3BpZWxsZWl0dW5nIHNpY2hlcnQgYWIsIGRhc3MgZGVyIHZlcmVpbmJhcnRlIFRhdXNjaCBhdWNoIGVpbmdlaGFsdGVuIHdpcmQsIGvDvG1tZXJ0IHNpY2ggYWJlciBuaWNodCwgd2VubiBpbmhhbHRsaWNoZSBVbnN0aW1taWdrZWl0ZW4gYXVmdHJldGVuIG9kZXIgZWluZSBTZWl0ZSBuYWNodmVyaGFuZGVsbiB3aWxsLg0KDQpJbnNnZXNhbXQgZMO8cmZlbiBudXIgZsO8bmYgZGVyIHplaG4gS2FydGVuIGF1c2dlc3BpZWx0IHdlcmRlbi4gQWxzbyDDvGJlcmxlZ2VuIFNpZSBndXQsIG1pdCB3ZW0gU2llIGlucyBHZXNjaMOkZnQga29tbWVuIHdvbGxlbi4NCg0KRGllIEthcnRlbiBtaXQgZGVuIE1pbnVzcHVua3RlbiBrw7ZubmVuIMO8YnJpZ2VucyBqZWRlcnplaXQgZWluZmFjaCBzbyBhdWYgZGllIGFuZGVyZW4g4oCebG9zZ2VsYXNzZW7igJwgd2VyZGVuLiBFaW4gVGF1c2NoIGZpbmRldCBoaWVyIG5pY2h0IHN0YXR0LiBEZXIgYW5kZXJlIENoYXJha3RlciBiZWtvbW10IHNvZm9ydCBkaWUgTWludXNwdW5rdGUgdW5kIGthbm4gc2ljaCBkYWdlZ2VuIG5pY2h0IHdlaHJlbi4gRGFzIEF1c3NwaWVsZW4gcmVkdXppZXJ0IGFiZXIgSWhyZSBBbnphaGwgYW4gc3BpZWxiYXJlbiBLYXJ0ZW4gdW5kIGRhbWl0IElocmUgTcO2Z2xpY2hrZWl0ZW4sIHdlaXRlcmUgZ8O8bnN0aWdlIFRhdXNjaGFrdGlvbmVuIGR1cmNoenVmw7xocmVuLiBNYW4ga2FubiBuYXTDvHJsaWNoIGF1Y2ggbnVyIGRyb2hlbiBvZGVyIGJsdWZmZW4uDQoNClVtIG1pdCBkZW4gYW5kZXJlbiBHcnVwcGVuIHp1IGtvbW11bml6aWVyZW4sIG51dHplbiBTaWUgZGFzIE5hY2hyaWNodGVucG9ydGFsLiBEaWUgTmFjaHJpY2h0ZW4gd2VyZGVuIHZvbiBkZXIgU3BpZWxsZWl0dW5nIGF1c2dlZHJ1Y2t0IHVuZCB6dWdlc3RlbGx0LiBJbSBOYWNocmljaHRlbnBvcnRhbCBrw7ZubmVuIFNpZSBudXIgZGllIGVpZ2VuZW4gZ2VzZW5kZXRlbiBOYWNocmljaHRlbiBub2NoIGVpbm1hbCBuYWNobGVzZW4uIERpZSBlbXBmYW5nZW5lbiB1bmQgYWxsZSBmcmVtZGVuIE5hY2hyaWNodGVuIHNpbmQgZ2VzcGVycnQuDQoNCkF1c25haG1lOiBKZWRlciBDaGFyYWt0ZXIga2FubiBiaXMgenUgYWNodCBOYWNocmljaHRlbiB2b24gYW5kZXJlbiBHcnVwcGVuIGF1c3NwaW9uaWVyZW4uIEpld2VpbHMgZGllIGxldHp0ZSBOYWNocmljaHQsIGRpZSBlaW5lIEdydXBwZSBhbiBlaW5lIGFuZGVyZSBnZXNjaGlja3QgaGF0LCBrYW5uIGFiZ2VsYXVzY2h0IHdlcmRlbi4gQmVudXR6ZW4gU2llIGRhenUgZWluZmFjaCBkZW4gTGluayBpbSBOYWNocmljaHRlbnBvcnRhbC4gV2VubiBnZXJhZGUga2VpbmUgTmFjaHJpY2h0IHZlcmbDvGdiYXIgaXN0LCB2ZXJzdWNoZW4gU2llIGVzIGVpbmZhY2ggc3DDpHRlciBub2NoIGVpbm1hbC5xAS4=",
+      "value": "gAJYUgwAAERhcyBJbmZvcm1hdGlvbnN6ZWl0YWx0ZXIgaGF0IHZpZWxlIEZhY2V0dGVuLiBQb2xpdGlrLCBHZWhlaW1kaWVuc3RlLCBJVC1VbnRlcm5laG1lbiwgTWVkaWVuIHVuZCBQcml2YXRlIGFnaWVyZW4gdmllbGbDpGx0aWcgaW0gTmV0ejogVmVyZGVja3Qgb2RlciBvZmZlbiwgSGF1cHRzYWNoZSBzY2huZWxsIHVuZCBpbmZvcm1hdGl2IG3DvHNzZW4gZGllIERhdGVuIHNlaW4sIGRpZSBkdXJjaCBkaWUgTGVpdHVuZ2VuIHJhc2VuLiBXZXIgd2lyZCBhbSBFbmRlIGRhcyBtZWlzdGUgV2lzc2VuIGhhYmVuLCBzaWNoIGRpZSBtZWlzdGUgTWFjaHQgc2ljaGVybj8NCg0KRGFzIFppZWwgZGVzIFNwaWVscyBpc3QgZXMsIG3DtmdsaWNoc3QgdmllbGUgUHVua3RlIHp1IGVycmVpY2hlbi4gQWxsZSBTcGllbGVyIHN0YXJ0ZW4gYmVyZWl0cyBtaXQgMjAgUHVua3Rlbi4gV2VyIGFtIEVuZGUgZGllIG1laXN0ZW4gUHVua3RlIGhhdCwgZ2V3aW5udC4gRGFzIFNwaWVsIGRhdWVydCBldHdhIDc1IE1pbnV0ZW4uDQoNCkplZGUgR3J1cHBlIHNwaWVsdCBlaW5lbiBTcGllbGNoYXJha3Rlci4gV8OkaHJlbmQgZGVzIFNwaWVscyBibGVpYmVuIGRpZSBHcnVwcGVuIHVudGVyIHNpY2guIERpZXNlcyBXZWJpbnRlcmZhY2UgdW50ZXJzdMO8dHp0IFNpZSBiZWkgZGVyIEtvbW11bmlrYXRpb24gbWl0IGRlbiBNaXRzcGllbGVybiB1bmQgYmVpIGRlbiB3ZXNlbnRsaWNoZW4gQWt0aW9uZW4gZGVzIFNwaWVscy4NCg0KTmFjaCBTcGllbGJlZ2lubiDDvGJlcmxlZ2VuIFNpZSBzaWNoIGluIElocmVyIEdydXBwZSBkaWUgYmVzdGUgU3RyYXRlZ2llIGbDvHIgSWhyZW4gU3BpZWxjaGFyYWt0ZXIuIFBsdXNwdW5rdGUga8O2bm5lbiBTaWUgbnVyIGJla29tbWVuLCB3ZW5uIFNpZSBtaXQgZWluZXIgYW5kZXJlbiBHcnVwcGUgZWluZSBLYXJ0ZSB0YXVzY2hlbiwgZGFzIGhlacOfdCBnZWdlbnNlaXRpZyBhdWZlaW5hbmRlciBhdXNzcGllbGVuLiBNaW51c3B1bmt0ZSBrw7ZubmVuIFNpZSBiZWtvbW1lbiwgd2VubiBlaW5lIGFuZGVyZSBHcnVwcGUgZWluZSBwYXNzZW5kZSBNaW51cy1LYXJ0ZSBhdWYgU2llIOKAnmxvc2zDpHNzdOKAnC4NCg0KSmVkZSBLYXJ0ZSBnZWjDtnJ0IGVpbmVtIGJlc3RpbW10ZW4gQ2hhcmFrdGVyIHVuZCBrYW5uIG51ciBhdWYgZWluZW4gYmVzdGltbXRlbiBhbmRlcmVuIENoYXJha3RlciBhdXNnZXNwaWVsdCB3ZXJkZW4uIFVtIGVpbmUgUGx1cy1LYXJ0ZSB6dSBzcGllbGVuLCB2ZXJ3ZW5kZW4gU2llIGRhcyB2b24gZGVyIFNwaWVsbGVpdHVuZyBhdXNnZXRlaWx0ZSBGb3JtdWxhci4gTnVyIHdlbm4gYmVpZGUgU2VpdGVuIGVpbiBhdWZlaW5hbmRlciBiZXpvZ2VuZXMgRm9ybXVsYXIgZWlucmVpY2hlbiwgd2lyZCBkZXIgVGF1c2NoIGVpbmdlbMO2c3QuIERpZSBNaXRzcGllbGVyZ3J1cHBlIGJla29tbXQgZGllIFBsdXNwdW5rdGUsIGRpZSBhdWYgSWhyZXIgS2FydGUgbm90aWVydCBzaW5kLCB1bmQgU2llIGJla29tbWVuIHVtZ2VrZWhydCBkaWUgUGx1c3B1bmt0ZSwgZGllIGF1ZiBpaHJlciBLYXJ0ZSBzdGVoZW4uIEFjaHR1bmc6IFdpZSB2aWVsZSBQdW5rdGUgU2llIGdlbmF1IGJla29tbWVuLCB3aXNzZW4gU2llIGVyc3QsIHdlbm4gZGVyIFRhdXNjaCB2b2xsem9nZW4gaXN0Lg0KDQpEaWUgU3BpZWxsZWl0dW5nIHNpY2hlcnQgYWIsIGRhc3MgZGVyIHZlcmVpbmJhcnRlIFRhdXNjaCBhdWNoIGVpbmdlaGFsdGVuIHdpcmQsIGvDvG1tZXJ0IHNpY2ggYWJlciBuaWNodCwgd2VubiBpbmhhbHRsaWNoZSBVbnN0aW1taWdrZWl0ZW4gYXVmdHJldGVuIG9kZXIgZWluZSBTZWl0ZSBuYWNodmVyaGFuZGVsbiB3aWxsLg0KDQpJbnNnZXNhbXQgZMO8cmZlbiBudXIgZsO8bmYgZGVyIHplaG4gS2FydGVuIGF1c2dlc3BpZWx0IHdlcmRlbi4gQWxzbyDDvGJlcmxlZ2VuIFNpZSBndXQsIG1pdCB3ZW0gU2llIGlucyBHZXNjaMOkZnQga29tbWVuIHdvbGxlbi4NCg0KRGllIEthcnRlbiBtaXQgZGVuIE1pbnVzcHVua3RlbiBrw7ZubmVuIMO8YnJpZ2VucyBqZWRlcnplaXQgZWluZmFjaCBzbyBhdWYgZGllIGFuZGVyZW4g4oCebG9zZ2VsYXNzZW7igJwgd2VyZGVuLiBFaW4gVGF1c2NoIGZpbmRldCBoaWVyIG5pY2h0IHN0YXR0LiBEZXIgYW5kZXJlIENoYXJha3RlciBiZWtvbW10IHNvZm9ydCBkaWUgTWludXNwdW5rdGUgdW5kIGthbm4gc2ljaCBkYWdlZ2VuIG5pY2h0IHdlaHJlbi4gRGFzIEF1c3NwaWVsZW4gcmVkdXppZXJ0IGFiZXIgSWhyZSBBbnphaGwgYW4gc3BpZWxiYXJlbiBLYXJ0ZW4gdW5kIGRhbWl0IElocmUgTcO2Z2xpY2hrZWl0ZW4sIHdlaXRlcmUgZ8O8bnN0aWdlIFRhdXNjaGFrdGlvbmVuIGR1cmNoenVmw7xocmVuLiBNYW4ga2FubiBuYXTDvHJsaWNoIGF1Y2ggbnVyIGRyb2hlbiBvZGVyIGJsdWZmZW4uDQoNClVtIG1pdCBkZW4gYW5kZXJlbiBHcnVwcGVuIHp1IGtvbW11bml6aWVyZW4sIG51dHplbiBTaWUgZGFzIE5hY2hyaWNodGVucG9ydGFsLCBkYXMgZXR3YSA1IE1pbnV0ZW4gbmFjaCBTcGllbGJlZ2lubiBmcmVpZ2VzY2hhbHRldCB3aXJkLiAoRHLDvGNrZW4gU2llIEY1LCB1bSBkaWUgQnJvd3NlcnNlaXRlIHp1IGFrdHVhbGlzaWVyZW4uKSBEaWUgTmFjaHJpY2h0ZW4gd2VyZGVuIHZvbiBkZXIgU3BpZWxsZWl0dW5nIGF1c2dlZHJ1Y2t0IHVuZCB6dWdlc3RlbGx0LiBJbSBOYWNocmljaHRlbnBvcnRhbCBrw7ZubmVuIFNpZSBudXIgZGllIGVpZ2VuZW4gZ2VzZW5kZXRlbiBOYWNocmljaHRlbiBub2NoIGVpbm1hbCBuYWNobGVzZW4uIERpZSBlbXBmYW5nZW5lbiB1bmQgYWxsZSBmcmVtZGVuIE5hY2hyaWNodGVuIHNpbmQgZ2VzcGVycnQuDQoNCkF1c25haG1lOiBKZWRlciBDaGFyYWt0ZXIga2FubiBiaXMgenUgYWNodCBOYWNocmljaHRlbiB2b24gYW5kZXJlbiBHcnVwcGVuIGF1c3NwaW9uaWVyZW4uIEpld2VpbHMgZGllIGxldHp0ZSBOYWNocmljaHQsIGRpZSBlaW5lIEdydXBwZSBhbiBlaW5lIGFuZGVyZSBnZXNjaGlja3QgaGF0LCBrYW5uIGFiZ2VsYXVzY2h0IHdlcmRlbi4gQmVudXR6ZW4gU2llIGRhenUgZWluZmFjaCBkZW4gTGluayBpbSBOYWNocmljaHRlbnBvcnRhbC4gV2VubiBnZXJhZGUga2VpbmUgTmFjaHJpY2h0IHZlcmbDvGdiYXIgaXN0LCB2ZXJzdWNoZW4gU2llIGVzIGVpbmZhY2ggc3DDpHRlciBub2NoIGVpbm1hbC5xAS4=",
       "key": "introduction"
     }
   },
@@ -204,7 +204,7 @@
       "score": 20,
       "character": "NDB",
       "user": 5,
-      "description": "Der NDB ist der deutsche Auslandsnachrichtendienst. Seine Fühler sind weit verteilt, sein Informantennetze dicht und seine finanziellen Mittel zur „Gestaltung“ wichtiger politischer Fragen in allen Ländern schier unerschöpflich. Wer hier arbeitet und was man hier so macht, weiß keiner. Immerhin geht es (vielleicht) ums Ganze: Freiheit, Demokratie und die Innovationskraft der heimischen Wirtschaft wollen verteidigt werden. Und da sind nicht nur Diktatoren und Rebellen in irgendwelchen weit entfernten Staaten zu betrachten. Die neue Gefahr droht aus dem Internet und wer da so alles unterwegs ist ...? Wenigstens machen die Provider keinen Ärger, wenn man ihnen nur mit den altbewährten Mittel kommt."
+      "description": "Der NDB ist der deutsche Auslandsnachrichtendienst. Seine Fühler sind weit verteilt, seine Informantennetze dicht und seine finanziellen Mittel zur „Gestaltung“ wichtiger politischer Fragen in allen Ländern schier unerschöpflich. Wer hier arbeitet und was man hier so macht, weiß keiner. Immerhin geht es (vielleicht) ums Ganze: Freiheit, Demokratie und die Innovationskraft der heimischen Wirtschaft wollen verteidigt werden. Und da sind nicht nur Diktatoren und Rebellen in irgendwelchen weit entfernten Staaten zu betrachten. Die neue Gefahr droht aus dem Internet und wer da so alles unterwegs ist ...? Wenigstens machen die Provider keinen Ärger, wenn man ihnen nur mit den altbewährten Mitteln kommt."
     }
   },
   {
@@ -224,7 +224,7 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "Text",
+      "description": "Wer am Flughafen und an den Grenzen ein- und ausreist, hat potenziell etwas zu verbergen. Filtert man noch nach einschlägigen Gefahrenkriterien wie Bartlänge oder Religionszugehörigkeit, ergibt sich schnell ein klares Profil. Vielleicht interessiert sich ja der NBD für diese Sachverhalte?",
       "value": 3,
       "owner": 2,
       "name": "Reisedaten verdächtiger Personen übermitteln"
@@ -236,7 +236,7 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "Text",
+      "description": "Mit Verweis auf die (unveränderte) aktuelle Bedrohungslage hat sich schon die bisherige Sicherheitsgesetzgebung rechtfertigen lassen. Aber da ist noch Luft nach oben. Neue spannende Befugnisse (erweiterte Online-Durchsuchung und Verwanzung, Dronen- und Satellitenüberwachung und vieles mehr) harren darauf, endlich geltendes Recht und legal zum Einsatz gebracht zu werden. Du kannst dazu das Nötige tun und die Apparate werden dir dankbar sein.",
       "value": 6,
       "owner": 2,
       "name": "Schärfere Sicherheitsgesetze mit neuen Befugnissen erlassen"
@@ -248,7 +248,7 @@
     "fields": {
       "used": false,
       "target": 3,
-      "description": "",
+      "description": "Das Gebaren der Datenschutzbeauftragten war für dich schon immer unerträglich. Hier werden doch nur notwendige Datenverarbeitungen verhindert und Steuergelder verschwendet. Damit ist jetzt Schluss. Dein neuster Gesetzesentwurf belehrt die ewigen Besserwisser nun eines Besseren. Ganz zu Gunsten der datenverarbeitenden Wirtschaft, versteht sich.",
       "value": 4,
       "owner": 2,
       "name": "Datenschutzbeauftragten abschaffen"
@@ -260,7 +260,7 @@
     "fields": {
       "used": false,
       "target": 3,
-      "description": "",
+      "description": "Melderecht ist Bundesrecht – und fällt damit endlich auch in dein Ressort. Hier kann man nun einiges besser machen. Zum Beispiel der datenverarbeitenden Wirtschaft den Zugriff erleichtern. Wenn Gaagol und Co. die Adressen der Leute nicht erst umständlich von irgendwelchen Adresshändlern kaufen müssen, sondern gleich direkt aus der amtlichen Quelle ziehen können, kann viel Zeit und Geld gespart werden. Und das kommt letztendlich allen zu Gute. Dem einen mehr, dem anderen weniger.",
       "value": 5,
       "owner": 2,
       "name": "Private massenhafte Melderegisterabfragen ermöglichen"
@@ -272,7 +272,7 @@
     "fields": {
       "used": false,
       "target": 1,
-      "description": "",
+      "description": "Angemessenes Gehalt, geregelte Arbeitszeiten und zu Weihnachten immer eine kleine Feier mit dem Abteilungsleiter. Ein ordentliches Angebot für die Hacker-Jungs, die dringend mal unter Leute kommen müssen. Mit etwas Glück wird man später auch verbeamtet und kann sich ein Reihenhaus mit Vorgarten leisten. Wenn das nichts ist ...",
       "value": 3,
       "owner": 2,
       "name": "Jobs in der IT-Abteilung des Ministeriums anbieten"
@@ -284,7 +284,7 @@
     "fields": {
       "used": false,
       "target": 1,
-      "description": "",
+      "description": "Die Justiz ist chronisch überlastet, die Gefängnisse sind überfüllt, die Strafrichter und Staatsanwälte amtsmüde. Da kann es sehr hilfreich sein, die Opportunitätsvorschriften des Strafrechts etwas extensiver auszulegen und auf die Verfolgung kleinerer Internetbetrügereien zu verzichten. Dank deiner Beziehungen zu Justizkreisen alles kein Problem. Die beschuldigten Hacker werden aufatmen und – hoffentlich – künftig ein anständiges Leben führen.",
       "value": 5,
       "owner": 2,
       "name": "Strafverfahren einstellen"
@@ -296,7 +296,7 @@
     "fields": {
       "used": false,
       "target": 5,
-      "description": "",
+      "description": "Der Kampf um die besten Plätze auf der Presseempore des Oberlandesgerichts München tobt. Alle wollen beim NSU-Prozess hautnah dabei sein. Das Problem ist nur, dass ein Losverfahren so schlecht vorhersehbar ist – mag man meinen. Mit deinen Beziehungen kannst du jedoch ausgewählten Medien einen sicheren Platz verschaffen. Sie werden dann eben „zufällig“ als Erste gezogen.",
       "value": 4,
       "owner": 2,
       "name": "NSU-Lostopf nach Wunsch manipulieren"
@@ -308,7 +308,7 @@
     "fields": {
       "used": false,
       "target": 5,
-      "description": "",
+      "description": "Rockerbanden, Drogendealer, Waffenschmuggler, Kinderpornoringe, Steuersünder. Sie alle fürchten die große Razzia der Polizei. Noch viel mehr fürchten sie die zufällige Anwesenheit von Fotoreportern bei einer solchen. Mit ein paar heißen Tipps zu den nächsten Einsätzen kannst du deinen Freunden von der Presse gleich die Gelegenheit für exklusive Bilder zur Story verschaffen. Alles ganz diskret natürlich.",
       "value": 6,
       "owner": 2,
       "name": "Heiße Tipps zu geplanten Polizeizugriffen geben"
@@ -416,8 +416,8 @@
     "fields": {
       "used": false,
       "target": 2,
-      "description": "",
-      "value": 3,
+      "description": "Wer schrieb wann wem eine E-Mail? Wer hat wann mit wem wie lange telefoniert? Wer hat wann wie lange welche Internetseite angesehen? Alles höchst interessante Daten, die sich hübsch kombinieren und profilieren lassen. Und ob nun im Kampf gegen den Terror oder gegen irgend etwas anderes ... die Regierung ist allemal heiß auf das Datenpaket. Na dann ab damit.",
+      "value": 5,
       "owner": 3,
       "name": "Vorratsdaten abliefern"
     }
@@ -428,8 +428,8 @@
     "fields": {
       "used": false,
       "target": 2,
-      "description": "",
-      "value": 5,
+      "description": "Seit 2008 fahrt ihr durch jede Straße und jede Gasse und nehmt alles auf, was euch vor die Kamera kommt. StreetView ist ein beliebter Dienst bei Jung und Alt. Für die Öffentlichkeit gibt es manchmal nur verpixelte Bilder. Menschen, Autokennzeichen und sogar Häuser sind unkenntlich gemacht. Was nicht heißt, dass die Daten etwa nicht mehr vorhanden wären. Von Löschen hat keiner was gesagt. Die Regierung freut sich sicher, wenn man ihr mal eben die Rohdaten rüberschiebt. Vielleicht ist da ja noch etwas Interessantes drauf?",
+      "value": 3,
       "owner": 3,
       "name": "Ungepixelte StreetView-Daten übersenden"
     }
@@ -440,7 +440,7 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "",
+      "description": "Wenn der Geheimdienst einmal wissen möchte, welche Dateien jemand in seiner Clound abgelegt hat, muss er nur euch fragen. Voller Zugriff, volle Kontrolle, volle Zufriedenheit. Selbstverständlich wird das nur bei Verdacht und Gefahr im Verzug gemacht. Alles ganz legal ... ",
       "value": 6,
       "owner": 3,
       "name": "Zugriff auf Cloud Storages bestimmter Personen eröffnen"
@@ -452,7 +452,7 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "",
+      "description": "Der Fall der Isla Calero ist ein Paradebeispiel: Diese Insel im Fluss San Juan wird von den meisten Staaten für zu Costa Rica gehörig gehalten. Nur die Maps eines Online-Kartendienstes sagen etwas anderes und waren Motivation eines nicaraguanischen Truppenkommandeurs, die Insel zu betreten und zu besetzen. Fast ein Krieg! Solche Situationen können dem NDB grundsätzlich ganz nützlich sein. Warum nicht die Karten hier und da ein wenig seinen Wünschen und Bedürfnissen anpassen?",
       "value": 4,
       "owner": 3,
       "name": "Gaagol-Maps im Ausland auf Wunsch gezielt manipulieren"
@@ -464,7 +464,7 @@
     "fields": {
       "used": false,
       "target": 1,
-      "description": "",
+      "description": "Jeder Computerfreak nutzt für seine Spielereien unzählige Tools und Plattformen. Alle passen nur mehr oder weniger auf das, was man gerade so macht. Hier kommt ihr ins Spiel: Öffnet die ultimative Plattform für Softwareentwickler: mit Versionskontrolle, Ticketing, Chat, Mailbenachrichtigung, Code-Review, Übersetzungsdatenbank, Testsuite und allem, was der Hobbyhacker sonst so braucht, um gemeinsam mit anderen seine Projekte aufzuziehen. Kostenlos natürlich.",
       "value": 3,
       "owner": 3,
       "name": "Kostenlose Online-Entwicklerplattform einrichten"
@@ -476,7 +476,7 @@
     "fields": {
       "used": false,
       "target": 1,
-      "description": "",
+      "description": "Da Hacker in der Regel ihr ganzes Geld für Pizza ausgeben, sind ihre Treffen immer etwas spartanisch: Jeden Tag nur Nudeln und übernachtet wird in irgendwelchen Kellern mit Isomatte und Schlafsack. Hier könntet ihr mal für etwas Luxus sorgen. Lasst dem nächsten Treffen ein umfangreiches Sponsoring zukommen: Räume, Technik, Hotels, Catering. Alles vom Feinsten.",
       "value": 6,
       "owner": 3,
       "name": "Großsponsoring des nächsten Hackertreffens"
@@ -488,7 +488,7 @@
     "fields": {
       "used": false,
       "target": 5,
-      "description": "",
+      "description": "Das Schöne an vielgenutzten Online-Diensten ist, dass man über die Nutzer aussagekräftige und werberelevante Profile erstellen kann. Wer sich Maps in den Alpen ansieht, will vielleicht demnächst ein paar Wanderschuhe kaufen. Und wer nach dem Begriff „Bondage“ sucht, will vielleicht ein paar Seile erwerben. Wenn er dann seine Online-Zeitung liest, sollte die Werbung dafür geschickt platziert sein. Lasst das Medienportal doch an euren Erkenntnissen über die geheimen Wünsche der Nutzer teilhaben, einen passenden Werbepartner haben sie sicher schon bei der Hand.",
       "value": 4,
       "owner": 3,
       "name": "Werbedaten und Nutzerprofile übermitteln"
@@ -500,7 +500,7 @@
     "fields": {
       "used": false,
       "target": 5,
-      "description": "",
+      "description": "Wer in einer Suchmaschine nicht (gleich) gefunden wird, den gibt es nicht. Zumindest ein wenig Wahrheit ist an diesem Satz dran. Dass allein der PageRank bestimmt, wer wie schnell gefunden wird, muss auch nicht immer stimmen. Zu Gunsten eures Tauschpartners könnt ihr die Ergebnisrelevanz bestimmter Seiten bestimmter Konkurrenten „einstellen“. Ganz plötzlich tauchen dann diese Seiten nur noch ab Platz 100 auf.",
       "value": 5,
       "owner": 3,
       "name": "Suchtreffer der Konkurrenz minimieren"
@@ -512,7 +512,7 @@
     "fields": {
       "used": false,
       "target": 2,
-      "description": "",
+      "description": "Ein zu strenges Urheberrecht mag eine Sache sein. Aber die vielen Filesharer, Skriptkiddies, Spamer und Berufsvirenschreiber schaden dem Ruf der Szene. Der Innenminister hat sicher Interesse an ein paar Namen und Adressen. Kampf gegen Internetkriminalität steht ihm gut zu Buche. Mit heißen Tipps zu Leuten, die ihr nicht wirklich zu euresgleichen zählt, könnt ihr ihm ein bisschen unter die Arme greifen.",
       "value": 4,
       "owner": 1,
       "name": "Filesharer und Internetpiraten verraten"
@@ -524,10 +524,10 @@
     "fields": {
       "used": false,
       "target": 2,
-      "description": "",
+      "description": "Die Börse führt oft ein Eigenleben. Wie soll man da mitbekommen, welchen wirklichen Wert ein notiertes Unternehmen nun hat? Für euch alles kein Problem. Ein paar Kommandos in die Konsole gehackt, ein paar Skripte gestartet und schon kann der Kurs des gewünschten Unternehmens ein wenig in die richtige Richtung korrigiert werden. Der Politik können solche „Argumente“ in Verhandlungen mit den Unternehmen bei allen möglichen Themen (Atomausstieg, Frauenquote, Ausbildungsplätze, Managerboni, ...) sehr behilflich sein. Über mehr Gestaltungsspielraum wird sie sich doch immer freuen ...",
       "value": 5,
       "owner": 1,
-      "name": "Börsendaten hacken und nach Wunsch manipulieren"
+      "name": "Börsendaten für die Regierung hacken"
     }
   },
   {
@@ -536,10 +536,10 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "",
+      "description": "Wer ist gut, wer ist böse? Wer weiß das schon. Euch kann es egal sein. Schickt euer bestes Botnetz auf die Seiten einer ausländischen Regierung. Mal sehen, wie viele Sekunden die durchhalten. Der Geheimdienst sagt euch, welche es sein soll. Was er davon hat, das sagt er euch nicht. Vielleicht geht es um die Freiheit der Welt, vielleicht aber auch nur ums liebe Geld.",
       "value": 5,
       "owner": 1,
-      "name": "Botnetzangriff auf ausländisches Regime nach Wunsch fahren"
+      "name": "Botnetzangriff auf gewünschtes ausländisches Regime fahren"
     }
   },
   {
@@ -548,7 +548,7 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "",
+      "description": "Ein paar von euch hatten schon immer etwas Affinität zu Verschwörungen. Und einen langen Mantel mit Schlapphut wollten sie auch schon immer mal tragen. Andere kennen sich bestens mit Kryptographie aus. Alles Fähigkeiten, die ein Geheimdienst immer brauchen kann. Er macht aus denen, die Interesse haben, Profis – und das Personal für seine nächsten Projekte. Nur ein paar verlässliche Kontakte müsste man ihm weitergeben. Er kann ja seine Stellen als Spione und Krypto-Hacker schlecht beim Arbeitsamt ausschreiben.",
       "value": 3,
       "owner": 1,
       "name": "Interessierte als V-Leute und Hacker vermitteln"
@@ -560,7 +560,7 @@
     "fields": {
       "used": false,
       "target": 3,
-      "description": "",
+      "description": "Software ist niemals fertig. Und sie ist niemals fehlerfrei. Umso wichtiger ist es, alles schön auf Herz und Nieren zu prüfen, um wenigstens die gröbsten Sicherheitslücken ausfindig zu machen. Ihr könntet den IT-Konzernen doch einmal eure speziellen Techniken anbieten. Hackt euch in ihre Systeme und sagt ihnen, wo und wie es möglich ist. Dann schließen sie die Lücken und rühmen sich größtmöglicher Qualität. Wie viel wird ihnen das wert sein?",
       "value": 4,
       "owner": 1,
       "name": "Dienste auf Herz und Nieren testen"
@@ -572,7 +572,7 @@
     "fields": {
       "used": false,
       "target": 3,
-      "description": "",
+      "description": "Wie bringt man eine Suchmaschine auf Platz 1 des Weltmarktes? Ganz einfach: Die Standardeinstellung macht's. Wer einen Browser installiert und oben rechts ein kleines Suchfenster hat, macht sich selten die Mühe, einzustellen, welche Suchmaschine hier angesprochen werden soll. Ihr könntet euch dafür einsetzen, dass auf den gängigen freien Browsern (Firefox und Co.) der Dienst von Gaagol eingestellt ist. Das wäre dann der Goldesel für den Betreiber.",
       "value": 6,
       "owner": 1,
       "name": "Standardsuchmaschine in den Webbrowsern der Leute einstellen"
@@ -584,10 +584,10 @@
     "fields": {
       "used": false,
       "target": 5,
-      "description": "",
+      "description": "Eigentlich wollen alle nur das eine. Besonders die Journalisten. Tut ihnen doch den Gefallen, kauft die Artikel. Vielleicht wollt ihr sie dann auch lesen.",
       "value": 3,
       "owner": 1,
-      "name": "Artikel lesen und kaufen"
+      "name": "Artikel kaufen und vielleicht lesen"
     }
   },
   {
@@ -596,7 +596,7 @@
     "fields": {
       "used": false,
       "target": 5,
-      "description": "",
+      "description": "Heiße Tipps von Leuten wie Edward Snowden sind rar. Dank eurer Kontakte wisst ihr bestens Bescheid, wo der nächste Datenskandal lauert. Die Medien sind daran immer interessiert. Und wenn dann noch ein paar Namen von Politikern dabei sind – hervorragend. Ihr könnt der skandalhungrigen Journalie ein leckeres Häppchen servieren, das sie ein paar Wochen beschäftigen wird.",
       "value": 6,
       "owner": 1,
       "name": "Exklusivinformationen über den neusten Datenskandal mitteilen"
@@ -608,7 +608,7 @@
     "fields": {
       "used": false,
       "target": 2,
-      "description": "",
+      "description": "Auf eurer Startseite ist am Rand immer noch ein bisschen Platz. Hier kann man in Zeiten des Dauerwahlkampfes den Kandidaten eurer Wahl doch etwas unterstützen. Exklusive Bannerwerbung mit Link zu freundlichen Fotos eines sympathischen Bewerbers kann ein paar Prozente ausmachen.",
       "value": 3,
       "owner": 5,
       "name": "Wahlwerbung auf der Startseite platzieren"
@@ -620,7 +620,7 @@
     "fields": {
       "used": false,
       "target": 2,
-      "description": "",
+      "description": "Das Sommerloch ist vorüber, jetzt muss wieder etwas Aufregung in die deutsche Medienlandschaft. Unterstützt den Vorstoß des Innenministers nach schärferen Sicherheitsgesetzen, indem ihr eine wochenlange Kampagne fahrt. Bilder von blutenden Schlägereiopfern, fokussierte Kriminalitätsstatistiken, die einen steilen Anstieg zeigen, Interviews mit den strengsten Jugendrichtern des Landes, die mehr und schärfere Haft fordern, Berichte über gerade noch vereitelte Terroranschläge. Wenn die Bevölkerung hinreichend sensibilisiert ist, wird sie schon die Forderung nach mehr Sicherheit unterstützen. Und damit zugleich den Amtsinhaber, der für dieses Erfolgsprogramm steht.",
       "value": 6,
       "owner": 5,
       "name": "Kampagne für schärfere Sicherheitsgesetze fahren"
@@ -632,10 +632,10 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "",
+      "description": "Manchmal ist es wichtig und richtig, die Meinung der Leute über dieses oder jenes Land in eine bestimmte Richtung zu bewegen. Mit Rückendeckung in der Bevölkerung lassen sich erforderliche Maßnahmen viel leichter vertreten, auch wenn sie etwas teurer sind. Nutzt euer ganzes Können und schreibt über das Lieblingsland des NDB, was zu schreiben ist. Achtung: Vorher fragen, ob der dortige Diktator eher gut oder eher schlecht wegkommen soll. Beides ist immer möglich.",
       "value": 4,
       "owner": 5,
-      "name": "Gezielte Berichterstattung über ausländische Regime nach Wunsch"
+      "name": "Gezielte Berichterstattung über gewünschtes ausländische Regime"
     }
   },
   {
@@ -644,7 +644,7 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "",
+      "description": "Dank eurer langjährigen Tätigkeit habt ihr weltweit ein dichtes Netzwerk aus Informanten und Korrespondenten aufgebaut. Wenn dem NDB wieder einmal die Spione ausgegangen sind, braucht er neue zuverlässige Quellen. Hier könnt ihr ihm einfach und unkompliziert helfen. Schickt ihm einfach die Kontaktdaten per E-Mail. Die Empfängeradresse ist egal, die Nachricht kommt sowieso an.",
       "value": 5,
       "owner": 5,
       "name": "Informanten- und Korrespondentennetzwerk nutzen lassen"
@@ -656,10 +656,10 @@
     "fields": {
       "used": false,
       "target": 3,
-      "description": "",
+      "description": "Endlich ist es gekommen, das Leistungsschutzrecht für Pressebeiträge. Mit eurer Erlaubnis darf Gaagol weiterhin auf eure Beiträge verlinken und Auszüge daraus in den eigenen Diensten präsentieren. Das bringt Leser für euch und vor allem Nutzer für Gaagol. Eine Zusammenarbeit zum beiderseitigen Vorteil. Man muss sich nur über den Preis einigen.",
       "value": 5,
       "owner": 5,
-      "name": "Nutzungsrechte an eigenen Beiträgen einräumen"
+      "name": "Nutzungsrechte an FOTO.de-Beiträgen einräumen"
     }
   },
   {
@@ -668,10 +668,10 @@
     "fields": {
       "used": false,
       "target": 3,
-      "description": "",
+      "description": "Wer einen eurer Artikel liest und eine Frage hat, kann nach den Inhalten im Netz suchen. Er kann aber auch einfach auf gezielte Links drücken, die ihn an die Dienste bestimmter Unternehmen weiterleiten. Nutzt eure Möglichkeiten, es den Lesern leicht zu machen und sein Surfverhalten zu steuern. Gaagol hat sicher für jedes Anliegen einen Dienst bereit.",
       "value": 3,
       "owner": 5,
-      "name": "Gezielte Links setzen"
+      "name": "Gezielte Links zu Gaagol setzen"
     }
   },
   {
@@ -680,7 +680,7 @@
     "fields": {
       "used": false,
       "target": 1,
-      "description": "",
+      "description": "Was nützt das beste Können, das coolste Softwaretool und der genialste neuste Hack, wenn niemand davon weiß. Ein Hacker will, dass seine Leistung anerkannt wird. Nicht mit schnödem Mammon, nein, mit öffentlicher Aufmerksamkeit und wohlwollenden Postings dankbarer User. Ihr könnet den Hacker etwas helfen und über deren neuste Projekte intensiv und – selbstverständlich – wohlwollend berichten. Bietet einen umfangreichen Testbericht an und lasst ihnen die Möglichkeit, kleine Fehlerchen vor der Veröffentlichung schnell zu fixen und sie werden euch die Füße küssen. Nur virtuell – versteht sich.",
       "value": 6,
       "owner": 5,
       "name": "Über die neusten Projekte intensiv und wohlwollend berichten"
@@ -692,7 +692,7 @@
     "fields": {
       "used": false,
       "target": 1,
-      "description": "",
+      "description": "Lasst die Besten der Besten zusammenkommen und wettstreiten. Stellt ihnen schwierige Aufgaben und knappe Zeitfenster. Bietet dem Sieger ein üppiges Preisgeld. So werden die kleinen Hacker aus ihren Kellern kommen, ihr ganzes Können zeigen und sind auch für ein Foto in Siegerpose zu haben. Das Wichtigste ist die Anerkennung. Kein Problem, wenn die Sache am Ende ordentlich publiziert wird. Das Ganze ist dann noch unter der Überschrift \"Ausbildung und Nachwuchsförderung\" steuerlich absetzbar.",
       "value": 4,
       "owner": 5,
       "name": "Hackerwettbewerb ausschreiben"
@@ -704,7 +704,7 @@
     "fields": {
       "used": false,
       "target": 3,
-      "description": "",
+      "description": "Schluss mit den Ausnahmen im Urhebergesetz für Anrisstexte und Zitate! Der Urheber (und vor allem der Verleger) muss König bleiben und will bezahlt werden. Mit deiner Gesetzesinitiative für mehr Leistungsschutzrechte und Restriktionen schaffst du die Basis für eine „angemessene Vergütung“ der Urheber und Verleger. Und damit zugleich das Ende der kostenlosen Suchmaschinenschnipsel.",
       "value": -8,
       "owner": 2,
       "name": "Urheberrecht verschärfen"
@@ -716,10 +716,10 @@
     "fields": {
       "used": false,
       "target": 1,
-      "description": "",
+      "description": "Aus dem Handbuch zur Zersetzung konspirativer Gruppen und Kreise. Ost-Berlin 1988. Nur für den innerdienstlichen Gebrauch. Kapitel 1: V-Leute anwerben. Kapitel 2: V-Leute in die Gruppe bringen. Kapitel 3: Streit und Misstrauen säen. Kapitel 4: Liebesbeziehungen der Gruppenmitglieder nutzen. Kapitel 5: Die Gruppe zur Selbstauflösung führen. Wie wäre es, junge Aspiranten des Ministeriums mal die heutige Relevanz des alten Handbuchs an ausgewählten Hacker-Gruppen testen zu lassen?",
       "value": -8,
       "owner": 2,
-      "name": "V-Leute einschleusen, Gruppen zersetzen"
+      "name": "V-Leute einschleusen, Gruppe zersetzen"
     }
   },
   {
@@ -731,7 +731,7 @@
       "description": "",
       "value": -8,
       "owner": 4,
-      "name": "Eigeninitiative im Inneren starten"
+      "name": "Eigeninitiative im Inland starten, Kompetenzen überschreiten"
     }
   },
   {
@@ -752,10 +752,10 @@
     "fields": {
       "used": false,
       "target": 1,
-      "description": "",
+      "description": "Der Hacker ist ein geselliges Wesen. Am liebsten unterhält er sich stundenlang mit seinen Freunden über technische Feinheiten und Problemlösungen. Aber was, wenn seine Freunde plötzlich keine Zeit mehr haben? Was, wenn sie von euch mit einem Job ausgestattet werden, der ihnen zwar ein unverschämtes Gehalt bringt, aber zugleich einen Dienst von früh bis spät abverlangt? Dann hätten sie alle keine Zeit mehr für Plaudereien und Chats bis tief in die Nacht. Dann wird der Hacker sehr schnell einsam. Sehr einsam ...",
       "value": -8,
       "owner": 3,
-      "name": "Hackerfreunde abwerben"
+      "name": "Hackerfreunde mit 24/7-Job abwerben"
     }
   },
   {
@@ -764,7 +764,7 @@
     "fields": {
       "used": false,
       "target": 5,
-      "description": "",
+      "description": "Wer in einer Suchmaschine nicht (gleich) gefunden wird, den gibt es nicht. Da sich nun die meisten Nutzer selbst für einfachste Seitenaufrufe der Suche bedienen, fällt es ganz besonders ins Gewicht, wenn eine Seite gleich mal gar nicht mehr gelistet ist. Bis der Fehler gefunden und das Problem behoben ist, kann eine ganze Weile vergehen ...",
       "value": -8,
       "owner": 3,
       "name": "Beiträge und Bilder aus der Suche nehmen"
@@ -776,10 +776,10 @@
     "fields": {
       "used": false,
       "target": 5,
-      "description": "",
+      "description": "Der User will das Neuste vom Neusten, er zahlt, er klickt und ... nichts passiert. Ein Albtraum für jedes Online-Portal. Wenn sich der Server vor lauter „interessierter“ Anfragen infizierter Rechner nicht mehr retten kann, wird er bald den Geist aufgeben und die Seite ist erst einmal tot. Distributed Denial of Service. Wie ärgerlich – für den User. Noch viel ärgerlicher für den Betreiber ...",
       "value": -8,
       "owner": 1,
-      "name": "DoS-Angriff auf das Portal fahren"
+      "name": "DDoS-Angriff auf das Portal fahren"
     }
   },
   {
@@ -788,10 +788,10 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "",
+      "description": "Was wäre, wenn im Internet eine Liste mit den Namen aller deutschen Spione auftauchen würde? Wenn eine Liste aller unappetitlichen Aktivitäten der deutschen Nachrichtendienste der letzten 50 Jahre frei verfügbar wäre? Wenn Dokumente aus den geheimen Zentralen über Freund und Feind von Feind und Freund und auch sonst allen gelesen werden könnten? Grauenvoll, nicht wahr?",
       "value": -8,
       "owner": 1,
-      "name": "Eigene Informanten und Spione enttarnen, Dokumente leaken"
+      "name": "Deutsche Informanten und Spione enttarnen, Dokumente leaken"
     }
   },
   {
@@ -800,10 +800,10 @@
     "fields": {
       "used": false,
       "target": 4,
-      "description": "",
+      "description": "Ein Glücksgriff für den investigativen Journalismus: Edward Snowden hat so viel auszupacken, dass es noch für Monate reichen kann. Spätestens bis dahin sind alle Politiker weichgeklopft und drauf und dran, die Geheimdienste vom Kopf auf die Füße zu stellen (oder umgekehrt, je nach Perspektive). Ihr könnt ja hier auch mitmachen, euch mit dem Helden (oder Verräter, je nach Perspektive) treffen und ihn ausführlich interviewen. Mal sehen, wie der NDB das findet ...",
       "value": -8,
       "owner": 5,
-      "name": "Sich mit Edward Snowden treffen"
+      "name": "Interview mit Edward Snowden veröffentlichen"
     }
   },
   {
@@ -812,7 +812,7 @@
     "fields": {
       "used": false,
       "target": 2,
-      "description": "",
+      "description": "Wenn er nicht so will, wie er soll, ist eben etwas klassischer Journalismus gefragt. Durchsucht das Netz nach seinem Privatleben. Bestimmt hat er eine Freundin und seine brave Ehefrau weiß nichts davon. Und bestimmt gibt es davon digitale Spuren. Und bestimmt ist das seinen politischen Chancen abträglich. Auch wenn natürlich niemand zugeben wird, dass man jemanden nur deswegen bei der nächsten Wahl nicht ankreuzen wird. Falls ihr nichts findet, ... Nein, diesen Fall gibt es nicht, dafür werdet ihr schon Sorge tragen.",
       "value": -8,
       "owner": 5,
       "name": "Privates Liebesverhältnis (er-)finden"
