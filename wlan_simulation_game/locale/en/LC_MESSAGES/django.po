@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 23:51+0200\n"
+"POT-Creation-Date: 2013-09-16 01:19+0200\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -153,38 +153,49 @@ msgstr ""
 msgid "This list is sorted by card owner and target."
 msgstr ""
 
-#: message/forms.py:18 message/forms.py:47 message/models.py:29
+#: message/forms.py:21 message/forms.py:66 message/models.py:29
 #: message/templates/message/message_detail.html:37
 #: message/templates/message/message_list.html:39
 #: message/templates/message/message_list_not_printed.html:28
 msgid "Recipient"
 msgstr ""
 
-#: message/forms.py:41 message/templates/message/message_detail.html:33
+#: message/forms.py:51
+#, python-format
+msgid ""
+"You have to wait %d minutes before you can send the next message to the same "
+"recipient."
+msgstr ""
+
+#: message/forms.py:60 message/templates/message/message_detail.html:33
 #: message/templates/message/message_list.html:33
 #: message/templates/message/message_list_not_printed.html:25
 msgid "Game Master"
 msgstr ""
 
-#: message/forms.py:42 message/models.py:24
+#: message/forms.py:61 message/models.py:24
 #: message/templates/message/message_detail.html:29
 #: message/templates/message/message_list.html:29
 #: message/templates/message/message_list_not_printed.html:21
 msgid "Sender"
 msgstr ""
 
-#: message/forms.py:46 message/templates/message/message_detail.html:41
+#: message/forms.py:65 message/templates/message/message_detail.html:41
 #: message/templates/message/message_list.html:43
 #: message/templates/message/message_list_not_printed.html:32
 #: player/templates/player/player_list.html:22
 msgid "All players"
 msgstr ""
 
-#: message/forms.py:68
+#: message/forms.py:87
+msgid "You can not send a message from a player to himself."
+msgstr ""
+
+#: message/forms.py:96
 msgid "Victim Sender"
 msgstr ""
 
-#: message/forms.py:87
+#: message/forms.py:115
 msgid "Victim Recipient"
 msgstr ""
 
