@@ -9,7 +9,7 @@ from django.utils.timezone import localtime, now
 
 from wlan_simulation_game.player.models import Player
 
-from .models import Message, Interception
+from .models import Message
 
 
 class MessageCreateForm(forms.ModelForm):
