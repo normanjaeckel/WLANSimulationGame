@@ -174,6 +174,7 @@ CONSTANCE_CONFIG = {
     'subtitle': ('Subtitle', ugettext_lazy('Subtitle of the game. Used as second heading in the template.')),
     'headline': ('Welcome to WLAN Simulation Game', ugettext_lazy('Headline for the introduction text.')),
     'introduction': ('Introduction into WLAN Simulation Game comes here.', ugettext_lazy('Introduction to the game and the system.')),
+    'year': (2013, ugettext_lazy('The year for the copyright note.')),
     'name': ('Your Name', ugettext_lazy('Name of the game master.')),
     'players_can_submit_messages': (False, ugettext_lazy('If this is active, players can submit messages to the system.')),
     'number_of_interceptions': (8, ugettext_lazy('Maximum number of messages a player can intercept.')),
