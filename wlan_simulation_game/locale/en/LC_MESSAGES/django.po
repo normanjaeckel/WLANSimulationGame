@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-16 01:19+0200\n"
+"POT-Creation-Date: 2013-10-16 18:14+0200\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,22 +27,43 @@ msgid "Introduction to the game and the system."
 msgstr ""
 
 #: global_settings.py:177
-msgid "Name of the game master."
+msgid "The year for the copyright note."
 msgstr ""
 
 #: global_settings.py:178
-msgid "If this is active, players can submit messages to the system."
+msgid "Name of the game master."
 msgstr ""
 
 #: global_settings.py:179
+msgid "If this is active, players can submit messages to the system."
+msgstr ""
+
+#: global_settings.py:180
 msgid "Maximum number of messages a player can intercept."
 msgstr ""
 
-#: global_settings.py:194
+#: global_settings.py:181
+msgid "Name of the WLAN. This is just for the access data sheet."
+msgstr ""
+
+#: global_settings.py:182
+msgid "Password for the WLAN. This is just for the access data sheet."
+msgstr ""
+
+#: global_settings.py:183
+msgid ""
+"URL where the server is listening on. This is just for the access data sheet."
+msgstr ""
+
+#: global_settings.py:184
+msgid "Hide the header image for administrator."
+msgstr ""
+
+#: global_settings.py:199
 msgid "English"
 msgstr ""
 
-#: global_settings.py:195
+#: global_settings.py:200
 msgid "German"
 msgstr ""
 
@@ -156,7 +177,7 @@ msgstr ""
 #: message/forms.py:21 message/forms.py:66 message/models.py:29
 #: message/templates/message/message_detail.html:37
 #: message/templates/message/message_list.html:39
-#: message/templates/message/message_list_not_printed.html:28
+#: message/templates/message/message_list_not_printed.html:33
 msgid "Recipient"
 msgstr ""
 
@@ -169,20 +190,20 @@ msgstr ""
 
 #: message/forms.py:60 message/templates/message/message_detail.html:33
 #: message/templates/message/message_list.html:33
-#: message/templates/message/message_list_not_printed.html:25
+#: message/templates/message/message_list_not_printed.html:30
 msgid "Game Master"
 msgstr ""
 
 #: message/forms.py:61 message/models.py:24
 #: message/templates/message/message_detail.html:29
 #: message/templates/message/message_list.html:29
-#: message/templates/message/message_list_not_printed.html:21
+#: message/templates/message/message_list_not_printed.html:26
 msgid "Sender"
 msgstr ""
 
 #: message/forms.py:65 message/templates/message/message_detail.html:41
 #: message/templates/message/message_list.html:43
-#: message/templates/message/message_list_not_printed.html:32
+#: message/templates/message/message_list_not_printed.html:37
 #: player/templates/player/player_list.html:22
 msgid "All players"
 msgstr ""
@@ -292,7 +313,7 @@ msgstr ""
 #: message/templates/message/message_form.html:19
 #: message/templates/message/message_list.html:5
 #: message/templates/message/message_list.html:7
-#: message/templates/message/message_list_not_printed.html:10
+#: message/templates/message/message_list_not_printed.html:15
 msgid "All messages"
 msgstr ""
 
@@ -301,7 +322,7 @@ msgstr ""
 #: message/templates/message/message_form.html:14
 #: message/templates/message/message_form.html:16
 #: message/templates/message/message_list.html:14
-#: message/templates/message/message_list_not_printed.html:11
+#: message/templates/message/message_list_not_printed.html:16
 msgid "New message"
 msgstr ""
 
@@ -353,7 +374,7 @@ msgid "All messages to be printed"
 msgstr ""
 
 #: message/templates/message/message_detail.html:44
-#: message/templates/message/message_list_not_printed.html:20
+#: message/templates/message/message_list_not_printed.html:25
 msgid "Time"
 msgstr ""
 
@@ -389,12 +410,12 @@ msgstr ""
 msgid "No messages available."
 msgstr ""
 
-#: message/templates/message/message_list_not_printed.html:5
-#: message/templates/message/message_list_not_printed.html:7
+#: message/templates/message/message_list_not_printed.html:10
+#: message/templates/message/message_list_not_printed.html:12
 msgid "Messages to be printed"
 msgstr ""
 
-#: message/templates/message/message_list_not_printed.html:38
+#: message/templates/message/message_list_not_printed.html:43
 msgid "No messages to be printed."
 msgstr ""
 
@@ -434,6 +455,14 @@ msgstr ""
 
 #: player/templates/player/player_list.html:24
 msgid "The players and their actual score"
+msgstr ""
+
+#: player/templates/player/player_list.html:29
+msgid "Print all player descriptions"
+msgstr ""
+
+#: player/templates/player/player_list_print.html:9
+msgid "List of all players"
 msgstr ""
 
 #: templates/403.html:5
@@ -485,12 +514,48 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
-#: templates/base.html:79
+#: templates/base.html:81 templates/home_print_introduction.html:15
 msgid "Powered by"
 msgstr ""
 
-#: templates/base.html:80
+#: templates/base.html:82
 msgid ""
 "<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template "
 "design</a> by <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
+msgstr ""
+
+#: templates/home.html:13
+msgid "Print introduction"
+msgstr ""
+
+#: templates/home.html:14
+msgid "Print access data"
+msgstr ""
+
+#: templates/home_print_access_data.html:18
+msgid "Access data"
+msgstr ""
+
+#: templates/home_print_access_data.html:19
+msgid "Name of the WLAN"
+msgstr ""
+
+#: templates/home_print_access_data.html:20
+msgid "Password of the WLAN"
+msgstr ""
+
+#: templates/home_print_access_data.html:21
+msgid "URL"
+msgstr ""
+
+#: templates/home_print_access_data.html:22
+msgid "Username"
+msgstr ""
+
+#: templates/home_print_access_data.html:23
+msgid "Password"
+msgstr ""
+
+#: templates/home_print_access_data.html:23
+msgid "Write down the correspondent password here"
 msgstr ""
