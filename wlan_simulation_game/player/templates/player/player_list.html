@@ -34,6 +34,10 @@
                     <td><a href="{% url 'player_detail' player.pk %}">{{ player }}</a></td>
                     <td class="scorebar"><span style="width:{{player.relative_score}}%;">&nbsp;</span>{{ player.score }}</td>
                 </tr>
+            {% empty %}
+                <tr>
+                    <td><em>{% trans 'No players available.' %}</em></td>
+                </tr>
             {% endfor %}
         </table>
     </div>

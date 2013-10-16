@@ -50,7 +50,3 @@ class Card(models.Model):
         else:
             self.used = True
             self.save()
-            self.owner.playable_cards += -1
-            self.owner.save()
-            self.target.score += self.value
-            self.target.save()

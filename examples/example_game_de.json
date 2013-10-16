@@ -143,36 +143,20 @@
     "pk": 5,
     "model": "database.constance",
     "fields": {
-      "value": "gAJYDgAAAE5vcm1hbiBKw6Rja2VscQEu",
-      "key": "name"
+      "value": 2013,
+      "key": "year"
     }
   },
   {
     "pk": 6,
     "model": "database.constance",
     "fields": {
-      "value": false,
-      "key": "players_can_submit_messages"
+      "value": "gAJYDgAAAE5vcm1hbiBKw6Rja2VscQEu",
+      "key": "name"
     }
   },
   {
     "pk": 7,
-    "model": "database.constance",
-    "fields": {
-      "value": 8,
-      "key": "number_of_interceptions"
-    }
-  },
-  {
-    "pk": 8,
-    "model": "database.constance",
-    "fields": {
-      "value": 2013,
-      "key": "year"
-    }
-  },
-  {
-    "pk": 9,
     "model": "database.constance",
     "fields": {
       "value": false,
@@ -180,7 +164,15 @@
     }
   },
   {
-    "pk": 10,
+    "pk": 8,
+    "model": "database.constance",
+    "fields": {
+      "value": 8,
+      "key": "number_of_interceptions"
+    }
+  },
+  {
+    "pk": 9,
     "model": "database.constance",
     "fields": {
       "value": "gAJYBwAAAGRlZmF1bHRxAS4=",
@@ -188,7 +180,7 @@
     }
   },
   {
-    "pk": 11,
+    "pk": 10,
     "model": "database.constance",
     "fields": {
       "value": "gAJYEgAAAFdMQU5TaW11bGF0aW9uR2FtZXEBLg==",
@@ -196,7 +188,23 @@
     }
   },
   {
+    "pk": 11,
+    "model": "database.constance",
+    "fields": {
+      "value": false,
+      "key": "players_can_submit_messages"
+    }
+  },
+  {
     "pk": 12,
+    "model": "database.constance",
+    "fields": {
+      "value": 20,
+      "key": "start_score"
+    }
+  },
+  {
+    "pk": 13,
     "model": "database.constance",
     "fields": {
       "value": "gAJYGAAAAGh0dHA6Ly8xOTIuMTY4LjAuMTo4MDAwL3EBLg==",
@@ -204,11 +212,17 @@
     }
   },
   {
+    "pk": 14,
+    "model": "database.constance",
+    "fields": {
+      "value": 5,
+      "key": "playable_cards"
+    }
+  },
+  {
     "pk": 1,
     "model": "player.player",
     "fields": {
-      "playable_cards": 5,
-      "score": 20,
       "character": "A-No-Ni-Mos",
       "user": 2,
       "description": "A-No-Ni-Mos ist eine häufig online und selten offline agierende Gruppe von Hackern: Sie sind jung, (hauptsächlich) männlich, unsportlich und bekommen oft zu wenig Tageslicht. Dafür sind sie über alles, was im Netz passiert, bestens informiert, kennen alle technischen Details und beschäftigen sich am liebsten mit den neusten Programmen und Entwicklungen, die das Netz so zu bieten hat. Frei nach dem Motto: „Ein Hacker ist jemand, der versucht einen Weg zu finden, wie man mit einer Kaffeemaschine Toast zubereiten kann“ (Wau Holland). Der ein oder andere von ihnen hat dabei auch schon etwas tiefer in fremde Rechner gesehen, als dem Inhaber lieb ist. Was soll's: Wenn ein cooles Feature des eigenen Projekts mal nicht gelingt, kann man ja immer noch den Router des Nachbarn oder den Server einer Bank cracken ..."
@@ -218,8 +232,6 @@
     "pk": 2,
     "model": "player.player",
     "fields": {
-      "playable_cards": 5,
-      "score": 20,
       "character": "Dr. Franz Flichtig",
       "user": 3,
       "description": "Dr. Franz Flichtig ist der amtierende Innenminister der Bundesrepublik Deutschland. Er hat eine mühsame Parteikarriere hinter sich und ist noch lange nicht am Ziel seiner politischen Träume. Der (gewiss gutgemeinte) Polizeistaat ist ihm ein Herzensanliegen. Denn Law and Order-Politik hat sich schon immer gut verkauft. So möchte Franz am liebsten bestens über alles informiert sein. Mit dem Verfassungsschutz und dem BKA hat er einige willige und fähige Helfer zur Hand. Auch die Justiz frisst ihm aus der Hand. Wenn ihm da nicht immer die anderen Nachrichtendienste und die Bundesländer dazwischen funken würden ..."
@@ -229,8 +241,6 @@
     "pk": 3,
     "model": "player.player",
     "fields": {
-      "playable_cards": 5,
-      "score": 20,
       "character": "Gaagol",
       "user": 4,
       "description": "Gaagol ist das weltweit größte IT-Unternehmen. Seine Gründer haben das Informationszeitalter eingeleitet und mit seinen vielfältigen Diensten, wie Suchmaschinen, E-Mail, Videoplattformen, Routenplaner und Online-Werbung beherrscht es den Alltag vieler Menschen. Aber die vielen Server und Mitarbeiter wollen gefüttert werden: Informationen sind das täglich Brot dieser Firma, Nutzerklicks ihr Lebenssaft, Netzprofile ihr Evangelium. Wenn da nur nicht diese Datenschützer wären ..."
@@ -240,8 +250,6 @@
     "pk": 4,
     "model": "player.player",
     "fields": {
-      "playable_cards": 5,
-      "score": 20,
       "character": "NDB",
       "user": 5,
       "description": "Der NDB ist der deutsche Auslandsnachrichtendienst. Seine Fühler sind weit verteilt, seine Informantennetze dicht und seine finanziellen Mittel zur „Gestaltung“ wichtiger politischer Fragen in allen Ländern schier unerschöpflich. Wer hier arbeitet und was man hier so macht, weiß keiner. Immerhin geht es (vielleicht) ums Ganze: Freiheit, Demokratie und die Innovationskraft der heimischen Wirtschaft wollen verteidigt werden. Und da sind nicht nur Diktatoren und Rebellen in irgendwelchen weit entfernten Staaten zu betrachten. Die neue Gefahr droht aus dem Internet und wer da so alles unterwegs ist ...? Wenigstens machen die Provider keinen Ärger, wenn man ihnen nur mit den altbewährten Mitteln kommt."
@@ -251,8 +259,6 @@
     "pk": 5,
     "model": "player.player",
     "fields": {
-      "playable_cards": 5,
-      "score": 20,
       "character": "FOTO.de",
       "user": 6,
       "description": "FOTO.de ist das Internetportal des Verlags einer großen deutschen Tageszeitung. Hier erfährt der (zahlende) User alles, was in der Welt passiert. Politische Possen oder das Neuste aus dem Privatleben der Promis: Alles auf einen Klick, mit großen Bildern und Videos und manchmal auch etwas Text. Nur leider brechen die Werbeeinnahmen weg, der Nachrichtenhunger der Leute ist groß und die Konkurrenz schläft auch nicht. Dann muss man eben ab und zu den guten alten Skandaljournalismus aus dem Schrank holen. Und neuerdings gibt es ja im Internet so viel über die Leute zu finden ..."

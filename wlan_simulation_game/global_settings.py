@@ -177,6 +177,8 @@ CONSTANCE_CONFIG = {
     'year': (2013, ugettext_lazy('The year for the copyright note.')),
     'name': ('Your Name', ugettext_lazy('Name of the game master.')),
     'players_can_submit_messages': (False, ugettext_lazy('If this is active, players can submit messages to the system.')),
+    'start_score': (20, ugettext_lazy('Score all players start with.')),
+    'playable_cards': (5, ugettext_lazy('Maximum number of cards a player can play.')),
     'number_of_interceptions': (8, ugettext_lazy('Maximum number of messages a player can intercept.')),
     'ssid': ('WLANSimulationGame', ugettext_lazy('Name of the WLAN. This is just for the access data sheet.')),
     'psk': ('default', ugettext_lazy('Password for the WLAN. This is just for the access data sheet.')),
