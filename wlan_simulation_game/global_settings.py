@@ -181,6 +181,7 @@ CONSTANCE_CONFIG = {
     'ssid': ('WLANSimulationGame', ugettext_lazy('Name of the WLAN. This is just for the access data sheet.')),
     'psk': ('default', ugettext_lazy('Password for the WLAN. This is just for the access data sheet.')),
     'url': ('http://192.168.0.1:8000/', ugettext_lazy('URL where the server is listening on. This is just for the access data sheet.')),
+    'hide_header_image': (False, ugettext_lazy('Hide the header image for administrator.')),
 }
 
 # Template context processors
