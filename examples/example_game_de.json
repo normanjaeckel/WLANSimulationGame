@@ -164,6 +164,46 @@
     }
   },
   {
+    "pk": 8,
+    "model": "database.constance",
+    "fields": {
+      "value": 2013,
+      "key": "year"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "database.constance",
+    "fields": {
+      "value": false,
+      "key": "hide_header_image"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "database.constance",
+    "fields": {
+      "value": "gAJYBwAAAGRlZmF1bHRxAS4=",
+      "key": "psk"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "database.constance",
+    "fields": {
+      "value": "gAJYEgAAAFdMQU5TaW11bGF0aW9uR2FtZXEBLg==",
+      "key": "ssid"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "database.constance",
+    "fields": {
+      "value": "gAJYGAAAAGh0dHA6Ly8xOTIuMTY4LjAuMTo4MDAwL3EBLg==",
+      "key": "url"
+    }
+  },
+  {
     "pk": 1,
     "model": "player.player",
     "fields": {
