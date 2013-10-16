@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WLANSimulationGame\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 23:51+0200\n"
-"PO-Revision-Date: 2013-09-12 21:53+0000\n"
+"POT-Creation-Date: 2013-10-16 18:14+0200\n"
+"PO-Revision-Date: 2013-10-16 16:22+0000\n"
 "Last-Translator: normanjaeckel <transifex16062013@normanjaeckel.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/wlansimulationgame/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -34,22 +34,44 @@ msgid "Introduction to the game and the system."
 msgstr "Einführung in das Spiel und das System."
 
 #: global_settings.py:177
+msgid "The year for the copyright note."
+msgstr "Jahr für den Urhebervermerk"
+
+#: global_settings.py:178
 msgid "Name of the game master."
 msgstr "Name des Spielleiters."
 
-#: global_settings.py:178
+#: global_settings.py:179
 msgid "If this is active, players can submit messages to the system."
 msgstr "Wenn diese Einstellung aktiviert ist, dürfen die Spieler Nachrichten an das System übermitteln."
 
-#: global_settings.py:179
+#: global_settings.py:180
 msgid "Maximum number of messages a player can intercept."
 msgstr "Maximale Anzahl an Nachrichten, die ein Spieler abfangen kann."
 
-#: global_settings.py:194
+#: global_settings.py:181
+msgid "Name of the WLAN. This is just for the access data sheet."
+msgstr "Name des WLAN. Dies wird nur für das Blatt mit den Zugangsdaten verwendet."
+
+#: global_settings.py:182
+msgid "Password for the WLAN. This is just for the access data sheet."
+msgstr "Password für das WLAN. Dies wird nur für das Blatt mit den Zugangsdaten verwendet."
+
+#: global_settings.py:183
+msgid ""
+"URL where the server is listening on. This is just for the access data "
+"sheet."
+msgstr "URL, auf der der Server hört. Dies wird nur für das Blatt mit den Zugangsdaten verwendet."
+
+#: global_settings.py:184
+msgid "Hide the header image for administrator."
+msgstr "Versteckt für den Administrator das Bild im Seitenkopf."
+
+#: global_settings.py:199
 msgid "English"
 msgstr "Englisch"
 
-#: global_settings.py:195
+#: global_settings.py:200
 msgid "German"
 msgstr "Deutsch"
 
@@ -160,38 +182,49 @@ msgstr "Liste aller Karten"
 msgid "This list is sorted by card owner and target."
 msgstr "Diese Liste ist nach Inhaber und Ziel der Karten sortiert."
 
-#: message/forms.py:18 message/forms.py:47 message/models.py:29
+#: message/forms.py:21 message/forms.py:66 message/models.py:29
 #: message/templates/message/message_detail.html:37
 #: message/templates/message/message_list.html:39
-#: message/templates/message/message_list_not_printed.html:28
+#: message/templates/message/message_list_not_printed.html:33
 msgid "Recipient"
 msgstr "Empfänger"
 
-#: message/forms.py:41 message/templates/message/message_detail.html:33
+#: message/forms.py:51
+#, python-format
+msgid ""
+"You have to wait %d minutes before you can send the next message to the same"
+" recipient."
+msgstr "Sie müssten %d Minuten warten, bis Sie eine weitere Nachricht an den gleichen Empfänger senden können."
+
+#: message/forms.py:60 message/templates/message/message_detail.html:33
 #: message/templates/message/message_list.html:33
-#: message/templates/message/message_list_not_printed.html:25
+#: message/templates/message/message_list_not_printed.html:30
 msgid "Game Master"
 msgstr "Spielleiter"
 
-#: message/forms.py:42 message/models.py:24
+#: message/forms.py:61 message/models.py:24
 #: message/templates/message/message_detail.html:29
 #: message/templates/message/message_list.html:29
-#: message/templates/message/message_list_not_printed.html:21
+#: message/templates/message/message_list_not_printed.html:26
 msgid "Sender"
 msgstr "Absender"
 
-#: message/forms.py:46 message/templates/message/message_detail.html:41
+#: message/forms.py:65 message/templates/message/message_detail.html:41
 #: message/templates/message/message_list.html:43
-#: message/templates/message/message_list_not_printed.html:32
+#: message/templates/message/message_list_not_printed.html:37
 #: player/templates/player/player_list.html:22
 msgid "All players"
 msgstr "Alle Spieler"
 
-#: message/forms.py:68
+#: message/forms.py:87
+msgid "You can not send a message from a player to himself."
+msgstr "Sie können keine Nachricht von einem Spieler an diesem selbst senden."
+
+#: message/forms.py:96
 msgid "Victim Sender"
 msgstr "Opfer-Absender"
 
-#: message/forms.py:87
+#: message/forms.py:115
 msgid "Victim Recipient"
 msgstr "Opfer-Empfänger"
 
@@ -288,7 +321,7 @@ msgstr "Die Nachricht wurde erfolgreich abgefangen. Sie können Sie jetzt lesen.
 #: message/templates/message/message_form.html:19
 #: message/templates/message/message_list.html:5
 #: message/templates/message/message_list.html:7
-#: message/templates/message/message_list_not_printed.html:10
+#: message/templates/message/message_list_not_printed.html:15
 msgid "All messages"
 msgstr "Alle Nachrichten"
 
@@ -297,7 +330,7 @@ msgstr "Alle Nachrichten"
 #: message/templates/message/message_form.html:14
 #: message/templates/message/message_form.html:16
 #: message/templates/message/message_list.html:14
-#: message/templates/message/message_list_not_printed.html:11
+#: message/templates/message/message_list_not_printed.html:16
 msgid "New message"
 msgstr "Neue Nachricht"
 
@@ -348,7 +381,7 @@ msgid "All messages to be printed"
 msgstr "Alle zu druckenden Nachrichten"
 
 #: message/templates/message/message_detail.html:44
-#: message/templates/message/message_list_not_printed.html:20
+#: message/templates/message/message_list_not_printed.html:25
 msgid "Time"
 msgstr "Zeit"
 
@@ -384,12 +417,12 @@ msgstr "gedruckt"
 msgid "No messages available."
 msgstr "Keine Nachrichten verfügbar."
 
-#: message/templates/message/message_list_not_printed.html:5
-#: message/templates/message/message_list_not_printed.html:7
+#: message/templates/message/message_list_not_printed.html:10
+#: message/templates/message/message_list_not_printed.html:12
 msgid "Messages to be printed"
 msgstr "Zu druckende Nachrichten"
 
-#: message/templates/message/message_list_not_printed.html:38
+#: message/templates/message/message_list_not_printed.html:43
 msgid "No messages to be printed."
 msgstr "Keine Nachrichten zu drucken."
 
@@ -430,6 +463,14 @@ msgstr "noch %(rest_interceptions)s"
 #: player/templates/player/player_list.html:24
 msgid "The players and their actual score"
 msgstr "Die Spieler und ihr aktueller Punktestand"
+
+#: player/templates/player/player_list.html:29
+msgid "Print all player descriptions"
+msgstr "Alle Spielerbeschreibungen drucken"
+
+#: player/templates/player/player_list_print.html:9
+msgid "List of all players"
+msgstr "Liste aller Spieler"
 
 #: templates/403.html:5
 msgid "403 Forbidden"
@@ -480,12 +521,48 @@ msgstr "Benutzer"
 msgid "Login"
 msgstr "Anmelden"
 
-#: templates/base.html:79
+#: templates/base.html:81 templates/home_print_introduction.html:15
 msgid "Powered by"
 msgstr "Powered by"
 
-#: templates/base.html:80
+#: templates/base.html:82
 msgid ""
 "<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template "
 "design</a> by <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
 msgstr "<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template Design</a> von <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
+
+#: templates/home.html:13
+msgid "Print introduction"
+msgstr "Einführungstext drucken"
+
+#: templates/home.html:14
+msgid "Print access data"
+msgstr "Zugangsdaten drucken"
+
+#: templates/home_print_access_data.html:18
+msgid "Access data"
+msgstr "Zugangsdaten"
+
+#: templates/home_print_access_data.html:19
+msgid "Name of the WLAN"
+msgstr "Name des WLAN"
+
+#: templates/home_print_access_data.html:20
+msgid "Password of the WLAN"
+msgstr "Passwort des WLAN"
+
+#: templates/home_print_access_data.html:21
+msgid "URL"
+msgstr "Adresse (URL)"
+
+#: templates/home_print_access_data.html:22
+msgid "Username"
+msgstr "Benutzername"
+
+#: templates/home_print_access_data.html:23
+msgid "Password"
+msgstr "Passwort"
+
+#: templates/home_print_access_data.html:23
+msgid "Write down the correspondent password here"
+msgstr "Schreiben Sie das entsprechende Passwort hier hin"
