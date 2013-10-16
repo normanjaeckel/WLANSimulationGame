@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WLANSimulationGame\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-16 18:14+0200\n"
-"PO-Revision-Date: 2013-10-16 16:22+0000\n"
+"POT-Creation-Date: 2013-10-16 19:41+0200\n"
+"PO-Revision-Date: 2013-10-16 17:44+0000\n"
 "Last-Translator: normanjaeckel <transifex16062013@normanjaeckel.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/wlansimulationgame/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -46,32 +46,40 @@ msgid "If this is active, players can submit messages to the system."
 msgstr "Wenn diese Einstellung aktiviert ist, dürfen die Spieler Nachrichten an das System übermitteln."
 
 #: global_settings.py:180
+msgid "Score all players start with."
+msgstr "Startpunktzahl aller Spieler."
+
+#: global_settings.py:181
+msgid "Maximum number of cards a player can play."
+msgstr "Maximale Anzahl an Karten, die ein Spieler spielen kann."
+
+#: global_settings.py:182
 msgid "Maximum number of messages a player can intercept."
 msgstr "Maximale Anzahl an Nachrichten, die ein Spieler abfangen kann."
 
-#: global_settings.py:181
+#: global_settings.py:183
 msgid "Name of the WLAN. This is just for the access data sheet."
 msgstr "Name des WLAN. Dies wird nur für das Blatt mit den Zugangsdaten verwendet."
 
-#: global_settings.py:182
+#: global_settings.py:184
 msgid "Password for the WLAN. This is just for the access data sheet."
 msgstr "Password für das WLAN. Dies wird nur für das Blatt mit den Zugangsdaten verwendet."
 
-#: global_settings.py:183
+#: global_settings.py:185
 msgid ""
 "URL where the server is listening on. This is just for the access data "
 "sheet."
 msgstr "URL, auf der der Server hört. Dies wird nur für das Blatt mit den Zugangsdaten verwendet."
 
-#: global_settings.py:184
+#: global_settings.py:186
 msgid "Hide the header image for administrator."
 msgstr "Versteckt für den Administrator das Bild im Seitenkopf."
 
-#: global_settings.py:199
+#: global_settings.py:201
 msgid "English"
 msgstr "Englisch"
 
-#: global_settings.py:200
+#: global_settings.py:202
 msgid "German"
 msgstr "Deutsch"
 
@@ -79,7 +87,7 @@ msgstr "Deutsch"
 msgid "Name"
 msgstr "Name"
 
-#: card/models.py:17 player/models.py:16
+#: card/models.py:17 player/models.py:18
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -426,21 +434,13 @@ msgstr "Zu druckende Nachrichten"
 msgid "No messages to be printed."
 msgstr "Keine Nachrichten zu drucken."
 
-#: player/models.py:14
+#: player/models.py:16
 msgid "Login user"
 msgstr "Anmeldebenutzer"
 
-#: player/models.py:15
+#: player/models.py:17
 msgid "Character"
 msgstr "Charakter"
-
-#: player/models.py:17 player/templates/player/player_detail.html:12
-msgid "Score"
-msgstr "Punkte"
-
-#: player/models.py:18 player/templates/player/player_detail.html:13
-msgid "Playable cards"
-msgstr "Spielbare Karten"
 
 #: player/models.py:22 player/templates/player/player_detail.html:6
 msgid "Player"
@@ -449,6 +449,14 @@ msgstr "Spieler"
 #: player/models.py:23 templates/base.html:30
 msgid "Players"
 msgstr "Spieler"
+
+#: player/templates/player/player_detail.html:12
+msgid "Score"
+msgstr "Punkte"
+
+#: player/templates/player/player_detail.html:13
+msgid "Playable cards"
+msgstr "Spielbare Karten"
 
 #: player/templates/player/player_detail.html:13
 #, python-format
@@ -467,6 +475,10 @@ msgstr "Die Spieler und ihr aktueller Punktestand"
 #: player/templates/player/player_list.html:29
 msgid "Print all player descriptions"
 msgstr "Alle Spielerbeschreibungen drucken"
+
+#: player/templates/player/player_list.html:39
+msgid "No players available."
+msgstr "Keine Spieler verfügbar."
 
 #: player/templates/player/player_list_print.html:9
 msgid "List of all players"
