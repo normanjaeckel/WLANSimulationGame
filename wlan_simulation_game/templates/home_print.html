@@ -1,0 +1,17 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <h1>{{ config.title }}</h1>
+    <p><em>{{ config.subtitle }}</em></p>
+    <h2>{{ config.headline }}</h2>
+    <p>{{ config.introduction|linebreaks }}</p>
+    <p>
+        &copy; 2013 {{ config.name }}<br />
+        {% trans 'Powered by' %} WLAN Simulation Game &lt;http://github.com/normanjaeckel/WLANSimulationGame/&gt;<br />
+    </p>
+</body>

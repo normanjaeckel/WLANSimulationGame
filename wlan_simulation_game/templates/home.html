@@ -9,6 +9,9 @@
 {% block both %}
     <div class="col c12">
         <p>{{ config.introduction|linebreaks }}</p>
+        {% if user.is_staff %}
+            <p><a href="{% url 'home_print' %}">{% trans 'Print introduction' %}</a></p>
+        {% endif %}
     </div>
 {% endblock %}
 
