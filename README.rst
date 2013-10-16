@@ -13,7 +13,7 @@ You need a server with
 
 * Python 2.7.x
 * Virtual Python Environment builder 1.7.x (optional, but recommended)
-* Django 1.5.2
+* Django 1.5.4
 * Constance – Dynamic Django settings 0.6 (Backend: Database)
 * Actual webbrowser with support for HTML5 and CSS3
 
@@ -61,6 +61,10 @@ connected to the before created users. Also all configuration values have
 to be setup under the menu item Constance/Config. Last but not least all
 playable cards with all texts, owners, targets and scores have to be entered.
 
+Now you can print the cards, the list of all cards, the player
+descriptions, the game introduction and an access data sheet and give them
+to the players.
+
 At the beginning of the game the configuration flag to allow writing
 messages has to be activated by the game master. All messages have to be
 printed for there is intentionally no possibility for the players to
@@ -71,10 +75,17 @@ played manually in the interface by the game master.
 Example
 -------
 
-To load the date of the German example simulation game, install the
-programm as metioned above and run::
+To load the data of the German example simulation game „Wissen ist Macht“,
+install the programm as metioned above and run::
 
     $ python manage.py loaddata examples/example_game_de.json
 
 The user name of the game master is `admin`. The password for of all users
 is `default`. All passwords have to be changed before starting the game.
+
+
+Questions
+---------
+
+If you have any questions, do not hesitate to write me an email to
+wlansimulationgame [at] normanjaeckel.de.
