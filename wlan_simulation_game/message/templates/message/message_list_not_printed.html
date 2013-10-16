@@ -2,6 +2,11 @@
 
 {% load i18n %}
 
+{% block styles %}
+    {{ block.super }}
+    <meta http-equiv="refresh" content="3" />
+{% endblock %}
+
 {% block title %}{% trans 'Messages to be printed' %} – {{ block.super }}{% endblock %}
 
 {% block heading %}{% trans 'Messages to be printed' %}{% endblock %}

@@ -25,6 +25,9 @@
 
 {% block both %}
     <div class="col c12">
+        {% if user.is_staff %}
+            <p><a href="{% url 'player_list_print' %}">{% trans 'Print all player descriptions' %}</a></p>
+        {% endif %}
         <table>
             {% for player in player_list %}
                 <tr>
@@ -35,6 +38,3 @@
         </table>
     </div>
 {% endblock %}
-
-
-
