@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-16 18:14+0200\n"
+"POT-Creation-Date: 2013-10-16 19:41+0200\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,31 +39,39 @@ msgid "If this is active, players can submit messages to the system."
 msgstr ""
 
 #: global_settings.py:180
-msgid "Maximum number of messages a player can intercept."
+msgid "Score all players start with."
 msgstr ""
 
 #: global_settings.py:181
-msgid "Name of the WLAN. This is just for the access data sheet."
+msgid "Maximum number of cards a player can play."
 msgstr ""
 
 #: global_settings.py:182
-msgid "Password for the WLAN. This is just for the access data sheet."
+msgid "Maximum number of messages a player can intercept."
 msgstr ""
 
 #: global_settings.py:183
+msgid "Name of the WLAN. This is just for the access data sheet."
+msgstr ""
+
+#: global_settings.py:184
+msgid "Password for the WLAN. This is just for the access data sheet."
+msgstr ""
+
+#: global_settings.py:185
 msgid ""
 "URL where the server is listening on. This is just for the access data sheet."
 msgstr ""
 
-#: global_settings.py:184
+#: global_settings.py:186
 msgid "Hide the header image for administrator."
 msgstr ""
 
-#: global_settings.py:199
+#: global_settings.py:201
 msgid "English"
 msgstr ""
 
-#: global_settings.py:200
+#: global_settings.py:202
 msgid "German"
 msgstr ""
 
@@ -71,7 +79,7 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: card/models.py:17 player/models.py:16
+#: card/models.py:17 player/models.py:18
 msgid "Description"
 msgstr ""
 
@@ -419,20 +427,12 @@ msgstr ""
 msgid "No messages to be printed."
 msgstr ""
 
-#: player/models.py:14
+#: player/models.py:16
 msgid "Login user"
 msgstr ""
 
-#: player/models.py:15
+#: player/models.py:17
 msgid "Character"
-msgstr ""
-
-#: player/models.py:17 player/templates/player/player_detail.html:12
-msgid "Score"
-msgstr ""
-
-#: player/models.py:18 player/templates/player/player_detail.html:13
-msgid "Playable cards"
 msgstr ""
 
 #: player/models.py:22 player/templates/player/player_detail.html:6
@@ -441,6 +441,14 @@ msgstr ""
 
 #: player/models.py:23 templates/base.html:30
 msgid "Players"
+msgstr ""
+
+#: player/templates/player/player_detail.html:12
+msgid "Score"
+msgstr ""
+
+#: player/templates/player/player_detail.html:13
+msgid "Playable cards"
 msgstr ""
 
 #: player/templates/player/player_detail.html:13
@@ -459,6 +467,10 @@ msgstr ""
 
 #: player/templates/player/player_list.html:29
 msgid "Print all player descriptions"
+msgstr ""
+
+#: player/templates/player/player_list.html:39
+msgid "No players available."
 msgstr ""
 
 #: player/templates/player/player_list_print.html:9
