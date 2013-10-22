@@ -2,8 +2,8 @@
  WLAN Simulation Game
 ======================
 
-A system for WLAN supported simulation games for 15 to 25 players in five
-groups.
+A system for WLAN supported simulation games. It is optimized for 15 to 25
+players in five groups.
 
 
 Requirements
@@ -25,9 +25,12 @@ network, e. g. a WLAN.
 Install
 -------
 
+This is only an example instruction for a Unix system where Python and Git
+is already installed.
+
 ::
 
-    $ git clone https://github.com/normanjaeckel/WLANSimulationGame.git
+    $ git clone https://github.com/normanjaeckel/WLANSimulationGame.git  # You can also extract the downloaded compressed tar archive from GitHub instead of using git.
 
     $ cd WLANSimulationGame
 
