@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-16 19:41+0200\n"
+"POT-Creation-Date: 2014-07-03 14:20+0200\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -570,4 +570,8 @@ msgstr ""
 
 #: templates/home_print_access_data.html:23
 msgid "Write down the correspondent password here"
+msgstr ""
+
+#: templates/admin/base_site.html:4 templates/admin/base_site.html.py:7
+msgid "WLAN Simulation Game administration"
 msgstr ""
