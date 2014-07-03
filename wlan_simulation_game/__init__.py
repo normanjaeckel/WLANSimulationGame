@@ -7,4 +7,3 @@ WLAN Simulation Game
 __version__ = '1.0.1-dev'
 __author__ = 'Norman Jäckel <wlansimulationgame@normanjaeckel.de>'
 __date__ = 'unreleased'
-#__credits__ = ''

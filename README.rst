@@ -12,8 +12,8 @@ Requirements
 You need a server with
 
 * Python 2.7.x
-* Virtual Python Environment builder 1.7.x (optional, but recommended)
-* Django 1.5.4
+* Virtual Python Environment builder 1.11.x (optional, but recommended)
+* Django 1.5.8
 * Constance – Dynamic Django settings 0.6 (Backend: Database)
 * Actual webbrowser with support for HTML5 and CSS3
 
@@ -59,20 +59,25 @@ Configuration
 -------------
 
 First an admin user and an user for each player character has to be setup
-via the admin menu. After this, the player characters can be created and
-connected to the before created users. Also all configuration values have
-to be setup under the menu item Constance/Config. Last but not least all
-playable cards with all texts, owners, targets and scores have to be entered.
+via the admin panel. After this, the player characters can be created and
+connected to the before created users. All configuration values have to be
+setup in the menu item Constance/Config. Last but not least all playable
+cards with all texts, owners, targets and scores have to be entered.
 
 Now you can print the cards, the list of all cards, the player
 descriptions, the game introduction and an access data sheet and give them
 to the players.
 
+Every group of players gets its own cards (with scores), a list of all
+cards (without scores), a list of all players with descriptions, a game
+introduction and its access data sheet.
+
 At the beginning of the game the configuration flag to allow writing
-messages has to be activated by the game master. All messages have to be
-printed for there is intentionally no possibility for the players to
-receive messages via the interface. All played cards have to be marked as
-played manually in the interface by the game master.
+messages has to be activated by the game master. Now the players can
+communicate and deal with the other groups. All messages have to be printed
+for there is intentionally no possibility for the players to receive
+messages via the interface. All played cards have to be marked as played
+manually in the interface by the game master.
 
 
 Example
@@ -81,7 +86,12 @@ Example
 To load the data of the German example simulation game „Wissen ist Macht“,
 install the programm as metioned above and run::
 
-    $ python manage.py loaddata examples/example_game_de.json
+    $ python manage.py loaddata examples/example_game_de_1.json
+
+To load the data of the German example simulation game „Jeder ist seines
+Glückes ...“, install the programm as metioned above and run::
+
+    $ python manage.py loaddata examples/example_game_de_2.json
 
 The user name of the game master is `admin`. The password for of all users
 is `default`. All passwords have to be changed before starting the game.
