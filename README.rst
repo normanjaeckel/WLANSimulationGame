@@ -95,6 +95,8 @@ Glückes ...“, install the programm as metioned above and run::
 
 The user name of the game master is `admin`. The password for of all users
 is `default`. All passwords have to be changed before starting the game.
+You might also want to change the header image by replacing the respective
+file in `wlan_simulation_game/static/images`.
 
 
 Questions
