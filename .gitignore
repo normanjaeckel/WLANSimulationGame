@@ -1,7 +1,6 @@
 # Patterns of intentionally untracked files that Git should ignore
 
 # Python compiled files
-*.pyc
 __pycache__/
 
 # Virtual Python Environment builder

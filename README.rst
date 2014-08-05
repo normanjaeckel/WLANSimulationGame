@@ -9,48 +9,41 @@ players in five groups.
 Requirements
 ------------
 
-You need a server with
-
-* Python 2.7.x
-* Virtual Python Environment builder 1.11.x (optional, but recommended)
-* Django 1.5.8
-* Constance – Dynamic Django settings 0.6 (Backend: Database)
-* Actual webbrowser with support for HTML5 and CSS3
+You need a server with Python 3.4.x, Virtual Python Environment builder
+1.11.x (optional, but recommended) and an actual webbrowser with support
+for HTML5 and CSS3. On the server you have to install this application and
+its dependencies (Django 1.7.x and Constance – Dynamic Django settings 0.7
+(Backend: Database)).
 
 At least one player of each group of players needs a client computer with
-an actual webbrowser. All client computers and the server need access to a
-network, e. g. a WLAN.
+an actual webbrowser.
+
+All client computers and the server need access to a network, e. g. a WLAN.
 
 
-Install
--------
+Install and start
+-----------------
 
 This is only an example instruction for a Unix system where Python and Git
 is already installed.
 
 ::
 
-    $ git clone https://github.com/normanjaeckel/WLANSimulationGame.git  # You can also extract the downloaded compressed tar archive from GitHub instead of using git.
+    $ git clone https://github.com/normanjaeckel/WLANSimulationGame.git  # You can also extract the downloaded compressed tar archive from GitHub instead of using Git.
 
     $ cd WLANSimulationGame
 
-    $ virtualenv .virtualenv
+    $ virtualenv .virtualenv --python=python3
 
     $ source .virtualenv/bin/activate  # On Windows use: .virtualenv\Scripts\activate
 
-    $ python --version  # Ensure, that this returns Python 2.7.x
+    $ python --version  # Ensure that this returns Python 3.4.x
 
     $ pip install -r requirements.txt
 
-    $ python helper_script.py --create-settings
+    $ python manage.py migrate
 
-    $ python manage.py syncdb
-
-
-Start
------
-
-::
+    $ python manage.py createsuperuser  # You will be prompted for username, email and password.
 
     $ python manage.py runserver --insecure 0.0.0.0:8000
 
@@ -75,13 +68,13 @@ introduction and its access data sheet.
 At the beginning of the game the configuration flag to allow writing
 messages has to be activated by the game master. Now the players can
 communicate and deal with the other groups. All messages have to be printed
-for there is intentionally no possibility for the players to receive
-messages via the interface. All played cards have to be marked as played
-manually in the interface by the game master.
+by the game master, because there is intentionally no possibility for the
+players to receive messages via the interface. All played cards have to be
+marked as played manually in the interface by the game master.
 
 
-Example
--------
+Example games
+-------------
 
 To load the data of the German example simulation game „Wissen ist Macht“,
 install the programm as metioned above and run::
@@ -93,7 +86,7 @@ Glückes ...“, install the programm as metioned above and run::
 
     $ python manage.py loaddata examples/example_game_de_2.json
 
-The user name of the game master is `admin`. The password for of all users
+The username of the game master is `admin`. The password for of all users
 is `default`. All passwords have to be changed before starting the game.
 You might also want to change the header image by replacing the respective
 file in `wlan_simulation_game/static/images`.

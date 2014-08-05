@@ -12,7 +12,6 @@ import os
 
 from django.utils.translation import ugettext_lazy
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(__file__)
 
 
@@ -117,18 +116,18 @@ CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
 CONSTANCE_CONFIG = {
     'title': ('Title', ugettext_lazy('Title of the game. Used as first heading in the template.')),
     'subtitle': ('Subtitle', ugettext_lazy('Subtitle of the game. Used as second heading in the template.')),
-    'headline': ('Welcome to WLAN Simulation Game', ugettext_lazy('Headline for the introduction text.')),
+    'headline': ('Welcome to WLAN Simulation Game', ugettext_lazy('Headline of the introduction text.')),
     'introduction': ('Introduction into WLAN Simulation Game comes here.', ugettext_lazy('Introduction to the game and the system.')),
-    'year': (2013, ugettext_lazy('The year for the copyright note.')),
+    'year': (2014, ugettext_lazy('The year of the copyright note.')),
     'name': ('Your Name', ugettext_lazy('Name of the game master.')),
     'players_can_submit_messages': (False, ugettext_lazy('If this is active, players can submit messages to the system.')),
     'start_score': (20, ugettext_lazy('Score all players start with.')),
     'playable_cards': (5, ugettext_lazy('Maximum number of cards a player can play.')),
-    'number_of_interceptions': (8, ugettext_lazy('Maximum number of messages a player can intercept.')),
-    'ssid': ('WLANSimulationGame', ugettext_lazy('Name of the WLAN. This is just for the access data sheet.')),
+    'number_of_interceptions': (8, ugettext_lazy('Maximum number of messages a player can intercept. Change this to 0 to disable the interception system.')),
+    'ssid': ('My-WLAN', ugettext_lazy('Name of the WLAN. This is just for the access data sheet.')),
     'psk': ('default', ugettext_lazy('Password for the WLAN. This is just for the access data sheet.')),
-    'url': ('http://192.168.0.1:8000/', ugettext_lazy('URL where the server is listening on. This is just for the access data sheet.')),
-    'hide_header_image': (False, ugettext_lazy('Hide the header image for administrator.'))}
+    'url': ('http://192.168.0.1:8000/', ugettext_lazy('URL the server is listening on. This is just for the access data sheet.')),
+    'hide_header_image': (False, ugettext_lazy('Hide the header image for admin users.'))}
 
 
 # Template context processors

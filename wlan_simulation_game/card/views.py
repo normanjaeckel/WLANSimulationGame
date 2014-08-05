@@ -64,7 +64,7 @@ class CardPlayView(RedirectView):
         card = get_object_or_404(Card, pk=kwargs['pk'])
         try:
             card.play()
-        except WLANSimulationGameError, error_message:
+        except WLANSimulationGameError as error_message:
             messages.error(self.request, error_message)
         else:
             messages.success(self.request, _('Card "%(name)s" was successfully played.') % {'name': card.name})
