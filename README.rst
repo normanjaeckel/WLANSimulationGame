@@ -7,7 +7,7 @@ players in five groups.
 
 
 Requirements
-------------
+============
 
 You need a server with Python 3.4.x, Virtual Python Environment builder
 1.11.x (optional, but recommended) and an actual webbrowser with support
@@ -22,7 +22,7 @@ All client computers and the server need access to a network, e. g. a WLAN.
 
 
 Install and start
------------------
+=================
 
 This is only an example instruction for a Unix system where Python and Git
 is already installed.
@@ -49,7 +49,7 @@ is already installed.
 
 
 Configuration
--------------
+=============
 
 First an admin user and an user for each player character has to be setup
 via the admin panel. After this, the player characters can be created and
@@ -74,7 +74,7 @@ marked as played manually in the interface by the game master.
 
 
 Example games
--------------
+=============
 
 To load the data of the German example simulation game „Wissen ist Macht“,
 install the programm as metioned above and run::
@@ -92,8 +92,15 @@ You might also want to change the header image by replacing the respective
 file in `wlan_simulation_game/static/images`.
 
 
+License
+=======
+
+WLAN Simulation Game is Free/Libre Open Source Software and distributed
+under the MIT License, see LICENSE file.
+
+
 Questions
----------
+=========
 
 If you have any questions, do not hesitate to write me an email to
 wlansimulationgame [at] normanjaeckel.de.

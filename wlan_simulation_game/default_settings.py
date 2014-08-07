@@ -2,10 +2,10 @@
 Django settings.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/1.6/topics/settings/
+https://docs.djangoproject.com/en/1.7/topics/settings/
 
 For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.6/ref/settings/
+https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
 import os
@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(__file__)
 
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = ''
@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
+    'django.contrib.admin.apps.SimpleAdminConfig',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -55,6 +55,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware')
 
@@ -64,7 +65,7 @@ WSGI_APPLICATION = 'wlan_simulation_game.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
+# https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -73,7 +74,7 @@ DATABASES = {
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/1.6/topics/i18n/
+# https://docs.djangoproject.com/en/1.7/topics/i18n/
 
 LANGUAGE_CODE = 'de'
 
@@ -93,7 +94,7 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.6/howto/static-files/
+# https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
 
@@ -104,7 +105,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'wlan_simulation_game', 'static'),)
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'wlan_simulation_game', 'templates'),)
 
-#~ LOGIN_URL = 'login'
+LOGIN_URL = 'login'
 
 LOGIN_REDIRECT_URL = 'home'
 
@@ -114,9 +115,9 @@ LOGIN_REDIRECT_URL = 'home'
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
 
 CONSTANCE_CONFIG = {
-    'title': ('Title', ugettext_lazy('Title of the game. Used as first heading in the template.')),
-    'subtitle': ('Subtitle', ugettext_lazy('Subtitle of the game. Used as second heading in the template.')),
-    'headline': ('Welcome to WLAN Simulation Game', ugettext_lazy('Headline of the introduction text.')),
+    'title': ('Some Title', ugettext_lazy('Title of the game. Used as first heading in the template.')),
+    'subtitle': ('Some Subtitle', ugettext_lazy('Subtitle of the game. Used as second heading in the template.')),
+    'headline': ('Some Headline', ugettext_lazy('Headline of the introduction text.')),
     'introduction': ('Introduction into WLAN Simulation Game comes here.', ugettext_lazy('Introduction to the game and the system.')),
     'year': (2014, ugettext_lazy('The year of the copyright note.')),
     'name': ('Your Name', ugettext_lazy('Name of the game master.')),

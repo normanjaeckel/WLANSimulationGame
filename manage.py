@@ -11,7 +11,8 @@ def create_settings():
     """
     base_dir = os.path.dirname(__file__)
     if not os.path.exists(os.path.join(base_dir, 'settings.py')):
-        with open(os.path.join(base_dir, 'default_settings.py')) as default_settings:
+        default_settings_path = os.path.join(base_dir, 'wlan_simulation_game', 'default_settings.py')
+        with open(default_settings_path) as default_settings:
             key = get_random_string(50, 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)')
             settings = re.sub(
                 r"SECRET_KEY = ''",

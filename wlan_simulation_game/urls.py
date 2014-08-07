@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from django.contrib.auth.decorators import user_passes_test
@@ -8,9 +5,7 @@ from django.views.generic import TemplateView, ListView
 
 from .player.models import Player
 
-
 admin.autodiscover()
-
 
 urlpatterns = patterns(
     '',
