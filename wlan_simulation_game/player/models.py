@@ -1,35 +1,38 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from constance import config
-
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser, UserManager
 from django.utils.translation import ugettext_lazy
 
 
-class Player(models.Model):
+class PlayerManager(UserManager):
     """
-    Model for the player groups. It is one-to-one linked to Django's user
-    model but this user model is only used for login.
+    Custom manager to disable email as required field for superusers.
     """
-    user = models.OneToOneField(User, unique=True, verbose_name=ugettext_lazy('Login user'))
-    character = models.CharField(max_length=255, unique=True, verbose_name=ugettext_lazy('Character'))
+    def create_superuser(self, *args, **kwargs):
+        kwargs.setdefault('email')
+        return super().create_superuser(*args, **kwargs)
+
+
+class Player(AbstractUser):
+    """
+    Model for the player groups.
+    """
     description = models.TextField(blank=True, verbose_name=ugettext_lazy('Description'))
 
+    objects = PlayerManager()
+
+    REQUIRED_FIELDS = []
+
     class Meta:
-        ordering = ('character',)
+        ordering = ('is_staff', 'username',)
         verbose_name = ugettext_lazy('Player')
         verbose_name_plural = ugettext_lazy('Players')
-
-    def __unicode__(self):
-        return self.character
 
     @property
     def score(self):
         """
         Returns the actual score of the player according to all played cards.
         """
+        from constance import config
         value_sum = self.cards_against_me.filter(used=True).aggregate(models.Sum('value'))['value__sum']
         if value_sum is None:
             value_sum = 0
@@ -40,6 +43,7 @@ class Player(models.Model):
         """
         Returns the number of playable cards according to the played cards.
         """
+        from constance import config
         return config.playable_cards - self.cards.filter(used=True).count()
 
     @property

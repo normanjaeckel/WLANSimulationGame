@@ -1,12 +1,11 @@
-{% load i18n %}
-
-<!DOCTYPE html>
+{% load i18n %}<!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <title>{% trans 'Print all player descriptions' %}</title>
 </head>
 <body>
-    <h1>{% trans 'List of all players' %}</h1>
+    <h1>{% trans 'All players' %}</h1>
     {% for player in player_list %}
         <div class="player">
             <h2>{{ player }}</h2>

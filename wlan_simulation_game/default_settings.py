@@ -103,11 +103,13 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'wlan_simulation_game', 'static'),)
 
 # Miscellaneous
 
-TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'wlan_simulation_game', 'templates'),)
+AUTH_USER_MODEL = 'player.Player'
 
 LOGIN_URL = 'login'
 
 LOGIN_REDIRECT_URL = 'home'
+
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'wlan_simulation_game', 'templates'),)
 
 
 # Constance - Dynamic Django settings (django-constance)
@@ -124,7 +126,8 @@ CONSTANCE_CONFIG = {
     'players_can_submit_messages': (False, ugettext_lazy('If this is active, players can submit messages to the system.')),
     'start_score': (20, ugettext_lazy('Score all players start with.')),
     'playable_cards': (5, ugettext_lazy('Maximum number of cards a player can play.')),
-    'number_of_interceptions': (8, ugettext_lazy('Maximum number of messages a player can intercept. Change this to 0 to disable the interception system.')),
+    'number_of_interceptions': (8, ugettext_lazy('Maximum number of messages a player can intercept. '
+                                                 'Change this to 0 to disable the interception system.')),
     'ssid': ('My-WLAN', ugettext_lazy('Name of the WLAN. This is just for the access data sheet.')),
     'psk': ('default', ugettext_lazy('Password for the WLAN. This is just for the access data sheet.')),
     'url': ('http://192.168.0.1:8000/', ugettext_lazy('URL the server is listening on. This is just for the access data sheet.')),
