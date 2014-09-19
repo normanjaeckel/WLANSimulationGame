@@ -1,0 +1,23 @@
+{% extends 'base_print.html' %}
+
+{% load i18n %}
+
+{% block styles %}
+    {{ block.super }}
+    <style>
+        .card {padding:10px 0px 0px;}
+    </style>
+{% endblock %}
+
+{% block title %}{% trans 'List of all cards' %} – {{ block.super }}{% endblock %}
+
+{% block content %}
+    <h1>{% trans 'List of all cards' %}</h1>
+    <p>{% trans 'This list is sorted by card owner and target.' %}</p>
+    <dl>
+        {% for card in card_list %}
+            <dt class="card">{{ card }}</dt>
+            <dd>{% trans 'Owner' %}: {{ card.owner }} | {% trans 'Target' %}: {{ card.target }}</dd>
+        {% endfor %}
+    </dl>
+{% endblock %}

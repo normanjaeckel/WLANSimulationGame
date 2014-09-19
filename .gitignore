@@ -7,7 +7,7 @@ __pycache__/
 .virtualenv/
 
 # Django settings and SQLite3 database
-settings.py
+wlan_simulation_game_settings.py
 db.sqlite3
 
 # Private development data

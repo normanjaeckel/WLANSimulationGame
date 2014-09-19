@@ -1,0 +1,29 @@
+{% extends 'base_print.html' %}
+
+{% load i18n %}
+
+{% block styles %}
+    {{ block.super }}
+    <style>
+        .card {page-break-after:always;}
+        .card {font-size:175%;}
+    </style>
+    <style media="print">
+        .card hr {display:none;}
+    </style>
+{% endblock %}
+
+{% block title %}{% trans 'All cards' %} – {{ block.super }}{% endblock %}
+
+{% block content %}
+    {% for card in card_list %}
+        <div class="card">
+            <h1>{{ card }}</h1>
+            <p>{% trans 'Owner' %}: {{ card.owner }}</p>
+            <p>{% trans 'Target' %}: {{ card.target }}</p>
+            <p>{% trans 'Value' %}: {{ card.value }}</p>
+            <p><em>{{ card.description }}</em></p>
+            <hr>
+        </div>
+    {% endfor %}
+{% endblock %}

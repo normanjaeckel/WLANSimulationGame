@@ -1,0 +1,15 @@
+{% extends 'base_print.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans 'Print all player descriptions' %} – {{ block.super }}{% endblock %}
+
+{% block content %}
+    <h1>{% trans 'All players' %}</h1>
+    {% for player in player_list %}
+        <div>
+            <h2>{{ player }}</h2>
+            <p>{{ player.description }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

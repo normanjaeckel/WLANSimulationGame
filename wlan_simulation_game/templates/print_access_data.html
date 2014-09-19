@@ -1,0 +1,30 @@
+{% extends 'base_print.html' %}
+
+{% load i18n %}
+
+{% block styles %}
+    {{ block.super }}
+    <style>
+        .player {page-break-after:always;}
+        .player {font-size:175%;}
+    </style>
+    <style media="print">
+        .player hr {display:none;}
+    </style>
+{% endblock %}
+
+{% block title %}{% trans 'Access data' %} – {{ block.super }}{% endblock %}
+
+{% block content %}
+    {% for player in player_list %}
+        <div class="player">
+            <h1>{% trans 'Access data' %}</h1>
+            <p>{% trans 'Name of the WLAN' %}: {{ config.ssid }}</p>
+            <p>{% trans 'Password of the WLAN' %}: {{ config.psk }}</p>
+            <p>{% trans 'URL' %}: {{ config.url }}</p>
+            <p>{% trans 'Username' %}: {{ player.username }}</p>
+            <p>{% trans 'Password' %} <em>({% trans 'Write down the correspondent password here' %})</em>: </p>
+            <hr>
+        </div>
+    {% endfor %}
+{% endblock %}

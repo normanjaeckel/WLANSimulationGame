@@ -15,13 +15,10 @@ from django.utils.translation import ugettext_lazy
 BASE_DIR = os.path.dirname(__file__)
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: Keep the secret key used in production secret!
 SECRET_KEY = ''
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: Don't run with debug turned on in production!
 DEBUG = False
 
 # If you have problems, uncomment the next line to run the server in debug mode.
@@ -44,10 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.formtools',
     'constance',
     'constance.backends.database',
-    'wlan_simulation_game.player',
-    'wlan_simulation_game.card',
-    'wlan_simulation_game.message',
-    'wlan_simulation_game.templatetags')
+    'wlan_simulation_game.game')
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -103,7 +97,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'wlan_simulation_game', 'static'),)
 
 # Miscellaneous
 
-AUTH_USER_MODEL = 'player.Player'
+AUTH_USER_MODEL = 'game.Player'
 
 LOGIN_URL = 'login'
 
@@ -117,21 +111,48 @@ TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'wlan_simulation_game', 'templates'),)
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
 
 CONSTANCE_CONFIG = {
-    'title': ('Some Title', ugettext_lazy('Title of the game. Used as first heading in the template.')),
-    'subtitle': ('Some Subtitle', ugettext_lazy('Subtitle of the game. Used as second heading in the template.')),
-    'headline': ('Some Headline', ugettext_lazy('Headline of the introduction text.')),
-    'introduction': ('Introduction into WLAN Simulation Game comes here.', ugettext_lazy('Introduction to the game and the system.')),
-    'year': (2014, ugettext_lazy('The year of the copyright note.')),
-    'name': ('Your Name', ugettext_lazy('Name of the game master.')),
-    'players_can_submit_messages': (False, ugettext_lazy('If this is active, players can submit messages to the system.')),
-    'start_score': (20, ugettext_lazy('Score all players start with.')),
-    'playable_cards': (5, ugettext_lazy('Maximum number of cards a player can play.')),
-    'number_of_interceptions': (8, ugettext_lazy('Maximum number of messages a player can intercept. '
-                                                 'Change this to 0 to disable the interception system.')),
-    'ssid': ('My-WLAN', ugettext_lazy('Name of the WLAN. This is just for the access data sheet.')),
-    'psk': ('default', ugettext_lazy('Password for the WLAN. This is just for the access data sheet.')),
-    'url': ('http://192.168.0.1:8000/', ugettext_lazy('URL the server is listening on. This is just for the access data sheet.')),
-    'hide_header_image': (False, ugettext_lazy('Hide the header image for admin users.'))}
+    'players_can_submit_messages': (
+        False,
+        ugettext_lazy('If this is active, players can submit messages to the system.')),
+    'title': (
+        'Some Title',
+        ugettext_lazy('Title of the game. Used as first heading in the template.')),
+    'subtitle': (
+        'Some Subtitle',
+        ugettext_lazy('Subtitle of the game. Used as second heading in the template.')),
+    'headline': (
+        'Some Headline',
+        ugettext_lazy('Headline of the introduction text.')),
+    'introduction': (
+        'Introduction into WLAN Simulation Game comes here.',
+        ugettext_lazy('Introduction to the game and the system.')),
+    'year': (
+        2014,
+        ugettext_lazy('The year of the copyright note.')),
+    'name': (
+        'Your Name',
+        ugettext_lazy('Name of the game master.')),
+    'start_score': (
+        20,
+        ugettext_lazy('Score all players start with.')),
+    'playable_cards': (
+        5,
+        ugettext_lazy('Maximum number of cards a player can play.')),
+    'number_of_interceptions': (
+        8, ugettext_lazy('Maximum number of messages a player can intercept. '
+                         'Change this to 0 to disable the interception system.')),
+    'ssid': (
+        'My-WLAN',
+        ugettext_lazy('Name of the WLAN. This is just for the access data sheet.')),
+    'psk': (
+        'default',
+        ugettext_lazy('Password for the WLAN. This is just for the access data sheet.')),
+    'url': (
+        'http://192.168.0.1:8000/',
+        ugettext_lazy('URL the server is listening on. This is just for the access data sheet.')),
+    'hide_header_image': (
+        False,
+        ugettext_lazy('Hide the header image for admin users.'))}
 
 
 # Template context processors

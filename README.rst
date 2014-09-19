@@ -43,7 +43,7 @@ is already installed.
 
     $ python manage.py migrate
 
-    $ python manage.py createsuperuser  # You will be prompted for username, email and password.
+    $ python manage.py createsuperuser  # You will be prompted for username and password.
 
     $ python manage.py runserver --insecure 0.0.0.0:8000
 
@@ -51,11 +51,10 @@ is already installed.
 Configuration
 =============
 
-First an admin user and an user for each player character has to be setup
-via the admin panel. After this, the player characters can be created and
-connected to the before created users. All configuration values have to be
-setup in the menu item Constance/Config. Last but not least all playable
-cards with all texts, owners, targets and scores have to be entered.
+First you can login as admin user to the admin panel. There the player
+characters can be created. All configuration values have to be setup in the
+menu item Constance/Config. Last but not least all playable cards with all
+texts, owners, targets and scores have to be entered.
 
 Now you can print the cards, the list of all cards, the player
 descriptions, the game introduction and an access data sheet and give them
@@ -79,17 +78,17 @@ Example games
 To load the data of the German example simulation game „Wissen ist Macht“,
 install the programm as metioned above and run::
 
-    $ python manage.py loaddata examples/example_game_de_1.json
+    $ python manage.py loaddata examples/example_game_de_1/data.json
 
 To load the data of the German example simulation game „Jeder ist seines
 Glückes ...“, install the programm as metioned above and run::
 
-    $ python manage.py loaddata examples/example_game_de_2.json
+    $ python manage.py loaddata examples/example_game_de_2/data.json
 
-The username of the game master is `admin`. The password for of all users
-is `default`. All passwords have to be changed before starting the game.
-You might also want to change the header image by replacing the respective
-file in `wlan_simulation_game/static/images`.
+The username of the game master is `admin`. The password for of the game
+master and all players is `default`. All passwords have to be changed
+before starting the game. You might also want to change the header image by
+replacing the respective file in `wlan_simulation_game/static/images`.
 
 
 License

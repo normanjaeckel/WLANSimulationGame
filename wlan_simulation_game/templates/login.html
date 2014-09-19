@@ -5,9 +5,7 @@
 {% block styles %}
     {{ block.super }}
     <style>
-        .errorlist {
-            color: rgb(208, 96, 96);
-        }
+        .errorlist {color:rgb(208, 96, 96);}
     </style>
 {% endblock %}
 
@@ -17,9 +15,10 @@
 
 {% block both %}
     <div class="col c12">
-        <form action="" method="post">{% csrf_token %}
+        <form action="" method="post">
+            {% csrf_token %}
             {{ form.as_p }}
-        <input type="submit" value="{% trans 'Login' %}" />
+            <input type="submit" value="{% trans 'Login' %}">
         </form>
     </div>
 {% endblock %}
