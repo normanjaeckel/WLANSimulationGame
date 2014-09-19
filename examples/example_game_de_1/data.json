@@ -1,0 +1,764 @@
+[
+    {
+        "pk": 1,
+        "model": "database.constance",
+        "fields": {
+            "key": "title",
+            "value": "gAJYEAAAAFdpc3NlbiBpc3QgTWFjaHRxAC4="
+        }
+    },
+    {
+        "pk": 2,
+        "model": "database.constance",
+        "fields": {
+            "key": "subtitle",
+            "value": "gAJYPQAAAEVpbiBXTEFOLVBsYW5zcGllbCB6dW0gVGhlbWEgUHJpdmF0c3NwaMOkcmVuLSB1bmQgRGF0ZW5zY2h1dHpxAC4="
+        }
+    },
+    {
+        "pk": 3,
+        "model": "database.constance",
+        "fields": {
+            "key": "headline",
+            "value": "gAJYJgAAAEhlcnpsaWNoIHdpbGxrb21tZW4genVtIFdMQU4tUGxhbnNwaWVscQAu"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "database.constance",
+        "fields": {
+            "key": "introduction",
+            "value": "gAJYUgwAAERhcyBJbmZvcm1hdGlvbnN6ZWl0YWx0ZXIgaGF0IHZpZWxlIEZhY2V0dGVuLiBQb2xpdGlrLCBHZWhlaW1kaWVuc3RlLCBJVC1VbnRlcm5laG1lbiwgTWVkaWVuIHVuZCBQcml2YXRlIGFnaWVyZW4gdmllbGbDpGx0aWcgaW0gTmV0ejogVmVyZGVja3Qgb2RlciBvZmZlbiwgSGF1cHRzYWNoZSBzY2huZWxsIHVuZCBpbmZvcm1hdGl2IG3DvHNzZW4gZGllIERhdGVuIHNlaW4sIGRpZSBkdXJjaCBkaWUgTGVpdHVuZ2VuIHJhc2VuLiBXZXIgd2lyZCBhbSBFbmRlIGRhcyBtZWlzdGUgV2lzc2VuIGhhYmVuLCBzaWNoIGRpZSBtZWlzdGUgTWFjaHQgc2ljaGVybj8NCg0KRGFzIFppZWwgZGVzIFNwaWVscyBpc3QgZXMsIG3DtmdsaWNoc3QgdmllbGUgUHVua3RlIHp1IGVycmVpY2hlbi4gQWxsZSBTcGllbGVyIHN0YXJ0ZW4gYmVyZWl0cyBtaXQgMjAgUHVua3Rlbi4gV2VyIGFtIEVuZGUgZGllIG1laXN0ZW4gUHVua3RlIGhhdCwgZ2V3aW5udC4gRGFzIFNwaWVsIGRhdWVydCBldHdhIDc1IE1pbnV0ZW4uDQoNCkplZGUgR3J1cHBlIHNwaWVsdCBlaW5lbiBTcGllbGNoYXJha3Rlci4gV8OkaHJlbmQgZGVzIFNwaWVscyBibGVpYmVuIGRpZSBHcnVwcGVuIHVudGVyIHNpY2guIERpZXNlcyBXZWJpbnRlcmZhY2UgdW50ZXJzdMO8dHp0IFNpZSBiZWkgZGVyIEtvbW11bmlrYXRpb24gbWl0IGRlbiBNaXRzcGllbGVybiB1bmQgYmVpIGRlbiB3ZXNlbnRsaWNoZW4gQWt0aW9uZW4gZGVzIFNwaWVscy4NCg0KTmFjaCBTcGllbGJlZ2lubiDDvGJlcmxlZ2VuIFNpZSBzaWNoIGluIElocmVyIEdydXBwZSBkaWUgYmVzdGUgU3RyYXRlZ2llIGbDvHIgSWhyZW4gU3BpZWxjaGFyYWt0ZXIuIFBsdXNwdW5rdGUga8O2bm5lbiBTaWUgbnVyIGJla29tbWVuLCB3ZW5uIFNpZSBtaXQgZWluZXIgYW5kZXJlbiBHcnVwcGUgZWluZSBLYXJ0ZSB0YXVzY2hlbiwgZGFzIGhlacOfdCBnZWdlbnNlaXRpZyBhdWZlaW5hbmRlciBhdXNzcGllbGVuLiBNaW51c3B1bmt0ZSBrw7ZubmVuIFNpZSBiZWtvbW1lbiwgd2VubiBlaW5lIGFuZGVyZSBHcnVwcGUgZWluZSBwYXNzZW5kZSBNaW51cy1LYXJ0ZSBhdWYgU2llIOKAnmxvc2zDpHNzdOKAnC4NCg0KSmVkZSBLYXJ0ZSBnZWjDtnJ0IGVpbmVtIGJlc3RpbW10ZW4gQ2hhcmFrdGVyIHVuZCBrYW5uIG51ciBhdWYgZWluZW4gYmVzdGltbXRlbiBhbmRlcmVuIENoYXJha3RlciBhdXNnZXNwaWVsdCB3ZXJkZW4uIFVtIGVpbmUgUGx1cy1LYXJ0ZSB6dSBzcGllbGVuLCB2ZXJ3ZW5kZW4gU2llIGRhcyB2b24gZGVyIFNwaWVsbGVpdHVuZyBhdXNnZXRlaWx0ZSBGb3JtdWxhci4gTnVyIHdlbm4gYmVpZGUgU2VpdGVuIGVpbiBhdWZlaW5hbmRlciBiZXpvZ2VuZXMgRm9ybXVsYXIgZWlucmVpY2hlbiwgd2lyZCBkZXIgVGF1c2NoIGVpbmdlbMO2c3QuIERpZSBNaXRzcGllbGVyZ3J1cHBlIGJla29tbXQgZGllIFBsdXNwdW5rdGUsIGRpZSBhdWYgSWhyZXIgS2FydGUgbm90aWVydCBzaW5kLCB1bmQgU2llIGJla29tbWVuIHVtZ2VrZWhydCBkaWUgUGx1c3B1bmt0ZSwgZGllIGF1ZiBpaHJlciBLYXJ0ZSBzdGVoZW4uIEFjaHR1bmc6IFdpZSB2aWVsZSBQdW5rdGUgU2llIGdlbmF1IGJla29tbWVuLCB3aXNzZW4gU2llIGVyc3QsIHdlbm4gZGVyIFRhdXNjaCB2b2xsem9nZW4gaXN0Lg0KDQpEaWUgU3BpZWxsZWl0dW5nIHNpY2hlcnQgYWIsIGRhc3MgZGVyIHZlcmVpbmJhcnRlIFRhdXNjaCBhdWNoIGVpbmdlaGFsdGVuIHdpcmQsIGvDvG1tZXJ0IHNpY2ggYWJlciBuaWNodCwgd2VubiBpbmhhbHRsaWNoZSBVbnN0aW1taWdrZWl0ZW4gYXVmdHJldGVuIG9kZXIgZWluZSBTZWl0ZSBuYWNodmVyaGFuZGVsbiB3aWxsLg0KDQpJbnNnZXNhbXQgZMO8cmZlbiBudXIgZsO8bmYgZGVyIHplaG4gS2FydGVuIGF1c2dlc3BpZWx0IHdlcmRlbi4gQWxzbyDDvGJlcmxlZ2VuIFNpZSBndXQsIG1pdCB3ZW0gU2llIGlucyBHZXNjaMOkZnQga29tbWVuIHdvbGxlbi4NCg0KRGllIEthcnRlbiBtaXQgZGVuIE1pbnVzcHVua3RlbiBrw7ZubmVuIMO8YnJpZ2VucyBqZWRlcnplaXQgZWluZmFjaCBzbyBhdWYgZGllIGFuZGVyZW4g4oCebG9zZ2VsYXNzZW7igJwgd2VyZGVuLiBFaW4gVGF1c2NoIGZpbmRldCBoaWVyIG5pY2h0IHN0YXR0LiBEZXIgYW5kZXJlIENoYXJha3RlciBiZWtvbW10IHNvZm9ydCBkaWUgTWludXNwdW5rdGUgdW5kIGthbm4gc2ljaCBkYWdlZ2VuIG5pY2h0IHdlaHJlbi4gRGFzIEF1c3NwaWVsZW4gcmVkdXppZXJ0IGFiZXIgSWhyZSBBbnphaGwgYW4gc3BpZWxiYXJlbiBLYXJ0ZW4gdW5kIGRhbWl0IElocmUgTcO2Z2xpY2hrZWl0ZW4sIHdlaXRlcmUgZ8O8bnN0aWdlIFRhdXNjaGFrdGlvbmVuIGR1cmNoenVmw7xocmVuLiBNYW4ga2FubiBuYXTDvHJsaWNoIGF1Y2ggbnVyIGRyb2hlbiBvZGVyIGJsdWZmZW4uDQoNClVtIG1pdCBkZW4gYW5kZXJlbiBHcnVwcGVuIHp1IGtvbW11bml6aWVyZW4sIG51dHplbiBTaWUgZGFzIE5hY2hyaWNodGVucG9ydGFsLCBkYXMgZXR3YSA1IE1pbnV0ZW4gbmFjaCBTcGllbGJlZ2lubiBmcmVpZ2VzY2hhbHRldCB3aXJkLiAoRHLDvGNrZW4gU2llIEY1LCB1bSBkaWUgQnJvd3NlcnNlaXRlIHp1IGFrdHVhbGlzaWVyZW4uKSBEaWUgTmFjaHJpY2h0ZW4gd2VyZGVuIHZvbiBkZXIgU3BpZWxsZWl0dW5nIGF1c2dlZHJ1Y2t0IHVuZCB6dWdlc3RlbGx0LiBJbSBOYWNocmljaHRlbnBvcnRhbCBrw7ZubmVuIFNpZSBudXIgZGllIGVpZ2VuZW4gZ2VzZW5kZXRlbiBOYWNocmljaHRlbiBub2NoIGVpbm1hbCBuYWNobGVzZW4uIERpZSBlbXBmYW5nZW5lbiB1bmQgYWxsZSBmcmVtZGVuIE5hY2hyaWNodGVuIHNpbmQgZ2VzcGVycnQuDQoNCkF1c25haG1lOiBKZWRlciBDaGFyYWt0ZXIga2FubiBiaXMgenUgYWNodCBOYWNocmljaHRlbiB2b24gYW5kZXJlbiBHcnVwcGVuIGF1c3NwaW9uaWVyZW4uIEpld2VpbHMgZGllIGxldHp0ZSBOYWNocmljaHQsIGRpZSBlaW5lIEdydXBwZSBhbiBlaW5lIGFuZGVyZSBnZXNjaGlja3QgaGF0LCBrYW5uIGFiZ2VsYXVzY2h0IHdlcmRlbi4gQmVudXR6ZW4gU2llIGRhenUgZWluZmFjaCBkZW4gTGluayBpbSBOYWNocmljaHRlbnBvcnRhbC4gV2VubiBnZXJhZGUga2VpbmUgTmFjaHJpY2h0IHZlcmbDvGdiYXIgaXN0LCB2ZXJzdWNoZW4gU2llIGVzIGVpbmZhY2ggc3DDpHRlciBub2NoIGVpbm1hbC5xAC4="
+        }
+    },
+    {
+        "pk": 5,
+        "model": "database.constance",
+        "fields": {
+            "key": "year",
+            "value": 2013
+        }
+    },
+    {
+        "pk": 6,
+        "model": "database.constance",
+        "fields": {
+            "key": "name",
+            "value": "gAJYDgAAAE5vcm1hbiBKw6Rja2VscQAu"
+        }
+    },
+    {
+        "pk": 1,
+        "fields": {
+            "is_staff": true,
+            "date_joined": "2014-09-19T16:13:12.257Z",
+            "is_superuser": true,
+            "username": "admin",
+            "last_name": "",
+            "email": "",
+            "is_active": true,
+            "password": "pbkdf2_sha256$12000$CvK8RETIukvj$7va+/t65IeCTsyjMSNFsCDCT3NytYufqqKo+bikAa9c=",
+            "last_login": "2014-09-19T16:13:12.257Z",
+            "groups": [],
+            "description": "",
+            "user_permissions": [],
+            "first_name": ""
+        },
+        "model": "game.player"
+    },
+    {
+        "pk": 2,
+        "fields": {
+            "is_staff": false,
+            "date_joined": "2014-09-19T16:13:12.257Z",
+            "is_superuser": false,
+            "username": "A-No-Ni-Mos",
+            "last_name": "",
+            "email": "",
+            "is_active": true,
+            "password": "pbkdf2_sha256$12000$CMUOa7InWQo0$WvvzjXqNb1Mcd8jitE+LaehEidJd8peukAqInon50bc=",
+            "last_login": "2014-09-19T16:13:12.257Z",
+            "groups": [],
+            "description": "A-No-Ni-Mos ist eine h\u00e4ufig online und selten offline agierende Gruppe von Hackern: Sie sind jung, (haupts\u00e4chlich) m\u00e4nnlich, unsportlich und bekommen oft zu wenig Tageslicht. Daf\u00fcr sind sie \u00fcber alles, was im Netz passiert, bestens informiert, kennen alle technischen Details und besch\u00e4ftigen sich am liebsten mit den neusten Programmen und Entwicklungen, die das Netz so zu bieten hat. Frei nach dem Motto: \u201eEin Hacker ist jemand, der versucht einen Weg zu finden, wie man mit einer Kaffeemaschine Toast zubereiten kann\u201c (Wau Holland). Der ein oder andere von ihnen hat dabei auch schon etwas tiefer in fremde Rechner gesehen, als dem Inhaber lieb ist. Was soll's: Wenn ein cooles Feature des eigenen Projekts mal nicht gelingt, kann man ja immer noch den Router des Nachbarn oder den Server einer Bank cracken ...",
+            "user_permissions": [],
+            "first_name": ""
+        },
+        "model": "game.player"
+    },
+    {
+        "pk": 3,
+        "fields": {
+            "is_staff": false,
+            "date_joined": "2014-09-19T16:13:12.257Z",
+            "is_superuser": false,
+            "username": "Dr._Franz_Flichtig",
+            "last_name": "",
+            "email": "",
+            "is_active": true,
+            "password": "pbkdf2_sha256$12000$NB3tcm7UtsiZ$1tnXO6tivCGPXiv5gogDV9jmFkMvdDWS697n7C19Etg=",
+            "last_login": "2014-09-19T16:13:12.257Z",
+            "groups": [],
+            "description": "Dr. Franz Flichtig ist der amtierende Innenminister der Bundesrepublik Deutschland. Er hat eine m\u00fchsame Parteikarriere hinter sich und ist noch lange nicht am Ziel seiner politischen Tr\u00e4ume. Der (gewiss gutgemeinte) Polizeistaat ist ihm ein Herzensanliegen. Denn Law and Order-Politik hat sich schon immer gut verkauft. So m\u00f6chte Franz am liebsten bestens \u00fcber alles informiert sein. Mit dem Verfassungsschutz und dem BKA hat er einige willige und f\u00e4hige Helfer zur Hand. Auch die Justiz frisst ihm aus der Hand. Wenn ihm da nicht immer die anderen Nachrichtendienste und die Bundesl\u00e4nder dazwischen funken w\u00fcrden ...",
+            "user_permissions": [],
+            "first_name": ""
+        },
+        "model": "game.player"
+    },
+    {
+        "pk": 4,
+        "fields": {
+            "is_staff": false,
+            "date_joined": "2014-09-19T16:13:12.257Z",
+            "is_superuser": false,
+            "username": "Gaagol",
+            "last_name": "",
+            "email": "",
+            "is_active": true,
+            "password": "pbkdf2_sha256$12000$14Bjxn6eO9HF$mSxKgTqno4YyzNUJNWK5wNr7sQhdUNYMPKWmgVx7RjE=",
+            "last_login": "2014-09-19T16:13:12.257Z",
+            "groups": [],
+            "description": "Gaagol ist das weltweit gr\u00f6\u00dfte IT-Unternehmen. Seine Gr\u00fcnder haben das Informationszeitalter eingeleitet und mit seinen vielf\u00e4ltigen Diensten, wie Suchmaschinen, E-Mail, Videoplattformen, Routenplaner und Online-Werbung beherrscht es den Alltag vieler Menschen. Aber die vielen Server und Mitarbeiter wollen gef\u00fcttert werden: Informationen sind das t\u00e4glich Brot dieser Firma, Nutzerklicks ihr Lebenssaft, Netzprofile ihr Evangelium. Wenn da nur nicht diese Datensch\u00fctzer w\u00e4ren ...",
+            "user_permissions": [],
+            "first_name": ""
+        },
+        "model": "game.player"
+    },
+    {
+        "pk": 5,
+        "fields": {
+            "is_staff": false,
+            "date_joined": "2014-09-19T16:13:12.257Z",
+            "is_superuser": false,
+            "username": "NDB",
+            "last_name": "",
+            "email": "",
+            "is_active": true,
+            "password": "pbkdf2_sha256$12000$xtx2PAUqUdS9$FrUPsVEfqidAyJz9PVd0u4JKycCyN/v2ttB95Fc6Me0=",
+            "last_login": "2014-09-19T16:13:12.257Z",
+            "groups": [],
+            "description": "Der NDB ist der deutsche Auslandsnachrichtendienst. Seine F\u00fchler sind weit verteilt, seine Informantennetze dicht und seine finanziellen Mittel zur \u201eGestaltung\u201c wichtiger politischer Fragen in allen L\u00e4ndern schier unersch\u00f6pflich. Wer hier arbeitet und was man hier so macht, wei\u00df keiner. Immerhin geht es (vielleicht) ums Ganze: Freiheit, Demokratie und die Innovationskraft der heimischen Wirtschaft wollen verteidigt werden. Und da sind nicht nur Diktatoren und Rebellen in irgendwelchen weit entfernten Staaten zu betrachten. Die neue Gefahr droht aus dem Internet und wer da so alles unterwegs ist ...? Wenigstens machen die Provider keinen \u00c4rger, wenn man ihnen nur mit den altbew\u00e4hrten Mitteln kommt.",
+            "user_permissions": [],
+            "first_name": ""
+        },
+        "model": "game.player"
+    },
+    {
+        "pk": 6,
+        "fields": {
+            "is_staff": false,
+            "date_joined": "2014-09-19T16:13:12.257Z",
+            "is_superuser": false,
+            "username": "FOTO.de",
+            "last_name": "",
+            "email": "",
+            "is_active": true,
+            "password": "pbkdf2_sha256$12000$DY6tmgUSmflC$ruxhmscS62WPSEZh+IZSWk5FW0OCSH+eZ1zkLoHAAYM=",
+            "last_login": "2014-09-19T16:13:12.257Z",
+            "groups": [],
+            "description": "FOTO.de ist das Internetportal des Verlags einer gro\u00dfen deutschen Tageszeitung. Hier erf\u00e4hrt der (zahlende) User alles, was in der Welt passiert. Politische Possen oder das Neuste aus dem Privatleben der Promis: Alles auf einen Klick, mit gro\u00dfen Bildern und Videos und manchmal auch etwas Text. Nur leider brechen die Werbeeinnahmen weg, der Nachrichtenhunger der Leute ist gro\u00df und die Konkurrenz schl\u00e4ft auch nicht. Dann muss man eben ab und zu den guten alten Skandaljournalismus aus dem Schrank holen. Und neuerdings gibt es ja im Internet so viel \u00fcber die Leute zu finden ...",
+            "user_permissions": [],
+            "first_name": ""
+        },
+        "model": "game.player"
+    },
+    {
+        "pk": 1,
+        "model": "game.card",
+        "fields": {
+            "description": "Wer am Flughafen und an den Grenzen ein- und ausreist, hat potenziell etwas zu verbergen. Filtert man nun noch nach einschl\u00e4gigen Gefahrenkriterien wie Bartl\u00e4nge oder Religionszugeh\u00f6rigkeit, ergibt sich schnell ein klares Profil. Vielleicht interessiert sich ja der NBD f\u00fcr diese Sachverhalte?",
+            "target": 5,
+            "name": "Reisedaten verd\u00e4chtiger Personen \u00fcbermitteln",
+            "owner": 3,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 2,
+        "model": "game.card",
+        "fields": {
+            "description": "Mit Verweis auf die (unver\u00e4nderte) aktuelle Bedrohungslage hat sich schon die bisherige Sicherheitsgesetzgebung rechtfertigen lassen. Aber da ist noch Luft nach oben. Neue spannende Befugnisse (erweiterte Online-Durchsuchung und Verwanzung, Dronen- und Satelliten\u00fcberwachung und vieles mehr) harren darauf, endlich geltendes Recht und legal zum Einsatz gebracht zu werden. Du kannst dazu das N\u00f6tige tun. Die Apparate werden dir dankbar sein.",
+            "target": 5,
+            "name": "Sch\u00e4rfere Sicherheitsgesetze mit neuen Befugnissen erlassen",
+            "owner": 3,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 3,
+        "model": "game.card",
+        "fields": {
+            "description": "Das Gebaren der Datenschutzbeauftragten war f\u00fcr dich schon immer unertr\u00e4glich. Hier werden doch nur notwendige Datenverarbeitungen verhindert und Steuergelder verschwendet. Damit ist jetzt Schluss. Dein neuster Gesetzesentwurf belehrt die ewigen Besserwisser nun eines Besseren. Ganz zu Gunsten der datenverarbeitenden Wirtschaft, versteht sich.",
+            "target": 4,
+            "name": "Datenschutzbeauftragten abschaffen",
+            "owner": 3,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 4,
+        "model": "game.card",
+        "fields": {
+            "description": "Melderecht ist Bundesrecht \u2013 und f\u00e4llt damit endlich auch in dein Ressort. Hier kann man nun einiges besser machen. Zum Beispiel der datenverarbeitenden Wirtschaft den Zugriff erleichtern. Wenn Gaagol und Co. die Adressen der Leute nicht erst umst\u00e4ndlich von irgendwelchen Adressh\u00e4ndlern kaufen m\u00fcssten, sondern gleich direkt aus der amtlichen Quelle ziehen k\u00f6nnten, w\u00fcrde viel Zeit und Geld gespart. Und das k\u00e4me letztendlich allen zu Gute. Dem einen mehr, dem anderen weniger.",
+            "target": 4,
+            "name": "Private massenhafte Melderegisterabfragen erm\u00f6glichen",
+            "owner": 3,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 5,
+        "model": "game.card",
+        "fields": {
+            "description": "Angemessenes Gehalt, geregelte Arbeitszeiten und zu Weihnachten immer eine kleine Feier mit dem Abteilungsleiter. Ein ordentliches Angebot f\u00fcr die Hacker-Jungs, die dringend mal unter Leute kommen m\u00fcssen. Mit etwas Gl\u00fcck wird man sp\u00e4ter auch verbeamtet und kann sich ein Reihenhaus mit Vorgarten leisten. Wenn das nichts ist ...",
+            "target": 2,
+            "name": "Jobs in der IT-Abteilung des Ministeriums anbieten",
+            "owner": 3,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 6,
+        "model": "game.card",
+        "fields": {
+            "description": "Die Justiz ist chronisch \u00fcberlastet, die Gef\u00e4ngnisse sind \u00fcberf\u00fcllt, die Strafrichter und Staatsanw\u00e4lte amtsm\u00fcde. Da kann es sehr hilfreich sein, die Opportunit\u00e4tsvorschriften des Strafprozessrechts etwas extensiver auszulegen und auf die Verfolgung kleinerer Internetbetr\u00fcgereien zu verzichten. Dank deiner Beziehungen zu Justizkreisen alles kein Problem. Die beschuldigten Hacker werden aufatmen und \u2013 hoffentlich \u2013 k\u00fcnftig ein anst\u00e4ndiges Leben f\u00fchren.",
+            "target": 2,
+            "name": "Strafverfahren einstellen",
+            "owner": 3,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 7,
+        "model": "game.card",
+        "fields": {
+            "description": "Der Kampf um die besten Pl\u00e4tze auf der Presseempore des Oberlandesgerichts M\u00fcnchen tobt. Alle wollen beim NSU-Prozess hautnah dabei sein. Das Problem ist nur, dass ein Losverfahren so schlecht vorhersehbar ist \u2013 mag man meinen. Mit deinen Beziehungen kannst du jedoch ausgew\u00e4hlten Medien einen sicheren Platz verschaffen. Sie werden dann eben \u201ezuf\u00e4llig\u201c als Erste gezogen.",
+            "target": 6,
+            "name": "NSU-Lostopf nach Wunsch manipulieren",
+            "owner": 3,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 8,
+        "model": "game.card",
+        "fields": {
+            "description": "Rockerbanden, Drogendealer, Waffenschmuggler, Kinderpornoringe, Steuers\u00fcnder. Sie alle f\u00fcrchten die gro\u00dfe Razzia der Polizei. Noch viel mehr f\u00fcrchten sie die zuf\u00e4llige Anwesenheit von Fotoreportern bei einer solchen. Mit ein paar hei\u00dfen Tipps zu den n\u00e4chsten Eins\u00e4tzen kannst du deinen Freunden von der Presse gleich die Gelegenheit f\u00fcr exklusive Bilder zur Story verschaffen. Alles ganz diskret nat\u00fcrlich.",
+            "target": 6,
+            "name": "Hei\u00dfe Tipps zu geplanten Polizeizugriffen geben",
+            "owner": 3,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 9,
+        "model": "game.card",
+        "fields": {
+            "description": "Was n\u00fctzen Einreisekontrollen, wenn man nicht wei\u00df, wer am besten gar nicht einreisen soll? Hier habt ihr das passende Glied in der Kette umfangreicher und erfolgversprechender Gefahrenabwehr. Mit euren Listen \u00fcber die Topgef\u00e4hrder der Welt k\u00f6nnt ihr Innenministerium und Polizei einen sinnvollen Dienst bei ihren Kontrollen tun lassen. Und gleichzeitig leistet ihr einen Beitrag zur inneren Sicherheit. Gegen das Listing gibt es  f\u00fcr den Betroffenen keinen Rechtsschutz. Umso besser.",
+            "target": 3,
+            "name": "Ausl\u00e4ndische Terrorverd\u00e4chtige melden",
+            "owner": 5,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 10,
+        "model": "game.card",
+        "fields": {
+            "description": "Finde mal jemanden, der nahezu genauso ausieht wie die amtierende Bundeskanzlerin. Im Inland nicht so leicht. Weltweit aber schon m\u00f6glich. Ihr habt das Know-how, f\u00fcr jeden wichtigen Politiker einen Doppelg\u00e4nger zu finden, der im Ernstfall bei \u00f6ffentlichen (und riskanten) Auftritten einspringen kann. Dann kann sich das BKA einige seiner vielen Sicherheitsbeamten sparen. Denn wenn doch etwas passiert, trifft es ja nur den Doppelg\u00e4nger ...",
+            "target": 3,
+            "name": "Doppelg\u00e4nger f\u00fcr wichtige Politiker finden",
+            "owner": 5,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 11,
+        "model": "game.card",
+        "fields": {
+            "description": "Noch in vielen Staaten ist Internet Neuland. Wie soll man nun mit den IT-Konzernen umgehen, fragen sich die dortigen Machthaber. Liberal, das hei\u00dft, private Domainverwaltung, freier Netzausbau, unbeschr\u00e4nkte Dienstangebote? Oder besser restriktiv, das hei\u00dft staatliche Zugangs- und Inhaltskontrollen, strenge Impressumspflichten, hohe Haftungsregelungen? Ihr k\u00f6nnt hier f\u00fcr die richtige \u201eBeratung\u201c sorgen. Ganz im Sinne der heimischen Wirtschaft, versteht sich.",
+            "target": 4,
+            "name": "Ausl\u00e4ndische Regime zu liberaler Netzpolitik \u201eberaten\u201c",
+            "owner": 5,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 12,
+        "model": "game.card",
+        "fields": {
+            "description": "Wenn man w\u00fcsste, was die Konkurrenz so treibt, w\u00e4re man ihr vielleicht immer einen Schritt voraus. Industriespionage ist aber zeitaufwendig, riskant und teuer. Au\u00dferdem hat man meistens keine richtigen Profis bei der Hand. Hier w\u00e4re etwas Aushilfe von richtigen Spionen Gold wert. Ist zwar nicht euer Auftrag, aber wenn es im Ergebnis der guten Sache dient ...",
+            "target": 4,
+            "name": "Gesch\u00e4ftsgeheimnisse der Konkurrenz ausspionieren und \u00fcbermitteln",
+            "owner": 5,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 13,
+        "model": "game.card",
+        "fields": {
+            "description": "Ein Hacker sucht gerne seinesgleichen. Je besser, das hei\u00dft je nerdiger er ist, desto weniger seinesgleichen gibt es. Und die muss man erstmal finden. Mit euren umfangreichen Kontakten zu allen (auch verborgenen) Szenen k\u00f6nnt ihr dem genannten Bed\u00fcrfnis nach Geselligkeit leicht Befriedigung verschaffen. Ein paar kleine Tipps eurerseits und schon k\u00f6nnen neue lebenslange Freundschaften entstehen.",
+            "target": 2,
+            "name": "Kontakte zur Untergrundszene vermitteln",
+            "owner": 5,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 14,
+        "model": "game.card",
+        "fields": {
+            "description": "Eure Entwicklungsabteilung hat wieder eine Neuigkeit hervorgebracht. Ein spannendes Werkzeug verzwickter kryptographischer Art ist geboren. Jeder Hobbyhacker will es sofort ausprobieren, damit spielen und seine Feinheiten bis in die letzte Ver\u00e4stelung studieren und verstehen. Da ein Grundsatz in der Kryptographie lautet, dass immer nur der Schl\u00fcssel, aber niemals der Algorithmus geheim sein soll, k\u00f6nntet ihr das Tool ruhig den Hackern zum Ausprobieren \u00fcberlassen. Sie werden sich die Finger danach lecken ...",
+            "target": 2,
+            "name": "Neuste Kryptographietechnik ausprobieren lassen",
+            "owner": 5,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 15,
+        "model": "game.card",
+        "fields": {
+            "description": "Im Staat XY hat das Milit\u00e4r alle Vorbereitungen abgeschlossen. In 48 Stunden wird es zum Putsch gegen die amtierende Regierung kommen. Sichere Quellen haben alles schwarz auf wei\u00df belegt. Fehlt nur noch die Zusammenfassung f\u00fcr die Presse, dass die Sache auch die Bedeutung bekommt, die ihr zusteht. Wer nun diese Dokumente als Erstes hat, kann auch als Erstes berichten und wird auch als Erstes gelesen und zitiert. Und eure Freunde von FOTO.de w\u00fcrden sicher mal wieder die Ersten sein wollen.",
+            "target": 6,
+            "name": "Infos \u00fcber den n\u00e4chsten Putsch zuspielen",
+            "owner": 5,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 16,
+        "model": "game.card",
+        "fields": {
+            "description": "Eure exklusiven Kontakte zu Pr\u00e4sidenten aller Art (Staatspr\u00e4sidenten, Beh\u00f6rdenpr\u00e4sidenten, Unternehmensvorst\u00e4nde) erm\u00f6glichen euch, jederzeit und \u00fcberall einen Gespr\u00e4chstermin zu organisieren. Und mit dem Verweis auf die Bedeutung freundlicher Zusammenarbeit ist die Person auch sofort zu einem aktuellen Interview bereit. Das wird sicher einige Leser bringen und steht einem Medium, das sich seiner Aktualit\u00e4t r\u00fchmen m\u00f6chte, immer gut zu Gesicht.",
+            "target": 6,
+            "name": "Exklusivinterview mit dem Pr\u00e4sidenten erm\u00f6glichen",
+            "owner": 5,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 17,
+        "model": "game.card",
+        "fields": {
+            "description": "Wer schrieb wann wem eine E-Mail? Wer hat wann mit wem wie lange telefoniert? Wer hat wann wie lange welche Internetseite angesehen? Alles h\u00f6chst interessante Daten, die sich h\u00fcbsch kombinieren und profilieren lassen. Und ob nun im Kampf gegen den Terror oder gegen irgend etwas anderes ... die Regierung ist allemal hei\u00df auf das Datenpaket. Na dann ab damit.",
+            "target": 3,
+            "name": "Vorratsdaten abliefern",
+            "owner": 4,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 18,
+        "model": "game.card",
+        "fields": {
+            "description": "Seit 2008 fahrt ihr durch jede Stra\u00dfe und jede Gasse und nehmt alles auf, was euch vor die Kamera kommt. StreetView ist ein beliebter Dienst bei Jung und Alt. F\u00fcr die \u00d6ffentlichkeit gibt es manchmal nur verpixelte Bilder. Menschen, Autokennzeichen und sogar H\u00e4user sind unkenntlich gemacht. Was nicht hei\u00dft, dass die Daten etwa nicht mehr vorhanden w\u00e4ren. Von L\u00f6schen hat keiner was gesagt. Die Regierung freut sich sicher, wenn man ihr mal eben die Rohdaten r\u00fcberschiebt. Vielleicht ist da ja noch etwas Interessantes drauf?",
+            "target": 3,
+            "name": "Ungepixelte StreetView-Daten \u00fcbersenden",
+            "owner": 4,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 19,
+        "model": "game.card",
+        "fields": {
+            "description": "Wenn der Geheimdienst einmal wissen m\u00f6chte, welche Dateien jemand in seiner Cloud abgelegt hat, muss er nur euch fragen. Voller Zugriff, volle Kontrolle, volle Zufriedenheit. Selbstverst\u00e4ndlich wird das nur bei Verdacht und Gefahr im Verzug gemacht. Alles ganz legal ... ",
+            "target": 5,
+            "name": "Zugriff auf Cloud Storages bestimmter Personen er\u00f6ffnen",
+            "owner": 4,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 20,
+        "model": "game.card",
+        "fields": {
+            "description": "Der Fall der Isla Calero ist ein Paradebeispiel: Diese Insel im Fluss San Juan wird von den meisten Staaten f\u00fcr zu Costa Rica geh\u00f6rig gehalten. Nur die Maps eines Online-Kartendienstes sagen etwas anderes und waren Motivation eines nicaraguanischen Truppenkommandeurs, die Insel zu betreten und zu besetzen. Fast ein Krieg! Solche Situationen k\u00f6nnen dem NDB grunds\u00e4tzlich ganz n\u00fctzlich sein. Warum nicht die Karten hier und da ein wenig seinen W\u00fcnschen und Bed\u00fcrfnissen anpassen?",
+            "target": 5,
+            "name": "Gaagol-Maps im Ausland auf Wunsch gezielt manipulieren",
+            "owner": 4,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 21,
+        "model": "game.card",
+        "fields": {
+            "description": "Jeder Computerfreak nutzt f\u00fcr seine Spielereien unz\u00e4hlige Tools und Plattformen. Alle passen nur mehr oder weniger auf das, was man gerade so macht. Hier kommt ihr ins Spiel: \u00d6ffnet die ultimative Plattform f\u00fcr Softwareentwickler: mit Versionskontrolle, Ticketing, Chat, Mailbenachrichtigung, Code-Review, \u00dcbersetzungsdatenbank, Testsuite und allem, was der Hobbyhacker sonst so braucht, um gemeinsam mit anderen seine Projekte aufzuziehen. Kostenlos nat\u00fcrlich.",
+            "target": 2,
+            "name": "Kostenlose Online-Entwicklerplattform einrichten",
+            "owner": 4,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 22,
+        "model": "game.card",
+        "fields": {
+            "description": "Da Hacker in der Regel ihr ganzes Geld f\u00fcr Pizza ausgeben, sind ihre Treffen immer etwas spartanisch: Jeden Tag nur Nudeln und \u00fcbernachtet wird in irgendwelchen Kellern mit Isomatte und Schlafsack. Hier k\u00f6nntet ihr mal f\u00fcr etwas Luxus sorgen. Lasst dem n\u00e4chsten Treffen ein umfangreiches Sponsoring zukommen: R\u00e4ume, Technik, Hotels, Catering. Alles vom Feinsten.",
+            "target": 2,
+            "name": "Gro\u00dfsponsoring des n\u00e4chsten Hackertreffens",
+            "owner": 4,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 23,
+        "model": "game.card",
+        "fields": {
+            "description": "Das Sch\u00f6ne an vielgenutzten Online-Diensten ist, dass man \u00fcber die Nutzer aussagekr\u00e4ftige und werberelevante Profile erstellen kann. Wer sich Maps in den Alpen ansieht, will vielleicht demn\u00e4chst ein paar Wanderschuhe kaufen. Und wer nach dem Begriff \u201eBondage\u201c sucht, will vielleicht ein paar Seile erwerben. Wenn er dann seine Online-Zeitung liest, sollte die Werbung daf\u00fcr geschickt platziert sein. Lasst das Medienportal doch an euren Erkenntnissen \u00fcber die geheimen W\u00fcnsche der Nutzer teilhaben. Einen passenden Werbepartner haben sie sicher schon bei der Hand.",
+            "target": 6,
+            "name": "Werbedaten und Nutzerprofile \u00fcbermitteln",
+            "owner": 4,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 24,
+        "model": "game.card",
+        "fields": {
+            "description": "Wer in einer Suchmaschine nicht (gleich) gefunden wird, den gibt es nicht. Zumindest ein wenig Wahrheit ist an diesem Satz dran. Dass allein der PageRank bestimmt, wer wie schnell gefunden wird, muss auch nicht immer stimmen. Zu Gunsten eures Tauschpartners k\u00f6nnt ihr die Ergebnisrelevanz bestimmter Seiten bestimmter Konkurrenten \u201eeinstellen\u201c. Ganz pl\u00f6tzlich tauchen dann diese Seiten nur noch ab Platz 100 auf. Na so was ...",
+            "target": 6,
+            "name": "Suchtreffer der Konkurrenz minimieren",
+            "owner": 4,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 25,
+        "model": "game.card",
+        "fields": {
+            "description": "Ein zu strenges Urheberrecht mag eine Sache sein. Aber die vielen Filesharer, Skriptkiddies, Spamer und Berufsvirenschreiber schaden dem Ruf der Szene. Der Innenminister hat sicher Interesse an ein paar Namen und Adressen. Kampf gegen Internetkriminalit\u00e4t steht ihm gut zu Buche. Mit hei\u00dfen Tipps zu Leuten, die ihr nicht wirklich zu euresgleichen z\u00e4hlt, k\u00f6nnt ihr ihm ein bisschen unter die Arme greifen.",
+            "target": 3,
+            "name": "Filesharer und Internetpiraten verraten",
+            "owner": 2,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 26,
+        "model": "game.card",
+        "fields": {
+            "description": "Die B\u00f6rse f\u00fchrt oft ein Eigenleben. Wie soll man da mitbekommen, welchen wirklichen Wert ein notiertes Unternehmen nun hat? F\u00fcr euch alles kein Problem. Ein paar Kommandos in die Konsole gehackt, ein paar Skripte gestartet und schon kann der Kurs des gew\u00fcnschten Unternehmens in die richtige Richtung korrigiert werden. Der Politik k\u00f6nnen solche \u201eArgumente\u201c in Verhandlungen mit den Unternehmen bei allen m\u00f6glichen Themen (Atomausstieg, Frauenquote, Ausbildungspl\u00e4tze, Managerboni, ...) sehr behilflich sein. \u00dcber mehr Gestaltungsspielraum wird sie sich doch immer freuen ...",
+            "target": 3,
+            "name": "B\u00f6rsendaten f\u00fcr die Regierung hacken",
+            "owner": 2,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 27,
+        "model": "game.card",
+        "fields": {
+            "description": "Wer ist gut, wer ist b\u00f6se? Wer wei\u00df das schon. Euch kann es egal sein. Schickt euer bestes Botnetz auf die Seiten einer ausl\u00e4ndischen Regierung. Mal sehen, wie viele Sekunden die durchhalten. Der Geheimdienst sagt euch, welche es sein soll. Was er davon hat, das sagt er euch nicht. Vielleicht geht es um die Freiheit der Welt, vielleicht aber auch nur ums liebe Geld.",
+            "target": 5,
+            "name": "Botnetzangriff auf gew\u00fcnschtes ausl\u00e4ndisches Regime fahren",
+            "owner": 2,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 28,
+        "model": "game.card",
+        "fields": {
+            "description": "Ein paar von euch hatten schon immer etwas Affinit\u00e4t zu Verschw\u00f6rungen. Und einen langen Mantel mit Schlapphut wollten sie auch schon immer tragen. Andere kennen sich bestens mit Kryptographie aus. Alles F\u00e4higkeiten, die ein Geheimdienst gut brauchen kann. Er macht aus denen, die Interesse haben, Profis \u2013 und das Personal f\u00fcr seine n\u00e4chsten Projekte. Nur ein paar verl\u00e4ssliche Kontakte m\u00fcsste man ihm weitergeben. Er kann ja seine Stellen als Spione und Krypto-Hacker schlecht beim Arbeitsamt ausschreiben.",
+            "target": 5,
+            "name": "Interessierte als V-Leute und Hacker vermitteln",
+            "owner": 2,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 29,
+        "model": "game.card",
+        "fields": {
+            "description": "Software ist niemals fertig. Und sie ist niemals fehlerfrei. Umso wichtiger ist es, alles sch\u00f6n auf Herz und Nieren zu pr\u00fcfen, um wenigstens die gr\u00f6bsten Sicherheitsl\u00fccken ausfindig zu machen. Ihr k\u00f6nntet den IT-Konzernen doch einmal eure speziellen Techniken anbieten. Hackt euch in ihre Systeme und sagt ihnen, wo und wie es m\u00f6glich ist. Dann schlie\u00dfen sie die L\u00fccken und r\u00fchmen sich gr\u00f6\u00dftm\u00f6glicher Qualit\u00e4t. Wie viel wird ihnen das wert sein?",
+            "target": 4,
+            "name": "Dienste auf Herz und Nieren testen",
+            "owner": 2,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 30,
+        "model": "game.card",
+        "fields": {
+            "description": "Wie bringt man eine Suchmaschine auf Platz 1 des Weltmarktes? Ganz einfach: Die Standardeinstellung macht's. Wer einen Browser installiert und oben rechts ein kleines Suchfenster hat, macht sich selten die M\u00fche, einzustellen, welche Suchmaschine hier angesprochen werden soll. Ihr k\u00f6nntet euch daf\u00fcr einsetzen, dass auf den g\u00e4ngigen freien Browsern (Firefox und Co.) der Dienst von Gaagol eingestellt ist. Das w\u00e4re dann der Goldesel f\u00fcr den Betreiber.",
+            "target": 4,
+            "name": "Standardsuchmaschine in den Webbrowsern der Leute einstellen",
+            "owner": 2,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 31,
+        "model": "game.card",
+        "fields": {
+            "description": "Eigentlich wollen alle nur das eine. Besonders die Journalisten. Tut ihnen doch den Gefallen, kauft die Artikel. Vielleicht wollt ihr sie dann auch lesen.",
+            "target": 6,
+            "name": "Artikel kaufen und vielleicht lesen",
+            "owner": 2,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 32,
+        "model": "game.card",
+        "fields": {
+            "description": "Hei\u00dfe Tipps von Leuten wie Edward Snowden sind rar. Dank eurer Kontakte wisst ihr bestens Bescheid, wo der n\u00e4chste Datenskandal lauert. Die Medien sind daran immer interessiert. Und wenn dann noch ein paar Namen von Politikern dabei sind \u2013 hervorragend. Ihr k\u00f6nnt der skandalhungrigen Journalie ein leckeres H\u00e4ppchen servieren, das sie ein paar Wochen besch\u00e4ftigen wird.",
+            "target": 6,
+            "name": "Exklusivinformationen \u00fcber den neusten Datenskandal mitteilen",
+            "owner": 2,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 33,
+        "model": "game.card",
+        "fields": {
+            "description": "Auf eurer Startseite ist am Rand immer noch ein bisschen Platz. Hier kann man in Zeiten des Dauerwahlkampfes den Kandidaten eurer Wahl etwas unterst\u00fctzen. Exklusive Bannerwerbung mit Link zu freundlichen Fotos eines sympathischen Bewerbers kann ein paar Prozente ausmachen. Die entscheidenden vielleicht.",
+            "target": 3,
+            "name": "Wahlwerbung auf der Startseite platzieren",
+            "owner": 6,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 34,
+        "model": "game.card",
+        "fields": {
+            "description": "Das Sommerloch ist vor\u00fcber, jetzt muss wieder etwas Aufregung in die deutsche Medienlandschaft. Unterst\u00fctzt den Vorsto\u00df des Innenministers nach sch\u00e4rferen Sicherheitsgesetzen, indem ihr eine wochenlange Kampagne fahrt. Bilder von blutenden Schl\u00e4gereiopfern, fokussierte Kriminalit\u00e4tsstatistiken, die einen steilen Anstieg zeigen, Interviews mit den strengsten Jugendrichtern des Landes, die mehr und sch\u00e4rfere Haft fordern, Berichte \u00fcber gerade noch vereitelte Terroranschl\u00e4ge. Wenn die Bev\u00f6lkerung hinreichend sensibilisiert ist, wird sie schon die Forderung nach mehr Sicherheit unterst\u00fctzen. Und damit zugleich den Amtsinhaber, der f\u00fcr dieses Erfolgsprogramm steht.",
+            "target": 3,
+            "name": "Kampagne f\u00fcr sch\u00e4rfere Sicherheitsgesetze fahren",
+            "owner": 6,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 35,
+        "model": "game.card",
+        "fields": {
+            "description": "Manchmal ist es wichtig und richtig, die Meinung der Leute \u00fcber dieses oder jenes Land in eine bestimmte Richtung zu bewegen. Mit R\u00fcckendeckung in der Bev\u00f6lkerung lassen sich erforderliche Ma\u00dfnahmen viel leichter vertreten, auch wenn sie etwas teurer sind. Nutzt euer ganzes K\u00f6nnen und schreibt \u00fcber das Lieblingsland des NDB, was zu schreiben ist. Achtung: Vorher fragen, ob der dortige Diktator eher gut oder eher schlecht wegkommen soll. Beides ist m\u00f6glich.",
+            "target": 5,
+            "name": "Gezielte Berichterstattung \u00fcber gew\u00fcnschtes ausl\u00e4ndische Regime",
+            "owner": 6,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 36,
+        "model": "game.card",
+        "fields": {
+            "description": "Dank eurer langj\u00e4hrigen T\u00e4tigkeit habt ihr weltweit ein dichtes Netzwerk aus Informanten und Korrespondenten aufgebaut. Wenn dem NDB wieder einmal die Spione ausgegangen sind, braucht er neue zuverl\u00e4ssige Quellen. Hier k\u00f6nnt ihr ihm einfach und unkompliziert helfen. Schickt ihm einfach die Kontaktdaten per E-Mail. Die Empf\u00e4ngeradresse ist egal, die Nachricht kommt sowieso an.",
+            "target": 5,
+            "name": "Informanten- und Korrespondentennetzwerk nutzen lassen",
+            "owner": 6,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 37,
+        "model": "game.card",
+        "fields": {
+            "description": "Endlich ist es gekommen, das Leistungsschutzrecht f\u00fcr Pressebeitr\u00e4ge. Mit eurer Erlaubnis darf Gaagol weiterhin auf eure Beitr\u00e4ge verlinken und Ausz\u00fcge daraus in den eigenen Diensten pr\u00e4sentieren. Das bringt Leser f\u00fcr euch und vor allem Nutzer f\u00fcr Gaagol. Eine Zusammenarbeit zum beiderseitigen Vorteil. Man muss sich nur \u00fcber den Preis einigen.",
+            "target": 4,
+            "name": "Nutzungsrechte an FOTO.de-Beitr\u00e4gen einr\u00e4umen",
+            "owner": 6,
+            "value": 5,
+            "used": false
+        }
+    },
+    {
+        "pk": 38,
+        "model": "game.card",
+        "fields": {
+            "description": "Wer einen eurer Artikel liest und eine Frage hat, kann nach den Inhalten im Netz suchen. Er kann aber auch einfach auf gezielte Links klicken, die ihn an die Dienste bestimmter Unternehmen weiterleiten. Nutzt eure M\u00f6glichkeiten, es den Lesern leicht zu machen und sein Surfverhalten zu steuern. Gaagol hat sicher f\u00fcr jedes Anliegen einen passenden Dienst bereit.",
+            "target": 4,
+            "name": "Gezielte Links zu Gaagol setzen",
+            "owner": 6,
+            "value": 3,
+            "used": false
+        }
+    },
+    {
+        "pk": 39,
+        "model": "game.card",
+        "fields": {
+            "description": "Was n\u00fctzt das beste K\u00f6nnen, das coolste Softwaretool und der genialste Hack, wenn niemand davon wei\u00df. Ein Hacker will, dass seine Leistung anerkannt wird. Nicht mit schn\u00f6dem Mammon, nein, mit \u00f6ffentlicher Aufmerksamkeit und wohlwollenden Postings dankbarer User. Ihr k\u00f6nnet den Hackern etwas helfen und \u00fcber deren neuste Projekte intensiv und \u2013 selbstverst\u00e4ndlich \u2013 wohlwollend berichten. Bietet einen umfangreichen Testbericht an und lasst ihnen die M\u00f6glichkeit, kleine Fehlerchen vor der Ver\u00f6ffentlichung schnell zu fixen, und sie werden euch die F\u00fc\u00dfe k\u00fcssen. Nur virtuell \u2013 versteht sich.",
+            "target": 2,
+            "name": "\u00dcber die neusten Projekte intensiv und wohlwollend berichten",
+            "owner": 6,
+            "value": 6,
+            "used": false
+        }
+    },
+    {
+        "pk": 40,
+        "model": "game.card",
+        "fields": {
+            "description": "Lasst die Besten der Besten zusammenkommen und wettstreiten. Stellt ihnen schwierige Aufgaben und knappe Zeitfenster. Bietet dem Sieger ein \u00fcppiges Preisgeld. So werden die kleinen Hacker aus ihren Kellern kommen, ihr ganzes K\u00f6nnen zeigen und auch f\u00fcr ein Foto in Siegerpose zu haben sein. Das Wichtigste ist die Anerkennung. Kein Problem, wenn die Sache am Ende ordentlich publiziert wird. Das Ganze ist sogar unter der \u00dcberschrift \u201eAusbildung und Nachwuchsf\u00f6rderung\u201c steuerlich absetzbar.",
+            "target": 2,
+            "name": "Hackerwettbewerb ausschreiben",
+            "owner": 6,
+            "value": 4,
+            "used": false
+        }
+    },
+    {
+        "pk": 41,
+        "model": "game.card",
+        "fields": {
+            "description": "Schluss mit den Ausnahmen im Urhebergesetz f\u00fcr Anrisstexte und Zitate! Der Urheber (und vor allem der Verleger) muss K\u00f6nig bleiben und will bezahlt werden. Mit deiner Gesetzesinitiative f\u00fcr mehr Leistungsschutzrechte und Restriktionen schaffst du die Basis f\u00fcr eine \u201eangemessene Verg\u00fctung\u201c der Urheber und Verleger. Und damit zugleich das Ende der kostenlosen Suchmaschinenschnipsel.",
+            "target": 4,
+            "name": "Urheberrecht versch\u00e4rfen",
+            "owner": 3,
+            "value": -8,
+            "used": false
+        }
+    },
+    {
+        "pk": 42,
+        "model": "game.card",
+        "fields": {
+            "description": "Aus dem Handbuch zur Zersetzung konspirativer Gruppen und Kreise. Ost-Berlin 1988. Nur f\u00fcr den innerdienstlichen Gebrauch. Kapitel 1: V-Leute anwerben. Kapitel 2: V-Leute in die Gruppe bringen. Kapitel 3: Streit und Misstrauen s\u00e4en. Kapitel 4: Liebesbeziehungen der Gruppenmitglieder nutzen. Kapitel 5: Die Gruppe zur Selbstaufl\u00f6sung f\u00fchren. Wie w\u00e4re es, junge Aspiranten des Ministeriums mal die heutige Relevanz des alten Handbuchs an ausgew\u00e4hlten Hacker-Gruppen testen zu lassen?",
+            "target": 2,
+            "name": "V-Leute einschleusen, Gruppe zersetzen",
+            "owner": 3,
+            "value": -8,
+            "used": false
+        }
+    },
+    {
+        "pk": 43,
+        "model": "game.card",
+        "fields": {
+            "description": "Schluss mit den Nettigkeiten. Das Krisenmanagement im Inland ist katastrophal, die zust\u00e4ndigen Beh\u00f6rden sind unf\u00e4hig und der Minister hat auch schon bessere Zeiten gesehen. Zeit zu handeln: Startet eine eigene Sicherheitsinitiative im Inland und macht euch daran, die Gefahren f\u00fcr das Land und den Staat aufzusp\u00fcren und abzuwehren. Das w\u00e4re zwar eine \u00dcberschreitung der gesetzlichen Kompetenzen, aber da ihr ohnehin alles im Geheimen macht, bekommt es ja keiner mit. Jedenfalls solange keiner einen Fehler macht ...",
+            "target": 3,
+            "name": "Eigeninitiative im Inland starten, Kompetenzen \u00fcberschreiten",
+            "owner": 5,
+            "value": -8,
+            "used": false
+        }
+    },
+    {
+        "pk": 44,
+        "model": "game.card",
+        "fields": {
+            "description": "China ist ein spannendes Land mit viel Potenzial und gro\u00dfer Kaufkraft. Wer hier Fu\u00df fassen kann, spielt weltweit in der ersten Liga. F\u00fcr IT-Dienstanbieter hei\u00dft das vor allem, frei und umfassend das Netz f\u00fcr den und mit dem chinesischen User nutzen zu k\u00f6nnen. Internetzensur ist da ganz bl\u00f6d. Kostet viele Nerven und noch mehr Personal, das die ganzen Inhalte durchgeht und filtert. Was w\u00e4re nun, wenn die Geheimdienste ihren Einfluss f\u00fcr mehr Zensur in China geltend machen? Ganz nach dem Motto: Was nicht gutgehei\u00dfen wird, braucht nicht gelesen, braucht also gar nicht erst angezeigt zu werden. Und das m\u00fcssen halt die Dienstanbieter machen, klar?",
+            "target": 4,
+            "name": "Zensur in China versch\u00e4rfen lassen",
+            "owner": 5,
+            "value": -8,
+            "used": false
+        }
+    },
+    {
+        "pk": 45,
+        "model": "game.card",
+        "fields": {
+            "description": "Der Hacker ist ein geselliges Wesen. Am liebsten unterh\u00e4lt er sich stundenlang mit seinen Freunden \u00fcber technische Feinheiten und Probleml\u00f6sungen. Aber was, wenn seine Freunde pl\u00f6tzlich keine Zeit mehr haben? Was, wenn sie von euch mit einem Job ausgestattet werden, der ihnen zwar ein unversch\u00e4mtes Gehalt bringt, aber zugleich einen Dienst von fr\u00fch bis sp\u00e4t abverlangt? Dann h\u00e4tten sie alle keine Zeit mehr f\u00fcr Plaudereien und Chats bis tief in die Nacht. Dann wird der Hacker sehr schnell einsam. Sehr einsam ...",
+            "target": 2,
+            "name": "Hackerfreunde mit 24/7-Job abwerben",
+            "owner": 4,
+            "value": -8,
+            "used": false
+        }
+    },
+    {
+        "pk": 46,
+        "model": "game.card",
+        "fields": {
+            "description": "Wer in einer Suchmaschine nicht (gleich) gefunden wird, den gibt es nicht. Da sich nun die meisten Nutzer selbst f\u00fcr einfachste Seitenaufrufe der Suche bedienen, f\u00e4llt es ganz besonders ins Gewicht, wenn eine Seite gleich mal gar nicht mehr gelistet wird. Bis der Fehler gefunden und das Problem behoben ist, kann eine ganze Weile vergehen.",
+            "target": 6,
+            "name": "Beitr\u00e4ge und Bilder aus der Suche nehmen",
+            "owner": 4,
+            "value": -8,
+            "used": false
+        }
+    },
+    {
+        "pk": 47,
+        "model": "game.card",
+        "fields": {
+            "description": "Der User will das Neuste vom Neusten, er zahlt, er klickt und ... nichts passiert. Ein Albtraum f\u00fcr jedes Online-Portal. Wenn sich der Server vor lauter \u201einteressierter\u201c Anfragen infizierter Rechner nicht mehr retten kann, wird er bald den Geist aufgeben und die Seite ist erst einmal tot. Distributed Denial of Service. Wie \u00e4rgerlich \u2013 f\u00fcr den User. Noch viel \u00e4rgerlicher f\u00fcr den Betreiber ...",
+            "target": 6,
+            "name": "DDoS-Angriff auf das Portal fahren",
+            "owner": 2,
+            "value": -8,
+            "used": false
+        }
+    },
+    {
+        "pk": 48,
+        "model": "game.card",
+        "fields": {
+            "description": "Was w\u00e4re, wenn im Internet eine Liste mit den Namen aller deutschen Spione auftauchen w\u00fcrde? Wenn eine Liste aller unappetitlichen Aktivit\u00e4ten der deutschen Nachrichtendienste der letzten 50 Jahre frei verf\u00fcgbar w\u00e4re? Wenn Dokumente aus den geheimen Zentralen \u00fcber Freund und Feind von Feind und Freund und auch sonst allen gelesen werden k\u00f6nnten? Grauenvoll, nicht wahr?",
+            "target": 5,
+            "name": "Deutsche Informanten und Spione enttarnen, Dokumente leaken",
+            "owner": 2,
+            "value": -8,
+            "used": false
+        }
+    },
+    {
+        "pk": 49,
+        "model": "game.card",
+        "fields": {
+            "description": "Ein Gl\u00fccksgriff f\u00fcr den investigativen Journalismus: Edward Snowden hat so viel auszupacken, dass es noch f\u00fcr Monate reichen kann. Sp\u00e4testens bis dahin sind alle Politiker weichgeklopft und drauf und dran, die Geheimdienste vom Kopf auf die F\u00fc\u00dfe zu stellen (oder umgekehrt, je nach Perspektive). Ihr k\u00f6nnt ja hier auch mitmachen, euch mit dem Helden (oder Verr\u00e4ter, je nach Perspektive) treffen und ihn ausf\u00fchrlich interviewen. Mal sehen, wie der NDB das findet ...",
+            "target": 5,
+            "name": "Interview mit Edward Snowden ver\u00f6ffentlichen",
+            "owner": 6,
+            "value": -8,
+            "used": false
+        }
+    },
+    {
+        "pk": 50,
+        "model": "game.card",
+        "fields": {
+            "description": "Wenn er nicht so will, wie er soll, ist eben etwas klassischer Journalismus gefragt. Durchsucht das Netz nach seinem Privatleben. Bestimmt hat er eine Freundin und seine brave Ehefrau wei\u00df nichts davon. Und bestimmt gibt es davon digitale Spuren. Und bestimmt ist das seinen politischen Chancen abtr\u00e4glich. Auch wenn nat\u00fcrlich niemand zugeben w\u00fcrde, dass man einen Politiker nur deswegen bei der n\u00e4chsten Wahl nicht ankreuzen w\u00fcrde. Falls ihr nichts findet, ... Nein, diesen Fall gibt es nicht, daf\u00fcr werdet ihr schon Sorge tragen.",
+            "target": 3,
+            "name": "Privates Liebesverh\u00e4ltnis (er-)finden",
+            "owner": 6,
+            "value": -8,
+            "used": false
+        }
+    }
+]
