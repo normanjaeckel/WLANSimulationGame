@@ -5,7 +5,7 @@ from django.utils.translation import ugettext as _
 from django.utils.translation import ugettext_lazy
 from django.utils.timezone import localtime, now
 
-from .models import Message, Player
+from .models import Card, ConventOffer, Message, Player
 
 
 class MessageCreateForm(forms.ModelForm):
@@ -121,3 +121,26 @@ class InterceptionWizardFormTwo(forms.Form):
         return_value = super().__init__(*args, **kwargs)
         self.fields['victim_recipient'].queryset = Player.objects.filter(is_staff=False).exclude(pk=request.user.pk).exclude(pk=victim_sender.pk)
         return return_value
+
+
+class ConventOfferForm(forms.Form):
+    """
+    Form to submit a new offer.
+    """
+    acceptor = forms.ModelChoiceField(
+        empty_label=None,
+        label=ugettext_lazy('Acceptor'),
+        queryset=Player.objects.all())
+    offered_card = forms.ModelChoiceField(
+        empty_label=None,
+        label=ugettext_lazy('Offered Card'),
+        queryset=Card.objects.exclude(path=0))
+    acceptor = forms.ModelChoiceField(
+        label=ugettext_lazy('Card in return'),
+        required=False,
+        queryset=Card.objects.all())
+
+    def __init__(self, *arg, **kwargs):
+        """
+        """
+

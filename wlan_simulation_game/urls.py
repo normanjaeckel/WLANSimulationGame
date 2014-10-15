@@ -86,8 +86,17 @@ urlpatterns = patterns(
         login_required(views.CardDetailView.as_view()),
         name='card_detail'),
     url(r'^card/(?P<pk>\d+)/play/$',
-        user_passes_test(lambda user: user.is_staff)(views.CardPlayView.as_view()),
+        login_required(views.CardPlayView.as_view()),
         name='card_play'),
+    url(r'^card/convent/$',
+        login_required(views.CardConventView.as_view()),
+        name='card_convent'),
+    url(r'^card/convent/(?P<pk>\d+)/accept/$',
+        login_required(views.CardConventAcceptView.as_view()),
+        name='card_convent_accept'),
+    url(r'^card/convent/(?P<pk>\d+)/delete/$',
+        login_required(views.CardConventDeleteView.as_view()),
+        name='card_convent_delete'),
 
     # Admin
     url(r'^admin/', include(admin.site.urls)))

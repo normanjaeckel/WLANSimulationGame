@@ -8,18 +8,24 @@
 
 {% block both %}
     <div class="col c12">
-        <p>{% trans 'Owner' %}: {{ card.owner }}</p>
-        <p>{% trans 'Target' %}: {{ card.target }}</p>
         <p>{% trans 'Value' %}: {{ card.value }}</p>
+        {% if card.is_played %}
+            <p>{% trans 'This card was already played.' %}</p>
+        {% else %}
+            <p>
+                {% trans 'This card was not yet played.' %}
+                {% if card.value > 0 %}
+                    <a href="{% url 'card_convent' %}">{% trans 'Goto convent' %}</a>
+                {% else %}
+                    {% blocktrans with bad_playing_player=card.bad_playing_player bad_receiving_player=card.bad_receiving_player %}
+                        It can only be played by {{ bad_playing_player }} and only on {{ bad_receiving_player }}.
+                    {% endblocktrans %}
+                    {% if user == card.bad_playing_player %}
+                        </p><p><a href="{% url 'card_play' card.pk %}"><button>{% trans 'Play this card' %}</button></a>
+                    {% endif %}
+                {% endif %}
+            </p>
+        {% endif %}
         <p><em>{{ card.description }}</em></p>
-        <p>
-            {% if card.used %}
-                <em>{% trans 'This card was already played.' %}</em>
-            {% elif user.is_staff %}
-                <a href="{% url 'card_play' card.pk %}"><button>{% trans 'Play this card' %}</button></a>
-            {% else %}
-                <em>{% trans 'This card was not yet played.' %}</em>
-            {% endif %}
-        </p>
     </div>
 {% endblock %}

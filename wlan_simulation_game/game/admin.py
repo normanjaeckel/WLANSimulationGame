@@ -4,7 +4,7 @@ from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import Group
 
-from .models import Card, Interception, Message, Player
+from .models import Card, ConventOffer, Interception, Message, Player
 
 
 class PlayerCreationForm(UserCreationForm):
@@ -48,11 +48,13 @@ class CardAdmin(admin.ModelAdmin):
     """
     Customized admin for the card model.
     """
-    list_display = ('name', 'owner', 'target', 'value', 'used')
+    list_display = ('name', 'playing_player', 'receiving_player', 'value',
+        'path', 'level', 'bad_playing_player', 'bad_receiving_player')
 
 
 admin.site.register(Player, PlayerAdmin)
 admin.site.register(Message)
 admin.site.register(Interception)
 admin.site.register(Card, CardAdmin)
+admin.site.register(ConventOffer)
 admin.site.unregister(Group)

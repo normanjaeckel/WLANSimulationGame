@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans 'Convent' %} – {{ block.super }}{% endblock %}
+
+{% block heading %}{% trans 'Convent' %}{% endblock %}
+
+{% block both %}
+    <div class="col c12">
+        <h3>{% trans 'Open offers' %}</h3>
+        <ul>
+            {% for offer in offers %}
+                <li>
+                    {% if offer.type == 'from_me' %}
+                        {% blocktrans with acceptor=offer.offer.acceptor %}
+                            Offer from me to {{ acceptor }}
+                        {% endblocktrans %}
+                        <a href="{% url 'card_convent_delete' offer.offer.pk %}"><button>{% trans 'Delete' %}</button></a>
+                    {% else %}
+                        {% blocktrans with offeror=offer.offer.offeror %}
+                            Offer from {{ offeror }} to me
+                        {% endblocktrans %}
+                        <a href="{% url 'card_convent_accept' offer.offer.pk %}"><button>{% trans 'Accept' %}</button></a>
+                        <a href="{% url 'card_convent_delete' offer.offer.pk %}"><button>{% trans 'Reject' %}</button></a>
+                    {% endif %}
+                </li>
+            {% empty %}
+                <li><em>{% trans 'No offers available' %}</em></li>
+            {% endfor %}
+        </ul>
+
+    </div>
+{% endblock %}

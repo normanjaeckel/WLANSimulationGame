@@ -4,14 +4,14 @@ from django.contrib.formtools.wizard.views import SessionWizardView
 from django.core.exceptions import PermissionDenied
 from django.core.urlresolvers import reverse
 from django.db.models import Q
-from django.http import HttpResponseRedirect
+from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext as _
-from django.views.generic import ListView, DetailView, RedirectView, CreateView
+from django.views.generic import FormView, ListView, DeleteView, DetailView, RedirectView, CreateView
 
 from ..exceptions import WLANSimulationGameError
-from .forms import MessageCreateForm, MessageCreateFormStaff
-from .models import Card, Message, Interception
+from .forms import ConventOfferForm, MessageCreateForm, MessageCreateFormStaff
+from .models import Card, ConventOffer, Message, Interception
 
 
 class MessageListView(ListView):
@@ -184,11 +184,11 @@ class CardListView(ListView):
     """
     model = Card
 
-    def get_queryset(self, *args, **kwargs):
-        """
-        Sort cards by owner and target but then shuffle them.
-        """
-        return super().get_queryset(*args, **kwargs).order_by('owner', 'target', '?')
+    # def get_queryset(self, *args, **kwargs):
+        # """
+        # Sort cards by owner and target but then shuffle them.
+        # """
+        # return super().get_queryset(*args, **kwargs).order_by('owner', 'target', '?')
 
 
 class CardDetailView(DetailView):
@@ -198,24 +198,20 @@ class CardDetailView(DetailView):
     """
     model = Card
 
-    def dispatch(self, request, *args, **kwargs):
-        """
-        Method to check that only staff or owners can see their cards.
-        """
-        dispatch = super().dispatch(request, *args, **kwargs)
-        if not request.user.is_staff and not request.user == self.object.owner:
-            messages.error(request, _('You are not owner of this card, so you are not allowed to see it.'))
-            raise PermissionDenied
-        return dispatch
+    # def dispatch(self, request, *args, **kwargs):
+        # """
+        # Method to check that only staff or owners can see their cards.
+        # """
+        # dispatch = super().dispatch(request, *args, **kwargs)
+        # if not request.user.is_staff and not request.user == self.object.owner:
+            # messages.error(request, _('You are not owner of this card, so you are not allowed to see it.'))
+            # raise PermissionDenied
+        # return dispatch
 
 
 class CardPlayView(RedirectView):
     """
-    View to play a card.
-
-    A card is played, when it exists, is not already used and the owner can
-    still play at least one card. In urls.py it is checked that the
-    request.user is staff.
+    View to play a bad card.
     """
     permanent = False
 
@@ -225,10 +221,75 @@ class CardPlayView(RedirectView):
         After that it redirects to the list of cards.
         """
         card = get_object_or_404(Card, pk=kwargs['pk'])
-        try:
-            card.play()
-        except WLANSimulationGameError as error_message:
-            messages.error(self.request, error_message)
-        else:
-            messages.success(self.request, _('Card "%(name)s" was successfully played.') % {'name': card.name})
+        if card.is_played():
+            messages.error(self.request, _('This card is already played.'))
+            raise Http404
+        if card.path != 0:
+            messages.error(self.request, _('This card can not be played directly.'))
+            raise Http404
+        if self.request.user != card.bad_playing_player:
+            messages.error(self.request, _('This card can only be played by its owner.'))
+            raise PermissionDenied
+        # TODO: Should a player be able to play more than one bad card? If not, add some logic here.
+        card.playing_player = card.bad_playing_player
+        card.receiving_player = card.bad_receiving_player
+        card.save()
+        messages.success(self.request, _('Card "%(name)s" was successfully played.') % {'name': card.name})
         return reverse('card_list')
+
+
+class CardConventView(FormView):
+    """
+    View to see all offers and to submit a new offer.
+    """
+    form_class = ConventOfferForm
+    template_name = 'game/convent_form.html'
+
+    def get_context_data(self, **context):
+        """
+        Adds offers to the context.
+        """
+        context = super().get_context_data(**context)
+        offers = []
+        for offer in ConventOffer.objects.filter(
+                Q(offeror=self.request.user) | Q (acceptor=self.request.user)):
+            if offer.offeror == self.request.user:
+                offer_type = 'from_me'
+            else:
+                offer_type = 'to_me'
+            offers.append({'offer': offer, 'type': offer_type})
+        context['offers'] = offers
+        return context
+
+
+class CardConventAcceptView(RedirectView):
+    pass
+
+
+class CardConventDeleteView(DeleteView):
+    pass
+
+
+# class CardPlayView(RedirectView):
+    # """
+    # View to play a card.
+
+    # A card is played, when it exists, is not already used and the owner can
+    # still play at least one card. In urls.py it is checked that the
+    # request.user is staff.
+    # """
+    # permanent = False
+
+    # def get_redirect_url(self, *args, **kwargs):
+        # """
+        # Method to check if the card is to be played. If yes, it is played.
+        # After that it redirects to the list of cards.
+        # """
+        # card = get_object_or_404(Card, pk=kwargs['pk'])
+        # try:
+            # card.play()
+        # except WLANSimulationGameError as error_message:
+            # messages.error(self.request, error_message)
+        # else:
+            # messages.success(self.request, _('Card "%(name)s" was successfully played.') % {'name': card.name})
+        # return reverse('card_list')

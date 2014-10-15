@@ -8,27 +8,22 @@
 
 {% block both %}
     <div class="col c12">
-        {% regroup card_list by owner as owner_list %}
+        <p><a href="{% url 'card_convent' %}">{% trans 'Goto convent' %}</a></p>
+        {% regroup card_list by get_path_display as path_list %}
         <ul>
-            {% for owner_group in owner_list %}
+            {% for path_group in path_list %}
                 <li style="margin-bottom:1em;">
-                    {% trans 'Owner' %}: {{ owner_group.grouper }}
-                    {% regroup owner_group.list by target as target_list %}
+                    {% trans 'Path' %}: {{ path_group.grouper }}
+                    {% regroup path_group.list by level as level_list %}
                     <ul style="padding-left:1em; list-style-type:none;">
-                        {% for target_group in target_list %}
+                        {% for level_group in level_list %}
                             <li>
-                                {% trans 'Target' %}: {{ target_group.grouper }}
+                                {% trans 'Level' %}: {{ level_group.grouper }}
                                 <ul style="padding-left:2em; list-style-type:none;">
-                                    {% for card in target_group.list %}
+                                    {% for card in level_group.list %}
                                         <li>
-                                            {% if user.is_staff or user == card.owner %}
-                                                <a href="{% url 'card_detail' card.pk %}">
-                                            {% endif %}
-                                            {{ card }}
-                                            {% if user.is_staff or user == card.owner %}
-                                                </a> {{ card.value }}
-                                            {% endif %}
-                                            {% if card.used %}
+                                            <a href="{% url 'card_detail' card.pk %}">{{ card }}</a>
+                                            {% if card.is_played %}
                                                 ({% trans 'Played' %})
                                             {% endif %}
                                         </li>
