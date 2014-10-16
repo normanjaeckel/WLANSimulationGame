@@ -15,6 +15,6 @@
             <p><a href="{% url 'print_card_list_full' %}">{% trans 'Print all cards (full)' %}</a></p>
             <p><a href="{% url 'print_card_list_short' %}">{% trans 'Print all cards (short)' %}</a></p>
         {% endif %}
-        <p>{{ config.introduction|linebreaks }}</p>
+        {{ config.introduction|linebreaks }}
     </div>
 {% endblock %}

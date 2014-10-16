@@ -21,11 +21,11 @@
                                 <ul style="padding-left:2em; list-style-type:none;">
                                     {% for card in target_group.list %}
                                         <li>
-                                            {% if user.is_staff or user.player == card.owner %}
+                                            {% if user.is_staff or user == card.owner %}
                                                 <a href="{% url 'card_detail' card.pk %}">
                                             {% endif %}
                                             {{ card }}
-                                            {% if user.is_staff or user.player == card.owner %}
+                                            {% if user.is_staff or user == card.owner %}
                                                 </a> {{ card.value }}
                                             {% endif %}
                                             {% if card.used %}

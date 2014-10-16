@@ -203,7 +203,7 @@ class CardDetailView(DetailView):
         Method to check that only staff or owners can see their cards.
         """
         dispatch = super().dispatch(request, *args, **kwargs)
-        if not request.user.is_staff and not request.user.player == self.object.owner:
+        if not request.user.is_staff and not request.user == self.object.owner:
             messages.error(request, _('You are not owner of this card, so you are not allowed to see it.'))
             raise PermissionDenied
         return dispatch
