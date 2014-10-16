@@ -76,12 +76,12 @@ Example games
 =============
 
 To load the data of the German example simulation game „Wissen ist Macht“,
-install the programm as metioned above and run::
+install the program as mentioned above and run::
 
     $ python manage.py loaddata examples/example_game_de_1/data.json
 
 To load the data of the German example simulation game „Jeder ist seines
-Glückes ...“, install the programm as metioned above and run::
+Glückes ...“, install the program as mentioned above and run::
 
     $ python manage.py loaddata examples/example_game_de_2/data.json
 
