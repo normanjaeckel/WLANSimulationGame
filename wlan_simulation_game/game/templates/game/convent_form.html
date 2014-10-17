@@ -2,6 +2,14 @@
 
 {% load i18n %}
 
+{% block styles %}
+    {{ block.super }}
+    <meta http-equiv="refresh" content="10">
+    <style>
+        .errorlist {color: rgb(208, 96, 96);}
+    </style>
+{% endblock %}
+
 {% block title %}{% trans 'Convent' %} – {{ block.super }}{% endblock %}
 
 {% block heading %}{% trans 'Convent' %}{% endblock %}
@@ -13,13 +21,13 @@
             {% for offer in offers %}
                 <li>
                     {% if offer.type == 'from_me' %}
-                        {% blocktrans with acceptor=offer.offer.acceptor %}
-                            Offer from me to {{ acceptor }}
+                        {% blocktrans with acceptor=offer.offer.acceptor offered_card=offer.offer.offered_card card_in_return=offer.offer.card_in_return|default_if_none:'–' %}
+                            {{ user }} offers {{ acceptor }} card <strong>{{ offered_card }}</strong>. Card in return: <strong>{{ card_in_return }}</strong>
                         {% endblocktrans %}
                         <a href="{% url 'card_convent_delete' offer.offer.pk %}"><button>{% trans 'Delete' %}</button></a>
                     {% else %}
-                        {% blocktrans with offeror=offer.offer.offeror %}
-                            Offer from {{ offeror }} to me
+                        {% blocktrans with offeror=offer.offer.offeror offered_card=offer.offer.offered_card card_in_return=offer.offer.card_in_return|default_if_none:'–' %}
+                            {{ offeror }} offers {{ user }} card <strong>{{ offered_card }}</strong>. Card in return: <strong>{{ card_in_return }}</strong>
                         {% endblocktrans %}
                         <a href="{% url 'card_convent_accept' offer.offer.pk %}"><button>{% trans 'Accept' %}</button></a>
                         <a href="{% url 'card_convent_delete' offer.offer.pk %}"><button>{% trans 'Reject' %}</button></a>
@@ -29,6 +37,11 @@
                 <li><em>{% trans 'No offers available' %}</em></li>
             {% endfor %}
         </ul>
-
+        <h3>{% trans 'New offer' %}</h3>
+        <form action="" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="{% trans 'Submit' %}">
+            <input type="reset" value="{% trans 'Reset' %}">
+        </form>
     </div>
 {% endblock %}

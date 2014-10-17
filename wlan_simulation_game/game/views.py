@@ -2,7 +2,8 @@ from constance import config
 from django.contrib import messages
 from django.contrib.formtools.wizard.views import SessionWizardView
 from django.core.exceptions import PermissionDenied
-from django.core.urlresolvers import reverse
+from django.core.urlresolvers import reverse, reverse_lazy
+from django.db import IntegrityError, transaction
 from django.db.models import Q
 from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import get_object_or_404
@@ -233,8 +234,12 @@ class CardPlayView(RedirectView):
         # TODO: Should a player be able to play more than one bad card? If not, add some logic here.
         card.playing_player = card.bad_playing_player
         card.receiving_player = card.bad_receiving_player
-        card.save()
-        messages.success(self.request, _('Card "%(name)s" was successfully played.') % {'name': card.name})
+        try:
+            card.save()
+        except WLANSimulationGameError as error_message:
+            messages.error(self.request, error_message)
+        else:
+            messages.success(self.request, _('Card "%(name)s" was successfully played.') % {'name': card.name})
         return reverse('card_list')
 
 
@@ -243,6 +248,7 @@ class CardConventView(FormView):
     View to see all offers and to submit a new offer.
     """
     form_class = ConventOfferForm
+    success_url = reverse_lazy('card_convent')
     template_name = 'game/convent_form.html'
 
     def get_context_data(self, **context):
@@ -261,13 +267,101 @@ class CardConventView(FormView):
         context['offers'] = offers
         return context
 
+    def get_form_kwargs(self):
+        """
+        Hacks in the request for we can use it in the form later.
+        """
+        form_kwargs = super().get_form_kwargs()
+        form_kwargs['request'] = self.request
+        return form_kwargs
+
+    def form_valid(self, form):
+        """
+        Creates an offer.
+        """
+        ConventOffer.objects.create(
+            offeror=self.request.user,
+            acceptor=form.cleaned_data['acceptor'],
+            offered_card=form.cleaned_data['offered_card'],
+            card_in_return=form.cleaned_data['card_in_return'])
+        return super().form_valid(form)
+
 
 class CardConventAcceptView(RedirectView):
-    pass
+    """
+    View to accept an offer.
+    """
+    permanent = False
+
+    def get_redirect_url(self, *args, **kwargs):
+        """
+        Contains some logic whether the offer is to be accepted.
+        """
+        offer = get_object_or_404(ConventOffer, pk=kwargs['pk'])
+
+        if not offer.acceptor == self.request.user:
+            messages.error(self.request, _('You are not allowed to accept this offer.'))
+            raise PermissionDenied
+
+        fail = False
+        try:
+            with transaction.atomic():
+                offered_card = Card.objects.select_for_update().get(pk=offer.offered_card_id)
+                if not offered_card.is_played():
+                    offered_card.playing_player = offer.offeror
+                    offered_card.receiving_player = offer.acceptor
+                    if offer.card_in_return_id:
+                        card_in_return =  Card.objects.select_for_update().get(pk=offer.card_in_return_id)
+                        if not card_in_return.is_played():
+                            offered_card.save()
+                            offered_card.from_offers.all().delete()
+                            offered_card.to_offers.all().delete()
+                            card_in_return.playing_player = offer.acceptor
+                            card_in_return.receiving_player = offer.offeror
+                            card_in_return.save()
+                            card_in_return.from_offers.all().delete()
+                            card_in_return.to_offers.all().delete()
+                        else:
+                            messages.error(self.request, _('The offer can not be accepted any more because the card in return was already played.'))
+                            fail=True
+                    else:
+                        offered_card.save()
+                        offered_card.from_offers.all().delete()
+                        offered_card.to_offers.all().delete()
+                else:
+                    messages.error(self.request, _('The offer can not be accepted any more because the offered card was already played.'))
+                    fail = True
+        except IntegrityError:
+            messages.error(self.request, 'Unknown IntegrityError')
+        except WLANSimulationGameError as error_message:
+            messages.error(self.request, error_message)
+        else:
+            if not fail:
+                messages.success(self.request, _('Offer successfully accepted. Look at your new score if you like.'))
+
+        return reverse('card_convent')
 
 
-class CardConventDeleteView(DeleteView):
-    pass
+class CardConventDeleteView(RedirectView):
+    """
+    View to delete offers. Either the offeror or the acceptor can delete an
+    offer.
+    """
+    permanent = False
+
+    def get_redirect_url(self, *args, **kwargs):
+        """
+        Method to check if the user is allowed to delete the convent offer.
+        If yes, the offer will be deleted and the user is redirected to the
+        convent page. If no, a 403 is raised.
+        """
+        offer = get_object_or_404(ConventOffer, pk=kwargs['pk'])
+        if not offer.offeror == self.request.user and not offer.acceptor == self.request.user:
+            messages.error(self.request, _('You are not allowed to delete this offer.'))
+            raise PermissionDenied
+        offer.delete()
+        messages.success(self.request, _('Offer successfully deleted.'))
+        return reverse('card_convent')
 
 
 # class CardPlayView(RedirectView):

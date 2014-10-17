@@ -134,13 +134,47 @@ class ConventOfferForm(forms.Form):
     offered_card = forms.ModelChoiceField(
         empty_label=None,
         label=ugettext_lazy('Offered Card'),
-        queryset=Card.objects.exclude(path=0))
-    acceptor = forms.ModelChoiceField(
+        queryset=Card.objects.exclude(path=0).filter(playing_player__exact=None))
+    card_in_return = forms.ModelChoiceField(
         label=ugettext_lazy('Card in return'),
         required=False,
-        queryset=Card.objects.all())
+        queryset=Card.objects.exclude(path=0).filter(playing_player__exact=None))
 
-    def __init__(self, *arg, **kwargs):
+    def __init__(self, request, *args, **kwargs):
         """
+        Manipulates acceptor field to exclude the request user player and
+        staff users. The request object is excluded from the kwargs for it
+        was hacked in in the view.
         """
+        self.request = request
+        return_value = super().__init__(*args, **kwargs)
+        self.fields['acceptor'].queryset = Player.objects.filter(is_staff=False).exclude(pk=request.user.pk)
+        return return_value
 
+    def clean(self):
+        """
+        Varios checks
+
+        Checks that the submitter does not choose the same cards as offered
+        card and card in return. Checks that there is only one offer by one
+        player to another. Checks that the offer follows the path rules
+        that means one can only gat a higher path card if he already has a
+        lower one.
+        """
+        cleaned_data = super().clean()
+        if cleaned_data.get('offered_card') and cleaned_data.get('acceptor'):
+            if cleaned_data['offered_card'] == cleaned_data.get('card_in_return'):
+                raise forms.ValidationError(_('You have to choose different cards or omit the card in return.'))
+            if ConventOffer.objects.filter(offeror=self.request.user, acceptor=cleaned_data['acceptor']).exists():
+                raise forms.ValidationError(_('You can have only one offer to a player at the same time.'))
+            if (cleaned_data['offered_card'].level > 1
+                    and not cleaned_data['acceptor'].cards_against_me.filter(
+                        path=cleaned_data['offered_card'].path,
+                        level__gte=cleaned_data['offered_card'].level-1).exists()):
+                raise forms.ValidationError(_('You can not offer this card because your partner needs a card with a lower level in the same path before.'))
+            if cleaned_data.get('card_in_return'):
+                if (cleaned_data['card_in_return'].level > 1
+                        and not self.request.user.cards_against_me.filter(
+                            path=cleaned_data['card_in_return'].path,
+                            level__gte=cleaned_data['card_in_return'].level-1).exists()):
+                    raise forms.ValidationError(_('You can not demand this card because you need a card with a lower level in the same path before.'))

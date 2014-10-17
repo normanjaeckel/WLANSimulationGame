@@ -209,6 +209,16 @@ class Card(models.Model):
         verbose_name = ugettext_lazy('Card')
         verbose_name_plural = ugettext_lazy('Cards')
 
+    def save(self, *args, **kwargs):
+        """
+        Checks that a player can not play more cards that his config limit
+        allows.
+        """
+        if self.playing_player is not None:
+            if self.playing_player.playable_cards <= 0:
+                raise WLANSimulationGameError(_('%s can not play cards anymore.') % self.playing_player)
+        return super().save(*args, **kwargs)
+
     def __str__(self):
         """
         Method for representation.
