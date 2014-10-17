@@ -171,7 +171,8 @@ class ConventOfferForm(forms.Form):
                     and not cleaned_data['acceptor'].cards_against_me.filter(
                         path=cleaned_data['offered_card'].path,
                         level__gte=cleaned_data['offered_card'].level-1).exists()):
-                raise forms.ValidationError(_('You can not offer this card because your partner needs a card with a lower level in the same path before.'))
+                raise forms.ValidationError(_('You can not offer this card because your partner needs '
+                                              'a card with a lower level in the same path before.'))
             if cleaned_data.get('card_in_return'):
                 if (cleaned_data['card_in_return'].level > 1
                         and not self.request.user.cards_against_me.filter(

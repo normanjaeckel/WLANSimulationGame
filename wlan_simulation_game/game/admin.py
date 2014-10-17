@@ -48,8 +48,9 @@ class CardAdmin(admin.ModelAdmin):
     """
     Customized admin for the card model.
     """
-    list_display = ('name', 'playing_player', 'receiving_player', 'value',
-        'path', 'level', 'bad_playing_player', 'bad_receiving_player')
+    list_display = (
+        'name', 'playing_player', 'receiving_player', 'value', 'path', 'level',
+        'bad_playing_player', 'bad_receiving_player')
 
 
 admin.site.register(Player, PlayerAdmin)

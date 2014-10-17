@@ -193,8 +193,8 @@ class Card(models.Model):
     receiving_player = models.ForeignKey(
         Player, null=True, blank=True, related_name='cards_against_me',
         verbose_name=ugettext_lazy('Receiving player'))
-    value = models.IntegerField(validators=[validate_not_zero],
-        verbose_name=ugettext_lazy('Value'))
+    value = models.IntegerField(
+        validators=[validate_not_zero], verbose_name=ugettext_lazy('Value'))
     path = models.IntegerField(choices=PATH_COICES, verbose_name=ugettext_lazy('Path'))
     level = models.IntegerField(verbose_name=ugettext_lazy('Level'))
     bad_playing_player = models.ForeignKey(
@@ -231,26 +231,26 @@ class Card(models.Model):
         """
         if self.playing_player is None and self.receiving_player is not None:
             raise ValidationError(_('You need to set a playing player if you '
-                'want to set a receiving player.'))
+                                    'want to set a receiving player.'))
         if self.playing_player is not None and self.playing_player == self.receiving_player:
             raise ValidationError(_('The playing player can not be the receiving player.'))
         if self.value > 0:
             if self.path == 0:
                 raise ValidationError(_('Do not set a positiv value if the '
-                    'card does belong to the bad path.'))
+                                        'card does belong to the bad path.'))
         else:
             if self.path != 0:
                 raise ValidationError(_('Do not set a negativ value if the '
-                    'card does not belong to the bad path.'))
+                                        'card does not belong to the bad path.'))
             if self.bad_playing_player is None or self.bad_receiving_player is None:
                 raise ValidationError(_('The fields bad playing player and '
-                    'bad receiving player are required for negativ cards.'))
+                                        'bad receiving player are required for negativ cards.'))
             if self.playing_player is not None and self.playing_player != self.bad_playing_player:
                 raise ValidationError(_('The bad card can only be played by '
-                    'the bad playing player.'))
+                                        'the bad playing player.'))
             if self.receiving_player is not None and self.receiving_player != self.bad_receiving_player:
                 raise ValidationError(_('The bad card can only be played on '
-                    'the bad receiving player.'))
+                                        'the bad receiving player.'))
 
     def is_played(self):
         """
@@ -310,7 +310,7 @@ class ConventOffer(models.Model):
         # Override to check that no one is owner and target at one time.
         # """
         # if self.owner == self.target:
-            # raise WLANSimulationGameError(_('The owner can not be saved as target.'))
+        #     raise WLANSimulationGameError(_('The owner can not be saved as target.'))
         # return super().save(*args, **kwargs)
 
     # def __str__(self):
@@ -324,11 +324,11 @@ class ConventOffer(models.Model):
         # Method to play a card. No check of permissions.
         # """
         # if self.used:
-            # raise WLANSimulationGameError(_('You can not play this card any more. It is already used.'))
+        #     raise WLANSimulationGameError(_('You can not play this card any more. It is already used.'))
         # elif self.owner.playable_cards <= 0:
-            # raise WLANSimulationGameError(_('The owner can not play cards anymore.'))
+        #     raise WLANSimulationGameError(_('The owner can not play cards anymore.'))
         # else:
-            # # Everything is ok, the card can be played.
-            # pass
+        #     # Everything is ok, the card can be played.
+        #     pass
         # self.used = True
         # self.save()

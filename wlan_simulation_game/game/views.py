@@ -8,7 +8,7 @@ from django.db.models import Q
 from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext as _
-from django.views.generic import FormView, ListView, DeleteView, DetailView, RedirectView, CreateView
+from django.views.generic import FormView, ListView, DetailView, RedirectView, CreateView
 
 from ..exceptions import WLANSimulationGameError
 from .forms import ConventOfferForm, MessageCreateForm, MessageCreateFormStaff
@@ -186,10 +186,10 @@ class CardListView(ListView):
     model = Card
 
     # def get_queryset(self, *args, **kwargs):
-        # """
-        # Sort cards by owner and target but then shuffle them.
-        # """
-        # return super().get_queryset(*args, **kwargs).order_by('owner', 'target', '?')
+    #     """
+    #     Sort cards by owner and target but then shuffle them.
+    #     """
+    #     return super().get_queryset(*args, **kwargs).order_by('owner', 'target', '?')
 
 
 class CardDetailView(DetailView):
@@ -200,14 +200,14 @@ class CardDetailView(DetailView):
     model = Card
 
     # def dispatch(self, request, *args, **kwargs):
-        # """
-        # Method to check that only staff or owners can see their cards.
-        # """
-        # dispatch = super().dispatch(request, *args, **kwargs)
-        # if not request.user.is_staff and not request.user == self.object.owner:
-            # messages.error(request, _('You are not owner of this card, so you are not allowed to see it.'))
-            # raise PermissionDenied
-        # return dispatch
+    #     """
+    #     Method to check that only staff or owners can see their cards.
+    #     """
+    #     dispatch = super().dispatch(request, *args, **kwargs)
+    #     if not request.user.is_staff and not request.user == self.object.owner:
+    #         messages.error(request, _('You are not owner of this card, so you are not allowed to see it.'))
+    #         raise PermissionDenied
+    #     return dispatch
 
 
 class CardPlayView(RedirectView):
@@ -258,7 +258,7 @@ class CardConventView(FormView):
         context = super().get_context_data(**context)
         offers = []
         for offer in ConventOffer.objects.filter(
-                Q(offeror=self.request.user) | Q (acceptor=self.request.user)):
+                Q(offeror=self.request.user) | Q(acceptor=self.request.user)):
             if offer.offeror == self.request.user:
                 offer_type = 'from_me'
             else:
@@ -311,7 +311,7 @@ class CardConventAcceptView(RedirectView):
                     offered_card.playing_player = offer.offeror
                     offered_card.receiving_player = offer.acceptor
                     if offer.card_in_return_id:
-                        card_in_return =  Card.objects.select_for_update().get(pk=offer.card_in_return_id)
+                        card_in_return = Card.objects.select_for_update().get(pk=offer.card_in_return_id)
                         if not card_in_return.is_played():
                             offered_card.save()
                             offered_card.from_offers.all().delete()
@@ -323,7 +323,7 @@ class CardConventAcceptView(RedirectView):
                             card_in_return.to_offers.all().delete()
                         else:
                             messages.error(self.request, _('The offer can not be accepted any more because the card in return was already played.'))
-                            fail=True
+                            fail = True
                     else:
                         offered_card.save()
                         offered_card.from_offers.all().delete()
@@ -381,9 +381,9 @@ class CardConventDeleteView(RedirectView):
         # """
         # card = get_object_or_404(Card, pk=kwargs['pk'])
         # try:
-            # card.play()
+        #     card.play()
         # except WLANSimulationGameError as error_message:
-            # messages.error(self.request, error_message)
+        #     messages.error(self.request, error_message)
         # else:
-            # messages.success(self.request, _('Card "%(name)s" was successfully played.') % {'name': card.name})
+        #     messages.success(self.request, _('Card "%(name)s" was successfully played.') % {'name': card.name})
         # return reverse('card_list')
