@@ -8,7 +8,8 @@
 
 {% block both %}
     <div class="col c12">
-        <p><a href="{% url 'card_convent' %}">{% trans 'Goto convent' %}</a></p>
+        <p><a href="{% url 'card_convent' %}"><button>{% trans 'Goto convent' %}</button></a></p>
+        <p>{% trans 'Attention: Each card can be played overall only once.' %}</p>
         {% regroup card_list by get_path_display as path_list %}
         <ul>
             {% for path_group in path_list %}
@@ -18,11 +19,16 @@
                     <ul style="padding-left:1em; list-style-type:none;">
                         {% for level_group in level_list %}
                             <li>
-                                {% trans 'Level' %}: {{ level_group.grouper }}
+                                {% if level_group.list.0.path > 0 %}
+                                    {% trans 'Level' %}: {{ level_group.grouper }}
+                                {% endif %}
                                 <ul style="padding-left:2em; list-style-type:none;">
                                     {% for card in level_group.list %}
                                         <li>
                                             <a href="{% url 'card_detail' card.pk %}">{{ card }}</a>
+                                            {% if card.path == 0 and card.bad_playing_player == user %}
+                                                ({% trans 'My card' %})
+                                            {% endif %}
                                             {% if card.is_played %}
                                                 ({% trans 'Played by' %} {{ card.playing_player }} | {% trans 'Played on' %} {{ card.receiving_player }})
                                             {% endif %}

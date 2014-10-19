@@ -25,6 +25,7 @@
                     <a {% url_href_class_current 'player_list' %}>{% trans 'Players' %}</a>
                     <a {% url_href_class_current 'message_list' %}>{% trans 'Messages' %}</a>
                     <a {% url_href_class_current 'card_list' %}>{% trans 'Cards' %}</a>
+                    <a href="{% url 'card_convent' %}">{% trans 'Convent' %}</a>
                     {% if user.is_authenticated %}
                         {% if user.is_staff %}
                             <a href="{% url 'admin:index' %}">{% trans 'Administration' %}</a>

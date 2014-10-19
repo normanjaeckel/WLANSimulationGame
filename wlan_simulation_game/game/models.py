@@ -205,7 +205,7 @@ class Card(models.Model):
         verbose_name=ugettext_lazy('Bad receiving player'))
 
     class Meta:
-        ordering = ('-path', 'level')
+        ordering = ('path', 'level')
         verbose_name = ugettext_lazy('Card')
         verbose_name_plural = ugettext_lazy('Cards')
 
@@ -223,7 +223,12 @@ class Card(models.Model):
         """
         Method for representation.
         """
-        return self.name
+        if self.path == 0:
+            return_value = self.name
+        else:
+            path = {1: 'A', 2: 'B', 3: 'C'}[self.path]
+            return_value = '%s%s %s' % (path, self.level, self.name)
+        return return_value
 
     def clean(self):
         """
