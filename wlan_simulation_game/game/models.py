@@ -180,10 +180,10 @@ class Card(models.Model):
     Model for good and bad cards the players can play.
     """
     PATH_COICES = (
-        (0, ugettext_lazy('Bad path')),
-        (1, ugettext_lazy('Path 1')),
-        (2, ugettext_lazy('Path 2')),
-        (3, ugettext_lazy('Path 3')))
+        (0, 'Minuskarten'),
+        (1, 'Beachtete Gemeindearbeit'),
+        (2, 'Zukunftsfähige Strukturen'),
+        (3, 'Eine einflussreiche Stimme in der Landeskirche'))
 
     name = models.CharField(max_length=255, verbose_name=ugettext_lazy('Name'))
     description = models.TextField(blank=True, verbose_name=ugettext_lazy('Description'))

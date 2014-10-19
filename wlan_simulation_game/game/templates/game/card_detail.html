@@ -2,13 +2,17 @@
 
 {% load i18n %}
 
-{% block title %}{% trans 'Card' %} {{ card }} – {{ block.super }}{% endblock %}
+{% block title %}{% trans 'Card' %}: {{ card }} – {{ block.super }}{% endblock %}
 
-{% block heading %}{% trans 'Card' %} {{ card }}{% endblock %}
+{% block heading %}{% trans 'Card' %}: {{ card }}{% endblock %}
 
 {% block both %}
     <div class="col c12">
         <p>{% trans 'Value' %}: {{ card.value }}</p>
+        {% if card.value > 0 %}
+            <p>{% trans 'Path' %}: {{ card.get_path_display }}</p>
+            <p>{% trans 'Level' %}: {{ card.level }}</p>
+        {% endif %}
         {% if card.is_played %}
             <p>{% trans 'This card was already played.' %}</p>
         {% else %}

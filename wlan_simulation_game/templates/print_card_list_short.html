@@ -13,11 +13,24 @@
 
 {% block content %}
     <h1>{% trans 'List of all cards' %}</h1>
-    <p>{% trans 'This list is sorted by card owner and target.' %}</p>
-    <dl>
-        {% for card in card_list %}
-            <dt class="card">{{ card }}</dt>
-            <dd>{% trans 'Owner' %}: {{ card.owner }} | {% trans 'Target' %}: {{ card.target }}</dd>
+    {% regroup card_list by get_path_display as path_list %}
+        {% for path_group in path_list %}
+            <h2>{{ path_group.grouper }}</h2>
+            {% regroup path_group.list by level as level_list %}
+            <dl>
+                {% for level_group in level_list %}
+                    {% for card in level_group.list %}
+                        <dt class="card">{{ card }}</dt>
+                        <dd>
+                            {% if card.path != 0 %}
+                                {% trans 'Level' %} {{ level_group.grouper }}
+                            {% else %}
+                                {{ card.bad_playing_player }} &#8594; {{ card.bad_receiving_player }}
+                            {% endif %}
+                        </dd>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+            {% if not forloop.last %}<hr>{% endif %}
         {% endfor %}
-    </dl>
 {% endblock %}

@@ -24,7 +24,7 @@
                                         <li>
                                             <a href="{% url 'card_detail' card.pk %}">{{ card }}</a>
                                             {% if card.is_played %}
-                                                ({% trans 'Played' %})
+                                                ({% trans 'Played by' %} {{ card.playing_player }} | {% trans 'Played on' %} {{ card.receiving_player }})
                                             {% endif %}
                                         </li>
                                     {% endfor %}

@@ -19,9 +19,17 @@
     {% for card in card_list %}
         <div class="card">
             <h1>{{ card }}</h1>
-            <p>{% trans 'Owner' %}: {{ card.owner }}</p>
-            <p>{% trans 'Target' %}: {{ card.target }}</p>
             <p>{% trans 'Value' %}: {{ card.value }}</p>
+            {% if card.value > 0 %}
+                <p>{% trans 'Path' %}: {{ card.get_path_display }}</p>
+                <p>{% trans 'Level' %}: {{ card.level }}</p>
+            {% else %}
+                <p>
+                    {% blocktrans with bad_playing_player=card.bad_playing_player bad_receiving_player=card.bad_receiving_player %}
+                        It can only be played by {{ bad_playing_player }} and only on {{ bad_receiving_player }}.
+                    {% endblocktrans %}
+                </p>
+            {% endif %}
             <p><em>{{ card.description }}</em></p>
             <hr>
         </div>
