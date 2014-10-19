@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WLANSimulationGame\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-18 01:41+0200\n"
-"PO-Revision-Date: 2014-10-18 00:03+0000\n"
+"POT-Creation-Date: 2014-10-20 00:09+0200\n"
+"PO-Revision-Date: 2014-10-19 22:11+0000\n"
 "Last-Translator: Norman Jäckel <transifex16062013@normanjaeckel.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/wlansimulationgame/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -128,15 +128,15 @@ msgstr "Opfer-Absender"
 msgid "Victim Recipient"
 msgstr "Opfer-Empfänger"
 
-#: game/forms.py:132 game/models.py:271
+#: game/forms.py:132 game/models.py:276
 msgid "Acceptor"
 msgstr "Annehmender"
 
-#: game/forms.py:136 game/models.py:274
+#: game/forms.py:136 game/models.py:279
 msgid "Offered Card"
 msgstr "Angebotene Karte"
 
-#: game/forms.py:139 game/models.py:277
+#: game/forms.py:139 game/models.py:282
 msgid "Card in return"
 msgstr "Erwartete Karte"
 
@@ -240,22 +240,6 @@ msgstr "Es gibt keine neue Nachricht, die Sie noch nicht abgefangen haben. Versu
 msgid "Zero is not allowed."
 msgstr "Null ist nicht zulässig."
 
-#: game/models.py:183
-msgid "Bad path"
-msgstr "Pfad für Minuskarten"
-
-#: game/models.py:184
-msgid "Path 1"
-msgstr "Pfad 1"
-
-#: game/models.py:185
-msgid "Path 2"
-msgstr "Pfad 2"
-
-#: game/models.py:186
-msgid "Path 3"
-msgstr "Pfad 3"
-
 #: game/models.py:188
 msgid "Name"
 msgstr "Name"
@@ -269,15 +253,20 @@ msgid "Receiving player"
 msgstr "Empfangender Spieler"
 
 #: game/models.py:197 game/templates/game/card_detail.html:11
-#: templates/print_card_list_full.html:24
+#: templates/print_card_list_full.html:22
 msgid "Value"
 msgstr "Wert"
 
-#: game/models.py:198 game/templates/game/card_list.html:16
+#: game/models.py:198 game/templates/game/card_detail.html:13
+#: game/templates/game/card_list.html:17
+#: templates/print_card_list_full.html:24
 msgid "Path"
 msgstr "Pfad"
 
-#: game/models.py:199 game/templates/game/card_list.html:21
+#: game/models.py:199 game/templates/game/card_detail.html:14
+#: game/templates/game/card_list.html:23
+#: templates/print_card_list_full.html:25
+#: templates/print_card_list_short.html:26
 msgid "Level"
 msgstr "Level"
 
@@ -303,64 +292,65 @@ msgstr "Karten"
 msgid "%s can not play cards anymore."
 msgstr "%s kann keine Karten mher spielen."
 
-#: game/models.py:233
+#: game/models.py:238
 msgid ""
 "You need to set a playing player if you want to set a receiving player."
 msgstr "Sie müssen einen ausspielenden Spieler angeben, wenn Sie einen empfangenden Spieler angeben möchten."
 
-#: game/models.py:236
+#: game/models.py:241
 msgid "The playing player can not be the receiving player."
 msgstr "Der ausspielende Spieler kann nicht zugleich der empfangende Spieler sein."
 
-#: game/models.py:239
+#: game/models.py:244
 msgid "Do not set a positiv value if the card does belong to the bad path."
 msgstr "Geben Sie keinen positiven Wert ein, wenn die Karten zum Pfad der Minuskarten gehört."
 
-#: game/models.py:243
+#: game/models.py:248
 msgid ""
 "Do not set a negativ value if the card does not belong to the bad path."
 msgstr "Geben Sie keinen negativen Wert ein, wenn die Karte nicht zum Pfad der Minuskarten gehört."
 
-#: game/models.py:246
+#: game/models.py:251
 msgid ""
 "The fields bad playing player and bad receiving player are required for "
 "negativ cards."
 msgstr "Die Felder für den auspielenden und den empfangenden Spieler einer Minuskarte dürfen bei Karten mit negativen Werten nicht leer sein."
 
-#: game/models.py:249
+#: game/models.py:254
 msgid "The bad card can only be played by the bad playing player."
 msgstr "Die Minuskarte kann nur vom ausspielenden Spieler der Minuskarte gespielt werden."
 
-#: game/models.py:252
+#: game/models.py:257
 msgid "The bad card can only be played on the bad receiving player."
 msgstr "Die Minuskarte kann nur auf den empfangenden Spieler der Minuskarte gespielt werden."
 
-#: game/models.py:268
+#: game/models.py:273
 msgid "Offeror"
 msgstr "Anbieter"
 
-#: game/models.py:281
+#: game/models.py:286
 msgid "Offer"
 msgstr "Angebot"
 
-#: game/models.py:282
+#: game/models.py:287
 msgid "Offers"
 msgstr "Angebote"
 
-#: game/templates/game/card_detail.html:13
+#: game/templates/game/card_detail.html:17
 msgid "This card was already played."
 msgstr "Diese Karte wurde bereits gespielt."
 
-#: game/templates/game/card_detail.html:16
+#: game/templates/game/card_detail.html:20
 msgid "This card was not yet played."
 msgstr "Diese Karte wurde noch nicht gespielt."
 
-#: game/templates/game/card_detail.html:18
+#: game/templates/game/card_detail.html:22
 #: game/templates/game/card_list.html:11
 msgid "Goto convent"
 msgstr "Gehe zum Konvent"
 
-#: game/templates/game/card_detail.html:20
+#: game/templates/game/card_detail.html:24
+#: templates/print_card_list_full.html:28
 #, python-format
 msgid ""
 "\n"
@@ -368,7 +358,7 @@ msgid ""
 "                    "
 msgstr "\nDie Karte kann nur von %(bad_playing_player)s und nur auf %(bad_receiving_player)s ausgespielt werden."
 
-#: game/templates/game/card_detail.html:24
+#: game/templates/game/card_detail.html:28
 msgid "Play this card"
 msgstr "Spiele diese Karte"
 
@@ -377,16 +367,28 @@ msgstr "Spiele diese Karte"
 msgid "All cards"
 msgstr "Alle Karten"
 
-#: game/templates/game/card_list.html:27
-msgid "Played"
-msgstr "Gespielt"
+#: game/templates/game/card_list.html:12
+msgid "Attention: Each card can be played overall only once."
+msgstr "Achtung: Jede Karte kann insgesamt nur einmal gespielt werden."
 
-#: game/templates/game/card_list.html:38
+#: game/templates/game/card_list.html:30
+msgid "My card"
+msgstr "Meine Karte"
+
+#: game/templates/game/card_list.html:33
+msgid "Played by"
+msgstr "Gespielt von"
+
+#: game/templates/game/card_list.html:33
+msgid "Played on"
+msgstr "Gespielt auf"
+
+#: game/templates/game/card_list.html:44
 msgid "No cards available."
 msgstr "Keine Karten verfügbar."
 
 #: game/templates/game/convent_form.html:13
-#: game/templates/game/convent_form.html:15
+#: game/templates/game/convent_form.html:15 templates/base.html:28
 msgid "Convent"
 msgstr "Konvent"
 
@@ -677,28 +679,28 @@ msgstr "WLAN Planspiel Verwaltung"
 msgid "Home"
 msgstr "Startseite"
 
-#: templates/base.html:30
+#: templates/base.html:31
 msgid "Administration"
 msgstr "Administration"
 
-#: templates/base.html:32
+#: templates/base.html:33
 msgid "Logout"
 msgstr "Abmelden"
 
-#: templates/base.html:32
+#: templates/base.html:33
 msgid "User"
 msgstr "Benutzer"
 
-#: templates/base.html:34 templates/login.html:12 templates/login.html.py:14
+#: templates/base.html:35 templates/login.html:12 templates/login.html.py:14
 #: templates/login.html:21
 msgid "Login"
 msgstr "Anmelden"
 
-#: templates/base.html:72 templates/print_introduction.html:14
+#: templates/base.html:73 templates/print_introduction.html:14
 msgid "Powered by"
 msgstr "Powered by"
 
-#: templates/base.html:73
+#: templates/base.html:74
 msgid ""
 "<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template "
 "design</a> by <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
@@ -752,24 +754,10 @@ msgstr "Passwort"
 msgid "Write down the correspondent password here"
 msgstr "Schreiben Sie das entsprechende Passwort hier hin"
 
-#: templates/print_card_list_full.html:22
-#: templates/print_card_list_short.html:20
-msgid "Owner"
-msgstr "Inhaber"
-
-#: templates/print_card_list_full.html:23
-#: templates/print_card_list_short.html:20
-msgid "Target"
-msgstr "Ziel"
-
 #: templates/print_card_list_short.html:12
 #: templates/print_card_list_short.html:15
 msgid "List of all cards"
 msgstr "Liste aller Karten"
-
-#: templates/print_card_list_short.html:16
-msgid "This list is sorted by card owner and target."
-msgstr "Diese Liste ist nach Inhaber und Ziel der Karten sortiert."
 
 #: templates/print_introduction.html:5
 msgid "Introduction"

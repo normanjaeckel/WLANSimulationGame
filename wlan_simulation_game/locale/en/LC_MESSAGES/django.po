@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-18 01:41+0200\n"
+"POT-Creation-Date: 2014-10-20 00:09+0200\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -120,15 +120,15 @@ msgstr ""
 msgid "Victim Recipient"
 msgstr ""
 
-#: game/forms.py:132 game/models.py:271
+#: game/forms.py:132 game/models.py:276
 msgid "Acceptor"
 msgstr ""
 
-#: game/forms.py:136 game/models.py:274
+#: game/forms.py:136 game/models.py:279
 msgid "Offered Card"
 msgstr ""
 
-#: game/forms.py:139 game/models.py:277
+#: game/forms.py:139 game/models.py:282
 msgid "Card in return"
 msgstr ""
 
@@ -232,22 +232,6 @@ msgstr ""
 msgid "Zero is not allowed."
 msgstr ""
 
-#: game/models.py:183
-msgid "Bad path"
-msgstr ""
-
-#: game/models.py:184
-msgid "Path 1"
-msgstr ""
-
-#: game/models.py:185
-msgid "Path 2"
-msgstr ""
-
-#: game/models.py:186
-msgid "Path 3"
-msgstr ""
-
 #: game/models.py:188
 msgid "Name"
 msgstr ""
@@ -261,15 +245,20 @@ msgid "Receiving player"
 msgstr ""
 
 #: game/models.py:197 game/templates/game/card_detail.html:11
-#: templates/print_card_list_full.html:24
+#: templates/print_card_list_full.html:22
 msgid "Value"
 msgstr ""
 
-#: game/models.py:198 game/templates/game/card_list.html:16
+#: game/models.py:198 game/templates/game/card_detail.html:13
+#: game/templates/game/card_list.html:17
+#: templates/print_card_list_full.html:24
 msgid "Path"
 msgstr ""
 
-#: game/models.py:199 game/templates/game/card_list.html:21
+#: game/models.py:199 game/templates/game/card_detail.html:14
+#: game/templates/game/card_list.html:23
+#: templates/print_card_list_full.html:25
+#: templates/print_card_list_short.html:26
 msgid "Level"
 msgstr ""
 
@@ -295,62 +284,63 @@ msgstr ""
 msgid "%s can not play cards anymore."
 msgstr ""
 
-#: game/models.py:233
+#: game/models.py:238
 msgid "You need to set a playing player if you want to set a receiving player."
 msgstr ""
 
-#: game/models.py:236
+#: game/models.py:241
 msgid "The playing player can not be the receiving player."
 msgstr ""
 
-#: game/models.py:239
+#: game/models.py:244
 msgid "Do not set a positiv value if the card does belong to the bad path."
 msgstr ""
 
-#: game/models.py:243
+#: game/models.py:248
 msgid "Do not set a negativ value if the card does not belong to the bad path."
 msgstr ""
 
-#: game/models.py:246
+#: game/models.py:251
 msgid ""
 "The fields bad playing player and bad receiving player are required for "
 "negativ cards."
 msgstr ""
 
-#: game/models.py:249
+#: game/models.py:254
 msgid "The bad card can only be played by the bad playing player."
 msgstr ""
 
-#: game/models.py:252
+#: game/models.py:257
 msgid "The bad card can only be played on the bad receiving player."
 msgstr ""
 
-#: game/models.py:268
+#: game/models.py:273
 msgid "Offeror"
 msgstr ""
 
-#: game/models.py:281
+#: game/models.py:286
 msgid "Offer"
 msgstr ""
 
-#: game/models.py:282
+#: game/models.py:287
 msgid "Offers"
 msgstr ""
 
-#: game/templates/game/card_detail.html:13
+#: game/templates/game/card_detail.html:17
 msgid "This card was already played."
 msgstr ""
 
-#: game/templates/game/card_detail.html:16
+#: game/templates/game/card_detail.html:20
 msgid "This card was not yet played."
 msgstr ""
 
-#: game/templates/game/card_detail.html:18
+#: game/templates/game/card_detail.html:22
 #: game/templates/game/card_list.html:11
 msgid "Goto convent"
 msgstr ""
 
-#: game/templates/game/card_detail.html:20
+#: game/templates/game/card_detail.html:24
+#: templates/print_card_list_full.html:28
 #, python-format
 msgid ""
 "\n"
@@ -359,7 +349,7 @@ msgid ""
 "                    "
 msgstr ""
 
-#: game/templates/game/card_detail.html:24
+#: game/templates/game/card_detail.html:28
 msgid "Play this card"
 msgstr ""
 
@@ -368,16 +358,28 @@ msgstr ""
 msgid "All cards"
 msgstr ""
 
-#: game/templates/game/card_list.html:27
-msgid "Played"
+#: game/templates/game/card_list.html:12
+msgid "Attention: Each card can be played overall only once."
 msgstr ""
 
-#: game/templates/game/card_list.html:38
+#: game/templates/game/card_list.html:30
+msgid "My card"
+msgstr ""
+
+#: game/templates/game/card_list.html:33
+msgid "Played by"
+msgstr ""
+
+#: game/templates/game/card_list.html:33
+msgid "Played on"
+msgstr ""
+
+#: game/templates/game/card_list.html:44
 msgid "No cards available."
 msgstr ""
 
 #: game/templates/game/convent_form.html:13
-#: game/templates/game/convent_form.html:15
+#: game/templates/game/convent_form.html:15 templates/base.html:28
 msgid "Convent"
 msgstr ""
 
@@ -673,28 +675,28 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: templates/base.html:30
+#: templates/base.html:31
 msgid "Administration"
 msgstr ""
 
-#: templates/base.html:32
+#: templates/base.html:33
 msgid "Logout"
 msgstr ""
 
-#: templates/base.html:32
+#: templates/base.html:33
 msgid "User"
 msgstr ""
 
-#: templates/base.html:34 templates/login.html:12 templates/login.html.py:14
+#: templates/base.html:35 templates/login.html:12 templates/login.html.py:14
 #: templates/login.html:21
 msgid "Login"
 msgstr ""
 
-#: templates/base.html:72 templates/print_introduction.html:14
+#: templates/base.html:73 templates/print_introduction.html:14
 msgid "Powered by"
 msgstr ""
 
-#: templates/base.html:73
+#: templates/base.html:74
 msgid ""
 "<a href=\"http://andreasviklund.com/dt_portfolio/in-response/\">Template "
 "design</a> by <a href=\"http://andreasviklund.com/\">Andreas Viklund</a>"
@@ -748,23 +750,9 @@ msgstr ""
 msgid "Write down the correspondent password here"
 msgstr ""
 
-#: templates/print_card_list_full.html:22
-#: templates/print_card_list_short.html:20
-msgid "Owner"
-msgstr ""
-
-#: templates/print_card_list_full.html:23
-#: templates/print_card_list_short.html:20
-msgid "Target"
-msgstr ""
-
 #: templates/print_card_list_short.html:12
 #: templates/print_card_list_short.html:15
 msgid "List of all cards"
-msgstr ""
-
-#: templates/print_card_list_short.html:16
-msgid "This list is sorted by card owner and target."
 msgstr ""
 
 #: templates/print_introduction.html:5
