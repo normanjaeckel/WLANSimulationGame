@@ -1,9 +1,5 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-
 class WLANSimulationGameError(Exception):
     """
-    Base exception for this project.
+    Base exception for WLAN Simulation Game.
     """
     pass

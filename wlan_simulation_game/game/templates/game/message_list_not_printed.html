@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block styles %}
+    {{ block.super }}
+    <meta http-equiv="refresh" content="3">
+{% endblock %}
+
+{% block title %}{% trans 'Messages to be printed' %} – {{ block.super }}{% endblock %}
+
+{% block heading %}{% trans 'Messages to be printed' %}{% endblock %}
+
+{% block left %}
+    <p><a href="{% url 'message_list' %}">{% trans 'All messages' %}</a></p>
+    <p><a href="{% url 'message_create' %}">{% trans 'New message' %}</a></p>
+{% endblock %}
+
+{% block right %}
+   <ul>
+        {% for message in message_list %}
+            <li>
+                <ul>
+                    <li><a href="{% url 'message_detail' message.pk %}">{{ message }}</a></li>
+                    <li>{% trans 'Time' %}: {{ message.sending_time }}</li>
+                    <li>{% trans 'Sender' %}: {{ message.sender }}</li>
+                    <li>{% trans 'Recipient' %}:
+                        {% if message.recipient %}
+                            {{  message.recipient }}
+                        {% else %}
+                            {% trans 'All players' %}
+                        {% endif %}
+                    </li>
+                </ul>
+            </li>
+        {% empty %}
+            <li><em>{% trans 'No messages to be printed.' %}</em></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

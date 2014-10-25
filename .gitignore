@@ -1,11 +1,17 @@
-# Patterns to be ignored by git
+# Patterns of intentionally untracked files that Git should ignore
 
 # Python compiled files
-*.pyc
+__pycache__/
 
-# Virtual Python Environment builder (virtualenv)
+# Compiled message files
+*.mo
+
+# Virtual Python Environment builder
 .virtualenv/
 
-# Personal settings and database
-settings.py
-database.sqlite
+# Django settings and SQLite3 database
+wlan_simulation_game_settings.py
+db.sqlite3
+
+# Private development data
+private/

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans 'All cards' %} – {{ block.super }}{% endblock %}
+
+{% block heading %}{% trans 'All cards' %}{% endblock %}
+
+{% block both %}
+    <div class="col c12">
+        {% regroup card_list by owner as owner_list %}
+        <ul>
+            {% for owner_group in owner_list %}
+                <li style="margin-bottom:1em;">
+                    {% trans 'Owner' %}: {{ owner_group.grouper }}
+                    {% regroup owner_group.list by target as target_list %}
+                    <ul style="padding-left:1em; list-style-type:none;">
+                        {% for target_group in target_list %}
+                            <li>
+                                {% trans 'Target' %}: {{ target_group.grouper }}
+                                <ul style="padding-left:2em; list-style-type:none;">
+                                    {% for card in target_group.list %}
+                                        <li>
+                                            {% if user.is_staff or user == card.owner %}
+                                                <a href="{% url 'card_detail' card.pk %}">
+                                            {% endif %}
+                                            {{ card }}
+                                            {% if user.is_staff or user == card.owner %}
+                                                </a> {{ card.value }}
+                                            {% endif %}
+                                            {% if card.used %}
+                                                ({% trans 'Played' %})
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% if not forloop.last %}<hr>{% endif %}
+                </li>
+            {% empty %}
+                <li><em>{% trans 'No cards available.' %}</em></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

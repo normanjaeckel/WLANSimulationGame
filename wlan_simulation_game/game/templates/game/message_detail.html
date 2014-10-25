@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block styles %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'message-print.css' %}" media="print">
+{% endblock %}
+
+{% block title %}{% trans 'Message' %} – {{ block.super }}{% endblock %}
+
+{% block heading %}{% trans 'Message' %} {{ message }}{% endblock %}
+
+{% block left %}
+    <p><a href="{% url 'message_list' %}">{% trans 'All messages' %}</a></p>
+    {% if user.is_staff %}
+        <p><a href="{% url 'message_list_not_printed' %}">{% trans 'All messages to be printed' %}</a></p>
+    {% endif %}
+    <p><a href="{% url 'message_create' %}">{% trans 'New message' %}</a></p>
+    {% if not user.is_staff and config.number_of_interceptions > 0 %}
+        <p><a href="{% url 'interception' %}">{% trans 'Interception' %}</a></p>
+    {% endif %}
+{% endblock %}
+
+{% block right %}
+    <div>
+        <ul>
+            <li>{% trans 'Sender' %}: {{ message.sender }}</li>
+            <li>
+                {% trans 'Recipient' %}:
+                {% if message.recipient %}
+                    {{ message.recipient }}
+                {% else %}
+                    {% trans 'All players' %}
+                {% endif %}
+            </li>
+            <li>{% trans 'Time' %}: {{ message.sending_time }}</li>
+            <li>{% trans 'Subject' %}: {{ message.subject }}</li>
+        </ul>
+        <div style="padding-left:1em;">{{ message.text|linebreaks }}</div>
+    </div>
+    <p id="print-message">
+        {% if message.printed %}
+            <em>{% trans 'This message was already printed.' %}</em>
+        {% elif user.is_staff %}
+            <a href="{% url 'message_print' message.pk %}"><button>{% trans 'Message printed' %}</button></a></p>
+        {% else %}
+            <em>{% trans 'This message was not yet printed.' %}</em>
+        {% endif %}
+    </p>
+{% endblock %}
+
+{% block javascript %}
+    {{ block.super }}
+    {% if not message.printed and user.is_staff %}
+        <script type="text/javascript">window.onload = function () {window.print();}</script>
+    {% endif %}
+{% endblock %}

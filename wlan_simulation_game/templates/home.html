@@ -8,12 +8,14 @@
 
 {% block both %}
     <div class="col c12">
-        <p>{{ config.introduction|linebreaks }}</p>
         {% if user.is_staff %}
-            <p><a href="{% url 'home_print_introduction' %}">{% trans 'Print introduction' %}</a></p>
-            <p><a href="{% url 'home_print_access_data' %}">{% trans 'Print access data' %}</a></p>
+            <p><a href="{% url 'print_introduction' %}">{% trans 'Print introduction' %}</a></p>
+            <p><a href="{% url 'print_access_data' %}">{% trans 'Print access data' %}</a></p>
+            <p><a href="{% url 'print_player_list' %}">{% trans 'Print all player descriptions' %}</a></p>
+            <p><a href="{% url 'print_card_list_full' %}">{% trans 'Print all cards (full)' %}</a></p>
+            <p><a href="{% url 'print_card_list_short' %}">{% trans 'Print all cards (short)' %}</a></p>
+            <p><a href="{% url 'print_card_play_form' %}">{% trans 'Print form for playing a card' %}</a></p>
         {% endif %}
+        {{ config.introduction|linebreaks }}
     </div>
 {% endblock %}
-
-

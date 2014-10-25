@@ -1,0 +1,16 @@
+{% extends 'base_print.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans 'Introduction' %} – {{ block.super }}{% endblock %}
+
+{% block content %}
+    <h1>{{ config.title }}</h1>
+    <p><em>{{ config.subtitle }}</em></p>
+    <h2>{{ config.headline }}</h2>
+    <p>{{ config.introduction|linebreaks }}</p>
+    <p>
+        &copy; {{ config.year }} {{ config.name }}<br>
+        {% trans 'Powered by' %} WLAN Simulation Game &lt;http://github.com/normanjaeckel/WLANSimulationGame/&gt;
+    </p>
+{% endblock %}

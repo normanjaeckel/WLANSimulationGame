@@ -1,91 +1,80 @@
-{% load i18n %}
-{% load wlan_simulation_game_extras %}
-
-<!DOCTYPE html>
+{% load i18n %}{% load staticfiles %}{% load wlan_simulation_game_extras %}<!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     {% block styles %}
-        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}fonts.css" />
-        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}in-response.css" title="In Response" media="all" />
-        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}wlan-simulation-game.css" media="all" />
+        <link rel="stylesheet" href="{% static 'fonts.css' %}">
+        <link rel="stylesheet" href="{% static 'in-response.css' %}" title="In Response" media="all">
+        <link rel="stylesheet" href="{% static 'wlan-simulation-game.css' %}" media="all">
     {% endblock %}
-    <meta name="viewport" content="width=device-width, initial-scale=0.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <title>{% block title %}{{ config.title }}{% endblock %}</title>
 </head>
-
 <body class="light">
-<div id="layout">
-    <div id="title-subtitle" class="row">
-        <div class="col c12">
-            <h1 class="aligncenter"><a href="/">{{ config.title }}</a></h1>
-            <p class="aligncenter slogan">{{ config.subtitle }}</p>
+    <div id="layout">
+        <div id="title-subtitle" class="row">
+            <div class="col c12">
+                <h1 class="aligncenter"><a href="/">{{ config.title }}</a></h1>
+                <p class="aligncenter slogan">{{ config.subtitle }}</p>
+            </div>
         </div>
-    </div>
-
-    <div id="nav" class="row">
-        <div class="col c12 aligncenter navmenu">
-            <p>
-                <a {% url_href_class_current 'home' %}>{% trans 'Home' %}</a>
-                <a {% url_href_class_current 'player_list' %}>{% trans 'Players' %}</a>
-                <a {% url_href_class_current 'message_list' %}>{% trans 'Messages' %}</a>
-                <a {% url_href_class_current 'card_list' %}>{% trans 'Cards' %}</a>
-                {% if user.is_authenticated %}
-                    {% if user.is_staff %}
-                        <a href="{% url 'admin:index' %}">{% trans 'Administration' %}</a>
+        <div id="nav" class="row">
+            <div class="col c12 aligncenter navmenu">
+                <p>
+                    <a {% url_href_class_current 'home' %}>{% trans 'Home' %}</a>
+                    <a {% url_href_class_current 'player_list' %}>{% trans 'Players' %}</a>
+                    <a {% url_href_class_current 'message_list' %}>{% trans 'Messages' %}</a>
+                    <a {% url_href_class_current 'card_list' %}>{% trans 'Cards' %}</a>
+                    {% if user.is_authenticated %}
+                        {% if user.is_staff %}
+                            <a href="{% url 'admin:index' %}">{% trans 'Administration' %}</a>
+                        {% endif %}
+                        <a href="{% url 'logout' %}">{% trans 'Logout' %}</a> {% trans 'User' %}: {{ user }}
+                    {% else %}
+                        <a {% url_href_class_current 'login' %}>{% trans 'Login' %}</a>
                     {% endif %}
-                    <a href="{% url 'logout' %}">{% trans 'Logout' %}</a> {% trans 'User' %}: {{ user }}
-                {% else %}
-                    <a {% url_href_class_current 'login' %}>{% trans 'Login' %}</a>
-                {% endif %}
-            </p>
+                </p>
+            </div>
+        </div>
+        {% if not user.is_staff or not config.hide_header_image %}
+            <div id="headerimage" class="row">
+                <div class="col c12 aligncenter headerimage">
+                    <img src="{% static 'images/headerimage.jpg' %}" width="960" height="300" alt="">
+                </div>
+            </div>
+        {% endif %}
+        {% block messages %}
+            <div id="messages" class="row">
+                <div class="col c12 aligncenter">
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endblock %}
+        {% block content %}
+            <div id="content-heading" class="row">
+                <div class="col c12 aligncenter">
+                    <h2>{% block heading %}{% endblock %}</h2>
+                </div>
+            </div>
+            <div id="content-both" class="row">
+                {% block both %}
+                    <div id="content-left"class="col c3">{% block left %}&nbsp;{% endblock %}</div>
+                    <div id="content-right" class="col c9">{% block right %}&nbsp;{% endblock %}</div>
+                {% endblock %}
+            </div>
+        {% endblock %}
+        <div id="footlines" class="row">
+            <div class="col c12 aligncenter">
+                <p>
+                    <span class="larger">&copy; {{ config.year }} {{ config.name }}</span><br>
+                    {% trans 'Powered by' %} <a href="http://github.com/normanjaeckel/WLANSimulationGame/">WLAN Simulation Game</a><br>
+                    {% trans '<a href="http://andreasviklund.com/dt_portfolio/in-response/">Template design</a> by <a href="http://andreasviklund.com/">Andreas Viklund</a>' %}
+                </p>
+            </div>
         </div>
     </div>
-
-    {% if not user.is_staff or not config.hide_header_image %}
-        <div id="headerimage" class="row">
-            <div class="col c12 aligncenter headerimage">
-                <img src="{{ STATIC_URL }}images/headerimage.jpg" width="960" height="300" title="A view of the server room at The National Archives. &copy; The National Archives (UK). CC-BY-3.0" alt="" />
-            </div>
-        </div>
-    {% endif %}
-
-    {% block messages %}
-        <div id="messages" class="row">
-            <div class="col c12 aligncenter">
-                {% for message in messages %}
-                    <p>{{ message }}</p>
-                {% endfor %}
-            </div>
-        </div>
-    {% endblock %}
-
-    {% block content %}
-        <div id="content-heading" class="row">
-            <div class="col c12 aligncenter">
-                <h2>{% block heading %}{% endblock %}</h2>
-            </div>
-        </div>
-        <div id="content-both" class="row">
-            {% block both %}
-                <div id="content-left"class="col c3">{% block left %}&nbsp;{% endblock %}</div>
-                <div id="content-right" class="col c9">{% block right %}&nbsp;{% endblock %}</div>
-            {% endblock %}
-        </div>
-    {% endblock %}
-
-    <div id="footlines" class="row">
-        <div class="col c12 aligncenter">
-            <p>
-                <span class="larger">&copy; {{ config.year }} {{ config.name }}</span><br />
-                {% trans 'Powered by' %} <a href="http://github.com/normanjaeckel/WLANSimulationGame/">WLAN Simulation Game</a><br />
-                {% trans '<a href="http://andreasviklund.com/dt_portfolio/in-response/">Template design</a> by <a href="http://andreasviklund.com/">Andreas Viklund</a>' %}
-            </p>
-        </div>
-    </div>
-</div>
-
-{% block javascript %}{% endblock %}
-
+    {% block javascript %}{% endblock %}
 </body>
 </html>

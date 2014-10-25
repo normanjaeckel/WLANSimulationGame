@@ -1,0 +1,44 @@
+{% extends 'base_print.html' %}
+
+{% load i18n %}
+
+{% block styles %}
+    {{ block.super }}
+    <style>
+        .line {width:75%}
+    </style>
+{% endblock %}
+
+{% block title %}{% trans 'Form for playing a card' %} – {{ block.super }}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans 'Form for playing a card' %}</h1>
+
+{% blocktrans %}
+    <p>If you want to play a card, write down the names of your character
+    and your card and the names of your partner's character and the card he
+    will play on you. Hand out this form and your card to the game master.
+    The game master doesn't inform the partner about this. He plays all
+    cards only if both partners hand out compatible forms and cards. If you
+    want to play a negative card, you don't need to use this form. Just
+    hand out the card to the game master directly.</p>
+{% endblocktrans %}
+
+<p>{% trans 'Name of your character' %}:</p>
+
+<hr class="line">
+
+<p>{% trans 'Name of your card' %}:</p>
+
+<hr class="line">
+
+<p>{% trans "Name of your partner's character" %}:</p>
+
+<hr class="line">
+
+<p>{% trans "Name of your partner's card" %}:</p>
+
+<hr class="line">
+
+{% endblock %}
