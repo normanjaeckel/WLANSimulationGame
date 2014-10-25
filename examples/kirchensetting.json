@@ -1,0 +1,592 @@
+[
+  {
+    "pk": 1,
+    "fields": {
+      "key": "title",
+      "value": "gAJYLgAAAEFsbGUgYW4gZWluZW0gU3RyYW5nLiBKZWRlciBhbiBzZWluZW0gZWlnZW5lbj9xAC4="
+    },
+    "model": "database.constance"
+  },
+  {
+    "pk": 2,
+    "fields": {
+      "key": "subtitle",
+      "value": "gAJYOAAAAEVpbiBXTEFOLVBsYW5zcGllbCB6dW0gVGhlbWEgS29tbXVuaWthdGlvbiBpbiBkZXIgS2lyY2hlcQAu"
+    },
+    "model": "database.constance"
+  },
+  {
+    "pk": 3,
+    "fields": {
+      "key": "headline",
+      "value": "gAJYJgAAAEhlcnpsaWNoIHdpbGxrb21tZW4genVtIFdMQU4tUGxhbnNwaWVscQAu"
+    },
+    "model": "database.constance"
+  },
+  {
+    "pk": 4,
+    "fields": {
+      "key": "introduction",
+      "value": "gAJYPxEAAEluIGRlciBLaXJjaGUgemllaGVuIGFsbGUgYW4gZWluZW0gU3RyYW5nLiBGw7xyIGRhcyBncm/Dn2UgR2FuemUgdHJpdHQgbWFuIGdlcm4gaW4gaWhyZW4gRGllbnN0LCBtw7xodCBzaWNoIHJlaWNobGljaCwgYmxlaWJ0IGJlc2NoZWlkZW4uIEFiZXIgd2VubiBzdGF0dCBlaW5lbSBzZWxic3QgZGVyIEtvbGxlZ2Ugb2RlciBkaWUgS29sbGVnaW4gZGllIEFyYmVpdCBtYWNoZW4ga2FubiwgaXN0IGRhcyBkb2NoIG5pY2h0IHZlcmtlaHJ0LiBTY2hsaWXDn2xpY2ggbXVzcyBqZWRlciB1bmQgamVkZSBzZWxic3Qgc2VoZW4sIHdvIGVyIG9kZXIgc2llIGJsZWlidC4NCg0KRGFzIFppZWwgZGVzIFNwaWVscyBpc3QgZXMsIG3DtmdsaWNoc3QgdmllbGUgU2llZ3B1bmt0ZSB6dSBlcnJlaWNoZW4uIEFsbGUgU3BpZWxlciBzdGFydGVuIGJlcmVpdHMgbWl0IDIwIFB1bmt0ZW4uIFdlciBhbSBFbmRlIGRpZSBtZWlzdGVuIFB1bmt0ZSBoYXQsIGdld2lubnQuIERhcyBTcGllbCBkYXVlcnQgZXR3YSA3NSBNaW51dGVuLg0KDQpKZWRlIEdydXBwZSBzcGllbHQgZWluZW4gU3BpZWxjaGFyYWt0ZXIuIFfDpGhyZW5kIGRlcyBTcGllbHMgYmxlaWJlbiBkaWUgR3J1cHBlbiB1bnRlciBzaWNoLiBEYXMgV2ViaW50ZXJmYWNlIHVudGVyc3TDvHR6dCBldWNoIGJlaSBkZXIgS29tbXVuaWthdGlvbiBtaXQgZGVuIGFuZGVyZW4gR3J1cHBlbiB1bmQgYmVpIGRlbiB3ZXNlbnRsaWNoZW4gQWt0aW9uZW4gZGVzIFNwaWVscy4gTmFjaCBTcGllbGJlZ2lubiDDvGJlcmxlZ3QgaWhyIGV1Y2ggaW4gZXVyZXIgR3J1cHBlIGRpZSBiZXN0ZSBTdHJhdGVnaWUgZsO8ciBldXJlbiBTcGllbGNoYXJha3Rlci4NCg0KUGx1c3B1bmt0ZSBrw7ZubnQgaWhyIG51ciBiZWtvbW1lbiwgd2VubiBpaHIgbWl0IGVpbmVyIGFuZGVyZW4gR3J1cHBlIGludGVyYWdpZXJ0LCBkYXMgaGVpw590IGdlZ2Vuc2VpdGlnIGVpbmUgUGx1c2thcnRlIGF1ZmVpbmFuZGVyIGF1c3NwaWVsdC4gTWludXNwdW5rdGUga8O2bm50IGlociBiZWtvbW1lbiwgd2VubiBlaW5lIGFuZGVyZSBHcnVwcGUgZWluZSBwYXNzZW5kZSBNaW51c2thcnRlIGF1ZiBldWNoIOKAnmxvc2zDpHNzdOKAnC4NCg0KSmVkZSBQbHVza2FydGUgZ2Vow7ZydCB6dSBlaW5lbSBiZXN0aW1tdGVuIFBmYWQuIEthcnRlbiBtaXQgZWluZW0gaMO2aGVyZW4gTGV2ZWwgYnJpbmdlbiBtZWhyIFB1bmt0ZS4gSWhyIGvDtm5udCBzaWUgYWJlciBudXIgYmVrb21tZW4sIHdlbm4gaWhyIGJlcmVpdHMgbWluZGVzdGVucyBlaW5lIEthcnRlIG1pdCBkZW0gamV3ZWlscyBuw6RjaHN0bmllZHJpZ2VyZW4gTGV2ZWwgZGllc2VzIFBmYWRlcyBiZWtvbW1lbiBoYWJ0LiBVbSBlaW5lIFBsdXNrYXJ0ZSB6dSBiZWtvbW1lbiwgbcO8c3N0IGlociBlaW5lIGFuZGVyZSBHcnVwcGUgZGF6dSBicmluZ2VuLCBzaWUgYXVmIGV1Y2ggKGRhcyBoZWnDn3QgenUgZXVyZW4gR3Vuc3RlbikgYXVzenVzcGllbGVuLiBEYXMgZ2VodCBhbSBiZXN0ZW4sIHdlbm4gaWhyIGltIEdlZ2VuenVnIGFuYmlldGV0LCBlaW5lIGFuZGVyZSBLYXJ0ZSBhdWYgc2llIChkYXMgaGVpw590IHp1IGlocmVuIEd1bnN0ZW4pIGF1c3p1c3BpZWxlbi4gSmVkZSBQbHVza2FydGUga2FubiB2b24gamVkZW0gYXVmIGplZGVuIGF1c2dlc3BpZWx0IHdlcmRlbi4gRGllIFBsdXNrYXJ0ZW4gc2luZCBhbSBBbmZhbmcga2VpbmVyIGJlc3RpbW10ZW4gR3J1cHBlIHp1Z2VvcmRuZXQuIEluc2dlc2FtdCBrYW5uIGVpbmUgS2FydGUgYWJlciBudXIgZWlubWFsIGF1c2dlc3BpZWx0IHdlcmRlbi4gV2FzIHdlZyBpc3QsIGlzdCB3ZWcuDQoNClVtIGVpbiBBbmdlYm90IHp1IHVudGVyYnJlaXRlbiwgYWJ6dWxlaG5lbiBvZGVyIGFuenVuZWhtZW4sIHZlcndlbmRldCBpaHIgZGFzIEZvcm11bGFyIGltIFdlYmludGVyZmFjZSB1bnRlciDigJ5Lb252ZW504oCcLiBNYW4ga2FubiBhdWNoIGdhbnogdW5laW5nZW5uw7x0emlnIGFuYmlldGVuLCBhdWYgZWluZW4gYW5kZXJlbiBlaW5lIFBsdXNrYXJ0ZSBhdXN6dXNwaWVsZW4uIERhenUgbMOkc3N0IG1hbiBkYXMgRm9ybXVsYXJmZWxkIGbDvHIgZGllIGltIEdlZ2VuenVnIGVyd2FydGV0ZSBLYXJ0ZSBlaW5mYWNoIGxlZXIuDQoNCkluc2dlc2FtdCBkw7xyZmVuIG51ciBmw7xuZiBLYXJ0ZW4gYXVzZ2VzcGllbHQgd2VyZGVuLiBBbHNvIMO8YmVybGVndCBndXQsIG1pdCB3ZW0gaWhyIGlucyBHZXNjaMOkZnQga29tbWVuIHdvbGx0Lg0KDQpEaWUgS2FydGVuIG1pdCBkZW4gTWludXNwdW5rdGVuIGvDtm5uZW4gamVkZXJ6ZWl0IGVpbmZhY2ggc28gYXVmIGRpZSBhbmRlcmVuIOKAnmxvc2dlbGFzc2Vu4oCcIHdlcmRlbi4gRWluZSBJbnRlcmFrdGlvbiDDvGJlciBkZW4g4oCeS29udmVudOKAnCBmaW5kZXQgaGllciBuaWNodCBzdGF0dC4gRGllIGFuZGVyZSBHcnVwcGUgYmVrb21tdCBzb2ZvcnQgZGllIE1pbnVzcHVua3RlIHVuZCBrYW5uIHNpY2ggZGFnZWdlbiBuaWNodCB3ZWhyZW4uIERhcyBBdXNzcGllbGVuIHJlZHV6aWVydCBhYmVyIGV1cmUgQW56YWhsIGFuIHNwaWVsYmFyZW4gS2FydGVuIHVuZCBkYW1pdCBldXJlIE3DtmdsaWNoa2VpdGVuLCB3ZWl0ZXJlIGfDvG5zdGlnZSBBa3Rpb25lbiBkdXJjaHp1ZsO8aHJlbi4gTWFuIGthbm4gbmF0w7xybGljaCBhdWNoIG51ciBkcm9oZW4gb2RlciBibHVmZmVuLg0KDQpVbSBtaXQgZGVuIGFuZGVyZW4gR3J1cHBlbiB6dSBrb21tdW5pemllcmVuLCBudXR6dCBkYXMgTmFjaHJpY2h0ZW5wb3J0YWwsIGRhcyB6dSBTcGllbGJlZ2lubiBmcmVpZ2VzY2hhbHRldCB3aXJkLiBEcsO8Y2t0IEY1LCB1bSBkaWUgU2VpdGUgaW0gQnJvd3NlciB6dSBha3R1YWxpc2llcmVuLiBEaWUgTmFjaHJpY2h0ZW4gd2VyZGVuIHZvbiBkZXIgU3BpZWxsZWl0dW5nIGF1c2dlZHJ1Y2t0IHVuZCB6dWdlc3RlbGx0LiBJbSBOYWNocmljaHRlbnBvcnRhbCBrw7ZubnQgaWhyIG51ciBkaWUgZWlnZW5lbiBnZXNlbmRldGVuIE5hY2hyaWNodGVuIG5vY2ggZWlubWFsIG5hY2hsZXNlbi4gRGllIGVtcGZhbmdlbmVuIHVuZCBhbGxlIGZyZW1kZW4gTmFjaHJpY2h0ZW4gc2luZCBnZXNwZXJydC4NCg0KRGllIFNwaWVsbGVpdHVuZyBrw7xtbWVydCBzaWNoIG5pY2h0IGRhcnVtLCBkYXNzIGVpbmUgYW5kZXJlIEdydXBwZSBkYXZvbiBlcmbDpGhydCwgZGFzcyBpaHIgZWluIEdlc2Now6RmdCBhbmJpZXRlbiB3b2xsdC4gU2NoYXV0IGFsc28gcmVnZWxtw6TDn2lnIGltIOKAnktvbnZlbnTigJwgdm9yYmVpLCB3ZWxjaGUgQW5nZWJvdGUgZXMgZ2VyYWRlIHNvIGdpYnQuDQoNCkFtIFNwaWVsZW5kZSB3aXJkIGRhcyBOYWNocmljaHRlbnBvcnRhbCBhYmdlc2NoYWx0ZXQuIEVzIGvDtm5uZW4gYWJlciBub2NoIGxldHp0ZSBBa3Rpb25za2FydGVuIGdlc3BpZWx0IHdlcmRlbi4NCg0KVmllbCBTcGHDnyBiZWltIFNwaWVsIQ0KDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0Kw5xiZXJzaWNodCDDvGJlciBkaWUgUGZhZGUNCg0KUGZhZCBBOiBCZWFjaHRldGUgR2VtZWluZGVhcmJlaXQNCg0K4oCeSW4gZGVyIGdhbnplbiBXZWx0IHNwcmljaHQgbWFuIMO8YmVyIGV1cmVuIEdsYXViZW4u4oCcIE9kZXIgd2VubiBuaWNodCDDvGJlciBldXJlbiBHbGF1YmVuLCBkYW5uIMO8YmVyIGRpZSBncm/Dn2FydGlnZW4gS29uemVydGUgaW4gZXVyZXIgR2VtZWluZGUsIMO8YmVyIGV1cmUgZ3V0IGJlc3VjaHRlIEp1Z2VuZGFyYmVpdCB1bmQgw7xiZXIgZGllIFJvdGVuIFfDvHJzdGUgYmVpIGV1cmVuIEdlbWVpbmRlZmVzdGVuIQ0KDQpQZmFkIEI6IFp1a3VuZnRzZsOkaGlnZSBTdHJ1a3R1cmVuDQoNCkRlaW5lIEdlbWVpbmRlIHdlacOfIHZpZWxsZWljaHQgZ2FyIG5pY2h0LCB3YXMgc2llIGFuIGRpciBoYXQuIEFiZXIgZGllIFZvcnNpdHplbmRlbiBkZWluZXMgS0dSIHVuZCBkZWluZXIgQmV6aXJrc3N5bm9kZSwgZGllIHZlcmVocmVuIGRpY2guIERlbm4gZGllIHdpc3Nlbiwgd2FzIGR1IGdlbGVpc3RldCBoYXN0LCB1bSBkZWluZSBHZW1laW5kZSBtaXQgbmV1ZW4gU3RydWt0dXJlbiB1bmQgT3JnYW5pc2F0aW9uIGZpdCBmw7xyIGRpZSBadWt1bmZ0IHp1IG1hY2hlbi4NCg0KUGZhZCBDOiBFaW5lIGVpbmZsdXNzcmVpY2hlIFN0aW1tZSBpbiBkZXIgTGFuZGVza2lyY2hlIA0KDQpEaWUgQnJlbnotTWVkYWlsbGUgaW4gQnJvbnplIGlzdCBkaXIgbWluZGVzdGVucyBzaWNoZXIsIHdlbm4gbmljaHQgc29nYXIgaW4gU2lsYmVyLiBEdSBoYXN0IGRpY2ggZ3V0IHZlcm5ldHp0IHVuZCBiaXN0IGJla2FubnQgdW5kIGhhc3QgRWluZmx1c3MgaW4gZGVyIExhbmRlc2tpcmNoZS4gQmVpIGRlbiBuw6RjaHN0ZW4gd2ljaHRpZ2VuIFN0ZWxsZW4gd2lyZCBkZWluIE5hbWUgaW0gTGFuZGVza2lyY2hlbmF1c3NjaHVzcyBzaWNoZXIgZmFsbGVuLg0KcQAu"
+    },
+    "model": "database.constance"
+  },
+  {
+    "pk": 5,
+    "fields": {
+      "key": "name",
+      "value": "gAJYIgAAAE5vcm1hbiBKw6Rja2VsIHVuZCBDaHJpc3RvcGggS2FybGVxAC4="
+    },
+    "model": "database.constance"
+  },
+  {
+    "pk": 6,
+    "fields": {
+      "key": "start_score",
+      "value": 5
+    },
+    "model": "database.constance"
+  },
+  {
+    "pk": 7,
+    "fields": {
+      "key": "number_of_interceptions",
+      "value": 0
+    },
+    "model": "database.constance"
+  },
+  {
+    "pk": 1,
+    "fields": {
+      "email": "",
+      "last_name": "",
+      "is_superuser": true,
+      "is_active": true,
+      "first_name": "",
+      "username": "admin",
+      "description": "",
+      "groups": {},
+      "date_joined": "2014-10-19T15:00:47.709Z",
+      "last_login": "2014-10-19T15:00:47.709Z",
+      "user_permissions": {},
+      "is_staff": true,
+      "password": "pbkdf2_sha256$12000$wdPoq150gVtK$Affw99oJLhxMfR4V/oAguim0TqzunVwY9iSVRbLmsEg="
+    },
+    "model": "game.player"
+  },
+  {
+    "pk": 2,
+    "fields": {
+      "email": "",
+      "last_name": "",
+      "is_superuser": false,
+      "is_active": true,
+      "first_name": "",
+      "username": "Sieglinde_Eich",
+      "description": "Sieglinde Eich ist die Dekanin.",
+      "groups": {},
+      "date_joined": "2014-10-19T15:00:47.709Z",
+      "last_login": "2014-10-19T15:00:47.709Z",
+      "user_permissions": {},
+      "is_staff": false,
+      "password": "pbkdf2_sha256$12000$1Xsg6zHQTCeV$L5WZfPXMiy2qIaAfefiyNp7lFvEY3q2O8JOFkllSwfY="
+    },
+    "model": "game.player"
+  },
+  {
+    "pk": 3,
+    "fields": {
+      "email": "",
+      "last_name": "",
+      "is_superuser": false,
+      "is_active": true,
+      "first_name": "",
+      "username": "Dr._Dorothea_Fischer-Reiss",
+      "description": "Dr. Dorothea Fischer-Reiss ist Pfarrerin und Mitglied der Landessynode.",
+      "groups": {},
+      "date_joined": "2014-10-19T15:00:47.709Z",
+      "last_login": "2014-10-19T15:00:47.709Z",
+      "user_permissions": {},
+      "is_staff": false,
+      "password": "pbkdf2_sha256$12000$Jni59H46e9PU$iGG5/T3R3e4clKa/4Rjq8uyiOxAWxfPTOnFlLuHO0cQ="
+    },
+    "model": "game.player"
+  },
+  {
+    "pk": 4,
+    "fields": {
+      "email": "",
+      "last_name": "",
+      "is_superuser": false,
+      "is_active": true,
+      "first_name": "",
+      "username": "Johnny_Häberle",
+      "description": "Johnny, oder wie er sich selbst nennt Jo, ist Bezirksjugendpfarrer.",
+      "groups": {},
+      "date_joined": "2014-10-19T15:00:47.709Z",
+      "last_login": "2014-10-19T15:00:47.709Z",
+      "user_permissions": {},
+      "is_staff": false,
+      "password": "pbkdf2_sha256$12000$gEHv8C2vrX7p$DS5Rm5Mj0I6D/guaWXHVBGI3at66V9assHRITNIvZzg="
+    },
+    "model": "game.player"
+  },
+  {
+    "pk": 5,
+    "fields": {
+      "email": "",
+      "last_name": "",
+      "is_superuser": false,
+      "is_active": true,
+      "first_name": "",
+      "username": "Karl_Friedrich",
+      "description": "Pfr. Karl Friedrich ist Pfarrer an der berühmten historischen Matthäuskirche in der größten Stadt des Bezirks.",
+      "groups": {},
+      "date_joined": "2014-10-19T15:00:47.709Z",
+      "last_login": "2014-10-19T15:00:47.709Z",
+      "user_permissions": {},
+      "is_staff": false,
+      "password": "pbkdf2_sha256$12000$GE5OnbfxeD4F$UtLchF8BC86smebFsZFlv4+I2Eq4xVw6EnXg7K9V/EQ="
+    },
+    "model": "game.player"
+  },
+  {
+    "pk": 6,
+    "fields": {
+      "email": "",
+      "last_name": "",
+      "is_superuser": false,
+      "is_active": true,
+      "first_name": "",
+      "username": "Wolfgang_vom_Kocherthal",
+      "description": "Wolfgang vom Kocherthal hat eine Pfarrstelle inne, die drei Dörfer betreut. Ironischer Weise liegt keins davon im Kochertal.",
+      "groups": {},
+      "date_joined": "2014-10-19T15:00:47.709Z",
+      "last_login": "2014-10-19T15:00:47.709Z",
+      "user_permissions": {},
+      "is_staff": false,
+      "password": "pbkdf2_sha256$12000$OkIitcoCWj1q$4Pg1h2OaDMwiWceGI8NFqYxa8iEelYbyPsF4Vt5AJjk="
+    },
+    "model": "game.player"
+  },
+  {
+    "pk": 1,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 3,
+      "value": -2,
+      "description": "Der Kollegin wäre es sehr wichtig, in dieser Woche frei zu haben. Dir wäre es sehr wichtig, dass die Kollegin mal etwas in ihrer Gemeinde arbeitet. Das kannst du so natürlich nicht sagen. Deshalb murmelst du etwas von Vertretungsregelung und schickst sie zum Schuldekan.",
+      "bad_playing_player": 2,
+      "name": "Urlaubsantrag: Abgelehnt!"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 2,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 5,
+      "value": -2,
+      "description": "Du nickst verständnisvoll, als der Kollege sagt, dass er ohnehin schon ausgelastet war. Du sagst, dass war dir natürlich klar, dass es eine Mehrbelastung bedeutet, jetzt auch noch den Nachbarort mit zu versorgen. Mehr sagst du nicht. Du hast nicht vor, etwas an deinem Beschluss zu ändern.",
+      "bad_playing_player": 2,
+      "name": "Angeordnete Vakanzvertretung"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 3,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 4,
+      "value": -2,
+      "description": "In der Pause einer Synodentagung erzählst du von den schlimmen Zuständen im Bezirksjugendwerk. Synodale sind doch bestimmt verschwiegen; das wird sich ja nicht rumsprechen und dem Kollegen schaden, oder?",
+      "bad_playing_player": 3,
+      "name": "Gerüchte streuen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 4,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 6,
+      "value": -2,
+      "description": "Grußworte sind eine tolle Gelegenheit, Menschen zu erreichen. Oder die peinlichen Schwächen des Kollegen bloß zu stellen. So hast du das natürlich nicht gemeint, als du von den tollen Aktionen im Nachbarort geschwärmt hast. Das tut dir leid, dass das so ankam. Du wünschst ehrlich einen guten Tag, auch im Namen der Landessynode! ",
+      "bad_playing_player": 3,
+      "name": "Grußworte können den Tag verderben"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 5,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 2,
+      "value": -2,
+      "description": "Du verstehst, dass der Dekanin die Renovierung des Dekanats sehr am Herzen liegt. Du findest aber, dass man die Voranschläge der Handwerker trotzdem gründlich und gewissenhaft prüfen sollte. Vielleicht auch zweimal. Der KBA ist mit dir einig, dass hier unbedingt der Anschein besonderer Behandlung vermieden werden soll. Da kann auch die Dekanin nichts gegen sagen.",
+      "bad_playing_player": 4,
+      "name": "Dekanatsrenovierung vertagt"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 6,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 5,
+      "value": -2,
+      "description": "In der Stadt tut sich die Jugendarbeit schwer. Da hätte es dem Kollegen sehr geholfen, mit seinen Konfirmanden am Konfi-Camp teilnehmen zu können! Leider sind die Plätze begrenzt und irgendwie haben ihn die Einladungen sehr spät erreicht. Du sagst, dir täte das leid.",
+      "bad_playing_player": 4,
+      "name": "Konficamp Einladungen vergessen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 7,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 3,
+      "value": -2,
+      "description": "Schon lange lässt die Kollegin Bemerkungen darüber fallen, was für eine tolle, alte Kirche du hast und wie toll es sein muss, darin Gottesdienst zu halten. Du hast schon verstanden, was sie meint. Aber du stellst dich trotzdem dumm und lädst sie nicht ein. Der Predigtplan ist ja auch schon gemacht ...",
+      "bad_playing_player": 5,
+      "name": "Mein Kanzelrecht"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 8,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 6,
+      "value": -2,
+      "description": "Der Kollege vom Dorf fände es ganz toll, wenn man gegenseitig von der erfolgreichen Arbeit der je anderen Gemeinde profitieren könnte. „Bestimmt fänden die das toll, von unserer Arbeit zu profitieren“, denkst du dir und lässt ihn auflaufen.",
+      "bad_playing_player": 5,
+      "name": "Kooperation? Ohne mich!"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 9,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 2,
+      "value": -2,
+      "description": "Die Dekanin sucht dringend noch Menschen, die an ihrem „Bezirkskirchentag“ mitwirken. Der ist ihr wirklich sehr wichtig. Deshalb schreibst du ihr auch, es täte dir sehr leid, dass du keine Zeit hast.",
+      "bad_playing_player": 6,
+      "name": "Terminkollision"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 10,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 0,
+      "receiving_player": null,
+      "bad_receiving_player": 4,
+      "value": -2,
+      "description": "Deine Gemeinde hat ein tolles Stückle am Dorfrand. Das Jugendwerk würde das nur zu gerne für ein Grillfest nutzen. Das passt dir aber nicht, und deshalb ist das Stückle schon belegt. Und das kann man auch nicht mehr ändern.",
+      "bad_playing_player": 6,
+      "name": "Jugendwerk aussperren"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 11,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 1,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 1,
+      "description": "Folgendes ist noch bekannt zu geben: Die Kirchengemeinde in [Nachbarort] lädt ein zu einer Vortragsreihe zum Thema [...]. Die Reihe beginnt heute Abend mit einem Vortrag von [...] unter dem Titel [...]. Um 18 Uhr im evangelischen Gemeindehaus in [Nachbarort]. Herzliche Einladung!",
+      "bad_playing_player": null,
+      "name": "Veranstaltung im Gottesdienst abkündigen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 12,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 1,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 1,
+      "description": "Die Technik im Gemeindehaus steht eh nur rum. Schön wenn sie mal benutzt wird. Der Kollege darf sie gerne für sein Projekt ausleihen.",
+      "bad_playing_player": null,
+      "name": "Technik aus dem eigenen Gemeindehaus verleihen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 13,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 1,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 1,
+      "description": "Im Gemeindebrief sind noch einige Spalten frei und selber habt ihr in diesem Monat kein so tolles Konzert in eurer Kirche. Was hindert's da, auf die Veranstaltung im Nachbarort hinzuweisen?",
+      "bad_playing_player": null,
+      "name": "Im Gemeindebrief über die Aktionen der Nachbarn berichten"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 14,
+    "fields": {
+      "playing_player": null,
+      "level": 2,
+      "path": 1,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 2,
+      "description": "Die Nachbargemeinde suchen noch Mitarbeitende für den Glaubenskurs im Frühjahr. Du weißt selbst, wie schwer es ist, motivierte Ehrenamtliche zu finden, deshalb fragst du in deiner Gemeinde auch noch einmal herum.",
+      "bad_playing_player": null,
+      "name": "Mitarbeiter zur Verfügung stellen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 15,
+    "fields": {
+      "playing_player": null,
+      "level": 2,
+      "path": 1,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 2,
+      "description": "Du kennst eine Band die genau richtig wäre für den Jugo, den der Kollege plant. Gerne mailst du ihm die Kontaktdaten.",
+      "bad_playing_player": null,
+      "name": "Kontakt zu bekannter Band vermitteln"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 16,
+    "fields": {
+      "playing_player": null,
+      "level": 3,
+      "path": 1,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 4,
+      "description": "Die Nachbargemeinde hat ehrgeizige Pläne für ihre Sommervortragsreihe. Aber hochkarätige Referenten sind nicht billig. Kein Problem findest du, der Bezirk kann helfen.",
+      "bad_playing_player": null,
+      "name": "Im KBA Gelder für aufwändiges Projekt bewilligen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 17,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 2,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 1,
+      "description": "Der Kollege möchte sich für eine Fortbildung anmelden und sucht noch Vertretung. Du hilfst ihm gerne.",
+      "bad_playing_player": null,
+      "name": "Vertretungen übernehmen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 18,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 2,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 1,
+      "description": "Dem Kollegen ist es wichtig, neue Strukturen mit entwickeln zu können. Dir ist es wichtig, Montag Abends frei zu haben. Eine Win-Win-Situation.",
+      "bad_playing_player": null,
+      "name": "In den KBA wählen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 19,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 2,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 1,
+      "description": "Die Diskussion mit dem Schuldekan wäre sicher anders verlaufen, hättest du nicht auf den Paragrafen aus der Kirchenbezirksordnung verwiesen und versichert, dass Herr Frisch dir seine Gültigkeit noch einmal telefonisch bestätigt hat. Der Kollege ist dir sehr dankbar!",
+      "bad_playing_player": null,
+      "name": "Auf Rechtsauskunft des OKR hinweisen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 20,
+    "fields": {
+      "playing_player": null,
+      "level": 2,
+      "path": 2,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 2,
+      "description": "Auf einer Fortbildung hast du etwas über ein neues Projekt der Landeskirche erfahren, das deinen Kollegen sehr interessieren müsste. Du bist dir sicher, er hat noch nichts davon gehört. Deshalb nimmst du dir abends einen Moment, ihn anzurufen.",
+      "bad_playing_player": null,
+      "name": "Wichtige Informationen weitergeben"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 21,
+    "fields": {
+      "playing_player": null,
+      "level": 2,
+      "path": 2,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 2,
+      "description": "Die Bezirkssynode diskutiert die aktuelle Runde des Pfarrplans. Zum Glück ist deine Gemeinde von keinem der vorgeschlagenen Modelle betroffen. Der Kollege favorisiert aber Modell A und kann dich mit seinen Argumenten überzeugen. Du stimmst für seinen Antrag. Ob es wohl in der Pause was Gutes zu essen gibt?",
+      "bad_playing_player": null,
+      "name": "In der Bezirkssynode Pfarrplan-Entwurf zustimmen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 22,
+    "fields": {
+      "playing_player": null,
+      "level": 3,
+      "path": 2,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 4,
+      "description": "Als Bezirk eine neue Diakonenstelle zu finanzieren ist keine kleine Sache. Besonders wenn eine Gemeinde mehr als andere von dessen Arbeit profitieren wird und das nicht deine Gemeinde ist. Trotzdem kannst du in diesem Fall, nach Prüfung aller Umstände, guten Gewissens zustimmen.",
+      "bad_playing_player": null,
+      "name": "In KBA und Bezirkssynode zusätzliche Stellen bewilligen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 23,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 3,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 1,
+      "description": "Das Interview hatte so nett und harmlos angefangen. Jetzt geht dich der Reporter auf einmal kritisch an, ob Kirche denn nicht mehr für Verfolgte tun müsste? Du spürst, wie Panik in dir ausbricht. Zum Glück fällt dir der Kollege aus dem Nachbarort ein und du berichtest eilig von seiner Arbeit. Puh, gerade noch mal gut gegangen.",
+      "bad_playing_player": null,
+      "name": "Positiv in der Presse erwähnen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 24,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 3,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 1,
+      "description": "Du machst dir Sorgen um den Kollegen: Was der nicht alles arbeitet; wo der nicht überall engagiert ist. Im Gebet bringst du ihn vor Gott.",
+      "bad_playing_player": null,
+      "name": "In die Fürbitte aufnehmen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 25,
+    "fields": {
+      "playing_player": null,
+      "level": 1,
+      "path": 3,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 1,
+      "description": "Beim Seniorenausflug sprechen dich Gemeindeglieder an. Sie haben schlimme Dinge über den Kollegen im Nachbarort gehört. Du beruhigst sie und versicherst ihnen, dass an diesen Gerüchten nichts dran ist. Man müsse vorsichtig sein, was man so glaubt, mahnst du. Später fragst du dich, ob da wohl was dran ist?",
+      "bad_playing_player": null,
+      "name": "Gerüchte zerstreuen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 26,
+    "fields": {
+      "playing_player": null,
+      "level": 2,
+      "path": 3,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 2,
+      "description": "Etwas rätselhaft findest du es ja schon, wie man sich so für Diakoniearbeit begeistern kann. Aber der Kollege scheint ehrlich interessiert. Und dem willst du ja nicht im Wege stehen. Du ahnst ja nicht, welche Flut an Rund- und Infomails dich erwartet.",
+      "bad_playing_player": null,
+      "name": "In Bezirksamt wählen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 27,
+    "fields": {
+      "playing_player": null,
+      "level": 2,
+      "path": 3,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 2,
+      "description": "Ein Glück, dass der Kollege eingesprungen ist, nachdem der richtige Referent plötzlich abgesagt hat. Dem Publikum sagst du: „Wir sind froh, dass wir einen so hochkarätigen Experten für den heutigen Abend gewinnen konnten! ...“",
+      "bad_playing_player": null,
+      "name": "Als Referent einladen"
+    },
+    "model": "game.card"
+  },
+  {
+    "pk": 28,
+    "fields": {
+      "playing_player": null,
+      "level": 3,
+      "path": 3,
+      "receiving_player": null,
+      "bad_receiving_player": null,
+      "value": 4,
+      "description": "Beim Wandern auf dem Pfarrkonvent unterhältst du dich überraschend angeregt mit dem Kollegen über Kirchenpolitik und die Zukunft der Landeskirche. Du denkst dir, der Kollege müsste sich gut mit deinem Freund verstehen, der im Vorstand eines Gesprächskreises sitzt. Die beiden sollten sich einmal kennen lernen.",
+      "bad_playing_player": null,
+      "name": "Einflussreiche Kontakte vermitteln"
+    },
+    "model": "game.card"
+  }
+]
