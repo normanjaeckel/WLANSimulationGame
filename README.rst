@@ -12,8 +12,8 @@ Requirements
 You need a server with Python 3.4.x, Virtual Python Environment builder
 1.11.x (optional, but recommended) and an actual webbrowser with support
 for HTML5 and CSS3. On the server you have to install this application and
-its dependencies (Django 1.7.x and Constance – Dynamic Django settings 0.7
-(Backend: Database)).
+its dependencies (Django 1.7.x and Constance – Dynamic Django settings >
+0.6 (Backend: Database)).
 
 At least one player of each group of players needs a client computer with
 an actual webbrowser.

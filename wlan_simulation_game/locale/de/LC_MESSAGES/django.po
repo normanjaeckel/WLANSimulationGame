@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WLANSimulationGame\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-06 21:26+0200\n"
-"PO-Revision-Date: 2014-10-06 19:48+0000\n"
+"POT-Creation-Date: 2014-10-25 20:53+0200\n"
+"PO-Revision-Date: 2014-10-25 19:01+0000\n"
 "Last-Translator: Norman Jäckel <transifex16062013@normanjaeckel.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/wlansimulationgame/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -90,7 +90,7 @@ msgid "Game"
 msgstr "Spiel"
 
 #: game/forms.py:17 game/forms.py:61 game/models.py:89
-#: game/templates/game/message_detail.html:30
+#: game/templates/game/message_detail.html:31
 #: game/templates/game/message_list.html:34
 #: game/templates/game/message_list_not_printed.html:27
 msgid "Recipient"
@@ -104,13 +104,13 @@ msgid ""
 msgstr "Sie müssten %d Minuten warten, bis Sie eine weitere Nachricht an den gleichen Empfänger senden können."
 
 #: game/forms.py:57 game/models.py:84
-#: game/templates/game/message_detail.html:28
+#: game/templates/game/message_detail.html:29
 #: game/templates/game/message_list.html:29
 #: game/templates/game/message_list_not_printed.html:26
 msgid "Sender"
 msgstr "Absender"
 
-#: game/forms.py:60 game/templates/game/message_detail.html:34
+#: game/forms.py:60 game/templates/game/message_detail.html:35
 #: game/templates/game/message_list.html:38
 #: game/templates/game/message_list_not_printed.html:31
 #: game/templates/game/player_list.html:21 templates/print_player_list.html:8
@@ -133,8 +133,7 @@ msgstr "Opfer-Empfänger"
 msgid "Description"
 msgstr "Beschreibung"
 
-#: game/models.py:30 game/templates/game/card_detail.html:7
-#: game/templates/game/player_detail.html:6
+#: game/models.py:30 game/templates/game/player_detail.html:6
 #: game/templates/game/player_detail.html:8
 msgid "Player"
 msgstr "Spieler"
@@ -143,7 +142,7 @@ msgstr "Spieler"
 msgid "Players"
 msgstr "Spieler"
 
-#: game/models.py:90 game/templates/game/message_detail.html:38
+#: game/models.py:90 game/templates/game/message_detail.html:39
 msgid "Subject"
 msgstr "Betreff"
 
@@ -160,8 +159,8 @@ msgid "Sending Time"
 msgstr "Gesendet"
 
 #: game/models.py:97 game/models.py:131
-#: game/templates/game/message_detail.html:10
-#: game/templates/game/message_detail.html:12
+#: game/templates/game/message_detail.html:11
+#: game/templates/game/message_detail.html:13
 msgid "Message"
 msgstr "Nachricht"
 
@@ -179,7 +178,7 @@ msgstr "Abfänger"
 
 #: game/models.py:135 game/templates/game/interception_wizard_form.html:13
 #: game/templates/game/interception_wizard_form.html:15
-#: game/templates/game/message_detail.html:21
+#: game/templates/game/message_detail.html:22
 #: game/templates/game/message_form.html:21
 #: game/templates/game/message_list.html:20
 msgid "Interception"
@@ -234,6 +233,7 @@ msgid "Used"
 msgstr "Gespielt"
 
 #: game/models.py:184 game/templates/game/card_detail.html:5
+#: game/templates/game/card_detail.html:7
 msgid "Card"
 msgstr "Karte"
 
@@ -279,7 +279,7 @@ msgid "No cards available."
 msgstr "Keine Karten verfügbar."
 
 #: game/templates/game/interception_wizard_form.html:18
-#: game/templates/game/message_detail.html:15
+#: game/templates/game/message_detail.html:16
 #: game/templates/game/message_form.html:17
 #: game/templates/game/message_list.html:5
 #: game/templates/game/message_list.html:7
@@ -288,7 +288,7 @@ msgid "All messages"
 msgstr "Alle Nachrichten"
 
 #: game/templates/game/interception_wizard_form.html:19
-#: game/templates/game/message_detail.html:19
+#: game/templates/game/message_detail.html:20
 #: game/templates/game/message_form.html:12
 #: game/templates/game/message_form.html:14
 #: game/templates/game/message_list.html:14
@@ -336,26 +336,26 @@ msgstr "Starte Abfangversuch"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: game/templates/game/message_detail.html:17
+#: game/templates/game/message_detail.html:18
 #: game/templates/game/message_form.html:19
 #: game/templates/game/message_list.html:11
 msgid "All messages to be printed"
 msgstr "Alle zu druckenden Nachrichten"
 
-#: game/templates/game/message_detail.html:37
+#: game/templates/game/message_detail.html:38
 #: game/templates/game/message_list_not_printed.html:25
 msgid "Time"
 msgstr "Zeit"
 
-#: game/templates/game/message_detail.html:44
+#: game/templates/game/message_detail.html:45
 msgid "This message was already printed."
 msgstr "Diese Nachricht wurde bereits gedruckt."
 
-#: game/templates/game/message_detail.html:46
+#: game/templates/game/message_detail.html:47
 msgid "Message printed"
 msgstr "Nachricht gedruckt"
 
-#: game/templates/game/message_detail.html:48
+#: game/templates/game/message_detail.html:49
 msgid "This message was not yet printed."
 msgstr "Diese Nachricht wurde noch nicht gedruckt."
 
@@ -531,6 +531,10 @@ msgstr "Alle Karten drucken (volle Ansicht)"
 msgid "Print all cards (short)"
 msgstr "Alle Karten drucken (kurze Ansicht)"
 
+#: templates/home.html:17
+msgid "Print form for playing a card"
+msgstr "Formular zum Ausspielen einer Karte drucken"
+
 #: templates/print_access_data.html:16 templates/print_access_data.html:21
 msgid "Access data"
 msgstr "Zugangsdaten"
@@ -567,6 +571,39 @@ msgstr "Liste aller Karten"
 #: templates/print_card_list_short.html:16
 msgid "This list is sorted by card owner and target."
 msgstr "Diese Liste ist nach Inhaber und Ziel der Karten sortiert."
+
+#: templates/print_card_play_form.html:12
+#: templates/print_card_play_form.html:16
+msgid "Form for playing a card"
+msgstr "Formular zum Ausspielen einer Karte"
+
+#: templates/print_card_play_form.html:18
+msgid ""
+"\n"
+"    <p>If you want to play a card, write down the names of your character\n"
+"    and your card and the names of your partner's character and the card he\n"
+"    will play on you. Hand out this form and your card to the game master.\n"
+"    The game master doesn't inform the partner about this. He plays all\n"
+"    cards only if both partners hand out compatible forms and cards. If you\n"
+"    want to play a negative card, you don't need to use this form. Just\n"
+"    hand out the card to the game master directly.</p>\n"
+msgstr "\n<p>Wenn Sie eine Karte spielen wollen, schreiben Sie die Namen Ihrer Spielfigur und Ihrer Karte sowie die Namen der Spielfigur Ihres Tauschpartners und der Karte auf, die er auf Sie spielen wird. Übergeben Sie dieses Formular und Ihre Karte dem Spielleiter. Der Spielleiter informiert den Tauschpartner hierüber nicht. Er spielt alle Karten erst, wenn beide Tauschpartner passende Formulare und Karten abgegeben haben. Wenn Sie eine negative Karte spielen wollen, benötigen Sie dieses Formular nicht. Geben Sie die Karte direkt beim Spielleiter ab.</p>\n"
+
+#: templates/print_card_play_form.html:28
+msgid "Name of your character"
+msgstr "Name Ihrer Spielfigur"
+
+#: templates/print_card_play_form.html:32
+msgid "Name of your card"
+msgstr "Name Ihrer Karte"
+
+#: templates/print_card_play_form.html:36
+msgid "Name of your partner's character"
+msgstr "Name der Spielfigur Ihres Tauschpartners"
+
+#: templates/print_card_play_form.html:40
+msgid "Name of your partner's card"
+msgstr "Name der Karte Ihres Tauschpartners"
 
 #: templates/print_introduction.html:5
 msgid "Introduction"

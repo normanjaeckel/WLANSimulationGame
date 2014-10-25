@@ -1,4 +1,4 @@
 Django>=1.7,<1.8
 # django-constance[database]==0.7
-https://github.com/LearningProgress/django-constance/archive/0.6.post20140805.tar.gz
+https://github.com/normanjaeckel/django-constance/archive/0.6.post20141025.tar.gz
 django-picklefield==0.3.1

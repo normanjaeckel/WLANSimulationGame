@@ -44,6 +44,10 @@ urlpatterns = patterns(
         user_passes_test(lambda user: user.is_staff)(views.CardListView.as_view(
             template_name='print_card_list_short.html')),
         name='print_card_list_short'),
+    url(r'^print/card_play_form/$',
+        user_passes_test(lambda user: user.is_staff)(generic.TemplateView.as_view(
+            template_name='print_card_play_form.html')),
+        name='print_card_play_form'),
 
     # Player
     url(r'^player/$',

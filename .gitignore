@@ -3,6 +3,9 @@
 # Python compiled files
 __pycache__/
 
+# Compiled message files
+*.mo
+
 # Virtual Python Environment builder
 .virtualenv/
 
